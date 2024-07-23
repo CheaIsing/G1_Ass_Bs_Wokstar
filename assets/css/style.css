@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face{
+    font-family: kantumruy pro;
+    src: url(../font/KantumruyPro-VariableFont_wght.ttf);
+}
+
+:root {
+    --c-brand: #fdcf28;
+    --c-brand-dark: #f5c61c;
+    --c-black: #1a1a1a;
+    --c-gray: #aaaaaa;
+    --c-gray-dark: #7a7a7a;
+    --c-white-light: #e9ecef;
+    --c-white: #ffffff;
+}
+body {
+    font-family: kantumruy pro , sans-serif;
+}
