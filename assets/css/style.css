@@ -1,5 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+@font-face{
+    font-family: kantumruy pro;
+    src: url(../font/KantumruyPro-VariableFont_wght.ttf);
+}
 
 [data-theme="light"] {
     --c-brand: #fdcf28;
@@ -20,7 +23,7 @@
 }
 
 body {
-    font-family: "Kantumruy Pro", sans-serif;
+    font-family: kantumruy pro , sans-serif;
 }
 
 /* Navbar  */
