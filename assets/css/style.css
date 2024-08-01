@@ -222,9 +222,50 @@ body {
     border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
 }
 
+/* gallery page  */
+
 .gallery-page .box{
     background-color: antiquewhite;
-    height: 360px;
+    height: 400px;
+}
+
+/* cart page  */
+
+.cart-page .card{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-page table {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.cart-page table thead th {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--c-black);
+}
+
+.cart-page table th,
+.cart-page table td {
+    height: 100px;
+    padding-block: 12px;
+}
+
+.cart-page table tbody td {
+    font-weight: 500;
+    color: var(--c-black);
+    font-size: 18px;
+}
+
+.cart-page table td img {
+    height: 100px;
+}
+
+.text-right {
+    text-align: right;
 }
 /* Hero  */
 .hero {
