@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- Main Link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .blog-page .intro-section .card-intro{
+            height: 500px;
+            border-radius: 0;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s;
+            border: 0;
+        }
+        .blog-page .intro-section .card-intro .card-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.8s;
+        }
+
+        .blog-page .intro-section .card-intro:hover .card-img img{
+            transform: scale(1.2);
+        }
+
+        .blog-page .intro-section .card-intro .card-body{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .blog-page .intro-section .card-intro .card-body .stretched-link:hover .card-title{
+            color: var(--c-brand);
+        }
+
+        .blog-page .intro-section .card-intro-sm{
+            height: calc(250px - 0.25rem);
+        }
+
+        .blog-page .intro-section .card-intro-sm .card-body{
+            padding: 25px;
+        }
+    </style>
+</head>
+<body class="blog-page">
+
+    <header></header>
+    <main>
+        <section class="intro-section">
+            <div class="container-lg">
+                <div class="row g-2">
+                    <div class="col-md-7">
+                        <div class="card card-intro">
+                            <div class="card-img">
+                                <img  src="img/07bc80a98e0d1fc6109cf62b31fae15dcb0f9cf0_slider-02.jpg" alt="">
+                            </div>
+                            <div class="card-body text-white">
+                              <a href="#" class="stretched-link text-white text-decoration-none">
+                                    <h3 class="card-title">Italian traditional herbs bread with Olive</h3>
+                              </a>
+                              <p class="card-text">Nbis curabitur ullam ultr nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. “Ridiculus mus mauris vitae...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row g-2">
+                            <div class="col-12">
+                                <div class="card card-intro card-intro-sm">
+                                    <div class="card-img">
+                                        <img  src="img/07bc80a98e0d1fc6109cf62b31fae15dcb0f9cf0_slider-02.jpg" alt="">
+                                    </div>
+                                    <div class="card-body text-white">
+                                      <a href="#" class="stretched-link text-white text-decoration-none">
+                                            <h5 class="card-title">Italian traditional herbs bread with Olive</h5>
+                                      </a>
+                                      <p class="card-text">Nbis curabitur ullam ultr nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card card-intro card-intro-sm">
+                                    <div class="card-img">
+                                        <img  src="img/07bc80a98e0d1fc6109cf62b31fae15dcb0f9cf0_slider-02.jpg" alt="">
+                                    </div>
+                                    <div class="card-body text-white">
+                                      <a href="#" class="stretched-link text-white text-decoration-none">
+                                            <h5 class="card-title">Italian traditional herbs bread with Olive</h5>
+                                      </a>
+                                      <p class="card-text">Nbis curabitur ullam ultr nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

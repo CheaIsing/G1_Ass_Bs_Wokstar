@@ -300,6 +300,7 @@ footer .top-footer-sm .accordion .accordion-body ul li a{
     color: var(--c-header-color);
     padding: 10px 0;
     font-size: 18px;
+    text-wrap: nowrap;
 }
 footer .top-footer .content-center ul li a::before,
 footer .top-footer-sm .accordion .accordion-body.accordion-body-1 ul li a::before{
@@ -726,10 +727,6 @@ footer .top-footer-sm{
   }
 
 
-
-
-
-
 /* customer-review-page */
 .customer-review-page i.bi-quote-rotate::before {
     transform: rotate(180deg) !important;
@@ -773,9 +770,54 @@ footer .top-footer-sm{
     border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
 }
 
+/* gallery page  */
+
 .gallery-page .box{
     background-color: antiquewhite;
-    height: 360px;
+    height: 400px;
+}
+
+/* cart page  */
+
+.cart-page .card{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-page table {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.cart-page table thead th {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--c-black);
+}
+
+.cart-page table th,
+.cart-page table td {
+    height: 100px;
+    padding-block: 12px;
+}
+
+.cart-page table tbody td {
+    font-weight: 500;
+    color: var(--c-black);
+    font-size: 18px;
+}
+
+.cart-page table td img {
+    height: 100px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.card{
+    background-color: transparent;
 }
 /* Hero  */
 .hero {
@@ -785,5 +827,148 @@ footer .top-footer-sm{
     background-position: center;
     background-size: cover;
     
+}
+
+/* Landing page  */
+
+.margin-bottom{
+    margin-bottom: 120px;
+}
+.section-landing .carousel .carousel-inner{
+    width: 100%;
+    height: 90vh;
+}
+.section-landing .carousel .carousel-inner .carousel-item img{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    margin-left: 55%;
+    margin-top: 8%;
+    border: 6px solid var(--c-brand);
+}
+.section-landing .carousel-inner .imge-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-landing .carousel-inner .carousel-caption{
+    top: 30%;
+    width: 560px;
+
+}
+.section-landing .carousel-inner .carousel-caption h1{
+    font-size: 55px;
+    color: var(--c-brand);
+    padding: 8px 0px;
+}
+.section-landing .carousel-inner .carousel-caption p{
+    font-size: 20px;
+}
+.btn-booking{
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 25px;
+    color: var(--c-brand);
+    background-color: transparent;
+    font-size: 18px;
+    border:solid 2px var(--c-brand) !important;
+}
+.btn-booking:hover{
+    color: var(--c-white);
+    background-color: var(--c-brand-dark) ;
+}
+
+
+.landing-page .section-menu .nav-tabs .nav-item {
+   margin-left: 10px ;
+}
+.landing-page .section-menu .nav-tabs .nav-item .nav-link{
+   padding: 5px 18px;
+   font-size: 16px;
+   font-weight: 500;
+   border: 0;
+   border:solid 2px var(--c-brand) !important;
+   color: var(--c-black);
+   
+}
+.landing-page .section-menu .nav-tabs .nav-item .active{
+    color: var(--c-brand);
+}
+.landing-page .section-menu .bg-top{
+    width: 860px;
+    margin: auto;
+    /* background-color: rgb(255, 179, 0); */
+}
+.landing-page .section-menu .card{
+    border:solid 2px var(--c-brand);
+    /* position: relative; */
+}
+.landing-page .section-menu .card img{
+    width: 200px;
+    margin: auto;
+    padding-top: 20px;
+}
+.landing-page .section-menu .style-card{
+    border-radius: 100px;
+}
+.landing-page .section-menu .style-card img{
+    padding-top: 0;
+    width: 130px;
+    align-items: center;
+    padding: 18px;
+    
+}
+.landing-page .section-menu .style-card .card-body{
+    align-items: center;
+    padding-top: 6%;
+    
+}
+.landing-page .section-menu .style-card .price{
+    margin-top: 33%;
+    margin-right: 20px;
+    text-align: center;
+    padding: 0;
+}
+.landing-page .section-menu .content{
+    width: 100%;
+    height: 100%;
+    margin-left: 20%;
+    display: flex;
+    opacity: 0;
+    padding-top: 12%;
+    transition: 0.7s;    
+}
+.landing-page .section-menu .content .bi-star-fill{
+    width: 40px;
+    height: 40px;
+    background-color: #fdcf28;
+    border-radius: 50%;
+    margin-left: 10px;
+    line-height: 40px;
+    text-align: center;   
+}
+.landing-page .section-menu .content:hover{
+    opacity: 1;
+}
+.landing-page .section-menu .card:hover .rating {
+	opacity: 0;
+}
+.landing-page .section-menu .content > *{
+    transform: translateY(15px);
+    transition: transform 0.6s;
+}
+.landing-page .section-menu .content:hover > *{
+    transform: translateY(0);
+}
+.landing-page .section-service {
+    width: 100%;
+    height: 60vh;
+}
+.landing-page .section-galery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
