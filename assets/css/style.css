@@ -693,6 +693,21 @@ footer .top-footer-sm{
 .btn-cart:hover::before{
     transform: translateX(0);
 }
+.dproduct-des .nav-link{
+    color: var(--c-black);
+}
+.dproduct-des .nav-link.active{
+    /* background-color: transparent; */
+    background-color: var(--c-brand);
+    border-color: var(--c-brand)!important;
+    color: #fff!important;
+}
+.dproduct-des .nav-link:hover{
+    border-color: var(--c-brand)!important;
+}
+.dproduct-des .tab-content{
+    color: var(--c-black);
+}
 
 
 /* hover border top  */
