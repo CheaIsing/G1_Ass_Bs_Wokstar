@@ -692,10 +692,7 @@ footer .top-footer-sm{
 .btn-cart:hover::before{
     transform: translateX(0);
 }
-.section-menudetail .dproduct-des .nav-link.active{
-    background-color: transparent;
 
-}
 
 /* hover border top  */
 .hvr-overline-from-center {
