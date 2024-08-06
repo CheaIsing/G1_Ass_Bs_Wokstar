@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: kantumruy pro;
     src: url(../font/KantumruyPro-VariableFont_wght.ttf);
 }
@@ -837,38 +837,59 @@ footer .top-footer-sm{
 .margin-bottom{
     margin-bottom: 120px;
 }
-.section-landing .carousel .carousel-inner{
-    width: 100%;
-    height: 90vh;
+
+.section-landing {
+    background-image: url(../../img/bg-hero-baner-landing-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.section-landing .carousel .carousel-inner .carousel-item img{
+
+.section-landing .carousel .carousel-inner {
+    width: 100%;
+    height: 100vh;
+}
+
+.section-landing .carousel .carousel-inner .carousel-item {
+    margin-top: 8%;
+
+}
+
+.section-landing .carousel .carousel-inner .carousel-item img {
     width: 600px;
     height: 600px;
     border-radius: 50%;
     margin-left: 55%;
-    margin-top: 8%;
+    /* margin-top: 8%; */
     border: 6px solid var(--c-brand);
 }
+
 .section-landing .carousel-inner .imge-slide {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
-.section-landing .carousel-inner .carousel-caption{
+.section-landing .carousel-inner .carousel-caption {
     top: 30%;
     width: 560px;
+    /* height: 300px; */
+    /* border: 1px solid rebeccapurple; */
 
 }
-.section-landing .carousel-inner .carousel-caption h1{
+
+.section-landing .carousel-inner .carousel-caption h1 {
     font-size: 55px;
     color: var(--c-brand);
     padding: 8px 0px;
 }
-.section-landing .carousel-inner .carousel-caption p{
+
+.section-landing .carousel-inner .carousel-caption p {
     font-size: 20px;
 }
-.btn-booking{
+
+.btn-booking {
     margin-top: 10px;
     width: 150px;
     padding: 10px 0;
@@ -876,13 +897,27 @@ footer .top-footer-sm{
     color: var(--c-brand);
     background-color: transparent;
     font-size: 18px;
-    border:solid 2px var(--c-brand) !important;
-}
-.btn-booking:hover{
-    color: var(--c-white);
-    background-color: var(--c-brand-dark) ;
+    border: solid 2px var(--c-brand) !important;
 }
 
+.btn-booking:hover {
+    color: var(--c-white);
+    background-color: var(--c-brand-dark);
+}
+
+.section-menu {
+    background-image: url(../../img/Giveaway\ Design\ Minimalist\ Poster\ \(6\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+}
+
+.section-menu .style-img img {
+    width: 100px;
+    height: 100px;
+    /* position: relative !important; */
+}
 
 .landing-page .section-menu .nav-tabs .nav-item {
    margin-left: 10px ;
@@ -921,12 +956,12 @@ footer .top-footer-sm{
     width: 130px;
     align-items: center;
     padding: 18px;
-    
+
 }
 .landing-page .section-menu .style-card .card-body{
     align-items: center;
     padding-top: 6%;
-    
+
 }
 .landing-page .section-menu .style-card .price{
     margin-top: 33%;
@@ -941,7 +976,7 @@ footer .top-footer-sm{
     display: flex;
     opacity: 0;
     padding-top: 12%;
-    transition: 0.7s;    
+    transition: 0.7s;
 }
 .landing-page .section-menu .content .bi-star-fill{
     width: 40px;
@@ -950,7 +985,7 @@ footer .top-footer-sm{
     border-radius: 50%;
     margin-left: 10px;
     line-height: 40px;
-    text-align: center;   
+    text-align: center;
 }
 .landing-page .section-menu .content:hover{
     opacity: 1;
@@ -974,4 +1009,249 @@ footer .top-footer-sm{
     height: 100%;
     object-fit: cover;
 }
+/* .bg-image {
+   background-color: var(--c-brand-dark);
+    height: 350px;
+    background-repeat: no-repeat;
+   
+} */
+.btn-login{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-left: 6px;
+    color: var(--c-white);
+    background-color: var(--c-brand);
+    /* border: 1px solid var(--c-white); */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+
+}
+.btn-login:hover{
+    color: var(--c-brand);
+    background-color: var(--c-white);
+}
+.margin-top{
+    margin-top: 15%;
+}
+
+
+
+/*start login signup*/
+.background-imge {
+    max-width: 1180px;
+    background-image: url(../../img/bg_login.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10%;
+    margin-bottom: 8%;
+      
+}
+
+a{
+    color: var(--c-brand);
+    text-decoration: none;
+}
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.322) !important;
+    backdrop-filter: saturate(200%) blur(20px);
+}
+.btn-login-form{
+    width: 100%;
+    height: 40px;
+    background-color: var(--c-brand);
+    border-radius: 20px;
+    color: var(--c-white);
+}
+h4{
+    color: var(--c-white);
+}
+.form-check-label{
+    color: var(--c-white);
+}
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.or span {
+    color: #F59E0B;
+}
+.or .line {
+    width: 30%;
+    height: 1px;
+    background-color: #f5c61c;
+    border-radius: 1px;
+}
+.btn-icon {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-icon button {
+    width: 28%;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid #F59E0B;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:auto;
+}
+.btn-icon button:hover {
+    background-color: transparent;
+    opacity: 0.9;
+}
+.btn-icon button i {
+    font-size: 26px;
+    color: silver;
+}
+.term-and-privacy p {
+    color: #d2d2d2; 
+}
+
+@media (max-width: 576px) {
+    .background-imge  {
+        margin-top: 20%;
+    }
+}
+@media (max-width: 768px) {
+    .background-imge {
+        /* margin-left: 10%; */
+        margin-right: 10%;
+    }
+}
+/* end login signup */
+
+
+/* start page contact */
+.contac-benner{
+    height: 60vh;
+}
+.contac-benner .image img
+{
+    height: 60vh;
+    width: 100%;
+    filter: blur(6px);
+    object-fit: cover;
+}
+.ftco-section .card-contect .card{
+    height: 200px;
+
+
+}
+.info-wrap {
+    background-image: url(../../img/bg_login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.card-contect .card{
+    background-color: #dbb1681a;
+    border: 0;
+}
+ .wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #dbb1681a;
+    
+}
+.btn-send{
+    width: 130px;
+    height: 35px;
+    background-color: var(--c-brand);
+    color: var(--c-white);
+}
+.form-control{
+    background-color: #dbb1681a;
+}
+/* end page contact */
+
+
+.section-about-us .about-res{
+   
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid yellow; */
+}
+.section-about-us .about-res img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+
+    
+}
+/* .section-about-us .icon-style-contact img{
+    width: 200px;
+} */
+/* .shap {
+    width: 200px;
+    height: auto;
+    margin-left: 92%;
+    top: -15%;
+    /* left: -8%;
+} */
+
+.shap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: rotate360deg;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+
+}
+/* @keyframes rotate360deg{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(350deg);
+    }
+} */
+.section-about-us .shap-1{
+    width: 300px;
+    height: auto;
+    top: 0;
+    /* bottom: 0; */
+    margin-top: -5%;
+    
+}
+
+.section-about-us .shap-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    z-index: -1 ;
+
+}
+
+@keyframes rotate{
+    from{
+        transform:  rotate(0deg);
+        margin-top: 0;
+    }
+    to{
+        transform:  rotate(-20deg);
+        margin-top: 40px;
+    }
+    
+}
+.section-about-chef{
+    background-color:rgb(239, 209, 14);
+    /* width: 100%; */
+    height: 60vh;
+}
+
+
 
