@@ -24,6 +24,7 @@
 
 body {
     font-family: kantumruy pro , sans-serif;
+    background-color: var(--c-white);
 }
 
 /* Navbar  */
@@ -266,6 +267,10 @@ body {
 
 .text-right {
     text-align: right;
+}
+
+.card{
+    background-color: transparent;
 }
 /* Hero  */
 .hero {

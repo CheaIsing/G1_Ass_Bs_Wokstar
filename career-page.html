@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Career Page</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+        <!-- Main Link  -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+        .career-page .job-list .job-list-item:first-child{
+            border-top: 1px solid #ddd;
+        }
+        .career-page .job-list .job-list-item{
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+    </head>
+    <body class="career-page">
+
+        <header>
+            <nav
+                class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
+                <div class="container-xxl px-4 ">
+                    <a class="navbar-brand" href="#">
+                        <img class="ms-3 ms-xl-4"
+                            src="assets/img/logo-2-png.png" alt height="60px">
+                    </a>
+                    <div class="d-flex d-xl-none align-items-xl-center">
+                        <!-- <button class="btn btn-icon " type="button">
+                        <i class="fa-solid fa-utensils text-white"></i>
+                    </button> -->
+                        <form class="d-flex" role="search">
+                            <button class="btn btn-icon btn-responsive-icon"
+                                type="button">
+                                <i class="fa-solid fa-search"></i>
+                            </button>
+                        </form>
+                        <button class="btn btn-icon btn-responsive-icon"
+                            type="button">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                        <!-- <button class="btn btn-icon" type="button">
+                        <i class="fa-solid fa-moon text-white"></i>
+                    </button> -->
+                        <button class="btn btn-icon btn-responsive-icon"
+                            type="button">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <button class="navbar-toggler btn btn-icon"
+                            type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <i class=" fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                        data-bs-scroll="true" data-bs-backdrop="false">
+                        <div
+                            class="offcanvas-header d-flex d-xl-none align-items-center">
+                            <a class="navbar-brand" href="#">
+                                <img class="ms-3 ms-xl-4"
+                                    src="assets/img/logo-2-png2.png" alt
+                                    height="70px">
+                            </a>
+                            <button type="button"
+                                class="btn-close fs-4 btn-icon shadow-none"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
+                                <li class="nav-item mx-lg-2">
+                                    <a class="nav-link" href="#">ទំព័រដើម</a>
+                                </li>
+
+                                <li class="nav-item mx-lg-2 dropdown megamenu">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        ម៉ីនុយ
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <div class="container-xxl">
+                                            <div class="row w-100 gy-4">
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <h5
+                                                                class="dropdown-item">Khmer
+                                                                Food</h6>
+                                                        </li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <h5
+                                                                class="dropdown-item">Khmer
+                                                                Food</h6>
+                                                        </li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <h5
+                                                                class="dropdown-item">Khmer
+                                                                Food</h6>
+                                                        </li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <h5
+                                                                class="dropdown-item">Khmer
+                                                                Food</h6>
+                                                        </li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <h5
+                                                                class="dropdown-item">Khmer
+                                                                Food</h6>
+                                                        </li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <h5
+                                                                class="dropdown-item">Khmer
+                                                                Food</h6>
+                                                        </li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <h5
+                                                                class="dropdown-item">Khmer
+                                                                Food</h6>
+                                                        </li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <h5
+                                                                class="dropdown-item">Khmer
+                                                                Food</h6>
+                                                        </li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                        <li><a
+                                                                class="dropdown-item"
+                                                                href="#">Action</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-lg-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        សេវាកម្ម
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="#">សេវាកម្ម</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">ការវាយតម្លៃ</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">រូបភាព</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-lg-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        អំពី
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="#">អំពីយើង</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">អំពីភោជនីយដ្ឋាន</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-lg-2">
+                                    <a class="nav-link" href="#">អាជីព</a>
+                                </li>
+                                <li class="nav-item mx-lg-2">
+                                    <a class="nav-link" href="#">ព័ត៌មាន</a>
+                                </li>
+                                <li class="nav-item mx-lg-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        ទំនាក់ទំនង
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="#">ទំនាក់ទំនងយើង</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">សំណួរ​
+                                                និងចម្លើយ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-icon" type="button">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </button>
+                                <form class="d-none d-xl-flex" role="search">
+                                    <button class="btn btn-icon" type="button">
+                                        <i class="fa-solid fa-search"></i>
+                                    </button>
+                                </form>
+                                <button
+                                    class="btn btn-icon d-none d-xl-inline-block"
+                                    type="button">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </button>
+                                <button class="btn btn-icon" type="button"
+                                    data-theme-toggle>
+                                    <!-- <i class="fa-solid fa-moon"></i> -->
+                                </button>
+                                <button
+                                    class="btn btn-icon d-none d-xl-inline-block"
+                                    type="button">
+                                    <i class="fa-solid fa-user"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="py-5">
+            <section class="why-join-us-section mt-5 pt-5">
+                <div class="container-lg">
+                    <h1 class="section-title text-center mb-5">Why Join Us?</h1>
+                    <div class="row gy-5">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card border-0 flex-row">
+                                <div class="card-icon fs-1 text-warning">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                                <div class="card-body py-0 pt-1 pt-md-2">
+                                    <h4
+                                        class="card-title">ក្រុមហ៊ុនបែបបច្ចេកវិទ្យា</h4>
+                                    <p
+                                        class="card-text fs-5">យើងផ្តោតលើបច្ចេកវិទ្យានវានុវត្តន៍
+                                        ហើយអ្នកអភិវឌ្ឍន៍របស់យើងគឺជាអ្នកជំនាញក្នុងវិស័យជាច្រើន
+                                        រួមទាំងការវិភាគគំនិត
+                                        ការអភិវឌ្ឍន៍គេហទំព័រ
+                                        បច្ចេកវិទ្យាទូរស័ព្ទ
+                                        ការអភិវឌ្ឍមូលដ្ឋានទិន្នន័យ
+                                        និងស្ថាបត្យកម្មServer។</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card border-0 flex-row">
+                                <div class="card-icon fs-1 text-warning">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="card-body py-0 pt-1 pt-md-2">
+                                    <h4
+                                        class="card-title">កន្លែងសម្រាប់ការអភិវឌ្ឍ</h4>
+                                    <p
+                                        class="card-text fs-5">ចូលរួមទទួលយកបទពិសោធសហគ្រិនភាពនៅក្នុងក្រុមការងារពហុជំនាញដែលដឹកនាំដោយទេពកោសល្យរបស់ក្រុមហ៊ុន។
+                                        នៅពេលអ្នករីកចម្រើនជាមួយវិស័យជាច្រើន
+                                        អ្នកនឹងអាចចាប់ផ្ដើមជាមួយអាជីពដែលអ្នកជ្រើសរើស។</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card border-0 flex-row">
+                                <div class="card-icon fs-1 text-warning">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                                <div class="card-body py-0 pt-1 pt-md-2">
+                                    <h4
+                                        class="card-title">អារម្មណ៍ដូច​នៅ​​ផ្ទះ</h4>
+                                    <p
+                                        class="card-text fs-5">បរិស្ថានការងារដ៏រីករាយជាមួយនឹងបន្ទប់ធំទូលាយ
+                                        បរិយាកាសបៃតង ខ្យល់អាកាសបរិសុទ្ធ
+                                        និងសុវត្ថិភាព។
+                                        ការិយាល័យរបស់យើងត្រូវបានរចនាឡើងធ្វើឳ្យអ្នកគ្រប់គ្នាមានអារម្មណ៍ដូចនៅផ្ទះ។</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card border-0 flex-row">
+                                <div class="card-icon fs-1 text-warning">
+                                    <i class="fa-brands fa-playstation"></i>
+                                </div>
+                                <div class="card-body py-0 pt-1 pt-md-2">
+                                    <h4
+                                        class="card-title">ធ្វើការឱ្យអស់ពីកម្លាំងកាយ
+                                        ហើយកម្សាន្តឱ្យអស់ដៃ</h4>
+                                    <p class="card-text fs-5">រៀងរាល់ថ្ងៃសុក្រ
+                                        មិត្តរួមការងារទាំងអស់ត្រូវបានអញ្ជើញឱ្យចូលរួមក្នុងការប្រកួតបាល់ទាត់ប្រចាំសប្តាហ៍
+                                        ដើម្បីរក្សាសុខភាព សម្រាក
+                                        និងបង្កើតមិត្តភាពថ្មីជាមួយមិត្តរួមការងារទាំងអស់គ្នា។</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card border-0 flex-row">
+                                <div class="card-icon fs-1 text-warning">
+                                    <i class="fa-solid fa-chalkboard"></i>
+                                </div>
+                                <div class="card-body py-0 pt-1 pt-md-2">
+                                    <h4
+                                        class="card-title">រៀនពីអ្វីដែលល្អបំផុត</h4>
+                                    <p
+                                        class="card-text fs-5">ក្រុមការងារស្រាវជ្រាវ
+                                        និងអភិវឌ្ឍតាំងចិត្តស្វែងរកបច្ចេកវិទ្យា
+                                        និងស្វែងយល់ពីចំណេះដឹងផ្នែកបច្ចេកវិទ្យាដ៏អស្ចារ្យបំផុត
+                                        ដើម្បីចែករំលែកជាមួយក្រុមហ៊ុនទាំងអស់គ្នា។
+                                        លោកអ្នកនឹងមានឱកាសដ៏អស្ចារ្យដើម្បីទទួលបានបទពិសោធន៍ថ្មី
+                                        និងសម្រេចគោលដៅរបស់លោកអ្នក។</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card border-0 flex-row">
+                                <div class="card-icon fs-1 text-warning">
+                                    <i class="fa-solid fa-cookie-bite"></i>
+                                </div>
+                                <div class="card-body py-0 pt-1 pt-md-2">
+                                    <h4 class="card-title">អាហារសម្រន់
+                                        និងការសម្រាក</h4>
+                                    <p class="card-text fs-5">រៀងរាល់ថ្ងៃនៅម៉ោង
+                                        3 រសៀល យើងរីករាយនឹងការសម្រាក 15 នាទី
+                                        ដើម្បីទទួលទានអាហារសម្រន់ជាផ្លែឈើស្រស់ៗ
+                                        កាហ្វេ ឬតែ
+                                        ដើម្បីបង្កើនថាមពលសម្រាប់លោកអ្នក។</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-lg my-5">
+                    <img class="img-fluid rounded-3 "
+                        src="https://htmlstream.com/preview/front-v3.2/assets/img/1920x800/img2.jpg"
+                        alt>
+                </div>
+            </section>
+            <section class="job-list">
+                <div class="container-lg">
+                    <div class="text-center my-5">
+                        <h1 class="section-title">ការបើកការងារបច្ចុប្បន្ន</h1>
+                        <span class="fs-5 fw-medium">បើកមុខតំណែង</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="job-list-item py-4">
+                                <div>
+                                    <div
+                                        class="d-flex align-items-center justify-content-between mb-2">
+                                        <h3 class="job-title m-0">Restaurant
+                                            Manager</h3>
+                                        <a href="#"
+                                            class="btn text-nowrap p-0 d-none d-sm-inline-block">
+                                            <span class="fs-4 fw-medium">ចុះឈ្មោះ
+                                            </span>
+                                            <i
+                                                class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <h5
+                                        class="job-text">យើងកំពុងស្វែងរកប្រធានជាន់ខ្ពស់
+                                        ដើម្បីចូលរួមនៅក្នុងភោជនីយដ្ឋានរបស់យើងនៅភ្នំពេញ។</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <button type="button"
+                                                class="btn btn-outline-dark rounded-5 mt-2 btn-sm fw-medium">
+                                                <i
+                                                    class="fa-regular fa-clock"></i>
+                                                ពេញ​ម៉េាង
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-outline-dark rounded-5 mt-2 btn-sm fw-medium">
+                                                <i
+                                                    class="fa-regular fa-clock"></i>
+                                                    ភ្នំពេញ
+                                            </button>
+                                        </div>
+                                        <a href="#"
+                                            class="btn text-nowrap p-0 d-sm-none border-0">
+                                            <span class="fs-4 fw-medium">ចុះឈ្មោះ
+                                            </span>
+                                            <i
+                                                class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="job-list-item py-4">
+                                <div>
+                                    <div
+                                        class="d-flex align-items-center justify-content-between mb-2">
+                                        <h3 class="job-title m-0">Chief
+                                            Cooker</h3>
+                                        <a href="#"
+                                            class="btn text-nowrap p-0 d-none d-sm-inline-block">
+                                            <span class="fs-4 fw-medium">ចុះឈ្មោះ
+                                            </span>
+                                            <i
+                                                class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <h5
+                                        class="job-text">យើងកំពុងស្វែងរកប្រធានជាន់ខ្ពស់
+                                        ដើម្បីចូលរួមនៅក្នុងភោជនីយដ្ឋានរបស់យើងនៅភ្នំពេញ។</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <button type="button"
+                                                class="btn btn-outline-dark rounded-5 mt-2 btn-sm fw-medium">
+                                                <i
+                                                    class="fa-regular fa-clock"></i>
+                                                ពេញ​ម៉េាង
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-outline-dark rounded-5 mt-2 btn-sm fw-medium">
+                                                <i
+                                                    class="fa-regular fa-clock"></i>
+                                                    ភ្នំពេញ
+                                            </button>
+                                        </div>
+                                        <a href="#"
+                                            class="btn text-nowrap p-0 d-sm-none border-0 ">
+                                            <span class="fs-4 fw-medium">ចុះឈ្មោះ
+                                            </span>
+                                            <i
+                                                class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="job-list-item py-4">
+                                <div>
+                                    <div
+                                        class="d-flex align-items-center justify-content-between mb-2">
+                                        <h3 class="job-title m-0">Chief
+                                            Cooker</h3>
+                                        <a href="#"
+                                            class="btn text-nowrap p-0 d-none d-sm-inline-block">
+                                            <span class="fs-4 fw-medium">ចុះឈ្មោះ
+                                            </span>
+                                            <i
+                                                class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <h5
+                                        class="job-text">យើងកំពុងស្វែងរកប្រធានជាន់ខ្ពស់
+                                        ដើម្បីចូលរួមនៅក្នុងភោជនីយដ្ឋានរបស់យើងនៅភ្នំពេញ។</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <button type="button"
+                                                class="btn btn-outline-dark rounded-5 mt-2 btn-sm fw-medium">
+                                                <i
+                                                    class="fa-regular fa-clock"></i>
+                                                ពេញ​ម៉េាង
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-outline-dark rounded-5 mt-2 btn-sm fw-medium">
+                                                <i
+                                                    class="fa-regular fa-clock"></i>
+                                                    ភ្នំពេញ
+                                            </button>
+                                        </div>
+                                        <a href="#"
+                                            class="btn text-nowrap p-0 d-sm-none border-0 ">
+                                            <span class="fs-4 fw-medium">ចុះឈ្មោះ
+                                            </span>
+                                            <i
+                                                class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
