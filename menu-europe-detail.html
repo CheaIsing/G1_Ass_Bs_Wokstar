@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- link swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -264,27 +268,28 @@
                                 <span>(2 Reviews)</span>
                             </div>
                             <h1 class="py-4">ទាខ្វៃប៉េកាំង (Peking duck)</h1>
-                            <!-- <h3>ប្រភេទ: <span>ម្ហូបចិន</span></h3> -->
                             <h3 class="pb-3">តម្លៃ​​: <span>$12.50</span></h5>
                             <h4 class="pb-3">ប្រភេទ: <span>ម្ហូបចិន</span></h3>
                             <div class="d-flex align-items-center gap-3">
-                                <!-- <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
                                 <div class="cart-wrap fs-5">
                                     <span class="minus">-</span>
                                     <span class="num px-2">01</span>
                                     <span class="plus">+</span>
                                 </div>
-                                <button type="button" class="btn btn-cart px-3 py-2 ms-3">ដាក់ចូលកន្ត្រក<i class="fa-solid fa-cart-shopping ps-2"></i></button>
+                                <button type="button" class="btn btn-cart px-3 py-2 ms-3 fs-5">ដាក់ចូលកន្ត្រក<i class="fa-solid fa-cart-shopping ps-2"></i></button>
                             </div>
-                            <div class="d-flex fs-5 py-3">
-                                <div class="border-end border-danger px-3 ps-0">
-                                    <i class="fa-solid fa-heart text-brand"></i>
-                                    <span class="ps-2">ចំណង់ចំណូលចិត្ត</span>
+                            <div class="d-flex fs-6 py-3">
+                                <div class="border-end border-brand px-3 ps-0">
+                                    <a href="">
+                                        <i class="fa-solid fa-heart text-brand"></i>
+                                        <span class="ps-2">ចំណង់ចំណូលចិត្ត</span>
+                                    </a>
                                 </div>
                                 <div class="px-3">
-                                    <i class="fa-solid fa-heart text-brand"></i>
-                                    <span class="ps-2">ចំណង់ចំណូលចិត្ត</span>
+                                    <a href="" >
+                                        <i class="bi bi-bar-chart-line-fill text-brand"></i>
+                                        <span class="ps-2">ប្រៀបធៀបទំនិញ</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -296,17 +301,17 @@
             <div class="container">
                 <div class="dproduct-des ">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item " role="presentation">
-                          <button class="nav-link active hvr-overline-from-center" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Description</button>
+                        <li class="nav-item px-1" role="presentation">
+                          <button class="nav-link active hvr-overline-from-center" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">លម្អិត</button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link hvr-overline-from-center" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Review</button>
+                        <li class="nav-item px-1" role="presentation">
+                          <button class="nav-link hvr-overline-from-center" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">បន្ថែម</button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link hvr-overline-from-center" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                        <li class="nav-item px-1" role="presentation">
+                          <button class="nav-link hvr-overline-from-center" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">ការវាយតម្លៃ</button>
                         </li>
                       </ul>
-                      <div class="tab-content p-3" id="myTabContent">
+                      <div class="tab-content p-3 py-4" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                             Welcome to Restar, where culinary excellence meets exceptional service. Our restaurant is a haven for food enthusiasts seeking an elevated dining experience. Immerse yourself in a sophisticated and inviting ambiance. The carefully curated decor sets the stage for intimate dinners, celebrations, and memorable moments shared with friends and family. 
                             Indulge in a gourmet journey with a menu that showcases a fusion of flavors. Our chefs use the finest ingredients to create dishes that are not just meals but unforgettable experiences. Elevate your dining experience with our extensive selection of fine wines and expertly crafted cocktails. Each sip complements the richness of our dishes, creating a symphony of taste.
@@ -317,17 +322,503 @@
                             Welcome to Restar, where culinary excellence meets exceptional service. Our restaurant is a haven for food enthusiasts seeking an elevated dining experience. Immerse yourself in a sophisticated and inviting ambiance. The carefully curated decor sets the stage for intimate dinners, celebrations, and memorable moments shared with friends and family. 
                             Indulge in a gourmet journey with a menu that showcases a fusion of flavors. Our chefs use the finest ingredients to create dishes that are not just meals but unforgettable experiences. Elevate your dining experience with our extensive selection of fine wines and expertly crafted cocktails. Each sip complements the richness of our dishes, creating a symphony of taste.
                         </div>
-                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade " id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <section class="section-cus-review py-4">
+                                <h4>មតិលើមុខម្ហូប <span>(3)</span></h4>
+                                <div class="row g-4 pt-3">
+                                    <div class="col-lg-6">
+                                        <div class="card  ps-4 pe-5">
+                                            <div class="row ">
+                                                <div class="col-3 col-md-2 col-lg-3 col-xl-2">
+                                                    <div class="cus-profile ">
+                                                        <img class="" src="img/chef/02.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-md-10 col-lg-9 col-xl-10">
+                                                    <div class="text">
+                                                        <div class="comment">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h3>Jannie Min </h3>
+                                                                <div class="text-brand">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                            <h6> 15 មីនា, 2023</h6>
+                                                            <p>រសជាតិឈ្ងុយឆ្ងាញ់ ឃ្លានទៀតហើយ</p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card  ps-4 pe-5">
+                                            <div class="row ">
+                                                <div class="col-3 col-md-2 col-lg-3 col-xl-2">
+                                                    <div class="cus-profile ">
+                                                        <img class="" src="img/chef/02.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-md-10 col-lg-9 col-xl-10">
+                                                    <div class="text">
+                                                        <div class="comment">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h3>Jannie Min </h3>
+                                                                <div class="text-brand">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                            <h6> 15 មីនា, 2023</h6>
+                                                            <p>រសជាតិឈ្ងុយឆ្ងាញ់ ឃ្លានទៀតហើយ</p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card  ps-4 pe-5">
+                                            <div class="row ">
+                                                <div class="col-3 col-md-2 col-lg-3 col-xl-2">
+                                                    <div class="cus-profile ">
+                                                        <img class="" src="img/chef/02.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-md-10 col-lg-9 col-xl-10">
+                                                    <div class="text">
+                                                        <div class="comment">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h3>Jannie Min </h3>
+                                                                <div class="text-brand">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                            <h6> 15 មីនា, 2023</h6>
+                                                            <p>រសជាតិឈ្ងុយឆ្ងាញ់ ឃ្លានទៀតហើយ</p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="form-review py-5">
+                                <div >
+                                    <h3 class="text-brand">ផ្តល់មតិរបស់អ្នក</h3>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <form class="row g-3 needs-validation pt-3" novalidate>
+                                            <div class="col-md-6">
+                                              <label for="name" class="form-label">ឈ្មោះ*</label>
+                                              <input type="text" class="form-control bg-transparent" id="name" placeholder=""  required>
+                                              <div class="invalid-feedback">
+                                                សូមបញ្ចូលឈ្មោះរបស់លោកអ្នក
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="email" class="form-label">អ៊ីម៉ែល*</label>
+                                              <input type="email" class="form-control" id="email" placeholder="" required>
+                                              <div class="invalid-feedback">
+                                                សូមបញ្ចូលអ៊ីម៉ែលរបស់លោកអ្នក
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="review" class="form-label">មតិយោបល់*</label>
+                                                <textarea class="form-control" id="review" ​ cols="53" rows="6" required></textarea>
+                                                <div class="invalid-feedback">
+                                                  សូមផ្តល់មតិយោបល់របស់លោកអ្នកនៅទីនេះ
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                              <button class="btn btn-submit px-3" type="submit">បញ្ជូន</button>
+        
+        
+                                    
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-4 ">
+                                        <img class="object-fit-cover w-100 opacity-50" src="img/gif/window-review.gif" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                       </div>
                 </div>
             </div>
         </section>
-        <section class="vh-100 bg-danger"></section>
+        <section class="section-moremenu py-5">
+            <div class=" container-lg">
+                <div class="title">
+                    <div class="d-flex justify-content-center pb-4">
+                        <img src="img/icon/dishes.png" alt="">
+                        <h1 class="ps-3 pt-2" >មុខម្ហូបបន្ថែម</h1>
+                    </div>
+                </div>
+                <div class="swiper mySwiper py-3">
+                    <div class="swiper-wrapper h-100">
+                      <div class="swiper-slide">
+                        <div class="card mproduct border-0">
+                            <div class="mproduct-image">
+                                <a href="">
+                                    <img class="card-img rounded-circle" src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                </a>
+                                <div class="mproduct-hover">
+                                    <ul class="p-0">
+                                        <li class="mproduct-icon i-cart">
+                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                <i class="bi bi-cart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-wishlist">
+                                            <a href="#" title="រក្សាទុក"​​>
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-compare">
+                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-check">
+                                            <a href="#" title="លម្អិត">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body mproduct-des text-center ">
+                                <div class="product-review mb-1">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                <p class="fs-5">$12.50</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card mproduct border-0">
+                            <div class="mproduct-image">
+                                <a href="">
+                                    <img class="card-img rounded-circle" src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                </a>
+                                <div class="mproduct-hover">
+                                    <ul class="p-0">
+                                        <li class="mproduct-icon i-cart">
+                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                <i class="bi bi-cart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-wishlist">
+                                            <a href="#" title="រក្សាទុក"​​>
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-compare">
+                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-check">
+                                            <a href="#" title="លម្អិត">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body mproduct-des text-center ">
+                                <div class="product-review mb-1">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                <p class="fs-5">$12.50</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card mproduct border-0">
+                            <div class="mproduct-image">
+                                <a href="">
+                                    <img class="card-img rounded-circle" src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                </a>
+                                <div class="mproduct-hover">
+                                    <ul class="p-0">
+                                        <li class="mproduct-icon i-cart">
+                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                <i class="bi bi-cart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-wishlist">
+                                            <a href="#" title="រក្សាទុក"​​>
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-compare">
+                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-check">
+                                            <a href="#" title="លម្អិត">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body mproduct-des text-center ">
+                                <div class="product-review mb-1">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                <p class="fs-5">$12.50</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card mproduct border-0">
+                            <div class="mproduct-image">
+                                <a href="">
+                                    <img class="card-img rounded-circle" src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                </a>
+                                <div class="mproduct-hover">
+                                    <ul class="p-0">
+                                        <li class="mproduct-icon i-cart">
+                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                <i class="bi bi-cart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-wishlist">
+                                            <a href="#" title="រក្សាទុក"​​>
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-compare">
+                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-check">
+                                            <a href="#" title="លម្អិត">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body mproduct-des text-center ">
+                                <div class="product-review mb-1">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                <p class="fs-5">$12.50</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card mproduct border-0">
+                            <div class="mproduct-image">
+                                <a href="">
+                                    <img class="card-img rounded-circle" src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                </a>
+                                <div class="mproduct-hover">
+                                    <ul class="p-0">
+                                        <li class="mproduct-icon i-cart">
+                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                <i class="bi bi-cart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-wishlist">
+                                            <a href="#" title="រក្សាទុក"​​>
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-compare">
+                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-check">
+                                            <a href="#" title="លម្អិត">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body mproduct-des text-center ">
+                                <div class="product-review mb-1">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                <p class="fs-5">$12.50</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide h-100">
+                        <div class="card mproduct border-0">
+                            <div class="mproduct-image">
+                                <a href="">
+                                    <img class="card-img rounded-circle" src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                </a>
+                                <div class="mproduct-hover">
+                                    <ul class="p-0">
+                                        <li class="mproduct-icon i-cart">
+                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                <i class="bi bi-cart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-wishlist">
+                                            <a href="#" title="រក្សាទុក"​​>
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-compare">
+                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-check">
+                                            <a href="#" title="លម្អិត">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body mproduct-des text-center ">
+                                <div class="product-review mb-1">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                <p class="fs-5">$12.50</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide my-auto">
+                        <div class="card w-100 h-100 border-0 ">
+                            <div class="w-100 h-100">
+                                <a href="" class="hvr-icon-forward">
+                                    <button type="button" class="btn btn-lg btn-more hvr-icon-forward">
+                                        មើលបន្ថែម
+                                        <i class="bi bi-arrow-right hvr-icon"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center ">
+                        <div class="button-prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            
+                        </div>
+                        <div class="button-next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+       
     </main>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- lightmode darkmode  -->
     <script src="assets/js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper script  -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        //   autoplay: {
+        //     delay: 4500,
+        //     disableOnInteraction: false,
+        //     },
+        cssMode: true,
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
+        },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        767: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+        });
+    </script>
     <!-- click cart script  -->
     <script>
         const plus = document.querySelector(".plus"),
@@ -348,5 +839,33 @@
             }
         });
     </script>
+    <!-- validation  -->
+    <!-- // Example starter JavaScript for disabling form submissions if there are invalid fields -->
+    <script>
+        (() => {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+    
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+    </script>
+
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
