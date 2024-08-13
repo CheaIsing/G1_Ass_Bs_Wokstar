@@ -12,8 +12,20 @@
   <!-- Main Link  -->
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    .noti-page .list-group .list-group-item{
+    .text-2-line {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .noti-page .list-group .list-group-item {
       border: 0;
+      margin-block: 0.25rem;
+      font-size: 20px;
+      padding-block: 16px;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -98,20 +110,115 @@
             </div>
           </div>
           <div class="col-md-8 col-xl-9">
-            <h2>Notification</h2>
+            <h2 class="mb-4">Notification</h2>
             <div class="row g-4">
               <div class="col-12">
-                <h5>Today</h5>
+                <h5 class="">Today</h5>
                 <div class="row">
                   <div class="col-12">
                     <div class="list-group list-group-flush">
-                      <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                      <a href="#" class="list-group-item list-group-item-action">
                         <div class="card border-0 flex-row">
-                          <img class="rounded-circle border object-fit-cover me-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s" alt="" width="70px" height="70px">
+                          <img class="rounded-circle border object-fit-cover me-3"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+                            alt="" width="70px" height="70px">
                           <div>
-                            <h5 class="text-black mb-0">Bro Code <span>post a blog.</span></h5>
-                            
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="mb-0"><strong class="fw-medium">ការបញ្ជាក់ការកក់</strong></p>
+
+                            <p class="mb-0 text-2-line">
+                              ការកក់របស់អ្នកសម្រាប់ 5 នៅថ្ងៃទី 12 ម៉ោង 2 ត្រូវបានបញ្ជាក់ដោយជោគជ័យ។
+                              យើងរំពឹងថានឹងបានសេវាកម្មជូនអ្នក។</p>
+                            <small><time datetime="">5 នាទីមុន</time></small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <div class="card border-0 flex-row">
+                          <img class="rounded-circle border object-fit-cover me-3"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+                            alt="" width="70px" height="70px">
+                          <div>
+                            <p class="mb-0"><strong class="fw-medium">Sarah Williams</strong>
+                              បានបោះពុម្ពផ្សាយអត្ថបទប្លុកថ្មី: រសជាតិអាហារតាមផ្លូវកម្ពុជា។</p>
+
+                            <p class="mb-0 text-2-line">ចូលរួមក្នុងដំណើរកំសាន្តដ៏ឆ្ងាញ់របស់នាង
+                              នៅពេលដែលនាងស្វែងយល់អំពីពិភពអាហារតាមផ្លូវកម្ពុជាដ៏រសជាតិ និងពោរពេញដោយឱជារស។ ក្នុងអត្ថបទនេះ
+                              Sarah ចែករំលែកក្បាច់ក្លែមក្នុងការស្វែងរកម្ហូបសាកសព្វដែលឆ្ងាញ់បំផុតពីអាហារតាមផ្លូវដ៏កក្រើក
+                              ដល់បង្អែមផ្អែមៗ។
+                              មិនថាអ្នកជាមនុស្សចូលចិត្តអាហារជំនាញ ឬកំពុងស្វែងរកមេរៀនថ្មីៗ ដើម្បីបង្កើតមុខម្ហូបថ្មី
+                              ប្លុកនេះមានអ្វីគ្រប់គ្នាសម្រាប់មនុស្សគ្រប់គ្នា។</p>
+                            <time datetime=""><small>7 ម៉ោងមុន</small></time>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <div class="card border-0 flex-row">
+                          <img class="rounded-circle border object-fit-cover me-3"
+                            src="assets/img/logo-2-png.png"
+                            alt="" width="70px" height="70px">
+                          <div>
+                            <p class="mb-0"><strong class="fw-medium">ផ្តល់ជូនពិសេសសម្រាប់អ្នកម្នាក់</strong>
+                              </p>
+
+                            <p class="mb-0 text-2-line">រីករាយជាមួយ ការបញ្ចុះតម្លៃ​​ 20% ផ្តល់ជូន លើការចូលទស្សនាថ្ងៃក្រោយ! ប្រើលេខកូដ 120222 នៅពេលអ្នកកក់តាមអនឡាញ ឬប្រាប់ការផ្តល់ជូននេះនៅភោជនីយដ្ឋាន។ មានសុពលភាពរហូតដល់ 12 សីហា។</p>
+                            <time datetime=""><small>16 ម៉ោងមុន</small></time>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <h5>Yesterday</h5>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <div class="card border-0 flex-row">
+                          <img class="rounded-circle border object-fit-cover me-3"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+                            alt="" width="70px" height="70px">
+                          <div>
+                            <p class="mb-0"><strong class="fw-medium">ការបញ្ជាក់ការកក់</strong></p>
+
+                            <p class="mb-0 text-2-line">
+                              ការកក់របស់អ្នកសម្រាប់ 5 នៅថ្ងៃទី 12 ម៉ោង 2 ត្រូវបានបញ្ជាក់ដោយជោគជ័យ។
+                              យើងរំពឹងថានឹងបានសេវាកម្មជូនអ្នក។</p>
+                            <small><time datetime="">5 នាទីមុន</time></small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <div class="card border-0 flex-row">
+                          <img class="rounded-circle border object-fit-cover me-3"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRr5LcBMBnk_8829ptYnpdnG13hgcyUT7GFS0ztG1ioz6eRv3u7_SwNSVRkQdghGsD5Gc&usqp=CAU"
+                            alt="" width="70px" height="70px">
+                          <div>
+                            <p class="mb-0"><strong class="fw-medium">Sarah Williams</strong>
+                              បានបោះពុម្ពផ្សាយអត្ថបទប្លុកថ្មី: រសជាតិអាហារតាមផ្លូវកម្ពុជា។</p>
+
+                            <p class="mb-0 text-2-line">ចូលរួមក្នុងដំណើរកំសាន្តដ៏ឆ្ងាញ់របស់នាង
+                              នៅពេលដែលនាងស្វែងយល់អំពីពិភពអាហារតាមផ្លូវកម្ពុជាដ៏រសជាតិ និងពោរពេញដោយឱជារស។ ក្នុងអត្ថបទនេះ
+                              Sarah ចែករំលែកក្បាច់ក្លែមក្នុងការស្វែងរកម្ហូបសាកសព្វដែលឆ្ងាញ់បំផុតពីអាហារតាមផ្លូវដ៏កក្រើក
+                              ដល់បង្អែមផ្អែមៗ។
+                              មិនថាអ្នកជាមនុស្សចូលចិត្តអាហារជំនាញ ឬកំពុងស្វែងរកមេរៀនថ្មីៗ ដើម្បីបង្កើតមុខម្ហូបថ្មី
+                              ប្លុកនេះមានអ្វីគ្រប់គ្នាសម្រាប់មនុស្សគ្រប់គ្នា។</p>
+                            <time datetime=""><small>7 ម៉ោងមុន</small></time>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <div class="card border-0 flex-row">
+                          <img class="rounded-circle border object-fit-cover me-3"
+                            src="assets/img/logo-2-png.png"
+                            alt="" width="70px" height="70px">
+                          <div>
+                            <p class="mb-0"><strong class="fw-medium">ផ្តល់ជូនពិសេសសម្រាប់អ្នកម្នាក់</strong>
+                              </p>
+
+                            <p class="mb-0 text-2-line">រីករាយជាមួយ ការបញ្ចុះតម្លៃ​​ 20% ផ្តល់ជូន លើការចូលទស្សនាថ្ងៃក្រោយ! ប្រើលេខកូដ 120222 នៅពេលអ្នកកក់តាមអនឡាញ ឬប្រាប់ការផ្តល់ជូននេះនៅភោជនីយដ្ឋាន។ មានសុពលភាពរហូតដល់ 12 សីហា។</p>
+                            <time datetime=""><small>16 ម៉ោងមុន</small></time>
                           </div>
                         </div>
                       </a>

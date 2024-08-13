@@ -1,107 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>Restaurant Vouchers</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.voucher-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.voucher-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.voucher-header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.voucher-content {
+    padding: 10px 20px;
+}
+
+.current-vouchers,
+.other-vouchers {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.current-vouchers {
+    border: 2px solid #e74c3c;
+}
+
+.current-voucher-item {
+    font-size: 0.9em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.voucher-code {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.voucher-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.voucher-terms {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.voucher-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.voucher-item {
+    font-size: 1em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.voucher-item h3 {
+    margin-top: 0;
+    color: #e74c3c;
+}
+
+.voucher-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+    </style>
 </head>
-
 <body>
-    <section class="bg-black position-relative">
-        <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
-            
-        </div>
-        <div class="container pt-5 pb-7">
-            <div class="row">
-                <div class="col-lg-6 d-flex justify-content-center flex-column">
-                    <div id="carouselExampleIndicator" class="carousel slide py-7" data-bs-ride="carousel">
-                        <ol class="carousel-indicators justify-content-start ms-0">
-                            <a href="javascript:;">
-                                <img src="../../assets/img/team-4.jpg" alt="..."
-                                    class="avatar avatar-sm avatar-scale-up shadow border-0 active"
-                                    data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0">
-                                <span class="text-white mx-2">&#124;</span>
-                            </a>
-
-                            <a href="javascript:;">
-                                <img src="../../assets/img/team-3.jpg" alt="..."
-                                    class="avatar avatar-sm avatar-scale-up shadow border-0"
-                                    data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1"> <span
-                                    class="text-white mx-2">&#124;</span>
-                            </a>
-
-                            <a href="javascript:;">
-                                <img src="../../assets/img/team-2.jpg" alt="..."
-                                    class="avatar avatar-sm avatar-scale-up shadow border-0"
-                                    data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2">
-                            </a>
-                        </ol>
-                        <div class="carousel-inner">
-                            <h2 class="text-white mb-0">Work with us</h2>
-                            <p class="text-white opacity-8 mb-1">Whatever your qualification is - we got you!</p>
-                            <hr class="text-white horizontal opacity-6 mb-4 mt-2 w-25 text-start">
-                            <div class="carousel-item active">
-                                <h6 class="text-white opacity-8 pe-5">"Take up one idea. Make that one idea your life -
-                                    think of it, dream of it, live on that idea.
-                                    Let the brain, muscles, nerves, every part of your body, be full of that idea, and
-                                    just leave every other idea alone.
-                                    This is the way to success. A single rose can be my garden... a single friend, my
-                                    world."</h6>
-                                <div class="author mt-4">
-                                    <div class="name">
-                                        <span class="text-white">Ludwig Siato</span>
-                                        <div class="stats">
-                                            <small class="text-white opacity-6">Project manager, Apple</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <h6 class="text-white opacity-8 pe-5">"Take up one idea. Make that one idea your life -
-                                    think of it, dream of it, live on that idea.
-                                    Let the brain, muscles, nerves, every part of your body, be full of that idea, and
-                                    just leave every other idea alone.
-                                    This is the way to success. A single rose can be my garden... a single friend, my
-                                    world."</h6>
-                                <div class="author mt-4">
-                                    <div class="name">
-                                        <span class="text-white">John Down</span>
-                                        <div class="stats">
-                                            <small class="text-white opacity-6">CFO, Google</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <h6 class="text-white opacity-8 pe-5">"Take up one idea. Make that one idea your life -
-                                    think of it, dream of it, live on that idea.
-                                    Let the brain, muscles, nerves, every part of your body, be full of that idea, and
-                                    just leave every other idea alone.
-                                    This is the way to success. A single rose can be my garden... a single friend, my
-                                    world."</h6>
-                                <div class="author mt-4">
-                                    <div class="name">
-                                        <span class="text-white">Mark Jojansen</span>
-                                        <div class="stats">
-                                            <small class="text-white opacity-6">Fullstack Developer, Atlassian</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="voucher-container">
+        <header class="voucher-header">
+            <h1>Your Restaurant Vouchers</h1>
+        </header>
+        <main class="voucher-content">
+            <section class="current-vouchers">
+                <h2>Your Current Vouchers</h2>
+                <div class="voucher-item current-voucher-item">
+                    <h3>Voucher Code</h3>
+                    <p class="voucher-code">SAVE20OFF</p>
+                    <p class="voucher-description">
+                        Enjoy 20% off your next meal! Present this voucher code when you pay your bill.
+                    </p>
+                    <p class="voucher-terms">
+                        <strong>Terms and Conditions:</strong><br>
+                        - Valid for dine-in and takeout orders.<br>
+                        - Cannot be combined with other offers.<br>
+                        - Valid until December 31, 2024.<br>
+                    </p>
                 </div>
-                <div class="col-md-6">
+                <div class="voucher-item current-voucher-item">
+                    <h3>Voucher Code</h3>
+                    <p class="voucher-code">FREEBREAD</p>
+                    <p class="voucher-description">
+                        Get a free bread basket with any main course order.
+                    </p>
+                    <p class="voucher-terms">
+                        <strong>Terms and Conditions:</strong><br>
+                        - Valid for dine-in only.<br>
+                        - One bread basket per order.<br>
+                        - Expires November 15, 2024.<br>
+                    </p>
                 </div>
-            </div>
-        </div>
-        <div class="position-absolute w-100 bottom-0">
-            
-        </div>
-    </section>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+            </section>
+
+            <section class="other-vouchers">
+                <h2>Other Available Vouchers</h2>
+                <ul class="voucher-list">
+                    <li class="voucher-item">
+                        <h3>BOGO50</h3>
+                        <p>Buy one, get one 50% off. Valid on all menu items.</p>
+                        <p class="voucher-terms">
+                            <strong>Terms and Conditions:</strong><br>
+                            - Valid for dine-in only.<br>
+                            - Limit one per table.<br>
+                            - Expires November 30, 2024.<br>
+                        </p>
+                    </li>
+                    <li class="voucher-item">
+                        <h3>FREEAPPETIZER</h3>
+                        <p>Get a free appetizer with any main course order.</p>
+                        <p class="voucher-terms">
+                            <strong>Terms and Conditions:</strong><br>
+                            - Valid for dine-in and takeout.<br>
+                            - One appetizer per order.<br>
+                            - Expires October 31, 2024.<br>
+                        </p>
+                    </li>
+                    <li class="voucher-item">
+                        <h3>10OFF</h3>
+                        <p>Get $10 off any purchase over $50.</p>
+                        <p class="voucher-terms">
+                            <strong>Terms and Conditions:</strong><br>
+                            - Valid for dine-in and takeout.<br>
+                            - Minimum purchase of $50 required.<br>
+                            - Expires December 1, 2024.<br>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="voucher-footer">
+            <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-
 </html>
