@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-      
+
 </head>
- 
+
 <body class="landing-page">
     <header>
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
@@ -168,9 +170,9 @@
                                     សេវាកម្ម
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">សេវាកម្ម</a></li>
-                                    <li><a class="dropdown-item" href="#">ការវាយតម្លៃ</a></li>
-                                    <li><a class="dropdown-item" href="#">រូបភាព</a></li>
+                                    <li><a class="dropdown-item" href="service-page.html">សេវាកម្ម</a></li>
+                                    <li><a class="dropdown-item" href="customer-review.html">ការវាយតម្លៃ</a></li>
+                                    <li><a class="dropdown-item" href="gallery-page.html">រូបភាព</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item mx-lg-2 dropdown">
@@ -179,15 +181,15 @@
                                     អំពី
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">អំពីយើង</a></li>
-                                    <li><a class="dropdown-item" href="#">អំពីភោជនីយដ្ឋាន</a></li>
+                                    <li><a class="dropdown-item" href="about-us.html">អំពីយើង</a></li>
+                                    <li><a class="dropdown-item" href="about-restaurant.html">អំពីភោជនីយដ្ឋាន</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">អាជីព</a>
+                                <a class="nav-link" href="">អាជីព</a>
                             </li>
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">ព័ត៌មាន</a>
+                                <a class="nav-link" href="career-detail-page.html">ព័ត៌មាន</a>
                             </li>
                             <li class="nav-item mx-lg-2 dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -195,29 +197,26 @@
                                     ទំនាក់ទំនង
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">ទំនាក់ទំនងយើង</a></li>
-                                    <li><a class="dropdown-item" href="#">សំណួរ​
+                                    <li><a class="dropdown-item" href="contact.html">ទំនាក់ទំនងយើង</a></li>
+                                    <li><a class="dropdown-item" href="faq-page.html">សំណួរ​
                                             និងចម្លើយ</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center">
-                            <button class="btn btn-icon" type="button">
-                                <i class="fa-solid fa-utensils"></i>
+                            <button class="btn btn-icon " type="button">
+                                កក់តុ
                             </button>
-                            <form class="d-none d-xl-flex" role="search">
-                                <button class="btn btn-icon" type="button">
-                                    <i class="fa-solid fa-search"></i>
-                                </button>
-                            </form>
-                            <button class="btn btn-icon d-none d-xl-inline-block" type="button">
-                                <i class="fa-solid fa-basket-shopping"></i>
+                            
+                            <button class="btn btn-icon  d-none d-xl-inline-block" type="button">
+                                ចុះឈ្មោះ
+                            </button>
+                            
+                            <button class="btn btn-icon  d-none d-xl-inline-block" type="button">
+                                ចូលគណនី
                             </button>
                             <button class="btn btn-icon" type="button" data-theme-toggle>
-                                <!-- <i class="fa-solid fa-moon"></i> -->
-                            </button>
-                            <button class="btn btn-icon d-none d-xl-inline-block" type="button">
-                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-moon"></i>
                             </button>
                         </div>
                     </div>
@@ -226,65 +225,63 @@
         </nav>
     </header>
     <main>
-        <section class="section-landing ">
-            <div id="carouselExampleIndicators" class="carousel slide ">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
+        <section class="section-slider margin-bottom">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade ">
                 <div class="carousel-inner">
-                    <div class="carousel-item active ">
-                        <img class="" src="img/europe-food/mug-the-adventure-begins (1).jpg" alt="">
-                        <div class="carousel-caption ">
-                            <!-- <p><i>អាហារឆ្ងាញ់ឆ្ងាញ់</i></p> -->
-                            <h3>សូមស្វាគមន៏មកកាន់</h3>
-                            <h1>ភោជនីយដ្ឋាន <span>WokStar</span></h1>
-                            <p>ភោជនីយដ្ឋានអាស៊ីដ៏ប្រណិតបំផុតសម្រាប់លោកអ្នក</p>
-                            <a href="#"><button type="button" class="btn-booking">កក់តុឥឡូវនេះ</button></a>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-item  active position-relative w-100 h-100">
+                        <img src="img/bg-2.jpg" class="w-100 object-fit-cover black-50 position-relative" alt="">
+                        <div
+                            class="text-absolute h-100 position-absolute top-0 text-center d-flex flex-column justify-content-center ">
+                            <h2 class="display-4 pb-3 fw-medium">សូមស្វាគមន៏មកកាន់</h2>
+                            <div class="line"></div>
+                            <h1 class="display-2 pb-3 fw-bold lett pt-3">ភោជនីយដ្ឋាន <span>WokStar</span></h1>
+                            <div class="line"></div>
+                            <p class="fs-5 mt-4"> ស្វែងយល់ពីពិភពនៃការធ្វើម្ហូបដ៏រីករាយ
+                                និងទទួលយកបទពិសោធន៍នៃការទទួលទានអាហារដែលមិនអាចបំភ្លេចបាន។ រុករកម៉ឺនុយរបស់យើង
+                                ហើយធ្វើការកក់ទុកនៅថ្ងៃនេះ។ ភោជនីយដ្ឋានអាស៊ីដ៏ប្រណិតបំផុតសម្រាប់លោកអ្នក </p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/europe-food/brown-bear-printed-sweater (1).jpg" alt="">
-                        <div class="carousel-caption d-block d-md-block">
-                            <h1>ភោជនីយដ្ឋាន <span>WokStar</span></h1>
-                            <p>ផ្តល់ជូនលោកអ្នកនូវសេវាកម្ម និងរសជាតិម្ហូបដ៏ប្រណិត
-                                ជាមួយនឹងបរិយាកាសដ៏កក់ក្តៅ ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ <br> WokStar -
-                                កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!<br>សាកល្បងរសជាតិនៅwokstar ឥឡូវនេះ!</p>
-                            <a href="#"><button type="button " class="btn-booking">កក់តុឥឡូវនេះ</button></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/healthy-food/brown-bear-cushion (1).jpg" alt="">
-                        <div class="carousel-caption d-block d-md-block">
-                            <h1>ភោជនីយដ្ឋាន <span>WokStar</span></h1>
-                            <p>ផ្តល់ជូនលោកអ្នកនូវសេវាកម្ម និងរសជាតិម្ហូបដ៏ប្រណិត
+                    <div class="carousel-item position-relative">
+                        <img src="img/bg-3.jpg" class="w-100 object-fit-cover black-50 position-relative" alt="">
+                        <div
+                            class="text-absolute h-100 position-absolute top-0 text-center  d-flex flex-column justify-content-center ">
+                            <h1 class="display-4 pb-3 fw-bold">ភោជនីយដ្ឋាន <span>WokStar</span></h1>
+                            <p class="fs-4">ផ្តល់ជូនលោកអ្នកនូវសេវាកម្ម និងរសជាតិម្ហូបដ៏ប្រណិត
                                 ជាមួយនឹងបរិយាកាសដ៏កក់ក្តៅ ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
                                 កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!<br>សាកល្បងរសជាតិនៅwokstar ឥឡូវនេះ!</p>
-                            <a href="#"><button type="button " class="btn-booking">កក់តុឥឡូវនេះ</button></a>
+                            <a href="sing-up.html"><button type="button" class=" btn-booking">កក់តុឥឡូវនេះ</button></a>
                         </div>
                     </div>
+                    <div class="carousel-item bg-success">
+                        <img src="img/gif/Untitled design (2).gif" class=" w-100 object-fit-cover" alt="...">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
-        <section class="section-menus margin-bottom">
-            <div class="container ">
+        <section class="section-menus position-relative">
+            <img src="assets/img/highlight3.png" class="position-absolute" alt="">
+            <div class="container">
                 <div class="row ">
-                    <div class="bg-top">
-                        <h1 class="text-center ">មីនុយរបស់យើង</h1>
+                    <h1 class="pb-4 text-center">មីនុយរបស់យើង</h1>
+                    <div class="bg-top ">
                         <ul class="nav nav-tabs  border-0" id="myTab" role="tablist">
                             <li class="nav-item " role="presentation">
                                 <button class="nav-link active rounded-5" id="home-tab" data-bs-toggle="tab"
@@ -329,226 +326,421 @@
                         </ul>
                     </div>
                 </div>
-                <div class="tab-content mt-5" id="myTabContent">
+                <div class="tab-content mt-5 padding-bottom" id="myTabContent">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                         tabindex="0">
-                        <div class="row ">
-                            <div class="col-md-6  position-relative">
-                                <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-md-2">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body ms-3">
-                                                <h5 class="card-title mb-0 ">អាម៉ុក</h5>
-                                                <p class="card-text mb-0">.............................................................................</p>
-                                                <p class="rating pt-1">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>   
-                                                </p>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper h-100">
+                                <div class="row ">
+                                    <div class="col-lg-6">
+                                        <div class=" swiper-slide">
+                                            <div class="card mb-3 style-card">
+                                                <div class="row g-0">
+                                                    <div
+                                                        class="col-lg-2 col-md-2 justify-content-center align-items-center">
+                                                        <img src="img/europe-food/brown-bear-cushion.jpg"
+                                                            class="card-img" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8">
+                                                        <div class="card-body  ms-3">
+                                                            <h5 class="card-title mb-0 ">អាម៉ុក</h5>
+                                                            <hr>
+                                                            <p class="rating pt-1">
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2">
+                                                        <div class="card-body price align-items-center">
+                                                            <hr>
+                                                            <p class="card-text">12.22$</p>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <ul class="p-0">
+                                                        <li class="mproduct-icon i-cart">
+                                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                                <i class="bi bi-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-wishlist">
+                                                            <a href="#" title="រក្សាទុក" ​​>
+                                                                <i class="bi bi-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-compare">
+                                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-check">
+                                                            <a href="#" title="លម្អិត">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
                                             </div>
                                         </div>
-                                        <div class="col-md-2">
-                                            <div class="card-body price align-items-center">
-                                                <hr><p class="card-text" >12.22$</p><hr>
-                                            </div>
-                                        </div>   
                                     </div>
-                                    <div class="content position-absolute ">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>                                     
+                                    <div class="col-lg-6">
+                                        <div class=" swiper-slide">
+                                            <div class="card mb-3 style-card">
+                                                <div class="row g-0">
+                                                    <div
+                                                        class="col-lg-2 col-md-2 justify-content-center align-items-center">
+                                                        <img src="img/europe-food/brown-bear-cushion.jpg"
+                                                            class="card-img" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8">
+                                                        <div class="card-body  ms-3">
+                                                            <h5 class="card-title mb-0 ">អាម៉ុក</h5>
+                                                            <hr>
+                                                            <p class="rating pt-1">
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2">
+                                                        <div class="card-body price align-items-center">
+                                                            <hr>
+                                                            <p class="card-text">12.22$</p>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <ul class="p-0">
+                                                        <li class="mproduct-icon i-cart">
+                                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                                <i class="bi bi-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-wishlist">
+                                                            <a href="#" title="រក្សាទុក" ​​>
+                                                                <i class="bi bi-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-compare">
+                                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-check">
+                                                            <a href="#" title="លម្អិត">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class=" swiper-slide">
+                                            <div class="card mb-3 style-card">
+                                                <div class="row g-0">
+                                                    <div
+                                                        class="col-lg-2 col-md-2 justify-content-center align-items-center">
+                                                        <img src="img/europe-food/brown-bear-cushion.jpg"
+                                                            class="card-img" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8">
+                                                        <div class="card-body  ms-3">
+                                                            <h5 class="card-title mb-0 ">អាម៉ុក</h5>
+                                                            <hr>
+                                                            <p class="rating pt-1">
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2">
+                                                        <div class="card-body price align-items-center">
+                                                            <hr>
+                                                            <p class="card-text">12.22$</p>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <ul class="p-0">
+                                                        <li class="mproduct-icon i-cart">
+                                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                                <i class="bi bi-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-wishlist">
+                                                            <a href="#" title="រក្សាទុក" ​​>
+                                                                <i class="bi bi-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-compare">
+                                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-check">
+                                                            <a href="#" title="លម្អិត">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class=" swiper-slide">
+                                            <div class="card mb-3 style-card">
+                                                <div class="row g-0">
+                                                    <div
+                                                        class="col-lg-2 col-md-2 justify-content-center align-items-center">
+                                                        <img src="img/europe-food/brown-bear-cushion.jpg"
+                                                            class="card-img" alt="">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8">
+                                                        <div class="card-body  ms-3">
+                                                            <h5 class="card-title mb-0 ">អាម៉ុក</h5>
+                                                            <hr>
+                                                            <p class="rating pt-1">
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2">
+                                                        <div class="card-body price align-items-center">
+                                                            <hr>
+                                                            <p class="card-text">12.22$</p>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <ul class="p-0">
+                                                        <li class="mproduct-icon i-cart">
+                                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                                <i class="bi bi-cart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-wishlist">
+                                                            <a href="#" title="រក្សាទុក" ​​>
+                                                                <i class="bi bi-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-compare">
+                                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="mproduct-icon i-check">
+                                                            <a href="#" title="លម្អិត">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                        aria-labelledby="contact-tab" tabindex="0">
+                                        <h2>Contact</h2>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-md-6  position-relative">
-                                <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-md-2">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body ms-3">
-                                                <h5 class="card-title mb-0 ">អាម៉ុក</h5>
-                                                <p class="card-text mb-0">.............................................................................</p>
-                                                <p class="rating pt-1">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>   
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="card-body price align-items-center">
-                                                <hr><p class="card-text" >12.22$</p><hr>
-                                            </div>
-                                        </div>   
-                                    </div>
-                                    <div class="content position-absolute ">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>     
-                                </div>       
-                            </div>
-                            <div class="col-md-6  position-relative">
-                                <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-md-2">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body ms-3">
-                                                <h5 class="card-title mb-0 ">អាម៉ុក</h5>
-                                                <p class="card-text mb-0">.............................................................................</p>
-                                                <p class="rating pt-1">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>   
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="card-body price align-items-center">
-                                                <hr><p class="card-text" >12.22$</p><hr>
-                                            </div>
-                                        </div>   
-                                    </div>
-                                    <div class="content position-absolute ">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div> 
-                                     
+                            <div class="d-flex gap-2 justify-content-center ">
+                                <div class="button-prev">
+                                    <i class="fa-solid fa-arrow-left"></i>
+
+                                </div>
+                                <div class="button-next">
+                                    <i class="fa-solid fa-arrow-right"></i>
                                 </div>
 
-                            </div>
-                            <div class="col-md-6  position-relative">
-                                <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-md-2">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body ms-3">
-                                                <h5 class="card-title mb-0 ">អាម៉ុក</h5>
-                                                <p class="card-text mb-0">.............................................................................</p>
-                                                <p class="rating pt-1">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>   
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="card-body price align-items-center">
-                                                <hr><p class="card-text" >12.22$</p><hr>
-                                            </div>
-                                        </div>   
-                                    </div>
-                                    <div class="content position-absolute ">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div> 
-                                     
-                                </div>
-
-                            </div>
-                            <div class="col-md-6 ms-auto me-auto position-relative">
-                                <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-md-2">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body ms-3">
-                                                <h5 class="card-title mb-0 ">អាម៉ុក</h5>
-                                                <p class="card-text mb-0">.............................................................................</p>
-                                                <p class="rating pt-1">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>   
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="card-body price align-items-center">
-                                                <hr><p class="card-text" >12.22$</p><hr>
-                                            </div>
-                                        </div>   
-                                    </div>
-                                    <div class="content position-absolute ">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>      
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                        tabindex="0">
-                        <h2>Profile</h2>
-                        
-                    </div>
-                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                        tabindex="0">
-                        <h2>Contact</h2>    
-                    </div>
                 </div>
-            </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <h2 class="text-b">Profile</h2>
+                </div>
+
+                <!-- <div class="smoke-1">
+                <img src="img/smoke.png " class="position-absolute" alt="">
+            </div> -->
         </section>
         <section class="section-service margin-bottom bg-dark ">
             <div class="container">
                 <h1 class="text-center text-light pt-5">សេវាកម្ម</h1>
-            </div>     
+            </div>
         </section>
         <section class="section-galery margin-bottom mx-5">
-             <h1 class="text-center pb-3">រូបភាព</h1>  
-             <div class="row g-4">
-                <div class="col-3">
+            <h1 class="text-center pb-3">រូបភាព</h1>
+            <div class="row g-4">
+                <div class="col-xl-3 col-md-4 col-sm-6">
                     <img src="img/bg-hero-baner-landing-2.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-md-4 col-sm-6">
                     <img src="img/bg-hero-banner-langding-1.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-md-4 col-sm-6">
                     <img src="img/5-home-default.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-md-4 col-sm-6">
                     <img src="img/bg-hero-baner-landing-2.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-md-4 col-sm-6">
                     <img src="img/bg-hero-banner-langding-1.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-md-4 col-sm-6">
                     <img src="img/5-home-default.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-md-4 col-sm-6">
                     <img src="img/bg-hero-baner-landing-2.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-md-4 col-sm-6">
                     <img src="img/bg-hero-banner-langding-1.jpg" alt="">
-                </div>   
-             </div> 
+                </div>
+            </div>
+        </section>
+
+        <section class="section-feedback position-relative margin-bottom">
+            <div class="container">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <h1 class="text-center">ការវាយតម្លៃ</h1>
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="wrappers  d-flex ">
+                                <div class="thumbnail">
+                                    <img src="img/chef/04.jpg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>ខ្ញុំគ្រាន់តែចង់ចែករំលែកថាខ្ញុំស្រលាញ់គេហទំព័រអាហារនេះប៉ុណ្ណា។
+                                        វាបានក្លាយជាធនធានរបស់ខ្ញុំសម្រាប់ការស្វែងរករូបមន្តថ្មីៗ
+                                        និងការបំផុសគំនិតធ្វើម្ហូប។ រូបមន្តគឺងាយស្រួលធ្វើតាម
+                                        ហើយគ្រឿងផ្សំគឺអាចចូលបានជានិច្ច។ សូមអរគុណដល់គេហទំព័រនេះ
+                                        ខ្ញុំអាចធ្វើអោយគ្រួសារ
+                                        និងមិត្តភ័ក្តិចាប់អារម្មណ៍ជាមួយនឹងអាហារឆ្ងាញ់ៗ!</p>
+                                    <div class="name">
+                                        <h4>Srar Anina</h4>
+                                        <p>អតិថិជន</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="wrappers  d-flex ">
+                                <div class="thumbnail">
+                                    <img src="img/chef/04.jpg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>ក្នុង​នាម​ជា​អ្នក​រវល់​អាជីព ខ្ញុំ​មិន​មាន​ពេល​ច្រើន​ដើម្បី​ធ្វើ​ម្ហូប​ទេ។
+                                        នោះហើយជាមូលហេតុដែលខ្ញុំដឹងគុណយ៉ាងខ្លាំងចំពោះគេហទំព័រអាហារនេះ។ រូបមន្តគឺរហ័ស
+                                        និងងាយស្រួលក្នុងការរៀបចំ ប៉ុន្តែវាមិនប៉ះពាល់ដល់រសជាតិទេ។ ខ្ញុំបានរកឃើញគន្លឹះ
+                                        និងល្បិចសន្សំពេលវេលាជាច្រើន ដែលធ្វើឲ្យការរៀបចំអាហាររបស់ខ្ញុំមានខ្យល់អាកាស
+                                        វា​ដូចជា​មាន​មេចុងភៅ​ផ្ទាល់​ម្នាក់​ណែនាំ​ខ្ញុំ​ក្នុង​ដំណើរការ​នេះ​!</p>
+                                    <div class="name">
+                                        <h4>Sarah Albert</h4>
+                                        <p>អ្នកជំនាញអាហារ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="wrappers  d-flex ">
+                                <div class="thumbnail">
+                                    <img src="img/chef/04.jpg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>ខ្ញុំមិនមែនជាចុងភៅច្រើនទេ ប៉ុន្តែគេហទំព័រអាហារនេះបានផ្លាស់ប្តូរវា។
+                                        រូបមន្តគឺសាមញ្ញ និងត្រង់ ហើយពួកវាប្រែជាអស្ចារ្យរាល់ពេល។
+                                        ខ្ញុំ​មាន​ទំនុក​ចិត្ត​យ៉ាង​ខ្លាំង​ក្នុង​ផ្ទះបាយ
+                                        ហើយ​គ្រួសារ​របស់​ខ្ញុំ​ស្រឡាញ់​មុខ​ម្ហូប​ដែល​ខ្ញុំ​បាន​ធ្វើ។
+                                        គេហទំព័រនេះបានធ្វើឱ្យការចម្អិនអាហារមានភាពរីករាយ
+                                        និងមិនមានភាពតានតឹងសម្រាប់ខ្ញុំ។</p>
+                                    <div class="name">
+                                        <h4>Carry Mint</h4>
+                                        <p>អតិថិជន</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="wrappers  d-flex ">
+                                <div class="thumbnail">
+                                    <img src="img/chef/04.jpg" alt="">
+                                </div>
+                                <div class="aside">
+                                    <p>គេហទំព័រអាហារនេះបានក្លាយជាអ្នកផ្លាស់ប្តូរទីបំផុតខ្ញុំអាចរកឃើញរូបមន្តដែលទាក់ទាញដល់រសជាតិរបស់អ្នកគ្រប់គ្នា។
+                                        គេហទំព័រផ្តល់ជូននូវអាហារសម្រន់សម្រាប់កុមារជាច្រើនដែលមានជីវជាតិ និងរសជាតិ។
+                                        កូនៗរបស់ខ្ញុំឥឡូវនេះទន្ទឹងរង់ចាំដល់ម៉ោងញ៉ាំអាហារ
+                                        ហើយខ្ញុំពិតជារំភើបណាស់ដែលឃើញពួកគេរីករាយនឹងអាហារដែលមានសុខភាពល្អ។</p>
+                                    <div class="name">
+                                        <h4>Stevin Mark</h4>
+                                        <p>អ្នកជំនាញអាហារ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="shap-2  position-absolute">
+                <img src="img/leaves.png" alt="">
+            </div>
+            <div class="shap-3  position-absolute">
+                <img src="img/leaves.png" alt="">
+            </div>
         </section>
     </main>
 
@@ -781,7 +973,7 @@
             </div>
         </section>
     </footer>
-    
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 
@@ -794,7 +986,7 @@
         })
     </script>
 
-    
+
 
 </body>
 

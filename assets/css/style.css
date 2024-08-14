@@ -59,8 +59,9 @@ body {
 .text-white-light {
   color: var(--c-white-light);
 }
+
 .border-brand {
-  border-color: var(--c-brand);
+    border-color: var(--c-brand);
 }
 
 /* Navbar  */
@@ -270,6 +271,7 @@ footer::before {
     z-index: -1;
     opacity: 0.15;
 }
+
 footer .top-footer h2,
 footer .top-footer li {
   text-wrap: nowrap;
@@ -853,8 +855,8 @@ footer .copyright a:hover{
 }
 .dproduct-des .nav-link.active{
     background-color: var(--c-brand);
-    border-color: var(--c-brand)!important;
-    color: #fff!important;
+    border-color: var(--c-brand) !important;
+    color: #fff !important;
 }
 .dproduct-des .nav-link:hover {
   border-color: var(--c-brand) !important;
@@ -879,7 +881,8 @@ footer .copyright a:hover{
     color: var(--c-brand);
     cursor: pointer;
 }
-.dproduct-des .form-review textarea{
+
+.dproduct-des .form-review textarea {
     resize: none;
 }
 .section-menu-des .dproduct-des .form-review .form-control{
@@ -932,8 +935,9 @@ footer .copyright a:hover{
     justify-content: center;
     align-items: center;
 }
-.button-next::after ,
-.button-prev::after{
+
+.button-next::after,
+.button-prev::after {
     content: "";
     width: 160%;
     height: 1px;
@@ -942,8 +946,9 @@ footer .copyright a:hover{
     background-color: var(--c-black);
     z-index: -6;
 }
-.button-next::before ,
-.button-prev::before{
+
+.button-next::before,
+.button-prev::before {
     content: "";
     width: 120%;
     height: 1px;
@@ -952,10 +957,12 @@ footer .copyright a:hover{
     z-index: -6;
     background-color: var(--c-black);
 }
+
 .button-prev::after,
-.button-prev::before{
+.button-prev::before {
     right: 100%;
 }
+
 .button-next::after,
 .button-prev::after {
   content: "";
@@ -1009,7 +1016,8 @@ footer .copyright a:hover{
     object-fit: cover;
     animation: none;
 }
-.section-moremenu .btn-more{
+
+.section-moremenu .btn-more {
     width: 80%;
     /* margin-bottom: 50%; */
     border-radius: 50px;
@@ -1019,7 +1027,8 @@ footer .copyright a:hover{
     animation: btn-more-ani 1s linear infinite ;
     animation-direction: alternate;
 }
-.section-moremenu .btn-more:hover{
+
+.section-moremenu .btn-more:hover {
     background-color: var(--c-brand);
     color: #fff;
     animation: none;
@@ -1040,6 +1049,7 @@ footer .copyright a:hover{
   transition: 0.5s;
   text-wrap: nowrap;
 }
+
 .hvr-icon-forward .hvr-icon::before {
   transition: 0.5s;
   transition-timing-function: ease-out;
@@ -1161,6 +1171,7 @@ footer .copyright a:hover{
 .cart-page table th {
   height: auto;
 }
+
 .cart-page table td {
   height: 100px;
   padding-block: 12px;
@@ -1559,16 +1570,17 @@ footer .copyright a:hover{
 .margin-bottom {
   margin-bottom: 120px;
 }
-
 /*start login signup*/
 .background-imge {
-  max-width: 1180px;
-  background-image: url(../../img/bg_login.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-top: 10%;
-  margin-bottom: 8%;
+    max-width: 1180px;
+    background-image: url(../../img/bg_login.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10%;
+    
+    margin-bottom: 8%;
+
 }
 
 a {
@@ -1588,6 +1600,7 @@ a {
   border-radius: 20px;
   color: var(--c-white);
 }
+
 
 .background-imge .form-check-label {
   color: var(--c-white);
@@ -1663,14 +1676,27 @@ a {
 }
 
 .contac-benner .image img {
-  height: 60vh;
-  width: 100%;
-  filter: blur(6px);
-  object-fit: cover;
+    height: 60vh;
+    width: 100%;
+    filter: brightness(40%);
+    object-fit: cover;
 }
 
 .contact_page .card-contect .card {
-  height: 200px;
+    height: 200px;
+
+}
+
+.wrapper {
+    width: 100%;
+    height: 800px;
+    background-image: url(../../img/bg_login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    position: calc();
+
 }
 
 .info-wrap {
@@ -1682,21 +1708,80 @@ a {
 }
 
 .card-contect .card {
-  background-color: #dbb1681a;
-  border: 0;
+    /* border: 1px solid rgba(250, 205, 24, 0.866); */
+    box-shadow: inset 0 -3em 3em rgba(250, 205, 24, 0.866),
+        0 0 0 2px white,
+        0.1em 0.1em 0.5rem rgba(205, 125, 34, 0.211);
+    border-radius: 50px
 }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
-  background-color: #dbb1681a;
+.page-contact .reservation {
+    margin: auto;
+    background-color: var(--c-black);
 }
+
+.page-contact .reservation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: blur(8px);
+    box-shadow: inset 0 -3em 3em rgba(127, 127, 127, 0.106),
+        0 0 0 1px white,
+        0.1em 0.1em 1rem rgba(205, 125, 34, 0.211);
+}
+
+.page-contact .reservation .form-reservation {
+    width: 100%;
+    height: 100%;
+    z-index: 22;
+    position: relative;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-contact .reservation .form-reservation .text {
+    color: var(--c-text-res);
+}
+
+
+.page-contact .reservation .form-reservation form {
+    max-width: 600px;
+    padding: 20px;
+
+}
+
+.page-contact .form-reservation .form-control {
+    border-radius: 30px;
+    border: 0;
+    border-bottom: 2px solid var(--c-brand);
+    background: transparent;
+    color: var(--c-body-bg);
+
+}
+
+.page-contact .form-reservation .form-control::placeholder {
+    color: var(--c-text-res);
+}
+
+.page-contact textarea {
+    border-bottom: 2px solid var(--c-brand);
+    height: 120px;
+}
+
+.page-contact .open-reservation .text {
+    color: var(--c-black);
+
+}
+
+
 
 .btn-send {
-  max-width: 130px;
-  height: 35px;
-  background-color: var(--c-brand);
-  color: var(--c-white);
+    max-width: 130px;
+    height: 35px;
+    background-color: var(--c-brand);
+    color: var(--c-white);
 }
 
 .info-wrap .form-control {
@@ -1746,11 +1831,12 @@ a {
     }
 } */
 .page-restaurant .section-about-us .shap-1 {
-  width: 300px;
-  height: auto;
-  top: 0;
-  /* bottom: 0; */
-  margin-top: -5%;
+    width: 300px;
+    height: auto;
+    top: 0;
+    /* bottom: 0; */
+    margin-top: -10%;
+
 }
 
 .page-restaurant .section-about-us .shap-1 img {
@@ -1808,58 +1894,6 @@ a {
   color: var(--c-brand);
 }
 
-/* .section-about-chef .box ul li,
-.section-about-story .box ul li{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    list-style-type: none;
-    opacity: 0;
-    background: radial-gradient(var(--c-brand), transparent, transparent);
-    bottom: 0;
-    left: 10%;
-    animation: animate 15s linear infinite alternate-reverse;
-}
-.section-about-chef .box,
-.section-about-story .box{
-    position: absolute;
-    width: 100%;
-   
-}
-
-.section-about-chef .box ul li:nth-child(2),
-.section-about-story .box ul li:nth-child(2){
-    left: 30%;
-    animation-delay: 10s;
-}
-.section-about-chef .box ul li:nth-child(3),
-.section-about-story .box ul li:nth-child(3){
-    left: 45%;
-    animation-delay: 4s;
-}
-.section-about-chef .box ul li:nth-child(4),
-.section-about-story .box ul li:nth-child(4){
-    left: 65%;
-    animation-delay: 7s;
-}
-.section-about-chef .box ul li:nth-child(5),
-.section-about-story .box ul li:nth-child(5){
-    left: 90%;
-    animation-delay: 8s;
-}
-
-@keyframes animate{
-    0%{
-        transform: scale(1);
-        opacity: 1;
-        bottom: 0;
-    }
-    100%{
-        transform: scale(3 );
-        opacity: 1;
-        bottom: 500px;
-    }
-} */
 .page-restaurant .section-about-story {
   /* height: 60vh; */
   background-color: rgba(86, 247, 247, 0.096);
@@ -1884,65 +1918,67 @@ a {
   transform: scale(1.06);
 }
 
-.page-restaurant .section-feedback .shap-1 {
-  max-width: 300px;
-  height: auto;
-  top: 0;
-  /* bottom: 0; */
-  margin-top: -5%;
+/* .page-restaurant .section-feedback .shap-1 {
+    max-width: 300px;
+    height: auto;
+    top: 0;
+    margin-top: -10%;
+
+} */
+
+.section-feedback .shap-2 {
+    max-width: 300px;
+    height: auto;
+    top: 0;
+    margin-top: -10%;
+
 }
 
-.page-restaurant .section-feedback .shap-2 {
-  max-width: 300px;
-  height: auto;
-  top: 0;
-  /* bottom: 0; */
-  margin-top: -10%;
+.section-feedback .shap-3 {
+    max-width: 300px;
+    height: auto;
+    right: 0;
+    margin-top: -10%;
+
 }
 
-.page-restaurant .section-feedback .shap-3 {
-  max-width: 300px;
-  height: auto;
-  right: 0;
-  /* bottom: 0; */
-  margin-top: -8%;
+.section-feedback .shap-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    z-index: -1;
+
 }
 
-.page-restaurant .section-feedback .shap-1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation-name: rotate;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  z-index: -1;
+.section-feedback .shap-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    z-index: -1;
+
 }
 
-.page-restaurant .section-feedback .shap-2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation-name: rotate;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  z-index: -1;
-}
-
-.page-restaurant .section-feedback .shap-3 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation-name: rotate;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  z-index: -1;
-  transform: rotate(-170deg);
+.section-feedback .shap-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    z-index: -1;
+    transform: rotate(-170deg);
 }
 
 @keyframes rotate {
@@ -1956,100 +1992,207 @@ a {
     margin-top: 40px;
   }
 }
-.page-restaurant .section-feedback .carousel-inner {
-  max-width: 800px;
-  margin: auto;
+
+.section-feedback .carousel-inner {
+    max-width: 800px;
+    margin: auto;
 }
 
-.page-restaurant .section-feedback .wrappers {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  padding: 30px 20px;
+.section-feedback .wrappers {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 30px 20px;
 }
 
-.page-restaurant .section-feedback .thumbnail {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  flex-shrink: 0;
+.section-feedback .thumbnail {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    flex-shrink: 0;
 }
 
-.page-restaurant .section-feedback .thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+.section-feedback .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(1.1);
+    transition: transform .5s;
+
+
 }
 
-.page-restaurant .section-feedback .thumbnail::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  background-color: #f59e0b;
-  border-radius: 33% 67% 50% 50% / 50% 14% 86% 50%;
-  z-index: -1;
+.section-feedback .active .thumbnail img {
+    transform: scale(1);
 }
 
-.page-restaurant .section-feedback .aside {
-  position: relative;
-  padding-top: 15px;
-  display: flex;
-  flex-direction: column;
+.section-feedback .thumbnail::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #F59E0B;
+    border-radius: 50%;
+    z-index: -1;
+    transition: border-radius .2s .1s;
+
 }
 
-.page-restaurant .section-feedback .aside > p {
-  position: relative;
-  font-size: 14px;
-  margin-bottom: 30px;
+.section-feedback .active .thumbnail::before {
+    border-radius: 33% 67% 50% 50% / 50% 14% 86% 50%;
 }
 
-.page-restaurant .section-feedback .aside > p::before,
-.page-restaurant .section-feedback .aside > p::after {
-  font-size: 80px;
-  font-weight: 800px;
-  line-height: 1;
-  height: 40px;
-  position: absolute;
-  color: #fdcf28;
-  z-index: -1;
+.section-feedback .aside {
+    position: relative;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.page-restaurant .section-feedback .aside > p::before {
-  content: open-quote;
-  top: -40px;
-  left: 10px;
+.section-feedback .aside>p {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateX(10%);
+    transition: transform 1s;
 }
 
-.page-restaurant .section-feedback .aside > p::after {
-  content: close-quote;
-  right: 0;
+.section-feedback .active .aside>p {
+    transform: translateX(0);
+    opacity: 1;
 }
 
-.page-restaurant .section-feedback .aside .name {
-  position: relative;
-  width: fit-content;
-  line-height: 1;
+.section-feedback .aside>p::before,
+.section-feedback .aside>p::after {
+    font-size: 80px;
+    font-weight: 800px;
+    line-height: 1;
+    height: 40px;
+    position: absolute;
+    color: #fdcf28;
+    z-index: -1;
 }
 
-.page-restaurant .section-feedback .aside .name h4 {
-  font-size: 22px;
-  font-weight: 800;
-  color: #f59e0b;
-  opacity: 0.8;
+.section-feedback .aside>p::before {
+    content: open-quote;
+    top: -40px;
+    left: 10px;
 }
 
-.page-restaurant .section-feedback .aside .name p {
-  font-size: 12px;
-  text-align: right;
+.section-feedback .aside>p::after {
+    content: close-quote;
+    right: 0;
+}
+
+.section-feedback .aside .name {
+    position: relative;
+    width: fit-content;
+    line-height: 1;
+    transform: translateX(30px);
+    transition: transform 1s;
+}
+
+.section-feedback .active .aside .name {
+    transform: translateX(0);
+    opacity: 1s;
+}
+
+.section-feedback .aside .name h4 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #F59E0B;
+    opacity: .8;
+    ;
+}
+
+.section-feedback .aside .name p {
+    font-size: 16px;
+    text-align: right;
+
 }
 
 .page-restaurant .section-feedback .section-delivery {
   height: 70vh;
 }
+
+@media (max-width: 1200px) {
+    .section-about-us .shap-1 {
+        width: 250px;
+        height: auto;
+        top: 0;
+        margin-top: -18%;
+
+    }
+
+    .section-feedback .shap-2 {
+        max-width: 250px;
+        height: auto;
+        top: 0;
+        margin-top: -15%;
+
+    }
+
+    .section-feedback .shap-3 {
+        max-width: 250px;
+        height: auto;
+        right: 0;
+        margin-top: -15%;
+
+    }
+}
+
+@media (max-width: 960px) {
+    .section-feedback .shap-2 {
+        max-width: 250px;
+        height: auto;
+        top: 0;
+
+        margin-top: -15%;
+
+    }
+
+    .section-feedback .shap-3 {
+        max-width: 250px;
+        height: auto;
+        right: 0;
+        margin-top: -15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-feedback .wrappers {
+        flex-direction: column;
+        padding: 30px 100px;
+    }
+
+    .section-feedback .thumbnail {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-feedback .shap-2 {
+        max-width: 200px;
+        height: auto;
+        top: 0;
+
+        margin-top: -20%;
+
+    }
+
+    .section-feedback .shap-3 {
+        max-width: 200px;
+        height: auto;
+        right: 0;
+        margin-top: -20%;
+
+    }
+
+}
+
 
 /* start page reservation */
 .page-reservation .border-style {
@@ -2077,8 +2220,10 @@ a {
 .page-reservation .card .border-style p {
   color: var(--c-black);
 }
+
 option {
-  background-color: var(--c-black);
+    background-color: var(--c-black);
+
 }
 
 .page-reservation .reservation {
@@ -2109,9 +2254,10 @@ option {
 }
 
 .page-reservation .reservation .form-reservation form {
-  max-width: 600px;
-  /* border: 2px solid yellow; */
-  padding: 20px;
+    max-width: 600px;
+    /* border: 2px solid yellow; */
+    padding: 20px;
+
 }
 
 .page-reservation .reservation .form-reservation .form-control {
@@ -2168,10 +2314,11 @@ option {
 }
 
 .page-reservation .party .single-image .title {
-  font-size: 25px;
-  font-weight: 700;
-  color: var(--c-brand-dark);
-  margin: 0 0 15px 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--c-brand-dark);
+    margin: 0 0 15px 0;
+
 }
 
 .page-reservation .party .single-image .overlay-text .post {
@@ -2231,6 +2378,7 @@ option {
 .page-reservation .party .single-image:hover .overlay-text {
   opacity: 1;
 }
+
 .page-reservation .party .single-image:hover .overlay-text:before,
 .page-reservation .party .single-image:hover .overlay-text:after {
   opacity: 1;
@@ -2238,173 +2386,198 @@ option {
 }
 
 .page-reservation .party .content {
-  text-align: center;
-  color: var(--c-black);
+    text-align: center;
+    color: var(--c-black);
 }
+
 .page-reservation .party .content p i {
-  color: var(--c-brand);
+    color: var(--c-brand);
+
 }
+
 .page-reservation .party .content .price {
-  border-bottom: 1px solid var(--c-brand);
+    border-bottom: 1px solid var(--c-brand);
 }
+
 .page-reservation .party .content:hover .overlay-text {
   opacity: 1;
 }
+
 .hover-image:hover .single-image .overlay-text::before,
 .hover-image:hover .single-image .overlay-text::after {
-  opacity: 1;
-  transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
+
 .hover-image:hover .single-image .overlay-text {
-  opacity: 1;
+    opacity: 1;
 }
-@media (max-width: 767px) {
-  .page-reservation .party #row-rev {
-    flex-direction: column-reverse;
-  }
+
+@media (max-width:767px) {
+    .page-reservation .party #row-rev {
+        flex-direction: column-reverse;
+    }
 }
 
 /* end page reservation */
 
 /* Start page about us */
 .page-about-us .card {
-  width: 100%;
-  height: 300px;
-  position: relative;
-  background-color: #e9ecef;
-  /* background-color: var(--c-brand); */
-  box-shadow: inset 0 -3em 3em rgba(52, 52, 52, 0.2), 0 0 0 2px white,
-    0.3em 0.3em 1em rgb(200 0 0 / 30%);
-  transition: 0.5s;
-  align-items: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #e9ecef;
+    /* background-color: var(--c-brand); */
+    box-shadow: inset 0 -3em 3em rgba(52, 52, 52, 0.2),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 30%);
+    transition: 0.5s;
+    align-items: center;
 }
-.page-about-us .card:hover {
-  height: 350px;
-  /* overflow: hidden; */
-  transform: rotateY(20px);
-}
-.page-about-us .card .line {
-  position: absolute;
-  inset: 0;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.page-about-us .card .line::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 550px;
-  height: 120px;
-  background: linear-gradient(
-    transparent,
-    #f59e0b,
-    #f59e0b,
-    #f59e0b,
-    transparent
-  );
-  animation: animate-card 4s linear infinite;
-}
-@keyframes animate-card {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-.page-about-us .card .line::after {
-  content: "";
-  position: absolute;
-  inset: 3px;
-  background: #f8f8f8;
-  overflow: hidden;
-}
-.page-about-us .card .imgeBox {
-  position: absolute;
-  top: 20px;
-  width: 200px;
-  height: 200px;
 
-  border-radius: 50%;
-  transition: 0.5s;
-  overflow: hidden;
+.page-about-us .card:hover {
+    height: 350px;
+    /* overflow: hidden; */
+    transform: rotateY(20px);
 }
+
+.page-about-us .card .line {
+    position: absolute;
+    inset: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.page-about-us .card .line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: 120px;
+    background: linear-gradient(transparent, #F59E0B, #F59E0B, #F59E0B, transparent);
+    animation: animate-card 4s linear infinite;
+}
+
+@keyframes animate-card {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+
+    }
+}
+
+.page-about-us .card .line::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #f8f8f8;
+    overflow: hidden;
+
+}
+
+.page-about-us .card .imgeBox {
+    position: absolute;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    transition: 0.5s;
+    overflow: hidden;
+
+
+}
+
 .page-about-us .card .imgeBox::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  height: 250px;
-  /* border-radius: 20%; */
-  animation: animate-card-2 4s linear infinite;
-  background: linear-gradient(
-    transparent,
-    #f59e0b,
-    #f59e0b,
-    #f59e0b,
-    transparent
-  );
-  animation: animate-card 4s linear infinite;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 250px;
+    /* border-radius: 20%; */
+    animation: animate-card-2 4s linear infinite;
+    background: linear-gradient(transparent, #F59E0B, #F59E0B, #F59E0B, transparent);
+    animation: animate-card 4s linear infinite;
 }
+
 @keyframes animate-card-2 {
-  0% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+
+    }
 }
+
 .page-about-us .card:hover .imgeBox {
-  top: -80px;
-  scale: 0.9;
+    top: -80px;
+    scale: 0.9;
 }
+
 .page-about-us .card .imgeBox img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding: 3px;
-  border-radius: 50%;
-  position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 3px;
+    border-radius: 50%;
+    position: absolute;
 }
+
 .page-about-us .card .content {
-  position: absolute;
-  width: 100%;
-  top: 240px;
-  text-align: center;
-  height: 35px;
-  overflow: hidden;
-  text-align: center;
-  transform: 0.5s;
-  color: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 240px;
+    text-align: center;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transform: 0.5s;
+    color: #ffffff;
+
 }
+
 .page-about-us .card:hover .content {
-  top: 150px;
-  height: 250px;
-  padding: 0 30px;
+    top: 150px;
+    height: 250px;
+    padding: 0 30px;
+
 }
+
 .page-about-us .card .content h2 {
-  color: var(--c-brand);
+    color: var(--c-brand);
 }
 
 .page-about-us .card:hover .content p {
-  color: #292929;
+    color: #292929;
 }
-@media (max-width: 767px) {
-  .page-about-us .margin-top {
-    margin: 15% 0;
-  }
+
+@media (max-width:767px) {
+    .page-about-us .margin-top {
+        margin: 15% 0;
+    }
 }
+
 .page-about-us .purpose img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
+
 .page-about-us .purpose .content p {
-  font-size: 20px;
-  /* margin-top: 20px; */
+    font-size: 20px;
+    /* margin-top: 20px; */
+
 }
+
 .page-about-us .purpose .single-image {
   margin-bottom: 30px;
   overflow: hidden;
@@ -2432,6 +2605,7 @@ option {
   color: #fff;
   text-align: center;
 }
+
 .page-about-us .purpose .single-image .overlay-text {
   width: 100%;
   height: 100%;
@@ -2447,6 +2621,7 @@ option {
   left: 0;
   transition: all 0.3s ease 0s;
 }
+
 .page-about-us .purpose .single-image .overlay-text:before {
   border-left: 1px solid #f5c61c;
   border-right: 1px solid #f5c61c;
@@ -2482,6 +2657,7 @@ option {
 .page-about-us .purpose .single-image:hover .overlay-text {
   opacity: 1;
 }
+
 .page-about-us .purpose .single-image:hover .overlay-text:before,
 .page-about-us .purpose .single-image:hover .overlay-text:after {
   opacity: 1;
@@ -2489,58 +2665,72 @@ option {
 }
 
 .page-about-us .purpose .content {
-  text-align: center;
-  color: var(--c-black);
+    text-align: center;
+    color: var(--c-black);
 }
+
 .page-about-us .purpose .content p i {
-  color: var(--c-brand);
+    color: var(--c-brand);
+
 }
+
 .page-about-us .purpose .content .price {
-  border-bottom: 1px solid var(--c-brand);
+    border-bottom: 1px solid var(--c-brand);
 }
+
 .page-about-us .purpose .content:hover .overlay-text {
   opacity: 1;
 }
+
 .hover-image:hover .single-image .overlay-text::before,
 .hover-image:hover .single-image .overlay-text::after {
-  opacity: 1;
-  transform: scale(1);
-}
-.hover-image:hover .single-image .overlay-text {
-  opacity: 1;
-}
-.page-about-us .purpose .text {
-  max-width: 800px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-bottom: 120px;
-}
-.page-about-us .purpose .text p {
-  font-size: 20px;
-}
-.page-about-us .section-profile .image img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  filter: brightness(40%);
-}
-.page-about-us .section-profile .text {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.page-about-us .section-profile .text h1 {
-  font-size: 50px;
-  color: var(--c-brand);
+    opacity: 1;
+    transform: scale(1);
 }
 
-.page-about-us .section-profile .app {
-  justify-content: center;
+.hover-image:hover .single-image .overlay-text {
+    opacity: 1;
 }
+
+.page-about-us .purpose .text {
+    max-width: 800px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 120px;
+
+}
+
+.page-about-us .purpose .text p {
+    font-size: 20px;
+}
+
+.page-about-us .section-profile .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.page-about-us .section-profile .text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-about-us .section-profile .text h1 {
+    font-size: 50px;
+    color: var(--c-brand);
+}
+
+
+.page-about-us .section-profile .app {
+    justify-content: center;
+}
+
 .page-about-us .section-profile .app a,
 .page-about-us .section-profile .app a {
   color: var(--c-header-color);
@@ -2561,12 +2751,15 @@ option {
 .page-about-us .section-profile .app a {
   border: 2px solid var(--c-brand);
 }
+
 .page-about-us .section-profile .app a i {
-  color: #6b6b6b;
+    color: #6b6b6b;
 }
+
 .page-about-us .section-profile .app a:hover i {
-  color: #fff;
+    color: #fff;
 }
+
 .page-about-us .section-profile .app a::before {
   content: "";
   width: 40px;
@@ -2591,26 +2784,60 @@ option {
 /* end page about us */
 
 /* Landing page */
-.landing-page .section-landing {
-  background-image: url(../../img/bg-hero-baner-landing-4.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.landing-page .black-50 {
+    filter: brightness(30%);
 }
 
-.landing-page .section-landing .carousel .carousel-inner {
-  width: 100%;
-  height: 100vh;
+.landing-page .section-slider {
+    width: 100%;
+    height: auto;
 }
 
-.landing-page .section-landing .carousel-inner .carousel-caption h1 {
-  font-size: 55px;
-  color: var(--c-brand);
-  padding: 8px 0px;
+.landing-page .section-slider .carousel-item {
+    width: 100%;
+    max-height: 100vh !important;
+    background-color: #deb10c;
 }
 
-.landing-page .section-landing .carousel-inner .carousel-caption p {
-  font-size: 20px;
+.landing-page .section-slider .carousel-item img {
+    position: relative;
+    z-index: 1;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.landing-page .section-slider .carousel-item .content-absolute {
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.landing-page .section-slider .carousel-item .content-absolute .col-6 img {
+    width: 500px !important;
+    height: 500px !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.landing-page .section-slider .carousel-item .text-absolute {
+    width: 750px;
+    z-index: 2;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.landing-page .section-slider .carousel-item .text-absolute h1 {
+    letter-spacing: 4px;
+    color: var(--c-brand);
+}
+
+.landing-page .section-slider .carousel-item .text-absolute .line {
+    width: 100%;
+    height: 2px;
+    background-color: #deb10c;
 }
 
 .landing-page .btn-booking {
@@ -2629,17 +2856,31 @@ option {
   background-color: var(--c-brand-dark);
 }
 
-/* .landing-page .section-menus {
-  background-image: url(../../img/Giveaway\Design\Minimalist\Poster\\(6\).png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.landing-page .section-menus>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    object-fit: cover;
+
+}
+
+/* .landing-page .section-menus .smoke-1 img{
+    right: 0;
+    transform: rotate(30deg);
+    margin-right: 8%;
+    padding-bottom: 60px;
+
 } */
+.padding-bottom {
+    margin-bottom: 10%;
+}
 
 .landing-page .section-menus .style-img img {
-  width: 100px;
-  height: 100px;
-  /* position: relative !important; */
+    width: 100px;
+    height: 100px;
+    /* border-radius: 100%; */
 }
 
 .landing-page .section-menus .nav-tabs .nav-item {
@@ -2659,18 +2900,95 @@ option {
   color: var(--c-black);
 }
 
-.landing-page .bg-top {
-  padding-top: 100px;
-  padding-left: 20px;
+.landing-page .section-menus .nav-tabs .nav-item .active {
+    color: var(--c-brand);
 }
+
+.landing-page .section-menus .bg-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.landing-page .section-menus .card {
+    border: solid 2px var(--c-brand);
+}
+
+.landing-page .nav-link {
+    color: var(--c-black);
+    font-size: 20px;
+}
+
+.landing-page .nav-link.active {
+    /* background-color: transparent; */
+    background-color: var(--c-brand);
+    border-color: var(--c-brand) !important;
+    color: #fff !important;
+}
+
+.landing-page .nav-link:hover {
+    border-color: var(--c-brand) !important;
+}
+
+.landing-page .tab-content {
+    color: var(--c-black);
+}
+
+.landing-page .cus-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 4px solid var(--c-brand); */
+}
+
+.landing-page .card {
+    border-radius: 70px;
+    padding-top: 15px;
+    color: var(--c-black);
+    border-color: var(--c-brand);
+}
+
+
+.landing-page .section-menus .style-img img {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 100%; */
+}
+
+.landing-page .section-menus .nav-tabs .nav-item {
+    margin-left: 10px;
+}
+
+.landing-page .section-menus .nav-tabs {
+    border: 2px solid rgb(106, 0, 255);
+}
+
+.landing-page .section-menus .nav-tabs .nav-item .nav-link {
+    padding: 5px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    border: solid 2px var(--c-brand) !important;
+    color: var(--c-black);
+
+}
+
+/* .landing-page .bg-top {
+    padding-top: 100px;
+    padding-left: 20px;
+} */
 
 .landing-page .section-menus .nav-tabs .nav-item .active {
   color: var(--c-brand);
 }
 
 .landing-page .section-menus .bg-top {
-  width: 1000px;
-  margin: auto;
+    width: 1000px;
+    margin: auto;
+
 }
 
 .landing-page .section-menus .card {
@@ -2680,20 +2998,24 @@ option {
 }
 
 .landing-page .section-menus .card img {
-  width: 200px;
-  margin: auto;
-  padding-top: 20px;
+    width: 200px;
+    margin: auto;
+    padding-top: 20px;
+
 }
 
 .landing-page .section-menus .style-card {
-  border-radius: 100px;
+    border-radius: 100px;
+    padding: 0;
 }
 
 .landing-page .section-menus .style-card img {
-  padding-top: 0;
-  width: 130px;
-  align-items: center;
-  padding: 18px;
+    padding-top: 0;
+    width: 130px;
+    border-radius: 100%;
+    align-items: center;
+    padding: 20px;
+
 }
 
 .landing-page .section-menus .style-card .card-body {
@@ -2709,23 +3031,70 @@ option {
 }
 
 .landing-page .section-menus .content {
-  width: 100%;
-  height: 100%;
-  margin-left: 20%;
-  display: flex;
-  opacity: 0;
-  padding-top: 12%;
-  transition: 0.7s;
+    width: 100%;
+    height: 100%;
+    margin-left: 20%;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    padding-top: 13%;
+    transition: 0.7s;
+}
+.landing-page .section-menus .content ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.landing-page .section-menus .content ul li{
+    /* padding: 6px 11px; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c-black);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+}
+.landing-page .section-menus .content ul li a,
+.landing-page .section-menus .content ul li a {
+    color: var(--c-header-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: var(--c-header-icon-border);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 18px;
+    border: 0;
+}
+.landing-page .section-menus .content ul li a::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: var(--c-brand);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.5s;
+    transform: translateY(100%);
+    
+}
+.landing-page .section-menus .content ul li a:hover::before,
+.landing-page .section-menus .content ul li a:hover::before {
+    transform: translateY(0);
 }
 
-.landing-page .section-menus .content .bi-star-fill {
-  width: 40px;
-  height: 40px;
-  background-color: #fdcf28;
-  border-radius: 50%;
-  margin-left: 10px;
-  line-height: 40px;
-  text-align: center;
+.landing-page .section-menus .content ul li a:hover i {
+    color: #fff;
 }
 
 .landing-page .section-menus .content:hover {
@@ -2756,23 +3125,39 @@ option {
   object-fit: cover;
 }
 
-/* .bg-image {
-   background-color: var(--c-brand-dark);
-    height: 350px;
-    background-repeat: no-repeat;
-   
-} */
-.landing-page .btn-login {
-  width: 120px;
-  height: 40px;
-  font-size: 18px;
-  border-radius: 30px;
-  margin-left: 6px;
-  color: var(--c-white);
-  background-color: var(--c-brand);
-  /* border: 1px solid var(--c-white); */
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+.section-menus .tab-content {
+    color: var(--c-black);
 }
+
+.section-menus .cus-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 4px solid var(--c-brand); */
+}
+
+.section-menus .card {
+    border-radius: 70px;
+    padding-top: 15px;
+    color: var(--c-black);
+    border-color: var(--c-brand);
+}
+
+.landing-page .btn-login {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-left: 6px;
+    color: var(--c-white);
+    background-color: var(--c-brand);
+    /* border: 1px solid var(--c-white); */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    /* color: #f5c61c; */
+
+}
+
 .landing-page .btn-login:hover {
   color: var(--c-brand);
   background-color: var(--c-white);
@@ -2780,4 +3165,80 @@ option {
 
 .landing-page .margin-top {
   margin-top: 15%;
+}
+
+@media(max-width:768px) {
+    .landing-page .section-menus .card {
+        border: 0;
+    }
+    .landing-page .section-menus .card .card-body {
+        text-align: center;
+    }
+
+    .landing-page .section-menus .card .card-body {
+        margin: 0 !important;
+        padding: 0;
+        text-align: center;
+    }
+
+    .landing-page .section-menus .card img {
+        width: 400px;
+        margin: auto;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .landing-page .section-menus .style-card .price {
+        margin-top: 0;
+
+    }
+    .m-top{
+        margin-top: 25px;
+    }
+
+    .landing-page .section-menus .content {
+        margin-left: 0;
+        text-align: center;
+        display: flex ;
+        justify-content: center;
+        opacity: 1;
+        margin-top: 33rem;
+    }
+
+    .landing-page .section-menus .style-card {
+        border-radius: 100px;
+        padding: 0;
+    }
+
+
+}
+
+@media(max-width:678px) {
+
+    .landing-page .section-menus .card img {
+        width: 300px;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .landing-page .section-menus .content {
+        
+        margin-top: 26rem;
+    }
+    .landing-page .section-menus .style-card {
+        border-radius: 100px;
+        padding: 0;
+    }
+
+}
+.landing-page .section-service {
+    width: 100%;
+    height: 60vh;
+}
+
+.landing-page .section-galery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
