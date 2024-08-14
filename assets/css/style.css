@@ -1151,7 +1151,8 @@ footer .copyright a:hover {
   border-bottom: 1px solid #ddd;
 }
 
-.cart-page table {
+.cart-page .table {
+  --bs-table-bg: var(--c-white-black-light);
   text-align: left;
   vertical-align: middle;
 }
@@ -1341,21 +1342,51 @@ footer .copyright a:hover {
 .career-page .why-join-us-section .card-text{
   color: var(--c-card-text);
 }
-.career-page .job-list .job-list-item:first-child {
+
+.career-page .job-list-section .job-list-item:first-child {
   border-top: 1px solid #ddd;
 }
-.career-page .job-list .job-list-item {
+
+.career-page .job-list-section span {
+  color: var(--c-card-text);
+}
+.career-page .job-list-section .job-list-item {
   border-bottom: 1px solid #ddd;
+  color: var(--c-card-text);
+}
+.career-page .job-list-section .job-list-item .btn {
+  
+}
+.career-page .job-list-section .job-list-item span {
+  transition: .3s;
+  color: var(--c-black);
+}
+.career-page .job-list-section .job-list-item i {
+  transition: .3s;
+}
+.career-page .job-list-section .job-list-item a:hover span,
+.career-page .job-list-section .job-list-item a:hover i{
+  color: var(--c-brand);
 }
 
 /* Career detail page */
 
+[data-theme="light"]{
+  --c-box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  --c-white-black-light: #fff;
+}
+[data-theme="dark"]{
+  --c-box-shadow: none;
+  --c-white-black-light: #292524;
+}
+
 .career-detail-page .career-single {
-  background-color: var(--c-white);
+  background-color: var(--c-white-black-light);
   padding: 2rem 2.5rem;
   border-radius: 8px;
   font-size: 18px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  box-shadow: var(--c-box-shadow);
+  color: var(--c-card-text);
 }
 
 .career-detail-page .career-single .career-single-header .btn-apply-now,
@@ -1388,11 +1419,19 @@ footer .copyright a:hover {
   height: 54px;
   font-size: 16px;
   font-weight: 400;
+  color: var(--c-card-text);
+}
+.career-detail-page .career-single #apply-job form .form-control::placeholder {
+  color: var(--c-card-text);
+}
+.career-detail-page .career-single #apply-job form .form-label {
+  color: var(--c-black);
 }
 .career-detail-page .career-single #apply-job form textarea.form-control {
   height: auto;
   font-size: 16px;
   font-weight: 400;
+  color: var(--c-card-text);
 }
 
 .career-detail-page .career-single #apply-job form .form-control {
@@ -1416,10 +1455,10 @@ footer .copyright a:hover {
   justify-content: center;
   text-align: center;
   border: 0.125rem dashed #e7eaf3;
-  background-color: #f8fafd;
   border-radius: var(--bs-border-radius);
   cursor: pointer;
-  color: var(--c-gray-dark);
+  color: var(--c-card-text);
+  background-color: transparent;
 }
 
 .career-detail-page #apply-job form .custom-file-upload small {
