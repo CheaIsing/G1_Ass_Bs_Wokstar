@@ -1,134 +1,351 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order History</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <!-- Main Link  -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order History</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Main Link  -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .order-history-page .order-item {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .order-history-page .order-item img {
+      width: 220px;
+      /* object-fit: cover; */
+      margin-bottom: 1rem;
+    }
+
+    .order-history-page .order-item>div {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .order-history-page .order-item .btn-cart {
+      width: 100%;
+    }
+
+    @media (min-width: 480px) {
+      .order-history-page .order-item {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .order-history-page .order-item img {
+        width: 100px;
+        margin-right: 1.7rem;
+        margin-bottom: 0;
+      }
+
+      .order-history-page .order-item>div {
+        flex-direction: row;
+        width: auto;
+      }
+
+      .order-history-page .order-item .btn-cart {
+        width: auto;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
-<body class="profile-info-page">
 
-    <header></header>
-    <main>
-        <section class="">
-            <div class="container-lg my-5">
-                <div class="row g-4">
-                    <div class="setting-sidebar col-md-4 col-xl-3">
-                        <div class="card shadow-sm border-0 py-4 px-2 ps-0">
-                            <div class="card-header bg-transparent mb-3">
-                                <img class="rounded-circle mb-3"
-                                    src="https://tr.rbxcdn.com/b1efdf15c75325c428f5f58f5c8ba7b1/420/420/Hat/Webp"
-                                    alt>
-                                <h5 class="mb-0">The Chma</h5>
-                                <span>chma@gmail.com</span>
-                            </div>
-                            <ul class="nav">
-                                <li class="nav-item border-0">
-                                    <a href="#"
-                                        class="nav-link active d-flex"
-                                        aria-current="page">
-                                        <div>
-                                            <i
-                                                class="fa-solid fa-address-card me-3"></i>
-                                        </div>
-                                        Personal Info
-                                    </a>
-                                </li>
-                                <li class="nav-item border-0">
-                                    <a href="#" class="nav-link d-flex">
-                                        <div>
-                                            <i
-                                                class="fa-solid fa-bag-shopping me-3"></i>
-                                        </div>
-                                        Order & reordering
-
-                                    </a>
-                                </li>
-                                <li class="nav-item border-0">
-                                    <a href="#" class="nav-link d-flex">
-                                        <div>
-                                            <i
-                                                class="fa-solid fa-ticket me-3"></i>
-                                        </div>
-                                        Voucher & Offer
-                                    </a>
-                                </li>
-                                
-                                <li class="nav-item border-0">
-                                    <a href="#" class="nav-link d-flex">
-                                        <div>
-                                            <i
-                                                class="fa-solid fa-bell me-3"></i>
-                                        </div>
-                                        Notification
-                                        <span class="badge">6</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item border-0">
-                                    <a href="#" class="nav-link d-flex">
-                                        <div>
-                                            <i
-                                                class="fa-solid fa-heart me-3"></i>
-                                        </div>
-                                        Wishlist
-                                    </a>
-                                </li>
-                                <li class="nav-item border-0">
-                                    <a href="#" class="nav-link d-flex">
-                                        <div>
-                                            <i
-                                                class="fa-solid fa-book me-3"></i>
-
-                                        </div>
-                                        Term of use
-                                    </a>
-                                </li>
-                                <li class="nav-item border-0">
-                                    <a href="#" class="nav-link d-flex">
-                                        <div>
-                                            <i
-                                                class="fa-solid fa-right-from-bracket me-3"></i>
-                                        </div>
-                                        Log out
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
+<body class="profile-info-page order-history-page">
+  <header></header>
+  <main>
+    <section class>
+      <div class="container-lg my-5">
+        <div class="row g-4">
+          <div class="setting-sidebar col-md-4 col-xl-3">
+            <div class="card shadow-sm border-0 py-4 px-2 ps-0">
+              <div class="card-header bg-transparent mb-3">
+                <img class="rounded-circle mb-3"
+                  src="https://tr.rbxcdn.com/b1efdf15c75325c428f5f58f5c8ba7b1/420/420/Hat/Webp" alt />
+                <h5 class="mb-0">The Chma</h5>
+                <span>chma@gmail.com</span>
+              </div>
+              <ul class="nav">
+                <li class="nav-item border-0">
+                  <a href="#" class="nav-link active d-flex" aria-current="page">
+                    <div>
+                      <i class="fa-solid fa-address-card me-3"></i>
                     </div>
-                    <div class="col-md-8 col-xl-9">
-                        <div class="row g-5">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header justify-content-between">
-                                        <div>
-                                            <div class="order-date">
-                                                <div class="order-header-label">Order placed: </div>
-                                                <span>August 12</span>
-                                            </div>
-                                            <div class="total">
-                                                <div class="order-header-label">Total price: </div>
-                                                <span>August 12</span>
-                                            </div>
-                                        </div>
-                                        <div></div>
-                                    </div>
-                                    <div class="card-body"></div>
-                                </div>
-                            </div>
-                        </div>
+                    Personal Info
+                  </a>
+                </li>
+                <li class="nav-item border-0">
+                  <a href="#" class="nav-link d-flex">
+                    <div>
+                      <i class="fa-solid fa-bag-shopping me-3"></i>
                     </div>
-                </div>
+                    Order & reordering
+                  </a>
+                </li>
+                <li class="nav-item border-0">
+                  <a href="#" class="nav-link d-flex">
+                    <div>
+                      <i class="fa-solid fa-ticket me-3"></i>
+                    </div>
+                    Voucher & Offer
+                  </a>
+                </li>
+
+                <li class="nav-item border-0">
+                  <a href="#" class="nav-link d-flex">
+                    <div>
+                      <i class="fa-solid fa-bell me-3"></i>
+                    </div>
+                    Notification
+                    <span class="badge">6</span>
+                  </a>
+                </li>
+                <li class="nav-item border-0">
+                  <a href="#" class="nav-link d-flex">
+                    <div>
+                      <i class="fa-solid fa-heart me-3"></i>
+                    </div>
+                    Wishlist
+                  </a>
+                </li>
+                <li class="nav-item border-0">
+                  <a href="#" class="nav-link d-flex">
+                    <div>
+                      <i class="fa-solid fa-book me-3"></i>
+                    </div>
+                    Term of use
+                  </a>
+                </li>
+                <li class="nav-item border-0">
+                  <a href="#" class="nav-link d-flex">
+                    <div>
+                      <i class="fa-solid fa-right-from-bracket me-3"></i>
+                    </div>
+                    Log out
+                  </a>
+                </li>
+              </ul>
             </div>
-        </section>
-    </main>
-    
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+          </div>
+          <div class="col-md-8 col-xl-9">
+            <h2>Your Order</h2>
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header flex-row align-items-start justify-content-start">
+                    <div class="order-date d-flex flex-column flex-sm-row justify-content-between w-100">
+                      <div class="order-placed d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="me-4 d-flex d-sm-block">
+                          <div class="order-label me-1">Order Placed:</div>
+                          <time datetime> August, 12</time>
+                        </div>
+                        <div class="order-total d-flex d-sm-block">
+                          <div class="order-label me-1">Total:</div>
+                          <span> $20</span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex d-sm-block">
+                        <div class="order-label me-1">Order Id:</div>
+                        <span> d91724da</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row g-4 order-list">
+                      <div class="col-12">
+                        <div class="order-item d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex justify-content-center">
+                              <img class src="assets/img/dessert/brown-bear-vector-graphics.jpg" alt />
+                            </div>
+                            <div>
+                              <a href="menu-drink-detail.html">
+                                <h5 class="mb-0">Brown Bear Vector</h5>
+                              </a>
+                              <div>Ariving on: August 12</div>
+                              <div>Quantity: 12</div>
+                              <span>Total Price: $20</span>
+                            </div>
+                          </div>
+                          <button class="btn btn-cart" type="button">
+                            Buy it again
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header flex-row align-items-start justify-content-start">
+                    <div class="order-date d-flex flex-column flex-sm-row justify-content-between w-100">
+                      <div class="order-placed d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="me-4 d-flex d-sm-block">
+                          <div class="order-label me-1">Order Placed:</div>
+                          <time datetime> August, 12</time>
+                        </div>
+                        <div class="order-total d-flex d-sm-block">
+                          <div class="order-label me-1">Total:</div>
+                          <span> $20</span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex d-sm-block">
+                        <div class="order-label me-1">Order Id:</div>
+                        <span> d91724da</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row g-4 order-list">
+                      <div class="col-12">
+                        <div class="order-item d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex justify-content-center">
+                              <img class src="assets/img/dessert/brown-bear-vector-graphics.jpg" alt />
+                            </div>
+                            <div>
+                              <a href="menu-drink-detail.html">
+                                <h5 class="mb-0">Brown Bear Vector</h5>
+                              </a>
+                              <div>Ariving on: August 12</div>
+                              <div>Quantity: 12</div>
+                              <span>Total Price: $20</span>
+                            </div>
+                          </div>
+                          <button class="btn btn-cart" type="button">
+                            Buy it again
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="order-item d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex justify-content-center">
+                              <img class src="assets/img/dessert/brown-bear-vector-graphics.jpg" alt />
+                            </div>
+                            <div>
+                              <a href="menu-drink-detail.html">
+                                <h5 class="mb-0">Brown Bear Vector</h5>
+                              </a>
+                              <div>Ariving on: August 12</div>
+                              <div>Quantity: 12</div>
+                              <span>Total Price: $20</span>
+                            </div>
+                          </div>
+                          <button class="btn btn-cart" type="button">
+                            Buy it again
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header flex-row align-items-start justify-content-start">
+                    <div class="order-date d-flex flex-column flex-sm-row justify-content-between w-100">
+                      <div class="order-placed d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="me-4 d-flex d-sm-block">
+                          <div class="order-label me-1">Order Placed:</div>
+                          <time datetime> August, 12</time>
+                        </div>
+                        <div class="order-total d-flex d-sm-block">
+                          <div class="order-label me-1">Total:</div>
+                          <span> $20</span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex d-sm-block">
+                        <div class="order-label me-1">Order Id:</div>
+                        <span> d91724da</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row g-4 order-list">
+                      <div class="col-12">
+                        <div class="order-item d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex justify-content-center">
+                              <img class src="assets/img/dessert/brown-bear-vector-graphics.jpg" alt />
+                            </div>
+                            <div>
+                              <a href="menu-drink-detail.html">
+                                <h5 class="mb-0">Brown Bear Vector</h5>
+                              </a>
+                              <div>Ariving on: August 12</div>
+                              <div>Quantity: 12</div>
+                              <span>Total Price: $20</span>
+                            </div>
+                          </div>
+                          <button class="btn btn-cart" type="button">
+                            Buy it again
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="order-item d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex justify-content-center">
+                              <img class src="assets/img/dessert/brown-bear-vector-graphics.jpg" alt />
+                            </div>
+                            <div>
+                              <a href="menu-drink-detail.html">
+                                <h5 class="mb-0">Brown Bear Vector</h5>
+                              </a>
+                              <div>Ariving on: August 12</div>
+                              <div>Quantity: 12</div>
+                              <span>Total Price: $20</span>
+                            </div>
+                          </div>
+                          <button class="btn btn-cart" type="button">
+                            Buy it again
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="order-item d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex justify-content-center">
+                              <img class src="assets/img/dessert/brown-bear-vector-graphics.jpg" alt />
+                            </div>
+                            <div>
+                              <a href="menu-drink-detail.html">
+                                <h5 class="mb-0">Brown Bear Vector</h5>
+                              </a>
+                              <div>Ariving on: August 12</div>
+                              <div>Quantity: 12</div>
+                              <span>Total Price: $20</span>
+                            </div>
+                          </div>
+                          <button class="btn btn-cart" type="button">
+                            Buy it again
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
