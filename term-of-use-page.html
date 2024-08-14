@@ -16,53 +16,60 @@
             .term-of-use-page ul{
                 list-style-type: none;
             }
-            .term-of-use-page .term-and-conditions,
-            .term-of-use-page .term-and-conditions > ul{
+            .term-of-use-page .term-of-use-content,
+            .term-of-use-page .term-of-use-content > ul{
                 padding: 0;
                 counter-reset: heading;
             }
-            .term-of-use-page .term-and-conditions > ul >li{
+            .term-of-use-page .term-of-use-content > ul >li{
                 counter-increment: heading;
                 font-size: 28px;
                 font-weight: 500;
             }
-            .term-of-use-page .term-and-conditions > ul >li::before{
+            .term-of-use-page .term-of-use-content > ul >li::before{
                 content: ""counter(heading) ". ";
             }
 
-            .term-of-use-page .term-and-conditions > ul > ul{
+            .term-of-use-page .term-of-use-content > ul > ul{
                 counter-reset: subheading;
                 padding: 0;
             }
 
-            .term-of-use-page .term-and-conditions > ul > ul > li{
+            .term-of-use-page .term-of-use-content > ul > ul > li{
                 counter-increment: subheading;
                 
             }
-            .term-of-use-page .term-and-conditions > ul > ul > li {
+            .term-of-use-page .term-of-use-content > ul > ul > li {
                 font-size: 22px;
                 font-weight: 500;
                 margin: 16px 0;
             }
-            .term-of-use-page .term-and-conditions > ul > ul > li > p{
+            .term-of-use-page .term-of-use-content > ul > ul > li > p{
                 font-size: 20px;
                 font-weight: 400;
             }
-            .term-of-use-page .term-and-conditions > ul > ul > li > ul{
+            .term-of-use-page .term-of-use-content > ul > ul > li > ul,
+            .term-of-use-page .term-of-use-content .inner-refund{
                 list-style-type: disc;
                 
             }
-            .term-of-use-page .term-and-conditions > ul > ul > li > ul > li{
+
+            .term-of-use-page .term-of-use-content .inner-refund{
                 font-size: 20px;
                 font-weight: 400;
-
+                
             }
-
-            .term-of-use-page .term-and-conditions p{
+            .term-of-use-page .term-of-use-content > ul > ul > li > ul > li{
                 font-size: 20px;
                 font-weight: 400;
             }
-            .term-of-use-page .term-and-conditions > ul > ul > li::before{
+
+            .term-of-use-page .term-of-use-content p{
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            .term-of-use-page .term-of-use-content > ul > ul > li::before{
                 content: ""counter(heading) "." counter(subheading)" ";
             }
 
@@ -136,7 +143,8 @@
                                         </a>
                                     </li>
                                     <li class="nav-item border-0">
-                                        <a href="#" class="nav-link active d-flex">
+                                        <a href="#"
+                                            class="nav-link active d-flex">
                                             <div>
                                                 <i
                                                     class="fa-solid fa-book me-3"></i>
@@ -159,44 +167,36 @@
                             </div>
                         </div>
                         <div class="col-md-8 col-xl-9">
-                            <ul
-                                class="nav nav-pills mb-3 flex-column flex-md-row "
-                                id="pills-tab" role="tablist">
+                            <ul class="nav nav-tabs flex-column flex-sm-row" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active w-100"
-                                        id="pills-home-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#pills-home"
+                                        id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane"
                                         type="button" role="tab"
-                                        aria-controls="pills-home"
+                                        aria-controls="home-tab-pane"
                                         aria-selected="true">លក្ខខណ្ឌ</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link w-100"
-                                        id="pills-profile-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#pills-profile"
+                                    <button class="nav-link w-100" id="profile-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane"
                                         type="button" role="tab"
-                                        aria-controls="pills-profile"
+                                        aria-controls="profile-tab-pane"
                                         aria-selected="false">គោលការណ៍ឯកជនភាព</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link w-100"
-                                        id="pills-contact-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#pills-contact"
+                                    <button class="nav-link w-100" id="contact-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane"
                                         type="button" role="tab"
-                                        aria-controls="pills-contact"
+                                        aria-controls="contact-tab-pane"
                                         aria-selected="false">គោលនយោបាយសងប្រាក់វិញ</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                </li>
                             </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div
-                                    class="tab-pane fade show active term-and-conditions"
-                                    id="pills-home" role="tabpanel"
-                                    aria-labelledby="pills-home-tab"
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active term-of-use-content pt-4"
+                                    id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab"
                                     tabindex="0">
                                     <h2 class>លក្ខខណ្ឌ</h2>
                                     <p>សូមស្វាគមន៍មកកាន់ Wokstar ។
@@ -540,28 +540,149 @@
                                         </ul>
                                     </ul>
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile"
+                                <div class="tab-pane fade term-of-use-content pt-4" id="profile-tab-pane"
                                     role="tabpanel"
-                                    aria-labelledby="pills-profile-tab"
+                                    aria-labelledby="profile-tab"
                                     tabindex="0">
-                                    <h5>គោលនយោបាយភាពឯកជន</h5>
+                                    <h3>គោលនយោបាយភាពឯកជន</h3>
                                     <p>សូមស្វាគមន៍មកកាន់ Wokstar ។
                                         តាមរយៈការចូលប្រើ
                                         ឬប្រើប្រាស់គេហទំព័ររបស់យើងដែលមានទីតាំងនៅ
                                         wokstar.com អ្នកយល់ព្រមគោរពតាម
                                         និងត្រូវបានចងក្រងដោយលក្ខខណ្ឌខាងក្រោម។
                                         សូមអានពួកវាដោយប្រុងប្រយ័ត្នមុនពេលប្រើគេហទំព័ររបស់យើង។</p>
+                                    <ul>
+                                        <li>ការចងក្រងនិងការប្រើប្រាស់ព័ត៌មានផ្ទាល់ខ្លួន
+                                            <p>យើងធ្វើការចងក្រងនូវព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នកនៅពេលអ្នកប្រើប្រាស់គេហទំព័ររបស់យើង
+                                                សេវាកម្ម
+                                                ឬអនុញ្ញាតអំពីការប្រើប្រាស់ព័ត៌មានសម្រាប់គោលបំណងនៃការផ្តល់សេវាកម្មដល់អ្នក។
+                                                ព័ត៌មានដែលត្រូវបានចងក្រងអាចរួមមានឈ្មោះ
+                                                អាសយដ្ឋានអ៊ីមែល លេខទូរស័ព្ទ
+                                                ព័ត៌មានហិរញ្ញវត្ថុ
+                                                និងព័ត៌មានផ្សេងៗទៀតដែលអាចកំណត់ពីអ្នកបាន។</p>
+                                        </li>
+                                        <li>
+                                            ការចែករំលែកនិងការប្រគល់ព័ត៌មាន
+                                            <p>យើងខិតខំរក្សាការពារព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នក
+                                                និងមិនចែករំលែកនូវព័ត៌មាននេះទៅបក្សទីបីណាមួយគ្មានការអនុញ្ញាតរបស់អ្នក។
+                                                យើងអាចចែករំលែកព័ត៌មានរបស់អ្នកតែម្តងទៀតទៅក្រុមហ៊ុនឯកជន
+                                                ឬអង្គភាពស្វ័យភាពផ្សេងៗដែលបានតភ្ជាប់ទៅនឹងយើងដើម្បីអនុវត្តសេវាកម្ម
+                                                ឬសកម្មភាពណាមួយដែលបានត្រូវបានអនុញ្ញាតដោយអ្នក។</p>
+                                        </li>
+                                        <li>
+                                            សុវត្ថិភាពនៃព័ត៌មាន
+                                            <p>យើងយកចិត្តទុកដាក់ក្នុងការការពារព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នកដោយប្រើប្រាស់វិធីសាស្រ្តនិងសច្ចាភាពទំនើបក្នុងការពារច្បាស់លាស់នៃការប្រើប្រាស់
+                                                ព្រមទាំងការគ្រប់គ្រងផ្ទាល់ខ្លួននៅក្នុងការរក្សាការពារព័ត៌មាន។
+                                                យើងចាត់ការការប្រើប្រាស់វិធីសាស្រ្តការពារ
+                                                និងប្រព័ន្ធផ្ទាល់ខ្លួននៅក្នុងការពារការចូលប្រើដោយគ្មានការអនុញ្ញាត។</p>
+                                        </li>
+                                        <li>
+                                            អាណាព្យាបាលសម្រាប់កុមារ
+                                            <p>យើងមិនចង់បណ្តឹងកូនក្មេងកើតនៅក្រោមអាយុ
+                                                ១៣
+                                                ឆ្នាំជាផ្នែកនៃសកម្មភាពផ្ទាល់ខ្លួនដោយមិនមានការអនុញ្ញាតពីអាណាព្យាបាល។
+                                                ប្រសិនបើយើងទទួលបានព័ត៌មានដែលត្រូវបានផ្តល់ដោយកូនក្មេងក្រោមអាយុ
+                                                ១៣
+                                                ឆ្នាំដោយគ្មានការអនុញ្ញាតពីអាណាព្យាបាល
+                                                យើងនឹងធ្វើការលុបព័ត៌មានទាំងអស់នេះចេញពីស្ថាប័នរបស់យើង។</p>
+                                        </li>
+                                        <li>
+                                            ការធ្វើបច្ចុប្បន្នភាពនៃគោលនយោបាយភាពឯកជន
+                                            <p>យើងរក្សាសិទ្ធិក្នុងការធ្វើបច្ចុប្បន្នភាព
+                                                ឬកែប្រែគោលនយោបាយភាពឯកជននេះនៅពេលណាមួយដោយគ្មានការជូនដំណឹងជាមុន។
+                                                យើងនឹងបង្ហាញគោលនយោបាយភាពឯកជនដែលបានកែប្រែថ្មីនេះនៅលើគេហទំព័ររបស់យើង
+                                                ដូច្នេះសូមពិនិត្យមើលគោលនយោបាយនេះជាច្រើនដងដើម្បីដឹងពីការផ្លាស់ប្តូរណាមួយដែលកើតមាន។</p>
+                                        </li>
+                                        <li>
+                                            សិទ្ធិរបស់អ្នក
+                                            <p>អ្នកមានសិទ្ធិនៅក្នុងការទាក់ទងយើងដើម្បីសុំការចូលដំណើរការបញ្ហាផ្ទាល់ខ្លួនរបស់អ្នក
+                                                ឬការធ្វើបច្ចុប្បន្នភាពនូវព័ត៌មានដែលបានផ្តល់ឱ្យយើង។</p>
+                                        </li>
+                                        <li>
+                                            ទំនាក់ទំនងយើង
+                                            <p>ប្រសិនបើអ្នកមានសំណួរឬការព្រួយបារម្ភណាមួយអំពីគោលនយោបាយភាពឯកជនរបស់យើង
+                                                សូមទាក់ទងយើងតាមរយៈ WokStar</p>
+                                        </li>
+                                    </ul>
+                                
                                 </div>
-                                <div class="tab-pane fade" id="pills-contact"
+                                <div class="tab-pane fade term-of-use-content pt-4" id="contact-tab-pane"
                                     role="tabpanel"
-                                    aria-labelledby="pills-contact-tab"
-                                    tabindex="0">...</div>
-                                <div class="tab-pane fade" id="pills-disabled"
-                                    role="tabpanel"
-                                    aria-labelledby="pills-disabled-tab"
-                                    tabindex="0">...</div>
-                            </div>
+                                    aria-labelledby="contact-tab"
+                                    tabindex="0">
+                                    <h3>គោលនយោបាយពិនិត្យវិញនិងការសងប្រាក់វិញ</h3>
+                                    <p>សូមស្វាគមន៍មកកាន់ Wokstar ។
+                                        តាមរយៈការចូលប្រើ
+                                        ឬប្រើប្រាស់គេហទំព័ររបស់យើងដែលមានទីតាំងនៅ
+                                        wokstar.com អ្នកយល់ព្រមគោរពតាម
+                                        និងត្រូវបានចងក្រងដោយលក្ខខណ្ឌខាងក្រោម។
+                                        សូមអានពួកវាដោយប្រុងប្រយ័ត្នមុនពេលប្រើគេហទំព័ររបស់យើង។</p>
+                                    <ul>
+                                        <li>
+                                            សិទ្ធិក្នុងការសងប្រាក់វិញ
+                                            <p>យើងមានគោលនយោបាយដែលអនុញ្ញាតឱ្យអតិថិជនទាមទារការសងប្រាក់វិញសម្រាប់ផលិតផល
+                                                ឬសេវាកម្មដែលត្រូវបានទិញតាមគេហទំព័រ
+                                                ឬនៅតាមហាងរបស់យើង។
+                                                ប្រសិនបើអ្នកមិនពេញចិត្តនឹងការទិញរបស់អ្នក
+                                                សូមទាក់ទងយើងក្នុងរយៈពេល
+                                                ពីកាលបរិច្ឆេទទទួលបានផលិតផល
+                                                ឬសេវាកម្ម។</p>
+                                        </li>
+                                        <li>
+                                            លក្ខខណ្ឌសម្រាប់ការសងប្រាក់វិញ
+                                            <p>ដើម្បីមានសិទ្ធិទទួលសងប្រាក់វិញ
+                                                សូមប្រាកដថា៖
 
+                                                <ul class="inner-refund">
+                                                    <li>ផលិតផលត្រូវតែមានស្ថានភាពដូចដើម
+                                                        និងមិនមានការខូចខាត។
+                                                        ឯកសារពាក់ព័ន្ធ
+                                                        រួមមានវិក្កយបត្រ
+                                                        ឬបង្កាន់ដៃ
+                                                        ត្រូវតែបញ្ជូនមកជាមួយផលិតផល។
+                                                        ការទាមទារសងប្រាក់វិញត្រូវបានធ្វើក្នុងរយៈពេលដែលកំណត់</li>
+                                                    <li>ឯកសារពាក់ព័ន្ធ
+                                                        រួមមានវិក្កយបត្រ
+                                                        ឬបង្កាន់ដៃ
+                                                        ត្រូវតែបញ្ជូនមកជាមួយផលិតផល។</li>
+                                                    <li>ការទាមទារសងប្រាក់វិញត្រូវបានធ្វើក្នុងរយៈពេលដែលកំណត់។</li>
+                                                </ul>
+                                            </p>
+                                        </li>
+                                        <li>ផលិតផលដែលមិនអាចសងប្រាក់វិញបាន
+                                            <p>ផលិតផល
+                                                ឬសេវាកម្មខ្លះមិនត្រូវបានអនុញ្ញាតឱ្យទាមទារសងប្រាក់វិញ។
+                                                សូមចុះមើលឯកសារជាក់លាក់នៅពេលដែលអ្នកទិញផលិតផល
+                                                ឬសេវាកម្មណាមួយ។ ការផ្តល់ជូនពិសេស
+                                                ឬផលិតផលដែលបានបញ្ចុះតម្លៃ
+                                                មិនត្រូវបានអនុញ្ញាតឱ្យទាមទារសងប្រាក់វិញទេ។</p>
+                                        </li>
+                                        <li>ដំណើរការសងប្រាក់វិញ
+                                            <ul class="inner-refund">
+                                                <li>ប្រសិនបើអនុញ្ញាតឱ្យសងប្រាក់វិញ
+                                                    យើងនឹងធ្វើការបញ្ចូនប្រាក់វិញទៅឱ្យអ្នកតាមរយៈវិធីសាស្រ្តទូទាត់ដូចដែលបានប្រើនៅក្នុងការទិញដើម។</li>
+                                                <li>សូមចំណាំថាការសងប្រាក់វិញអាចចំណាយពេល
+                                                    ដើម្បីធ្វើប្រតិបត្តិការជាស្ថាពរ។</li>
+                                                <li>ក្នុងករណីដែលការសងប្រាក់វិញមិនអាចប្រព្រឹត្តទៅបាន
+                                                    យើងនឹងឱ្យដឹងពីហេតុផលនៃការទទួលសងប្រាក់វិញនោះ។</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            ការផ្លាស់ប្តូរផលិតផល
+                                            <p>ប្រសិនបើអ្នកចង់ផ្លាស់ប្តូរផលិតផលជំនួសការសងប្រាក់វិញ
+                                                សូមទាក់ទងយើង
+                                                ដើម្បីធ្វើការផ្លាស់ប្តូរ។
+                                                ផលិតផលដែលបានផ្លាស់ប្តូរត្រូវតែមានស្ថានភាពដូចដើមនិងមិនមានការខូចខាត។</p>
+                                        </li>
+                                        <li>
+                                            ទំនាក់ទំនងយើង
+                                            <p>ប្រសិនបើអ្នកមានសំណួរ
+                                                ឬការព្រួយបារម្ភអំពីគោលនយោបាយសងប្រាក់វិញ
+                                                សូមទាក់ទងយើងតាម Wokstar។</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

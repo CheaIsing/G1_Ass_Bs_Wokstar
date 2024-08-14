@@ -1706,8 +1706,8 @@ h4 {
 }
 
 .page-reservation .card .border-style h4,
-h5,
-h2 {
+.page-reservation .card .border-style h5,
+.page-reservation .card .border-style h2 {
     color: var(--c-brand);
 }
 
