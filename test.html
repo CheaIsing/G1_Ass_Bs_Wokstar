@@ -1,188 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Vouchers</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 
-.voucher-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+    <!-- Main Link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-.voucher-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-.voucher-header h1 {
-    margin: 0;
-    color: #333;
-}
-
-.voucher-content {
-    padding: 10px 20px;
-}
-
-.current-vouchers,
-.other-vouchers {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-.current-vouchers {
-    border: 2px solid #e74c3c;
-}
-
-.current-voucher-item {
-    font-size: 0.9em;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fff;
-    margin-bottom: 15px;
-}
-
-.voucher-code {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #e74c3c;
-    margin: 10px 0;
-}
-
-.voucher-description {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.voucher-terms {
-    font-size: 0.8em;
-    color: #777;
-}
-
-.voucher-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.voucher-item {
-    font-size: 1em;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 15px;
-}
-
-.voucher-item h3 {
-    margin-top: 0;
-    color: #e74c3c;
-}
-
-.voucher-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: #aaa;
-}
-
-    </style>
 </head>
-<body>
-    <div class="voucher-container">
-        <header class="voucher-header">
-            <h1>Your Restaurant Vouchers</h1>
-        </header>
-        <main class="voucher-content">
-            <section class="current-vouchers">
-                <h2>Your Current Vouchers</h2>
-                <div class="voucher-item current-voucher-item">
-                    <h3>Voucher Code</h3>
-                    <p class="voucher-code">SAVE20OFF</p>
-                    <p class="voucher-description">
-                        Enjoy 20% off your next meal! Present this voucher code when you pay your bill.
-                    </p>
-                    <p class="voucher-terms">
-                        <strong>Terms and Conditions:</strong><br>
-                        - Valid for dine-in and takeout orders.<br>
-                        - Cannot be combined with other offers.<br>
-                        - Valid until December 31, 2024.<br>
-                    </p>
-                </div>
-                <div class="voucher-item current-voucher-item">
-                    <h3>Voucher Code</h3>
-                    <p class="voucher-code">FREEBREAD</p>
-                    <p class="voucher-description">
-                        Get a free bread basket with any main course order.
-                    </p>
-                    <p class="voucher-terms">
-                        <strong>Terms and Conditions:</strong><br>
-                        - Valid for dine-in only.<br>
-                        - One bread basket per order.<br>
-                        - Expires November 15, 2024.<br>
-                    </p>
-                </div>
-            </section>
 
-            <section class="other-vouchers">
-                <h2>Other Available Vouchers</h2>
-                <ul class="voucher-list">
-                    <li class="voucher-item">
-                        <h3>BOGO50</h3>
-                        <p>Buy one, get one 50% off. Valid on all menu items.</p>
-                        <p class="voucher-terms">
-                            <strong>Terms and Conditions:</strong><br>
-                            - Valid for dine-in only.<br>
-                            - Limit one per table.<br>
-                            - Expires November 30, 2024.<br>
-                        </p>
-                    </li>
-                    <li class="voucher-item">
-                        <h3>FREEAPPETIZER</h3>
-                        <p>Get a free appetizer with any main course order.</p>
-                        <p class="voucher-terms">
-                            <strong>Terms and Conditions:</strong><br>
-                            - Valid for dine-in and takeout.<br>
-                            - One appetizer per order.<br>
-                            - Expires October 31, 2024.<br>
-                        </p>
-                    </li>
-                    <li class="voucher-item">
-                        <h3>10OFF</h3>
-                        <p>Get $10 off any purchase over $50.</p>
-                        <p class="voucher-terms">
-                            <strong>Terms and Conditions:</strong><br>
-                            - Valid for dine-in and takeout.<br>
-                            - Minimum purchase of $50 required.<br>
-                            - Expires December 1, 2024.<br>
-                        </p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer class="voucher-footer">
-            <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
-        </footer>
-        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-            Tooltip on top
-          </button>
-    </div>
+<body>
+    <main class="gallery-page">
+        <section class="hero-banner position-relative mb-5">
+            <div class="banner-bg europe-banner"></div>
+            <div class="content d-flex align-items-center">
+                <div class="container">
+                    <div class="text-center text-white-light mb-5">
+                        <h2 class="display-2 my-4">រូបភាព</h2>
+                        <div class="fs-5">
+                            <a href="index.html" class="text-white-light text-decoration-none">ទំព័រដើម</a>
+                            <span> &nbsp;>&nbsp; </span>
+                            <span class="text-brand">រូបភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div class="container-lg">
+                <div class="row g-4" id="lightgallery">
+                    <div class="col-md-12 col-lg-6">
+                        <a class="box" data-src="assets/img/blog-img/4.jpg">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/4.jpg" alt="..">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-6" data-src="assets/img/blog-img/4.jpg">
+                        <a class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/4.jpg" alt="..">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-src="assets/img/blog-img/3.webp">
+                        <a class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/3.webp" alt="..">
+                        </a>
+                    </div>
+                    <div class="col-md-7 col-lg-4" data-src="assets/img/blog-img/5.jpeg">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/5.jpeg" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4" data-src="assets/img/blog-img/6.jpg">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/6.jpg" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-7" data-src="assets/img/blog-img/7.webp">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/7.webp" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-5" data-src="assets/img/blog-img/8.jpg">
+                        <div class="box" data-src="assets/img/blog-img/8.jpg">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/8.jpg" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5" data-src="assets/img/blog-img/9.webp">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/9.webp" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-7" data-src="assets/img/blog-img/10.jpg">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/10.jpg" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4" data-src="assets/img/blog-img/11.jpg">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/11.jpg" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-4" data-src="assets/img/blog-img/12.webp">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/12.webp" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-src="assets/img/blog-img/13.jpg">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/13.jpg" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6" data-src="assets/img/blog-img/14.jpg">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/14.jpg" alt=".">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 border" data-src="assets/img/blog-img/15.jpeg">
+                        <div class="box">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/img/blog-img/15.jpeg" alt=".">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-1  ">
+        <section class="top-footer-sm bg-transparent py-5">
+            <div class="container-fluid ">
+                <div class="content-top">
+                    <div class="logo-lg-img">
+                        <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
+                    </div>
+                    <div>
+                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
+                            កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
+                        <div class="app position-relative d-flex gap-3 py-2">
+                            <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion accordion-flush bg-transparent border-top pt-3 mt-3 border-opacity-10"
+                    id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ភោជនីយដ្ឋាន
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body accordion-body-1">
+                                <ul class="list-unstyled d-flex flex-column gap-2">
+                                    <li>
+                                        <a href="about-restaurant.html">អំពីយើង</a>
+                                    </li>
+                                    <li>
+                                        <a href="menu-khmer.html">ម៉ីនុយ</a>
+                                    </li>
+                                    <li>
+                                        <a href="service-page.html">សេវាកម្ម</a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery-page.html">រូបភាពហាង</a>
+                                    </li>
+                                    <li>
+                                        <a href="reservation.html">ការកក់តុ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ព័ត៌មានផ្សេងៗ
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body accordion-body-1">
+                                <ul class="list-unstyled d-flex flex-column gap-2">
+                                    <li>
+                                        <a href="customer-review.html">ការវាយតម្លៃ</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq-page.html">សំណួរ & ចម្លើយ</a>
+                                    </li>
+                                    <li>
+                                        <a href="notification-page.html">ការជូនដំណឹង</a>
+                                    </li>
+                                    <li>
+                                        <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">ជំនួយ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ទំនាក់ទំនងមកកាន់យើង
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled d-flex flex-column gap-2">
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606,
+                                            ភ្នំពេញ</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                        <a href="tel:+88517631845">+885 17 631 845</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-footer py-5 ">
+            <div class="container-fluid px-5">
+                <div class="row text-white justify-content-center">
+                    <div class="col-12 col-md-12 col-xl-4 ">
+                        <div class="content-left">
+                            <div class="logo-lg-img">
+                                <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
+                            </div>
+                            <div>
+                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
+                                    កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
+                                <div class="app position-relative d-flex gap-3 py-2">
+                                    <a href="https://www.facebook.com/profile"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
+                        <div class="content-center">
+                            <h2 class="pb-2">ភោជនីយដ្ឋាន</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li>
+                                    <a href="about-restaurant.html">អំពីយើង</a>
+                                </li>
+                                <li>
+                                    <a href="menu-khmer.html">ម៉ីនុយ</a>
+                                </li>
+                                <li>
+                                    <a href="service-page.html">សេវាកម្ម</a>
+                                </li>
+                                <li>
+                                    <a href="gallery-page.html">រូបភាពហាង</a>
+                                </li>
+                                <li>
+                                    <a href="reservation.html">ការកក់តុ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
+                        <div class="content-center">
+                            <h2 class="pb-2">ព័ត៌មានផ្សេងៗ</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li>
+                                    <a href="customer-review.html">ការវាយតម្លៃ</a>
+                                </li>
+                                <li>
+                                    <a href="faq-page.html">សំណួរ & ចម្លើយ</a>
+                                </li>
+                                <li>
+                                    <a href="notification-page.html">ការជូនដំណឹង</a>
+                                </li>
+                                <li>
+                                    <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">ជំនួយ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
+                        <div class="content-right">
+                            <h2 class="pb-2">ទំនាក់ទំនងមកកាន់យើង</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606,
+                                        ភ្នំពេញ</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <a href="tel:+88517631845">+885 17 631 845</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="copyright py-3 border-top">
+            <div class="container-fluid px-5">
+                <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
+                    <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
+                    <p class="m-0 p-0">
+                        <a href="term-of-use-page.html" class="border-end pe-2">គោលការណ៍ឯកជនភាព</a>
+                        <a href="term-of-use-page.html" class="ps-1">លក្ខខណ្ឌ</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/autoplay/lg-autoplay.min.js"></script>
+
+        <script type="text/javascript">
+            lightGallery(document.getElementById('lightgallery'), {
+                selector: '.box',
+                plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
+                speed: 500,
+            });
+        </script>
 </body>
+
 </html>

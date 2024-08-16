@@ -168,3 +168,6 @@ const plus = document.querySelector(".plus"),
                 num.innerText = a;
             }
         });
+
+const header = document.getElementsByTagName("header");
+console.log(header);
