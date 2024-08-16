@@ -1,441 +1,488 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Term of use</title>
-        <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-        <!-- Main Link  -->
-        <link rel="stylesheet" href="assets/css/style.css">
 
-        <style>
-            .term-of-use-page ul{
-                list-style-type: none;
-            }
-            .term-of-use-page .term-of-use-content,
-            .term-of-use-page .term-of-use-content > ul{
-                padding: 0;
-                counter-reset: heading;
-            }
-            .term-of-use-page .term-of-use-content > ul >li{
-                counter-increment: heading;
-                font-size: 28px;
-                font-weight: 500;
-            }
-            .term-of-use-page .term-of-use-content > ul >li::before{
-                content: ""counter(heading) ". ";
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term of use</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- Main Link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-            .term-of-use-page .term-of-use-content > ul > ul{
-                counter-reset: subheading;
-                padding: 0;
-            }
+    <style>
+        .term-of-use-page ul {
+            list-style-type: none;
+        }
 
-            .term-of-use-page .term-of-use-content > ul > ul > li{
-                counter-increment: subheading;
-                
-            }
-            .term-of-use-page .term-of-use-content > ul > ul > li {
-                font-size: 22px;
-                font-weight: 500;
-                margin: 16px 0;
-            }
-            .term-of-use-page .term-of-use-content > ul > ul > li > p{
-                font-size: 20px;
-                font-weight: 400;
-            }
-            .term-of-use-page .term-of-use-content > ul > ul > li > ul,
-            .term-of-use-page .term-of-use-content .inner-refund{
-                list-style-type: disc;
-                
-            }
+        .term-of-use-page .term-of-use-content,
+        .term-of-use-page .term-of-use-content>ul {
+            padding: 0;
+            counter-reset: heading;
+        }
 
-            .term-of-use-page .term-of-use-content .inner-refund{
-                font-size: 20px;
-                font-weight: 400;
-                
-            }
-            .term-of-use-page .term-of-use-content > ul > ul > li > ul > li{
-                font-size: 20px;
-                font-weight: 400;
-            }
+        .term-of-use-page .term-of-use-content>ul>li {
+            counter-increment: heading;
+            font-size: 28px;
+            font-weight: 500;
+        }
 
-            .term-of-use-page .term-of-use-content p{
-                font-size: 20px;
-                font-weight: 400;
+        .term-of-use-page .term-of-use-content>ul>li::before {
+            content: "" counter(heading) ". ";
+        }
+
+        .term-of-use-page .term-of-use-content>ul>ul {
+            counter-reset: subheading;
+            padding: 0;
+        }
+
+        .term-of-use-page .term-of-use-content>ul>ul>li {
+            counter-increment: subheading;
+
+        }
+
+        .term-of-use-page .term-of-use-content>ul>ul>li {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 16px 0;
+        }
+
+        .term-of-use-page .term-of-use-content>ul>ul>li>p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .term-of-use-page .term-of-use-content>ul>ul>li>ul,
+        .term-of-use-page .term-of-use-content .inner-refund {
+            list-style-type: disc;
+
+        }
+
+        .term-of-use-page .term-of-use-content .inner-refund {
+            font-size: 20px;
+            font-weight: 400;
+
+        }
+
+        .term-of-use-page .term-of-use-content>ul>ul>li>ul>li {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .term-of-use-page .term-of-use-content p {
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--c-card-text);
+        }
+
+        .term-of-use-page .term-of-use-content>ul>ul>li::before {
+            content: "" counter(heading) "." counter(subheading)" ";
+        }
+
+        .term-of-use-page .nav-tabs .nav-link {
+            border-radius: 0;
+            border: 0;
+            font-weight: 500;
+            color: var(--c-text-grey);
+            border-bottom: 2px solid transparent;
+            background-color: transparent;
+        }
+
+        .term-of-use-page .nav-tabs .nav-link:hover {
+            color: var(--c-brand);
+            border-bottom: 2px solid var(--c-brand);
+        }
+
+        .term-of-use-page .nav-tabs .nav-link.active {
+
+            color: var(--c-brand);
+            border-bottom: 2px solid var(--c-brand);
+        }
+
+        @media (max-width: 576px) {
+            .term-of-use-page .nav-tabs .nav-link{
+                border-radius: 8px;
             }
-
-            .term-of-use-page .term-of-use-content > ul > ul > li::before{
-                content: ""counter(heading) "." counter(subheading)" ";
+            .term-of-use-page .nav-tabs .nav-link.active {
+                color: #fff;
+                background-color: var(--c-brand);
+                border-bottom: 2px solid transparent;
             }
+        }
+    </style>
+</head>
 
-        </style>
-    </head>
-    <body class="profile-info-page term-of-use-page">
+<body class="profile-info-page term-of-use-page">
 
-        <header>
-            <nav
-                class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
-                <div class="container-xxl px-4 ">
-                    <a class="navbar-brand" href="#">
-                        <img class="ms-3 ms-xl-4"
-                            src="assets/img/logo-2-png.png" alt height="60px">
-                    </a>
-                    <div class="d-flex d-xl-none align-items-xl-center">
-                        <!-- <button class="btn btn-icon " type="button">
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
+            <div class="container-xxl px-4 ">
+                <a class="navbar-brand" href="#">
+                    <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
+                </a>
+                <div class="d-flex d-xl-none align-items-xl-center">
+                    <!-- <button class="btn btn-icon " type="button">
                             <i class="fa-solid fa-utensils text-white"></i>
                         </button> -->
-                        <form class="d-flex" role="search">
-                            <button class="btn btn-icon btn-responsive-icon"
-                                type="button">
-                                <i class="fa-solid fa-search"></i>
-                            </button>
-                        </form>
-                        <button class="btn btn-icon btn-responsive-icon"
-                            type="button">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-icon btn-responsive-icon" type="button">
+                            <i class="fa-solid fa-search"></i>
                         </button>
-                        <!-- <button class="btn btn-icon" type="button">
+                    </form>
+                    <button class="btn btn-icon btn-responsive-icon" type="button">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                    <!-- <button class="btn btn-icon" type="button">
                             <i class="fa-solid fa-moon text-white"></i>
                         </button> -->
-                        <button class="btn btn-icon btn-responsive-icon"
-                            type="button">
-                            <i class="fa-solid fa-user"></i>
-                        </button>
-                        <button class="navbar-toggler btn btn-icon"
-                            type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar"
-                            aria-controls="offcanvasNavbar"
-                            aria-label="Toggle navigation">
-                            <i class=" fa-solid fa-bars"></i>
-                        </button>
-                    </div>
+                    <button class="btn btn-icon btn-responsive-icon" type="button">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class=" fa-solid fa-bars"></i>
+                    </button>
+                </div>
 
-                    <div class="offcanvas offcanvas-start" tabindex="-1"
-                        id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel"
-                        data-bs-scroll="true" data-bs-backdrop="false">
-                        <div
-                            class="offcanvas-header d-flex d-xl-none align-items-center">
-                            <a class="navbar-brand" href="#">
-                                <img class="ms-3 ms-xl-4"
-                                    src="assets/img/logo-2-png2.png" alt
-                                    height="70px">
-                            </a>
-                            <button type="button"
-                                class="btn-close fs-4 btn-icon shadow-none"
-                                data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
-                                <li class="nav-item mx-lg-2">
-                                    <a class="nav-link" href="#">ទំព័រដើម</a>
-                                </li>
-    
-                                <li class="nav-item mx-lg-2 dropdown megamenu ">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        ម៉ីនុយ
-                                    </a>
-                                    <ul class="dropdown-menu border-0">
-                                        <div class="container-xxl">
-                                            <div class="row w-100 gy-4">
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-    
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
+                    <div class="offcanvas-header d-flex d-xl-none align-items-center">
+                        <a class="navbar-brand" href="#">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
+                        </a>
+                        <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="#">ទំព័រដើម</a>
+                            </li>
+
+                            <li class="nav-item mx-lg-2 dropdown megamenu ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ម៉ីនុយ
+                                </a>
+                                <ul class="dropdown-menu border-0">
+                                    <div class="container-xxl">
+                                        <div class="row w-100 gy-4">
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                </ul>
                                             </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li class="text-black"><a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
                                         </div>
-    
-                                    </ul>
-                                </li>
-                                <li class="nav-item mx-lg-2 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        សេវាកម្ម
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="service-page.html">សេវាកម្ម</a></li>
-                                        <li><a class="dropdown-item" href="customer-review.html">ការវាយតម្លៃ</a></li>
-                                        <li><a class="dropdown-item" href="gallery-page.html">រូបភាព</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item mx-lg-2 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        អំពី
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="about-us.html">អំពីយើង</a></li>
-                                        <li><a class="dropdown-item" href="about-restaurant.html">អំពីភោជនីយដ្ឋាន</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item mx-lg-2">
-                                    <a class="nav-link" href="">អាជីព</a>
-                                </li>
-                                <li class="nav-item mx-lg-2">
-                                    <a class="nav-link" href="career-detail-page.html">ព័ត៌មាន</a>
-                                </li>
-                                <li class="nav-item mx-lg-2 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        ទំនាក់ទំនង
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="contact.html">ទំនាក់ទំនងយើង</a></li>
-                                        <li><a class="dropdown-item" href="faq-page.html">សំណួរ​
-                                                និងចម្លើយ</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="d-flex align-items-center">
+                                    </div>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-lg-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    សេវាកម្ម
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="text-black"><a class="dropdown-item"
+                                            href="service-page.html">សេវាកម្ម</a></li>
+                                    <li class="text-black"><a class="dropdown-item"
+                                            href="customer-review.html">ការវាយតម្លៃ</a></li>
+                                    <li class="text-black"><a class="dropdown-item" href="gallery-page.html">រូបភាព</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-lg-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    អំពី
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="text-black"><a class="dropdown-item" href="about-us.html">អំពីយើង</a>
+                                    </li>
+                                    <li class="text-black"><a class="dropdown-item"
+                                            href="about-restaurant.html">អំពីភោជនីយដ្ឋាន</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="">អាជីព</a>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="career-detail-page.html">ព័ត៌មាន</a>
+                            </li>
+                            <li class="nav-item mx-lg-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ទំនាក់ទំនង
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="text-black"><a class="dropdown-item"
+                                            href="contact.html">ទំនាក់ទំនងយើង</a></li>
+                                    <li class="text-black"><a class="dropdown-item" href="faq-page.html">សំណួរ​
+                                            និងចម្លើយ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-icon" type="button">
+                                <i class="fa-solid fa-utensils"></i>
+                            </button>
+                            <form class="d-none d-xl-flex" role="search">
                                 <button class="btn btn-icon" type="button">
-                                    <i class="fa-solid fa-utensils"></i>
+                                    <i class="fa-solid fa-search"></i>
                                 </button>
-                                <form class="d-none d-xl-flex" role="search">
-                                    <button class="btn btn-icon" type="button">
-                                        <i class="fa-solid fa-search"></i>
-                                    </button>
-                                </form>
-                                <button
-                                    class="btn btn-icon d-none d-xl-inline-block"
-                                    type="button">
-                                    <i class="fa-solid fa-basket-shopping"></i>
-                                </button>
-                                <button class="btn btn-icon" type="button"
-                                    data-theme-toggle>
-                                    <!-- <i class="fa-solid fa-moon"></i> -->
-                                </button>
-                                <button
-                                    class="btn btn-icon d-none d-xl-inline-block"
-                                    type="button">
-                                    <i class="fa-solid fa-user"></i>
-                                </button>
-                            </div>
+                            </form>
+                            <button class="btn btn-icon d-none d-xl-inline-block" type="button">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                            <button class="btn btn-icon" type="button" data-theme-toggle>
+                                <!-- <i class="fa-solid fa-moon"></i> -->
+                            </button>
+                            <button class="btn btn-icon d-none d-xl-inline-block" type="button">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section class>
-                <div class="container-lg my-5">
-                    <div class="row g-4">
-                        <div class="setting-sidebar col-md-4 col-xl-3">
-                            <div class="card shadow-sm border-0 py-4 px-2 ps-0">
-                                <div class="card-header bg-transparent mb-3">
-                                    <img class="rounded-circle mb-3"
-                                        src="https://tr.rbxcdn.com/b1efdf15c75325c428f5f58f5c8ba7b1/420/420/Hat/Webp"
-                                        alt>
-                                    <h5 class="mb-0">The Chma</h5>
-                                    <span>chma@gmail.com</span>
-                                </div>
-                                <ul class="nav">
-                                    <li class="nav-item border-0">
-                                        <a href="#"
-                                            class="nav-link d-flex"
-                                            aria-current="page">
-                                            <div>
-                                                <i
-                                                    class="fa-solid fa-address-card me-3"></i>
-                                            </div>
-                                            Personal Info
-                                        </a>
-                                    </li>
-                                    <li class="nav-item border-0">
-                                        <a href="#" class="nav-link d-flex">
-                                            <div>
-                                                <i
-                                                    class="fa-solid fa-bag-shopping me-3"></i>
-                                            </div>
-                                            Order & reordering
-
-                                        </a>
-                                    </li>
-                                    <li class="nav-item border-0">
-                                        <a href="#" class="nav-link d-flex">
-                                            <div>
-                                                <i
-                                                    class="fa-solid fa-ticket me-3"></i>
-                                            </div>
-                                            Voucher & Offer
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item border-0">
-                                        <a href="#" class="nav-link d-flex">
-                                            <div>
-                                                <i
-                                                    class="fa-solid fa-bell me-3"></i>
-                                            </div>
-                                            Notification
-                                            <span class="badge">6</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item border-0">
-                                        <a href="#" class="nav-link d-flex">
-                                            <div>
-                                                <i
-                                                    class="fa-solid fa-heart me-3"></i>
-                                            </div>
-                                            Wishlist
-                                        </a>
-                                    </li>
-                                    <li class="nav-item border-0">
-                                        <a href="#"
-                                            class="nav-link active d-flex">
-                                            <div>
-                                                <i
-                                                    class="fa-solid fa-book me-3"></i>
-
-                                            </div>
-                                            Term of use
-                                        </a>
-                                    </li>
-                                    <li class="nav-item border-0">
-                                        <a href="#" class="nav-link d-flex">
-                                            <div>
-                                                <i
-                                                    class="fa-solid fa-right-from-bracket me-3"></i>
-                                            </div>
-                                            Log out
-                                        </a>
-                                    </li>
-
-                                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-5 pt-5">
+            <div class="container-lg my-5">
+                <div class="row g-4">
+                    <div class="setting-sidebar col-md-4 col-xl-3">
+                        <div class="card border-0 py-4 px-2 ps-0">
+                            <div class="card-header bg-transparent mb-3">
+                              <img class="rounded-circle mb-3"
+                                src="https://tr.rbxcdn.com/b1efdf15c75325c428f5f58f5c8ba7b1/420/420/Hat/Webp" alt>
+                                <h5 class="mb-0">Willaim Sarah</h5>
+                                <span>williamsarah@gmail.com</span>
                             </div>
-                        </div>
-                        <div class="col-md-8 col-xl-9">
-                            <ul class="nav nav-tabs flex-column flex-sm-row" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active w-100"
-                                        id="home-tab" data-bs-toggle="tab"
-                                        data-bs-target="#home-tab-pane"
-                                        type="button" role="tab"
-                                        aria-controls="home-tab-pane"
-                                        aria-selected="true">លក្ខខណ្ឌ</button>
+                            <ul class="nav">
+                              <li class="nav-item border-0">
+                                  <a href="profile-info-page.html"
+                                      class="nav-link d-flex"
+                                      aria-current="page">
+                                      <div>
+                                          <i
+                                              class="fa-solid fa-address-card me-3"></i>
+                                      </div>
+                                      ព័ត៌មានផ្ទាល់ខ្លួន
+                                  </a>
+                              </li>
+                              <li class="nav-item border-0">
+                                  <a href="order-history-page.html" class="nav-link d-flex">
+                                      <div>
+                                          <i
+                                              class="fa-solid fa-bag-shopping me-3"></i>
+                                      </div>
+                                      ការបញ្ជាទិញ
+              
+                                  </a>
+                              </li>
+                              <li class="nav-item border-0">
+                                  <a href="voucher-page.html" class="nav-link d-flex">
+                                      <div>
+                                          <i
+                                              class="fa-solid fa-ticket me-3"></i>
+                                      </div>
+                                      ប័ណ្ណចំណាយ
+                                  </a>
+                              </li>
+                              
+                              <li class="nav-item border-0">
+                                  <a href="notification-page.html" class="nav-link d-flex">
+                                      <div>
+                                          <i
+                                              class="fa-solid fa-bell me-3"></i>
+                                      </div>
+                                      ការជូនដំណឹង
+                                      <span class="badge">6</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item border-0">
+                                  <a href="wishlist-page.html" class="nav-link d-flex">
+                                      <div>
+                                          <i
+                                              class="fa-solid fa-heart me-3"></i>
+                                      </div>
+                                      ចំំណូលចិត្តរបស់ខ្ញុំ
+                                  </a>
+                              </li>
+                              <li class="nav-item border-0">
+                                  <a href="term-of-use-page.html" class="nav-link active d-flex">
+                                      <div>
+                                          <i
+                                              class="fa-solid fa-book me-3"></i>
+              
+                                      </div>
+                                      គេាលការណ៏ប្រើ
+                                  </a>
+                              </li>
+                              <li class="nav-item border-0">
+                                  <a href="index.html" class="nav-link d-flex">
+                                      <div>
+                                          <i
+                                              class="fa-solid fa-right-from-bracket me-3"></i>
+                                      </div>
+                                      ចាកចេញ
+                                  </a>
+                              </li>
+              
+                          </ul>
+                          </div>
+                    </div>
+                    <div class="col-md-8 col-xl-9">
+                        <div class="card border-0 right-content p-4">
+                            <ul class="nav nav-tabs flex-column flex-sm-row border-0" id="myTab" role="tablist">
+                                <li class="nav-item me-sm-3" role="presentation">
+                                    <button class="nav-link active w-100" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">លក្ខខណ្ឌ</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link w-100" id="profile-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#profile-tab-pane"
-                                        type="button" role="tab"
-                                        aria-controls="profile-tab-pane"
-                                        aria-selected="false">គោលការណ៍ឯកជនភាព</button>
+                                <li class="nav-item mx-sm-3" role="presentation">
+                                    <button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">គោលការណ៍ឯកជនភាព</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link w-100" id="contact-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#contact-tab-pane"
-                                        type="button" role="tab"
+                                <li class="nav-item mx-sm-3" role="presentation">
+                                    <button class="nav-link w-100" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
                                         aria-controls="contact-tab-pane"
                                         aria-selected="false">គោលនយោបាយសងប្រាក់វិញ</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active term-of-use-content pt-4"
-                                    id="home-tab-pane" role="tabpanel"
-                                    aria-labelledby="home-tab"
-                                    tabindex="0">
-                                    <h2 class>លក្ខខណ្ឌ</h2>
+                                <div class="tab-pane fade show active term-of-use-content pt-4" id="home-tab-pane"
+                                    role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                    <h2 class="text-black">លក្ខខណ្ឌ</h2>
                                     <p>សូមស្វាគមន៍មកកាន់ Wokstar ។
                                         តាមរយៈការចូលប្រើ
                                         ឬប្រើប្រាស់គេហទំព័ររបស់យើងដែលមានទីតាំងនៅ
@@ -443,11 +490,10 @@
                                         និងត្រូវបានចងក្រងដោយលក្ខខណ្ឌខាងក្រោម។
                                         សូមអានពួកវាដោយប្រុងប្រយ័ត្នមុនពេលប្រើគេហទំព័ររបស់យើង។</p>
                                     <ul>
-                                        <li>សេចក្តីផ្តើម</li>
+                                        <li class="text-black">សេចក្តីផ្តើម</li>
                                         <ul>
-                                            <li>
-                                                <span
-                                                    class="subheading">អំពីពួកយើង</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">អំពីពួកយើង</span>
                                                 <p>Wokstar
                                                     គឺជាកន្លែងទទួលទានអាហារដែលផ្តល់នូវ
                                                     ការពិពណ៌នាសង្ខេបអំពីគោលគំនិតរបស់ភោជនីយដ្ឋាន
@@ -457,18 +503,16 @@
                                                     យើងប្តេជ្ញាផ្តល់អាហារដែលមានគុណភាពខ្ពស់
                                                     និងសេវាកម្មពិសេសជូនអតិថិជនរបស់យើង។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">គោលបំណង</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">គោលបំណង</span>
                                                 <p>លក្ខខណ្ឌទាំងនេះគ្រប់គ្រងការចូលប្រើ
                                                     និងប្រើប្រាស់គេហទំព័ររបស់អ្នក
                                                     រួមទាំងខ្លឹមសារ មុខងារ
                                                     និងសេវាកម្មដែលផ្តល់ជូននៅលើ
                                                     ឬតាមរយៈគេហទំព័រ។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការទទួលយកលក្ខខណ្ឌ</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការទទួលយកលក្ខខណ្ឌ</span>
                                                 <p>តាមរយៈការចូលប្រើ
                                                     ឬប្រើប្រាស់គេហទំព័រ
                                                     អ្នកទទួលស្គាល់ថាអ្នកបានអាន
@@ -479,19 +523,17 @@
                                                     ឬប្រើប្រាស់គេហទំព័របានទេ។</p>
                                             </li>
                                         </ul>
-                                        <li>ការប្រើប្រាស់គេហទំព័រ</li>
+                                        <li class="text-black">ការប្រើប្រាស់គេហទំព័រ</li>
                                         <ul>
-                                            <li>
-                                                <span
-                                                    class="subheading">សិទ្ធិ</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">សិទ្ធិ</span>
                                                 <p>គេហទំព័រនេះត្រូវបានបម្រុងទុកសម្រាប់ប្រើប្រាស់ដោយបុគ្គលដែលមានអាយុយ៉ាងតិច
                                                     15 ឆ្នាំ។ ដោយប្រើគេហទំព័រ
                                                     អ្នកតំណាង
                                                     និងធានាថាអ្នកមានអាយុស្របច្បាប់ដើម្បីបង្កើតកិច្ចសន្យាចងជាមួយយើង។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការចុះឈ្មោះគណនី</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការចុះឈ្មោះគណនី</span>
                                                 <p>អ្នកអាចនឹងត្រូវបានតម្រូវឱ្យបង្កើតគណនីមួយដើម្បីចូលប្រើមុខងារជាក់លាក់នៃគេហទំព័រ
                                                     ដូចជាការធ្វើការកក់
                                                     ឬដាក់ការបញ្ជាទិញជាដើម។
@@ -500,9 +542,8 @@
                                                     និងពេញលេញក្នុងអំឡុងពេលដំណើរការចុះឈ្មោះ
                                                     និងធ្វើបច្ចុប្បន្នភាពព័ត៌មានទាំងនោះតាមការចាំបាច់។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">សុវត្ថិភាពគណនី</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">សុវត្ថិភាពគណនី</span>
                                                 <p>អ្នកទទួលខុសត្រូវក្នុងការរក្សាការសម្ងាត់នៃព័ត៌មានគណនីរបស់អ្នក
                                                     រួមទាំងឈ្មោះអ្នកប្រើប្រាស់
                                                     និងពាក្យសម្ងាត់របស់អ្នក
@@ -510,38 +551,48 @@
                                                     អ្នកយល់ព្រមជូនដំណឹងយើងភ្លាមៗអំពីការប្រើប្រាស់គណនីរបស់អ្នកដោយគ្មានការអនុញ្ញាត
                                                     ឬការរំលោភបំពានលើសុវត្ថិភាពផ្សេងទៀត។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">អាកប្បកិរិយាហាមឃាត់</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">អាកប្បកិរិយាហាមឃាត់</span>
                                                 <p>អ្នកយល់ព្រមមិនចូលរួមក្នុងសកម្មភាពណាមួយខាងក្រោម៖
-                                                    <ul>
-                                                        <li>ការប្រើប្រាស់គេហទំព័រសម្រាប់គោលបំណងខុសច្បាប់
+                                                <ul>
+                                                    <li class="text-black">
+                                                        <p>ការប្រើប្រាស់គេហទំព័រសម្រាប់គោលបំណងខុសច្បាប់
                                                             ឬបំពានច្បាប់
-                                                            ឬបទប្បញ្ញត្តិជាធរមាន។</li>
-                                                        <li>ការជ្រៀតជ្រែកជាមួយប្រតិបត្តិការនៃគេហទំព័រ
-                                                            ឬម៉ាស៊ីនមេ
-                                                            ឬបណ្តាញដែលប្រើដើម្បីធ្វើឱ្យគេហទំព័រមាន។</li>
-                                                        <li>ការប៉ុនប៉ងដើម្បីទទួលបានការចូលប្រើប្រាស់ដោយគ្មានការអនុញ្ញាតទៅកាន់ផ្នែកណាមួយនៃគេហទំព័រ
+                                                            ឬបទប្បញ្ញត្តិជាធរមាន។</p>
+                                                    </li>
+                                                    <li class="text-black">
+                                                        <p>ការប៉ុនប៉ងដើម្បីទទួលបានការចូលប្រើប្រាស់ដោយគ្មានការអនុញ្ញាតទៅកាន់ផ្នែកណាមួយនៃគេហទំព័រ
                                                             គណនីផ្សេងទៀត
                                                             ឬប្រព័ន្ធ
-                                                            ឬបណ្តាញដែលពាក់ព័ន្ធ។</li>
-                                                        <li>ការប្រើប្រាស់គេហទំព័រដើម្បីបញ្ជូន
+                                                            ឬបណ្តាញដែលពាក់ព័ន្ធ។</p>
+                                                    </li>
+                                                    <li class="text-black">
+                                                        <p>ការប៉ុនប៉ងដើម្បីទទួលបានការចូលប្រើប្រាស់ដោយគ្មានការអនុញ្ញាតទៅកាន់ផ្នែកណាមួយនៃគេហទំព័រ
+                                                            គណនីផ្សេងទៀត
+                                                            ឬប្រព័ន្ធ
+                                                            ឬបណ្តាញដែលពាក់ព័ន្ធ។</p>
+                                                    </li>
+                                                    <li class="text-black">
+                                                        <p>ការប្រើប្រាស់គេហទំព័រដើម្បីបញ្ជូន
                                                             ចែកចាយ
                                                             ឬរក្សាទុកសម្ភារៈណាមួយដែលបង្ខូចកេរ្តិ៍ឈ្មោះ
                                                             អាសអាភាស គំរាមកំហែង
-                                                            ឬបង្កគ្រោះថ្នាក់ផ្សេងៗ។</li>
-                                                        <li>ចូលរួមក្នុងការប្រព្រឹត្តណាមួយដែលអាចបំផ្លាញ
+                                                            ឬបង្កគ្រោះថ្នាក់ផ្សេងៗ។</p>
+                                                    </li>
+                                                    <li class="text-black">
+                                                        <p>ចូលរួមក្នុងការប្រព្រឹត្តណាមួយដែលអាចបំផ្លាញ
                                                             បិទដំណើរការ
                                                             បន្ទុកលើស
                                                             ឬធ្វើឱ្យខូចគេហទំព័រ
-                                                            ឬរំខានដល់ការប្រើប្រាស់គេហទំព័ររបស់ភាគីណាមួយផ្សេងទៀត។</li>
-                                                    </ul>
+                                                            ឬរំខានដល់ការប្រើប្រាស់គេហទំព័ររបស់ភាគីណាមួយផ្សេងទៀត។</p>
+                                                    </li>
+                                                </ul>
                                                 </p>
 
                                             </li>
-                                            <li>
+                                            <li class="text-black">
                                                 <span
-                                                    class="subheading">អាជ្ញាប័ណ្ណដើម្បីប្រើប្រាស់គេហទំព័រ</span>
+                                                    class="subheading text-black">អាជ្ញាប័ណ្ណដើម្បីប្រើប្រាស់គេហទំព័រ</span>
                                                 <p>តាមរយៈការចូលប្រើ
                                                     ឬប្រើប្រាស់គេហទំព័រ
                                                     អ្នកទទួលស្គាល់ថាអ្នកបានអាន
@@ -552,20 +603,19 @@
                                                     ឬប្រើប្រាស់គេហទំព័របានទេ។</p>
                                             </li>
                                         </ul>
-                                        <li>ការកក់ជាមុន
+                                        <li class="text-black">ការកក់ជាមុន
                                             និងការកម្មង់តាមអ៊ីនធឺណិត</li>
                                         <ul>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការកក់ជាមុន</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការកក់ជាមុន</span>
                                                 <p>អ្នកអាចធ្វើការកក់ជាមុនសម្រាប់ការទទួលទានអាហារនៅភោជនីយដ្ឋានរបស់យើងតាមគេហទំព័រ។
                                                     ទោះបីយើងព្យាយាមទទួលសារវិញការកក់ទាំងអស់
                                                     ក៏យើងមិនធានាលើការមានសម្រាប់ទេ
-                                                    និងរក្សាសិទ្ធិក្នុងការលុបចោលឬផ្លាស់ប្តូរជូននូវការកក់ណាមួយតាមតំបន់សមស្របរបស់យើង។</p>
+                                                    និងរក្សាសិទ្ធិក្នុងការលុបចោលឬផ្លាស់ប្តូរជូននូវការកក់ណាមួយតាមតំបន់សមស្របរបស់យើង។
+                                                </p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការបញ្ជាក់ការកក់ជាមុន</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការបញ្ជាក់ការកក់ជាមុន</span>
                                                 <p>អ្នកនឹងទទួលបានការបញ្ជាក់លើការកក់របស់អ្នកតាមអ៊ីមែល
                                                     ឬ SMS ។
                                                     សូមធ្វើឱ្យប្រាកដថាបញ្ជាក់ការទំនាក់ទំនងរបស់អ្នកគឺត្រឹមត្រូវ
@@ -573,20 +623,19 @@
                                                     ប្រសិនបើអ្នកមិនទទួលបានការបញ្ជាក់
                                                     សូមទាក់ទងមកយើងដើម្បីផ្ទៀងផ្ទាត់ការកក់របស់អ្នក។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការលុបចោល
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការលុបចោល
                                                     និងការមិនមកទទួលទានតាមកាលវិភាគ</span>
                                                 <p>ប្រសិនបើអ្នកត្រូវការលុបចោល
                                                     ឬកែប្រែការកក់របស់អ្នក
                                                     សូមធ្វើដូច្នេះក្នុងរយៈពេល
                                                     24h មុនពេលទទួលទាន។
                                                     ការមិនអាចលុបចោលក្នុងរយៈពេលនេះអាចនឹងធ្វើឱ្យមានថ្លៃលុបចោលឬការទូរទាត់តាមកាតឥណទានដែលមាននៅក្នុងគណនីរបស់អ្នក។
-                                                    ការមិនមកទទួលទានដោយខានពេលធ្វើការកក់ជាញឹកញាប់អាចនឹងបណ្តាលឱ្យមានការផ្អាកសិទ្ធិក្នុងការធ្វើការកក់ជាមុនជាថ្មី។</p>
+                                                    ការមិនមកទទួលទានដោយខានពេលធ្វើការកក់ជាញឹកញាប់អាចនឹងបណ្តាលឱ្យមានការផ្អាកសិទ្ធិក្នុងការធ្វើការកក់ជាមុនជាថ្មី។
+                                                </p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការកម្មង់តាមអ៊ីនធឺណិត</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការកម្មង់តាមអ៊ីនធឺណិត</span>
                                                 <p>គេហទំព័រនេះអនុញ្ញាតឱ្យអ្នកកម្មង់សម្រាប់អាហារទៅយកឬដឹកជញ្ជូន។
                                                     ការកម្មង់ទាំងអស់ត្រូវបានអនុញ្ញាតដោយយើង
                                                     និងស្ថិតនៅលើការចូលមកគ្រប់គ្រងនៃផលិតផលដែលបានកម្មង់។
@@ -596,9 +645,8 @@
                                                     ដូច្នេះការកម្មង់អាចនឹងលុបចោលដោយសារតែការច្រឡំក្នុងការកំណត់តម្លៃឬការពិពណ៌នាផលិតផល
                                                     ឬបញ្ហាផ្នែកការទូរទាត់។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការផ្លាស់ប្តូរ
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការផ្លាស់ប្តូរ
                                                     និងការលុបចោលនៃការកម្មង់</span>
                                                 <p>មួយពេលការកម្មង់ត្រូវបានដាក់ហើយ
                                                     វាមិនអាចផ្លាស់ប្តូរ
@@ -608,17 +656,15 @@
                                                     យើងនឹងខិតខំធ្វើអ្វីដែលអាចធ្វើបានដើម្បីតបស្នងសំណើរបស់អ្នក
                                                     ប៉ុន្តែយើងមិនអាចធានាថាបានធ្វើការផ្លាស់ប្តូរនោះទេ។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការទូរទាត់</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការទូរទាត់</span>
                                                 <p>អ្នកយល់ព្រមក្នុងការទូរទាត់ទាំងអស់នៃចំណាយដែលបានប្រមូលនៅក្នុងការកម្មង់របស់អ្នក
                                                     រួមទាំងពន្ធ
                                                     ផ្សេងៗនិងថ្លៃដឹកជញ្ជូនដែលបានផ្ដល់តម្លៃ។
                                                     ការទូរទាត់ត្រូវធ្វើនៅពេលកម្មង់តាមវិធីដែលបានអនុញ្ញាតនៅលើគេហទំព័រ។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">គោលនយោបាយការដឹកជញ្ជូន</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">គោលនយោបាយការដឹកជញ្ជូន</span>
                                                 <p>ការដឹកជញ្ជូនអាចមាននៅក្នុងតំបន់ដែលបានកំណត់
                                                     ដែលអាចផ្លាស់ប្តូរតាមពេលវេលា។
                                                     ពេលវេលាការដឹកជញ្ជូនគឺត្រឹមតែការចំនួនចៃដន្យ
@@ -627,25 +673,23 @@
                                                     ឬបញ្ហាណាមួយដែលអាចកើតមាននៅក្នុងការដឹកជញ្ជូនទេ។</p>
                                             </li>
                                         </ul>
-                                        <li>មីនុយ និងតម្លៃ</li>
+                                        <li class="text-black">មីនុយ និងតម្លៃ</li>
                                         <ul>
-                                            <li>
-                                                <span
-                                                    class="subheading">មុខម្ហូបក្នុងមីនុយ</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">មុខម្ហូបក្នុងមីនុយ</span>
                                                 <p>មុខម្ហូបដែលបានបង្ហាញនៅលើគេហទំព័រគឺអាចផ្លាស់ប្តូរដោយគ្មានការជូនដំណឹង។
                                                     យើងខិតខំធានាថាមីនុយរបស់យើងគឺត្រឹមត្រូវ
                                                     និងទាន់សម័យ
                                                     ប៉ុន្តែយើងមិនធានាអំពីភាពមានរបស់មុខម្ហូបណាមួយទេ។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">សំណើពិសេស</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">សំណើពិសេស</span>
                                                 <p>យើងរីករាយក្នុងការទទួលសំណើពិសេសតាមសមត្ថភាពបំផុតរបស់យើង។
-                                                    សូមចំណាំថាយើងមិនអាចធានាថាសំណើពិសេសទាំងអស់នឹងត្រូវបានពេញចិត្តនោះទេ។</p>
+                                                    សូមចំណាំថាយើងមិនអាចធានាថាសំណើពិសេសទាំងអស់នឹងត្រូវបានពេញចិត្តនោះទេ។
+                                                </p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">តម្លៃ</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">តម្លៃ</span>
                                                 <p>តម្លៃទាំងអស់ដែលបានបង្ហាញនៅលើគេហទំព័រគឺស្ថិតក្នុង
                                                     riel
                                                     និងអាចផ្លាស់ប្តូរដោយគ្មានការជូនដំណឹង។
@@ -653,19 +697,19 @@
                                                     ពេលវេលា
                                                     និងការទំនាក់ទំនងផលិតផល។
                                                     យើងរក្សាសិទ្ធិក្នុងការបញ្ចូលតម្លៃដែលត្រឹមត្រូវនៅលើគេហទំព័រ
-                                                    ហើយយើងមិនស្ថិតនៅក្នុងកាតព្វកិច្ចក្នុងការប្រើប្រាស់តម្លៃដែលមិនត្រឹមត្រូវទេ។</p>
+                                                    ហើយយើងមិនស្ថិតនៅក្នុងកាតព្វកិច្ចក្នុងការប្រើប្រាស់តម្លៃដែលមិនត្រឹមត្រូវទេ។
+                                                </p>
                                             </li>
-                                            <li>
-                                                <span class="subheading">ពន្ធ
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ពន្ធ
                                                     និងតម្លៃផ្សេងៗទៀត</span>
                                                 <p>តម្លៃទាំងអស់ដែលបានបង្ហាញនៅលើគេហទំព័រនេះរួមបញ្ចូលទាំងពន្ធដែលអាចប្រើបានលុះត្រាតែបានបញ្ជាក់បន្ថែម។
                                                     តម្លៃផ្សេងៗ
                                                     ទៀតដូចជាថ្លៃដឹកជញ្ជូន
                                                     ឬថ្លៃសេវាកម្មអាចនឹងអនុញ្ញាតនិងបង្ហាញក្នុងការកម្មង់។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">បញ្ចុះតម្លៃ
+                                            <li class="text-black">
+                                                <span class="subheading text-black">បញ្ចុះតម្លៃ
                                                     និងការផ្តល់ជូនពិសេស</span>
                                                 <p>ម្តងម្កាលយើងអាចផ្តល់ជូននូវការផ្សព្វផ្សាយ
                                                     បញ្ចុះតម្លៃ
@@ -676,12 +720,11 @@
                                             </li>
 
                                         </ul>
-                                        <li>អាឡែហ្ស៊ី តម្រូវការរូបភាព
+                                        <li class="text-black">អាឡែហ្ស៊ី តម្រូវការរូបភាព
                                             និងសុវត្ថិភាពអាហារ</li>
                                         <ul>
-                                            <li>
-                                                <span
-                                                    class="subheading">ព័ត៌មានអាឡែហ្ស៊ី</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ព័ត៌មានអាឡែហ្ស៊ី</span>
                                                 <p>ទោះបីយើងបានដាក់ច្បាប់នៃការប្រុងប្រយ័ត្នដើម្បីជៀសវាងការប៉ះពាល់ឬការផ្លាស់ប្តូរតាមរយៈការចាក់ចូល
                                                     គ្រប់រូបមន្តរបស់យើងមិនអាចធានាបានថាមានគ្រឿងផ្សំដែរមិនអាចជាប់ដោយសារគ្រឿងផ្សំប៉ះពាល់
                                                     ដូចជាគ្រាប់ផ្លែឈើ
@@ -689,18 +732,16 @@
                                                     សូមជូនដំណឹងដល់បុគ្គលិករបស់យើងអំពីអាឡែហ្ស៊ី
                                                     ឬច្បាស់ត្រូវដែលមាននៅក្នុងការកម្មង់របស់អ្នក។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">តម្រូវការរូបភាព</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">តម្រូវការរូបភាព</span>
                                                 <p>យើងខិតខំឱ្យការងារអាហាររបស់យើងមានការគោរពទៅនឹងតម្រូវការរូបភាពនានា
                                                     រួមមានបញ្ហារូបភាពបៃតង
                                                     បៃតងក្លែងក្លាយ
                                                     និងគ្មានក្លែងក្លាយបន្ថែម។
                                                     ប៉ុន្តែយើងមិនអាចធានាថាតម្រូវការរូបភាពទាំងអស់អាចបំពេញបានទេ។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">សុវត្ថិភាពអាហារ</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">សុវត្ថិភាពអាហារ</span>
                                                 <p>យើងត្រូវបានប្តេជ្ញាក្នុងការទទួលបានច្បាប់នៃការរក្សាសុវត្ថិភាពអាហារខ្ពស់បំផុត។
                                                     អាហារទាំងអស់ត្រូវបានរៀបចំ
                                                     និងរក្សាទុកក្នុងការទៅនឹងបទបញ្ជាលើសុខភាព
@@ -709,11 +750,10 @@
                                                     សូមទាក់ទងយើងឆាប់បំផុត។</p>
                                             </li>
                                         </ul>
-                                        <li>សិទ្ធិបញ្ញា</li>
+                                        <li class="text-black">សិទ្ធិបញ្ញា</li>
                                         <ul>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការកាន់កាប់កម្មសិទ្ធិ</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការកាន់កាប់កម្មសិទ្ធិ</span>
                                                 <p>គ្រប់មាតិកានៅលើគេហទំព័ររួមមានមតិរៀបរាប់
                                                     រូបភាព ឡូកូ គូសបន្លាស់ គំនូរ
                                                     និងកម្មវិធីទាំងអស់ត្រូវបានទុកជាគុណសម្បត្តិដោយ
@@ -723,26 +763,27 @@
                                                     លក្ខណៈសម្បត្តិ
                                                     និងច្បាប់ផ្សេងៗទៀត។</p>
                                             </li>
-                                            <li>
+                                            <li class="text-black">
                                                 <span
-                                                    class="subheading">លិខិតអនុញ្ញាតក្នុងការប្រើប្រាស់មាតិកា</span>
+                                                    class="subheading text-black">លិខិតអនុញ្ញាតក្នុងការប្រើប្រាស់មាតិកា</span>
                                                 <p>អ្នកត្រូវបានផ្ដល់នូវលិខិតអនុញ្ញាតតូចៗដែលមិនអាចប្តូរវិញបានក្នុងការចូលនិងប្រើប្រាស់មាតិកានៅលើគេហទំព័រសម្រាប់គោលបំណងផ្ទាល់ខ្លួនដែលមិនស្ថិតក្នុងការធ្វើពាណិជ្ជកម្ម។
                                                     អ្នកមិនអាចចម្លង
-                                                    បំបែកឬធ្វើការប្រកាន់ក្នុងការប្រើប្រាស់នៃមាតិកាមួយនៅលើគេហទំព័រគ្មានការអនុញ្ញាតនោះទេ។</p>
+                                                    បំបែកឬធ្វើការប្រកាន់ក្នុងការប្រើប្រាស់នៃមាតិកាមួយនៅលើគេហទំព័រគ្មានការអនុញ្ញាតនោះទេ។
+                                                </p>
                                             </li>
-                                            <li>
+                                            <li class="text-black">
                                                 <span
-                                                    class="subheading">មាតិកាដែលបានបង្កើតដោយអ្នកប្រើប្រាស់</span>
+                                                    class="subheading text-black">មាតិកាដែលបានបង្កើតដោយអ្នកប្រើប្រាស់</span>
                                                 <p>ប្រសិនបើអ្នកបានបញ្ជូនមាតិកាដល់គេហទំព័ររួមមានមតិ
                                                     បញ្ចេញមតិ ឬរូបថត
                                                     អ្នកបានផ្ដល់សិទ្ធិក្នុងការប្រើប្រាស់
                                                     ការបកប្រែ ការរចនា
                                                     ការបោះពុម្ព
-                                                    និងការចែកចាយមាតិកាដែលបាននោះនៅទូទាំងពិភពលោកនៅក្នុងបណ្តាញផ្សេងៗទាំងអស់។</p>
+                                                    និងការចែកចាយមាតិកាដែលបាននោះនៅទូទាំងពិភពលោកនៅក្នុងបណ្តាញផ្សេងៗទាំងអស់។
+                                                </p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ត្រាសញ្ញា</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ត្រាសញ្ញា</span>
                                                 <p>ត្រាសញ្ញា សេវាកម្មសញ្ញា ឡូកូ
                                                     និងឈ្មោះពាណិជ្ជកម្មដែលបានប្រើនៅលើគេហទំព័រ
                                                     គឺជាសម្បត្តិរបស់ Wokstar
@@ -750,11 +791,10 @@
                                                     អ្នកមិនអាចប្រើត្រាសញ្ញាណាមួយដោយគ្មានការអនុញ្ញាតពីម្ចាស់។</p>
                                             </li>
                                         </ul>
-                                        <li>ការបម្រាមនៃកាតព្វកិច្ច</li>
+                                        <li class="text-black">ការបម្រាមនៃកាតព្វកិច្ច</li>
                                         <ul>
-                                            <li>
-                                                <span
-                                                    class="subheading">គ្មានការធានា</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">គ្មានការធានា</span>
                                                 <p>គេហទំព័រ និងមាតិកា ផលិតផល
                                                     និងសេវាកម្មទាំងអស់ដែលត្រូវបានផ្តល់តាមគេហទំព័រត្រូវបានផ្ដល់តាមប្រព័ន្ធ
                                                     "as is" និង "as available"
@@ -764,9 +804,8 @@
                                                     ឬមានសុវត្ថិភាព
                                                     ឬមិនបន្ថយទេ។</p>
                                             </li>
-                                            <li>
-                                                <span
-                                                    class="subheading">ការបម្រាមនៃកាតព្វកិច្ច</span>
+                                            <li class="text-black">
+                                                <span class="subheading text-black">ការបម្រាមនៃកាតព្វកិច្ច</span>
                                                 <p>ដល់កម្រិតបំផុតដែលច្បាប់អនុញ្ញាត
                                                     Wokstar
                                                     និងក្រុមហ៊ុនបុត្រក្រុមហ៊ុនបង
@@ -778,10 +817,8 @@
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade term-of-use-content pt-4" id="profile-tab-pane"
-                                    role="tabpanel"
-                                    aria-labelledby="profile-tab"
-                                    tabindex="0">
-                                    <h3>គោលនយោបាយភាពឯកជន</h3>
+                                    role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                    <h3 class="text-black">គោលនយោបាយភាពឯកជន</h3>
                                     <p>សូមស្វាគមន៍មកកាន់ Wokstar ។
                                         តាមរយៈការចូលប្រើ
                                         ឬប្រើប្រាស់គេហទំព័ររបស់យើងដែលមានទីតាំងនៅ
@@ -789,7 +826,7 @@
                                         និងត្រូវបានចងក្រងដោយលក្ខខណ្ឌខាងក្រោម។
                                         សូមអានពួកវាដោយប្រុងប្រយ័ត្នមុនពេលប្រើគេហទំព័ររបស់យើង។</p>
                                     <ul>
-                                        <li>ការចងក្រងនិងការប្រើប្រាស់ព័ត៌មានផ្ទាល់ខ្លួន
+                                        <li class="text-black">ការចងក្រងនិងការប្រើប្រាស់ព័ត៌មានផ្ទាល់ខ្លួន
                                             <p>យើងធ្វើការចងក្រងនូវព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នកនៅពេលអ្នកប្រើប្រាស់គេហទំព័ររបស់យើង
                                                 សេវាកម្ម
                                                 ឬអនុញ្ញាតអំពីការប្រើប្រាស់ព័ត៌មានសម្រាប់គោលបំណងនៃការផ្តល់សេវាកម្មដល់អ្នក។
@@ -798,7 +835,7 @@
                                                 ព័ត៌មានហិរញ្ញវត្ថុ
                                                 និងព័ត៌មានផ្សេងៗទៀតដែលអាចកំណត់ពីអ្នកបាន។</p>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             ការចែករំលែកនិងការប្រគល់ព័ត៌មាន
                                             <p>យើងខិតខំរក្សាការពារព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នក
                                                 និងមិនចែករំលែកនូវព័ត៌មាននេះទៅបក្សទីបីណាមួយគ្មានការអនុញ្ញាតរបស់អ្នក។
@@ -806,14 +843,14 @@
                                                 ឬអង្គភាពស្វ័យភាពផ្សេងៗដែលបានតភ្ជាប់ទៅនឹងយើងដើម្បីអនុវត្តសេវាកម្ម
                                                 ឬសកម្មភាពណាមួយដែលបានត្រូវបានអនុញ្ញាតដោយអ្នក។</p>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             សុវត្ថិភាពនៃព័ត៌មាន
                                             <p>យើងយកចិត្តទុកដាក់ក្នុងការការពារព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នកដោយប្រើប្រាស់វិធីសាស្រ្តនិងសច្ចាភាពទំនើបក្នុងការពារច្បាស់លាស់នៃការប្រើប្រាស់
                                                 ព្រមទាំងការគ្រប់គ្រងផ្ទាល់ខ្លួននៅក្នុងការរក្សាការពារព័ត៌មាន។
                                                 យើងចាត់ការការប្រើប្រាស់វិធីសាស្រ្តការពារ
                                                 និងប្រព័ន្ធផ្ទាល់ខ្លួននៅក្នុងការពារការចូលប្រើដោយគ្មានការអនុញ្ញាត។</p>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             អាណាព្យាបាលសម្រាប់កុមារ
                                             <p>យើងមិនចង់បណ្តឹងកូនក្មេងកើតនៅក្រោមអាយុ
                                                 ១៣
@@ -823,31 +860,30 @@
                                                 ឆ្នាំដោយគ្មានការអនុញ្ញាតពីអាណាព្យាបាល
                                                 យើងនឹងធ្វើការលុបព័ត៌មានទាំងអស់នេះចេញពីស្ថាប័នរបស់យើង។</p>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             ការធ្វើបច្ចុប្បន្នភាពនៃគោលនយោបាយភាពឯកជន
                                             <p>យើងរក្សាសិទ្ធិក្នុងការធ្វើបច្ចុប្បន្នភាព
                                                 ឬកែប្រែគោលនយោបាយភាពឯកជននេះនៅពេលណាមួយដោយគ្មានការជូនដំណឹងជាមុន។
                                                 យើងនឹងបង្ហាញគោលនយោបាយភាពឯកជនដែលបានកែប្រែថ្មីនេះនៅលើគេហទំព័ររបស់យើង
-                                                ដូច្នេះសូមពិនិត្យមើលគោលនយោបាយនេះជាច្រើនដងដើម្បីដឹងពីការផ្លាស់ប្តូរណាមួយដែលកើតមាន។</p>
+                                                ដូច្នេះសូមពិនិត្យមើលគោលនយោបាយនេះជាច្រើនដងដើម្បីដឹងពីការផ្លាស់ប្តូរណាមួយដែលកើតមាន។
+                                            </p>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             សិទ្ធិរបស់អ្នក
                                             <p>អ្នកមានសិទ្ធិនៅក្នុងការទាក់ទងយើងដើម្បីសុំការចូលដំណើរការបញ្ហាផ្ទាល់ខ្លួនរបស់អ្នក
                                                 ឬការធ្វើបច្ចុប្បន្នភាពនូវព័ត៌មានដែលបានផ្តល់ឱ្យយើង។</p>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             ទំនាក់ទំនងយើង
                                             <p>ប្រសិនបើអ្នកមានសំណួរឬការព្រួយបារម្ភណាមួយអំពីគោលនយោបាយភាពឯកជនរបស់យើង
                                                 សូមទាក់ទងយើងតាមរយៈ WokStar</p>
                                         </li>
                                     </ul>
-                                
+
                                 </div>
                                 <div class="tab-pane fade term-of-use-content pt-4" id="contact-tab-pane"
-                                    role="tabpanel"
-                                    aria-labelledby="contact-tab"
-                                    tabindex="0">
-                                    <h3>គោលនយោបាយពិនិត្យវិញនិងការសងប្រាក់វិញ</h3>
+                                    role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                    <h3 class="text-black">គោលនយោបាយពិនិត្យវិញនិងការសងប្រាក់វិញ</h3>
                                     <p>សូមស្វាគមន៍មកកាន់ Wokstar ។
                                         តាមរយៈការចូលប្រើ
                                         ឬប្រើប្រាស់គេហទំព័ររបស់យើងដែលមានទីតាំងនៅ
@@ -855,7 +891,7 @@
                                         និងត្រូវបានចងក្រងដោយលក្ខខណ្ឌខាងក្រោម។
                                         សូមអានពួកវាដោយប្រុងប្រយ័ត្នមុនពេលប្រើគេហទំព័ររបស់យើង។</p>
                                     <ul>
-                                        <li>
+                                        <li class="text-black">
                                             សិទ្ធិក្នុងការសងប្រាក់វិញ
                                             <p>យើងមានគោលនយោបាយដែលអនុញ្ញាតឱ្យអតិថិជនទាមទារការសងប្រាក់វិញសម្រាប់ផលិតផល
                                                 ឬសេវាកម្មដែលត្រូវបានទិញតាមគេហទំព័រ
@@ -865,28 +901,29 @@
                                                 ពីកាលបរិច្ឆេទទទួលបានផលិតផល
                                                 ឬសេវាកម្ម។</p>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             លក្ខខណ្ឌសម្រាប់ការសងប្រាក់វិញ
                                             <p>ដើម្បីមានសិទ្ធិទទួលសងប្រាក់វិញ
                                                 សូមប្រាកដថា៖
 
-                                                <ul class="inner-refund">
-                                                    <li>ផលិតផលត្រូវតែមានស្ថានភាពដូចដើម
-                                                        និងមិនមានការខូចខាត។
-                                                        ឯកសារពាក់ព័ន្ធ
-                                                        រួមមានវិក្កយបត្រ
-                                                        ឬបង្កាន់ដៃ
-                                                        ត្រូវតែបញ្ជូនមកជាមួយផលិតផល។
-                                                        ការទាមទារសងប្រាក់វិញត្រូវបានធ្វើក្នុងរយៈពេលដែលកំណត់</li>
-                                                    <li>ឯកសារពាក់ព័ន្ធ
-                                                        រួមមានវិក្កយបត្រ
-                                                        ឬបង្កាន់ដៃ
-                                                        ត្រូវតែបញ្ជូនមកជាមួយផលិតផល។</li>
-                                                    <li>ការទាមទារសងប្រាក់វិញត្រូវបានធ្វើក្នុងរយៈពេលដែលកំណត់។</li>
-                                                </ul>
+                                            <ul class="inner-refund">
+                                                <li class="text-black">ផលិតផលត្រូវតែមានស្ថានភាពដូចដើម
+                                                    និងមិនមានការខូចខាត។
+                                                    ឯកសារពាក់ព័ន្ធ
+                                                    រួមមានវិក្កយបត្រ
+                                                    ឬបង្កាន់ដៃ
+                                                    ត្រូវតែបញ្ជូនមកជាមួយផលិតផល។
+                                                    ការទាមទារសងប្រាក់វិញត្រូវបានធ្វើក្នុងរយៈពេលដែលកំណត់</li>
+                                                <li class="text-black">ឯកសារពាក់ព័ន្ធ
+                                                    រួមមានវិក្កយបត្រ
+                                                    ឬបង្កាន់ដៃ
+                                                    ត្រូវតែបញ្ជូនមកជាមួយផលិតផល។</li>
+                                                <li class="text-black">
+                                                    ការទាមទារសងប្រាក់វិញត្រូវបានធ្វើក្នុងរយៈពេលដែលកំណត់។</li>
+                                            </ul>
                                             </p>
                                         </li>
-                                        <li>ផលិតផលដែលមិនអាចសងប្រាក់វិញបាន
+                                        <li class="text-black">ផលិតផលដែលមិនអាចសងប្រាក់វិញបាន
                                             <p>ផលិតផល
                                                 ឬសេវាកម្មខ្លះមិនត្រូវបានអនុញ្ញាតឱ្យទាមទារសងប្រាក់វិញ។
                                                 សូមចុះមើលឯកសារជាក់លាក់នៅពេលដែលអ្នកទិញផលិតផល
@@ -894,24 +931,31 @@
                                                 ឬផលិតផលដែលបានបញ្ចុះតម្លៃ
                                                 មិនត្រូវបានអនុញ្ញាតឱ្យទាមទារសងប្រាក់វិញទេ។</p>
                                         </li>
-                                        <li>ដំណើរការសងប្រាក់វិញ
+                                        <li class="text-black">ដំណើរការសងប្រាក់វិញ
                                             <ul class="inner-refund">
-                                                <li>ប្រសិនបើអនុញ្ញាតឱ្យសងប្រាក់វិញ
-                                                    យើងនឹងធ្វើការបញ្ចូនប្រាក់វិញទៅឱ្យអ្នកតាមរយៈវិធីសាស្រ្តទូទាត់ដូចដែលបានប្រើនៅក្នុងការទិញដើម។</li>
-                                                <li>សូមចំណាំថាការសងប្រាក់វិញអាចចំណាយពេល
-                                                    ដើម្បីធ្វើប្រតិបត្តិការជាស្ថាពរ។</li>
-                                                <li>ក្នុងករណីដែលការសងប្រាក់វិញមិនអាចប្រព្រឹត្តទៅបាន
-                                                    យើងនឹងឱ្យដឹងពីហេតុផលនៃការទទួលសងប្រាក់វិញនោះ។</li>
+                                                <li class="text-black">
+                                                    <p>ប្រសិនបើអនុញ្ញាតឱ្យសងប្រាក់វិញ
+                                                        យើងនឹងធ្វើការបញ្ចូនប្រាក់វិញទៅឱ្យអ្នកតាមរយៈវិធីសាស្រ្តទូទាត់ដូចដែលបានប្រើនៅក្នុងការទិញដើម។
+                                                    </p>
+                                                </li>
+                                                <li class="text-black">
+                                                    <p>សូមចំណាំថាការសងប្រាក់វិញអាចចំណាយពេល
+                                                        ដើម្បីធ្វើប្រតិបត្តិការជាស្ថាពរ។</p>
+                                                </li>
+                                                <li class="text-black">
+                                                    <p>ក្នុងករណីដែលការសងប្រាក់វិញមិនអាចប្រព្រឹត្តទៅបាន
+                                                        យើងនឹងឱ្យដឹងពីហេតុផលនៃការទទួលសងប្រាក់វិញនោះ។</p>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             ការផ្លាស់ប្តូរផលិតផល
                                             <p>ប្រសិនបើអ្នកចង់ផ្លាស់ប្តូរផលិតផលជំនួសការសងប្រាក់វិញ
                                                 សូមទាក់ទងយើង
                                                 ដើម្បីធ្វើការផ្លាស់ប្តូរ។
                                                 ផលិតផលដែលបានផ្លាស់ប្តូរត្រូវតែមានស្ថានភាពដូចដើមនិងមិនមានការខូចខាត។</p>
                                         </li>
-                                        <li>
+                                        <li class="text-black">
                                             ទំនាក់ទំនងយើង
                                             <p>ប្រសិនបើអ្នកមានសំណួរ
                                                 ឬការព្រួយបារម្ភអំពីគោលនយោបាយសងប្រាក់វិញ
@@ -923,239 +967,241 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="border-1  ">
-            <section class="top-footer-sm bg-transparent py-5">
-                <div class="container-fluid ">
-                    <div class="content-top">
-                        <div class="logo-lg-img">
-                            <img src="assets/img/logo-2-png.png" class="w-100 h-100 object-fit-cover pb-4"  alt="">
-                        </div>
-                        <div>
-                            <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar
-                                -
-                                កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
-                            <div class="app position-relative d-flex gap-3 py-2">
-                                <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
-                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                            </div>
-                        </div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-1  ">
+        <section class="top-footer-sm bg-transparent py-5">
+            <div class="container-fluid ">
+                <div class="content-top">
+                    <div class="logo-lg-img">
+                        <img src="assets/img/logo-2-png.png" class="w-100 h-100 object-fit-cover pb-4" alt="">
                     </div>
-                    <div class="accordion accordion-flush bg-transparent border-top pt-3 mt-3 border-opacity-10"
-                        id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent fs-5" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    ភោជនីយដ្ឋាន
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body accordion-body-1">
-                                    <ul class="list-unstyled d-flex flex-column gap-2">
-                                        <li>
-                                            <a href="about-restaurant.html">អំពីយើង</a>
-                                        </li>
-                                        <li>
-                                            <a href="asia-menu.html">ម៉ីនុយ</a>
-                                        </li>
-                                        <li>
-                                            <a href="service.html">សេវាកម្ម</a>
-                                        </li>
-                                        <li>
-                                            <a href="gallery-page.html">រូបភាពហាង</a>
-                                        </li>
-                                        <li>
-                                            <a href="reservastion.html">ការកក់តុ</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent fs-5" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    ព័ត៌មានផ្សេងៗ
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body accordion-body-1">
-                                    <ul class="list-unstyled d-flex flex-column gap-2">
-                                        <li>
-                                            <a href="testimontial-page.html">ការវាយតម្លៃ</a>
-                                        </li>
-                                        <li>
-                                            <a href="faq2.html">សំណួរ & ចម្លើយ</a>
-                                        </li>
-                                        <li>
-                                            <a href="notification-page.html">ការជូនដំណឹង</a>
-                                        </li>
-                                        <li>
-                                            <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">ជំនួយ</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent fs-5" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    ទំនាក់ទំនងមកកាន់យើង
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled d-flex flex-column gap-2">
-                                        <li>
-                                            <i class="fa-solid fa-location-dot"></i>
-                                            <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
-                                                54 ផ្លូវលេខ 606,
-                                                ភ្នំពេញ</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-phone-volume"></i>
-                                            <a href="tel:+88517631845">+885 17 631 845</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-envelope"></i>
-                                            <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-clock"></i>
-                                            <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 -
-                                                22:00 )</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div>
+                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar
+                            -
+                            កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
+                        <div class="app position-relative d-flex gap-3 py-2">
+                            <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="top-footer py-5 ">
-                <div class="container-fluid px-5">
-                    <div class="row text-white justify-content-center">
-                        <div class="col-12 col-md-12 col-xl-4 ">
-                            <div class="content-left">
-                                <div class="logo-lg-img">
-                                    <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png-copy.png"
-                                        alt="">
-                                </div>
-                                <div>
-                                    <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ
-                                        WokStar -
-                                        កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
-                                    <div class="app position-relative d-flex gap-3 py-2">
-                                        <a href="https://www.facebook.com/profile"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
-                                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
-                                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
-                            <div class="content-center">
-                                <h2 class="pb-2">ភោជនីយដ្ឋាន</h2>
+                <div class="accordion accordion-flush bg-transparent border-top pt-3 mt-3 border-opacity-10"
+                    id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ភោជនីយដ្ឋាន
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body accordion-body-1">
                                 <ul class="list-unstyled d-flex flex-column gap-2">
-                                    <li>
+                                    <li class="text-black">
                                         <a href="about-restaurant.html">អំពីយើង</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <a href="asia-menu.html">ម៉ីនុយ</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <a href="service.html">សេវាកម្ម</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <a href="gallery-page.html">រូបភាពហាង</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <a href="reservastion.html">ការកក់តុ</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
-                            <div class="content-center">
-                                <h2 class="pb-2">ព័ត៌មានផ្សេងៗ</h2>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ព័ត៌មានផ្សេងៗ
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body accordion-body-1">
                                 <ul class="list-unstyled d-flex flex-column gap-2">
-                                    <li>
+                                    <li class="text-black">
                                         <a href="testimontial-page.html">ការវាយតម្លៃ</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <a href="faq2.html">សំណួរ & ចម្លើយ</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <a href="notification-page.html">ការជូនដំណឹង</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <a href="contact.html">ជំនួយ</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-5 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
-                            <div class="content-right">
-                                <h2 class="pb-2">ទំនាក់ទំនងមកកាន់យើង</h2>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ទំនាក់ទំនងមកកាន់យើង
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
                                 <ul class="list-unstyled d-flex flex-column gap-2">
-                                    <li>
+                                    <li class="text-black">
                                         <i class="fa-solid fa-location-dot"></i>
                                         <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
                                             54 ផ្លូវលេខ 606,
                                             ភ្នំពេញ</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <i class="fa-solid fa-phone-volume"></i>
                                         <a href="tel:+88517631845">+885 17 631 845</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <i class="fa-solid fa-envelope"></i>
                                         <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
                                     </li>
-                                    <li>
+                                    <li class="text-black">
                                         <i class="fa-solid fa-clock"></i>
-                                        <span>ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
+                                        <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 -
+                                            22:00 )</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-    
                     </div>
                 </div>
-            </section>
-            <section class="copyright py-3 border-top">
-                <div class="container-fluid px-5">
-                    <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
-                        <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
-                        <p class="m-0 p-0">
-                            <a href="#" class="border-end pe-2">Privacy policy</a>
-                            <a href="#" class="ps-1">Term&condition</a>
-                        </p>
+            </div>
+        </section>
+        <section class="top-footer py-5 ">
+            <div class="container-fluid px-5">
+                <div class="row text-white justify-content-center">
+                    <div class="col-12 col-md-12 col-xl-4 ">
+                        <div class="content-left">
+                            <div class="logo-lg-img">
+                                <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png-copy.png"
+                                    alt="">
+                            </div>
+                            <div>
+                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ
+                                    WokStar -
+                                    កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
+                                <div class="app position-relative d-flex gap-3 py-2">
+                                    <a href="https://www.facebook.com/profile"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </footer>
+                    <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
+                        <div class="content-center">
+                            <h2 class="pb-2">ភោជនីយដ្ឋាន</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li class="text-black">
+                                    <a href="about-restaurant.html">អំពីយើង</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href="asia-menu.html">ម៉ីនុយ</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href="service.html">សេវាកម្ម</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href="gallery-page.html">រូបភាពហាង</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href="reservastion.html">ការកក់តុ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
+                        <div class="content-center">
+                            <h2 class="pb-2">ព័ត៌មានផ្សេងៗ</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li class="text-black">
+                                    <a href="testimontial-page.html">ការវាយតម្លៃ</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href="faq2.html">សំណួរ & ចម្លើយ</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href="notification-page.html">ការជូនដំណឹង</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href="contact.html">ជំនួយ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
+                        <div class="content-right">
+                            <h2 class="pb-2">ទំនាក់ទំនងមកកាន់យើង</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li class="text-black">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
+                                        54 ផ្លូវលេខ 606,
+                                        ភ្នំពេញ</a>
+                                </li>
+                                <li class="text-black">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <a href="tel:+88517631845">+885 17 631 845</a>
+                                </li>
+                                <li class="text-black">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
+                                </li>
+                                <li class="text-black">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
+                </div>
+            </div>
+        </section>
+        <section class="copyright py-3 border-top">
+            <div class="container-fluid px-5">
+                <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
+                    <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
+                    <p class="m-0 p-0">
+                        <a href="#" class="border-end pe-2">Privacy policy</a>
+                        <a href="#" class="ps-1">Term&condition</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
