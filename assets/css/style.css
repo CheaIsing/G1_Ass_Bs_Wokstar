@@ -220,6 +220,7 @@ body {
     background-color: var(--c-black) !important;
     position: relative;
     z-index: 1;
+    border-radius: 12px;
   }
 
   .navbar .megamenu .dropdown-menu>.container-xxl::before {
@@ -234,6 +235,8 @@ body {
     margin: 0 -12px;
     z-index: -1;
   }
+
+  @media (max-width: 1320px) {}
 
   .navbar .navbar-nav .nav-item .nav-link {
     font-weight: 500;
@@ -263,13 +266,15 @@ body {
   }
 }
 
-.navbar .btn-responsive-icon {
-  color: var(--c-white-light) !important;
+.navbar .btn-responsive-icon,
+.navbar .navbar-toggler i{
+  color: #f8f8f8 !important;
 }
 
 @media (max-width: 576px) {
-  .navbar .btn-responsive-icon {
+  .navbar .btn-responsive-icon{
     padding-inline: 6px;
+    color: #fff !important;
   }
 }
 
@@ -1623,9 +1628,16 @@ footer .copyright a:hover {
 .career-page .job-list-section .job-list-item {
   border-bottom: 1px solid #ddd;
   color: var(--c-card-text);
+  position: relative;
 }
 
-.career-page .job-list-section .job-list-item .btn {}
+.career-page .job-list-section .job-list-item h3 {
+  transition: .3s;
+}
+
+.career-page .job-list-section .job-list-item:hover h3 {
+  color: var(--c-brand) !important;
+}
 
 .career-page .job-list-section .job-list-item span {
   transition: .3s;
@@ -1634,11 +1646,12 @@ footer .copyright a:hover {
 
 .career-page .job-list-section .job-list-item i {
   transition: .3s;
+  color: var(--c-black);
 }
 
 .career-page .job-list-section .job-list-item a:hover span,
 .career-page .job-list-section .job-list-item a:hover i {
-  color: var(--c-brand);
+  color: var(--c-brand) !important;
 }
 
 /* Career detail page */
