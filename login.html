@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar bg-black navbar-expand-xl fixed-top navbar-dark align-items-center">
+        <nav class="navbar navbar-expand-xl bg-black fixed-top navbar-dark align-items-center">
             <div class="container-xxl px-4 ">
                 <a class="navbar-brand" href="#">
                     <img class="ms-3 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
@@ -37,7 +37,6 @@
                         <i class=" fa-solid fa-bars"></i>
                     </button>
                 </div>
-
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
                     <div class="offcanvas-header d-flex d-xl-none align-items-center">
@@ -49,44 +48,17 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">ទំព័រដើម</a>
-                            </li>
 
-
-                            <li class="nav-item mx-lg-2 dropdown">
-                                <a class="nav-link " href="sing-up.html" role="button" aria-expanded="false">
-                                    សេវាកម្ម
-                                </a>
-
-                            </li>
-                            <li class="nav-item mx-lg-2 dropdown">
-                                <a class="nav-link " href="sing-up.html" role="button" aria-expanded="false">
-                                    អំពី
-                                </a>
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="sing-up.html">អាជីព</a>
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="sing-up.html">ព័ត៌មាន</a>
-                            </li>
-                            <li class="nav-item mx-lg-2 ">
-                                <a class="nav-link " href="sing-up.html" role="button" aria-expanded="false">
-                                    ទំនាក់ទំនង
-                                </a>
-                            </li>
                         </ul>
                         <div class="d-flex align-items-center">
-                            <button class="btn btn-icon " type="button">
+                            <button class="btn btn-landing " type="button">
                                 កក់តុ
                             </button>
-
-                            <button class="btn btn-icon  d-none d-xl-inline-block" type="button">
+                            <button class="btn btn-landing ms-2 =" type="button">
                                 ចុះឈ្មោះ
                             </button>
 
-                            <button class="btn btn-icon  d-none d-xl-inline-block" type="button">
+                            <button class="btn btn-landing m-2  " type="button">
                                 ចូលគណនី
                             </button>
                             <button class="btn btn-icon" type="button" data-theme-toggle>
@@ -132,15 +104,17 @@
                                                 ចង់ចាំគណនីខ្ញុំ
                                             </label>
                                         </div>
-                                        <a href="forget-pass-1.html" class="text-warning">
-                                                ភ្លេចលេខសម្ងាត់?
-                                            </a>
+
+                                        <span class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                            data-bs-toggle="modal">
+                                            ភ្លេចលេខសម្ងាត់?
+                                        </span>
                                     </div>
                                     <!-- Submit button -->
-                                        <a href="home-page.html" type="submit" data-mdb-button-init data-mdb-ripple-init
-                                            class="btn btn-login-form btn-block mb-4 border-0">
-                                            ចូលគណនី
-                                        </a>
+                                    <a href="home-page.html" type="submit" data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-login-form btn-block mb-4 border-0">
+                                        ចូលគណនី
+                                    </a>
 
                                     <div class="form-check d-flex justify-content-center  mb-4">
                                         <label class="form-check-label" for="form2Example33">
@@ -170,7 +144,6 @@
                                                 <img src="img/fb.webp" alt="" width="30px" height="30px">
                                             </button>
                                         </div>
-
                                         <div class="term-and-privacy">
                                             <p>
                                                 <span>លក្ខខណ្ឌនៃកាលប្រើប្រាស់ </span>
@@ -200,8 +173,36 @@
                 </div>
             </div>
         </section>
-
     </main>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 p-2">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalToggleLabel">ភ្លេចលេខសម្ងាត់?</h1> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center">ភ្លេចលេខសម្ងាត់?</h1>
+                    <p class="text-center">សូម​ប​ញ្ជូ​ល​អ៊ី​ម៊ែ​ល​របស់​អ្នក</p>
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="" id="" placeholder="example@gmail.com">
+                        </div>
+                    </form>
+                    
+                    <button type="button" class="btn btn-primary" style="width: 100%;">
+                            Button
+                     </button>
+                    </div> 
+                </div>
+                <!-- <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">Open second modal</button>
+                    </div> -->
+            </div>
+        </div>
+    </div>
     <footer class="border-1  ">
         <section class="top-footer-sm bg-transparent py-5">
             <div class="container-fluid ">

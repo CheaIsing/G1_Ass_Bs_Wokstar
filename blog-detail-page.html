@@ -1,631 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog detail</title>
-        <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-        <!-- Main Link  -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <style>
-            
-        </style>
-    </head>
-    <body class="blog-detail-page">
-        <header>
-            <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
-                <div class="container-xxl px-4 ">
-                    <a class="navbar-brand" href="#">
-                        <img class="ms-3 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
-                    </a>
-                    <div class="d-flex d-xl-none align-items-xl-center">
-                        <form class="d-flex" role="search">
-                            <button class="btn btn-icon btn-responsive-icon" type="button">
-                                <i class="fa-solid fa-search"></i>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog detail</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- Main Link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body class="blog-detail-page">
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
+            <div class="container-xxl px-4 ">
+                <a class="navbar-brand" href="#">
+                    <img class="ms-3 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
+                </a>
+                <div class="d-flex d-xl-none align-items-xl-center">
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-icon btn-responsive-icon" type="button">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="btn btn-icon btn-responsive-icon" type="button">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                    <button class="btn btn-icon btn-responsive-icon" type="button">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class=" fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
+                    <div class="offcanvas-header d-flex d-xl-none align-items-center">
+                        <a class="navbar-brand" href="#">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
+                        </a>
+                        <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="#">ទំព័រដើម</a>
+                            </li>
+
+                            <li class="nav-item mx-lg-2 dropdown megamenu ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ម៉ីនុយ
+                                </a>
+                                <ul class="dropdown-menu border-0">
+                                    <div class="container-xxl">
+                                        <div class="row w-100 gy-4">
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <h5 class="dropdown-item">Khmer
+                                                            Food</h6>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-lg-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    សេវាកម្ម
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="service-page.html">សេវាកម្ម</a></li>
+                                    <li><a class="dropdown-item" href="customer-review.html">ការវាយតម្លៃ</a></li>
+                                    <li><a class="dropdown-item" href="gallery-page.html">រូបភាព</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-lg-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    អំពី
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="about-us.html">អំពីយើង</a></li>
+                                    <li><a class="dropdown-item" href="about-restaurant.html">អំពីភោជនីយដ្ឋាន</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="">អាជីព</a>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="career-detail-page.html">ព័ត៌មាន</a>
+                            </li>
+                            <li class="nav-item mx-lg-2 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ទំនាក់ទំនង
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="contact.html">ទំនាក់ទំនងយើង</a></li>
+                                    <li><a class="dropdown-item" href="faq-page.html">សំណួរ​
+                                            និងចម្លើយ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-icon" type="button">
+                                <i class="fa-solid fa-utensils"></i>
                             </button>
-                        </form>
-                        <button class="btn btn-icon btn-responsive-icon" type="button">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                        <button class="btn btn-icon btn-responsive-icon" type="button">
-                            <i class="fa-solid fa-user"></i>
-                        </button>
-                        <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                            aria-label="Toggle navigation">
-                            <i class=" fa-solid fa-bars"></i>
-                        </button>
-                    </div>
-    
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                        <div class="offcanvas-header d-flex d-xl-none align-items-center">
-                            <a class="navbar-brand" href="#">
-                                <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
-                            </a>
-                            <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
-                                <li class="nav-item mx-lg-2">
-                                    <a class="nav-link" href="#">ទំព័រដើម</a>
-                                </li>
-    
-                                <li class="nav-item mx-lg-2 dropdown megamenu ">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        ម៉ីនុយ
-                                    </a>
-                                    <ul class="dropdown-menu border-0">
-                                        <div class="container-xxl">
-                                            <div class="row w-100 gy-4">
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xl-3">
-                                                    <ul>
-                                                        <li>
-                                                            <h5 class="dropdown-item">Khmer
-                                                                Food</h6>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    </ul>
-                                                </div>
-    
-                                            </div>
-                                        </div>
-    
-                                    </ul>
-                                </li>
-                                <li class="nav-item mx-lg-2 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        សេវាកម្ម
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="service-page.html">សេវាកម្ម</a></li>
-                                        <li><a class="dropdown-item" href="customer-review.html">ការវាយតម្លៃ</a></li>
-                                        <li><a class="dropdown-item" href="gallery-page.html">រូបភាព</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item mx-lg-2 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        អំពី
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="about-us.html">អំពីយើង</a></li>
-                                        <li><a class="dropdown-item" href="about-restaurant.html">អំពីភោជនីយដ្ឋាន</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item mx-lg-2">
-                                    <a class="nav-link" href="">អាជីព</a>
-                                </li>
-                                <li class="nav-item mx-lg-2">
-                                    <a class="nav-link" href="career-detail-page.html">ព័ត៌មាន</a>
-                                </li>
-                                <li class="nav-item mx-lg-2 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        ទំនាក់ទំនង
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="contact.html">ទំនាក់ទំនងយើង</a></li>
-                                        <li><a class="dropdown-item" href="faq-page.html">សំណួរ​
-                                                និងចម្លើយ</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="d-flex align-items-center">
+                            <form class="d-none d-xl-flex" role="search">
                                 <button class="btn btn-icon" type="button">
-                                    <i class="fa-solid fa-utensils"></i>
+                                    <i class="fa-solid fa-search"></i>
                                 </button>
-                                <form class="d-none d-xl-flex" role="search">
-                                    <button class="btn btn-icon" type="button">
-                                        <i class="fa-solid fa-search"></i>
-                                    </button>
-                                </form>
-                                <button class="btn btn-icon d-none d-xl-inline-block" type="button">
-                                    <i class="fa-solid fa-basket-shopping"></i>
-                                </button>
-                                <button class="btn btn-icon" type="button" data-theme-toggle>
-                                    <!-- <i class="fa-solid fa-moon"></i> -->
-                                </button>
-                                <button class="btn btn-icon d-none d-xl-inline-block" type="button">
-                                    <i class="fa-solid fa-user"></i>
-                                </button>
-                            </div>
+                            </form>
+                            <button class="btn btn-icon d-none d-xl-inline-block" type="button">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                            <button class="btn btn-icon" type="button" data-theme-toggle>
+                                <!-- <i class="fa-solid fa-moon"></i> -->
+                            </button>
+                            <button class="btn btn-icon d-none d-xl-inline-block" type="button">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-    
-        <main>
-            <section class="hero-banner position-relative">
-                <div class="banner-bg europe-banner"></div>
-                <div class="content d-flex align-items-center">
-                    <div class="container">
-                        <div class="text-center text-white-light mb-5">
-                            <h2 class="display-2 my-4">Menu Detail</h2>
-                            <div class="fs-5">
-                                <a href="index.html" class="text-white-light text-decoration-none">ទំព័រដើម</a>
-                                <span> &nbsp;>&nbsp; </span>
-                                <a href="index.html" class="text-white-light text-decoration-none">ម្ហូបអ៊ឺរ៉ុប</a>
-                                <span> &nbsp;>&nbsp; </span>
-                                <span class="text-brand">Menu Detail</span>
-                            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner position-relative">
+            <div class="banner-bg europe-banner"></div>
+            <div class="content d-flex align-items-center">
+                <div class="container">
+                    <div class="text-center text-white-light mb-5">
+                        <h2 class="display-2 my-4">ព័ត៌មានលម្អិត</h2>
+                        <div class="fs-5">
+                            <a href="index.html" class="text-white-light text-decoration-none">ទំព័រដើម</a>
+                            <span> &nbsp;>&nbsp; </span>
+                            <a href="blog-page.html" class="text-white-light text-decoration-none">ព័ត៌មាន</a>
+                            <span> &nbsp;>&nbsp; </span>
+                            <span class="text-brand">ព័ត៌មានលម្អិត</span>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                <div class="container-lg mt-5">
-                    <div class="blog-img mb-4">
-                        <img
-                            src="img/bg-hero-banner-langding-1.jpg"
-                            class="rounded-3" alt="...">
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-lg-8">
-                            <h2 class="text-start mb-2">Mouth watering full English
-                                with breakfast</h2>
-                            <div class="mb-4">
-                                <img
-                                    src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                    class="rounded-5" alt
-                                    width="30px">
-                                <span class="card-text mx-1">Bro
-                                    Code</span>
-                                <span
-                                    class="card-text">&bull;</span>
-                                <time datetime="August 7, 2019"
-                                    class="card-text ms-1">August 7,
-                                    2019</time>
-                            </div>
-                            <div class="blog-text">
-                                <p class="fw-medium fs-5 mb-4">Lorem ipsum dolor
-                                    sit amet consectetur adipisicing elit. Eaque
-                                    ex iusto sunt deleniti ea consequatur cum
-                                    dolor earum necessitatibus iste! Ullam fuga
-                                    hic, dicta praesentium sequi recusandae
-                                    optio mollitia non quasi.</p>
-                                <p class="fw-medium fs-5 mb-4">Lorem ipsum
-                                    dolor, sit amet consectetur adipisicing
-                                    elit. Inventore pariatur voluptas nihil
-                                    nulla sit ea fugit quaerat dolor. Unde
-                                    quisquam consequuntur dolorem, sequi dolore
-                                    nobis minima iusto eius itaque cupiditate
-                                    molestias modi, consequatur, odio nesciunt
-                                    odit magni aliquid possimus. Repudiandae
-                                    porro aperiam expedita aliquid facere
-                                    magnam, vero quibusdam distinctio molestiae
-                                    tempore maiores corrupti ratione blanditiis
-                                    non, quaerat mollitia. Voluptatem atque
-                                    veritatis corporis porro officia similique
-                                    consectetur consequatur. Dolorem omnis
-                                    magnam ab praesentium sunt possimus itaque
-                                    ea eveniet, qui, fuga, sed reprehenderit ut
-                                    voluptatem consequuntur repudiandae eos
-                                    nostrum corrupti. Quibusdam corporis animi
-                                    id at, voluptatibus expedita provident
-                                    dolor! Rerum cum similique provident qui
-                                    ipsam praesentium voluptatibus, adipisci
-                                    inventore, error nemo quae repudiandae iste
-                                    sit optio dolorum excepturi! Obcaecati error
-                                    officia vel minus adipisci similique
-                                    reprehenderit, odio aliquam quia! Earum, non
-                                    a.</p>
-                                <p class="fw-medium fs-5 mb-4">Lorem ipsum
-                                    dolor, sit amet consectetur adipisicing
-                                    elit. Inventore pariatur voluptas nihil
-                                    nulla sit ea fugit quaerat dolor. Unde
-                                    quisquam consequuntur dolorem, sequi dolore
-                                    nobis minima iusto eius itaque cupiditate
-                                    molestias modi, consequatur, odio nesciunt
-                                    odit magni aliquid possimus. Repudiandae
-                                    porro aperiam expedita aliquid facere
-                                    magnam, vero quibusdam distinctio molestiae
-                                    tempore maiores corrupti ratione blanditiis
-                                    non, quaerat mollitia. Voluptatem atque
-                                    veritatis corporis porro officia similique
-                                    consectetur consequatur. Dolorem omnis
-                                    magnam.</p>
-                                <p class="fw-medium fs-5 mb-4">Lorem ipsum
-                                    dolor, sit amet consectetur adipisicing
-                                    elit. Inventore pariatur voluptas nihil
-                                    nulla sit ea fugit quaerat dolor. Unde
-                                    quisquam consequuntur dolorem, sequi dolore
-                                    nobis minima iusto eius itaque cupiditate
-                                    molestias modi, consequatur, odio nesciunt
-                                    odit magni aliquid possimus.</p>
-                                <h2 class="text-start ">Mouth watering full
-                                    English
-                                    with breakfast</h2>
-                                <div class="my-4">
-                                    <img
-                                        src="img/bg-hero-banner-langding-1.jpg"
-                                        class="img-fluid rounded-3" alt="...">
-                                </div>
-                                <p class="fw-medium fs-5 mb-4">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Maiores sed omnis dicta
-                                    soluta molestiae. Impedit voluptas, illum
-                                    repellendus cupiditate laborum assumenda
-                                    dicta facilis consequatur eligendi velit
-                                    soluta nostrum quod voluptates?
-                                </p>
-                                <p class="fw-medium fs-5 mb-4">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Expedita vel sequi cum
-                                    excepturi sint tenetur nam officia, minima
-                                    odit. Optio, esse expedita! Necessitatibus
-                                    minus dolores similique! Quibusdam vel
-                                    suscipit dicta reprehenderit similique
-                                    nesciunt illo iusto explicabo molestias
-                                    alias tempora autem repudiandae ut dolor ex,
-                                    vitae deleniti. Itaque consectetur eos eum
-                                    velit neque qui, adipisci quidem voluptatum
-                                    amet dicta voluptatem assumenda.
-                                </p>
-                                <p class="fw-medium fs-5 mb-4">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Aliquid delectus nihil
-                                    ullam omnis modi praesentium aut dolorem
-                                    reprehenderit vero tempore reiciendis,
-                                    nostrum possimus expedita minus vitae
-                                    obcaecati alias, itaque in perspiciatis ex.
-                                    Eaque facilis temporibus labore aut ullam
-                                    neque. Earum nam id provident doloremque
-                                    velit quos aut laboriosam nulla labore,
-                                    unde, excepturi libero illum magnam. A
-                                    accusantium molestiae tenetur deleniti odit
-                                    recusandae optio eum facere nulla explicabo
-                                    nam eaque, vero sequi expedita aspernatur,
-                                    numquam veniam eveniet ipsum asperiores!
-                                    Iusto, odio magni? Quidem, tempore nostrum
-                                    minima cumque, mollitia officia recusandae
-                                    porro perferendis reprehenderit dicta
-                                    laboriosam voluptatum ipsum possimus
-                                    ducimus. Quibusdam expedita, voluptate
-                                    provident minus magni cum itaque odit
-                                    incidunt ad error ab voluptatum.
-                                </p>
-                                <p class="fw-medium fs-5 mb-4">
-                                    Lorem ipsum, arum nam id provident
-                                    doloremque velit quos aut laboriosam nulla
-                                    labore, unde, excepturi libero illum magnam.
-                                    A accusantium molestiae tenetur deleniti
-                                    odit recusandae optio eum facere nulla
-                                    explicabo nam eaque, vero sequi expedita
-                                    aspernatur, numquam veniam eveniet ipsum
-                                    asperiores! Iusto, odio magni? Quidem,
-                                    tempore nostrum minima cumque, mollitia
-                                    officia recusandae porro perferendis
-                                    reprehenderit dicta laboriosam voluptatum
-                                    ipsum possimus ducimus. Quibusdam expedita,
-                                    voluptate provident minus magni cum itaque
-                                    odit incidunt ad error ab voluptatum
-                                    consectetur et amet veniam ratione. Neque
-                                    eligendi quos omnis, placeat sapiente iste
-                                    quaerat in inventore eius ipsa beatae saepe
-                                    consequuntur aliquam ullam fuga alias
-                                    tempora odio sunt laudantium architecto
-                                    repellendus odit est at.
-                                </p>
-                                <p class="fw-medium fs-5 mb-4">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Expedita vel sequi cum
-                                    excepturi sint tenetur nam officia, minima
-                                    odit. Optio, esse expedita! Necessitatibus
-                                    minus dolores similique! Quibusdam vel
-                                    suscipit dicta reprehenderit similique
-                                    nesciunt illo iusto explicabo molestias
-                                    alias tempora autem repudiandae ut dolor ex,
-                                    vitae deleniti. Itaque consectetur eos eum
-                                    velit neque qui, adipisci quidem voluptatum
-                                    amet dicta voluptatem assumenda.
-                                </p>
-
-                                <div
-                                    class="card bg-secondary-subtle border-0 text-black rounded-3 mb-4">
-                                    <div class="card-body p-4">
-                                        <div class="quote">
-                                            <p class="pb-2 fs-5">
-                                                "Science makes people reach
-                                                selflessly for truth and
-                                                objectivity; it teaches
-                                                people to
-                                                accept reality, with wonder
-                                                and admiration, not to
-                                                mention the deep awe and joy
-                                                that the
-                                                natural order of things
-                                                brings to the true
-                                                scientist."
-                                            </p>
-                                            <span
-                                                class="mb-0 text-muted">
-                                                -- Lise Meitner
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="fw-medium fs-5 mb-5">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Expedita vel sequi cum
-                                    excepturi sint tenetur nam officia, minima
-                                    odit. Optio, esse expedita! Necessitatibus
-                                    minus dolores similique! Quibusdam vel
-                                    suscipit dicta reprehenderit similique
-                                    nesciunt illo iusto explicabo molestias
-                                    alias tempora autem repudiandae ut dolor ex,
-                                    vitae deleniti. Itaque consectetur eos eum
-                                    velit neque qui, adipisci quidem voluptatum
-                                    amet dicta voluptatem assumenda.
-                                </p>
-
-                                <hr>
-                            </div>
+            </div>
+        </section>
+        <section class="single-detail-blog">
+            <div class="container-lg mt-5">
+                <div class="blog-img mb-4">
+                    <img src="assets/img/blog-img/1.jpg"
+                        class="rounded-3" alt="...">
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <h2 class="text-start mb-2 text-black">រីករាយជាមួយការរីករាលដាលនៃអាហារប្រចាំកាន់ Wokstar
+                            កន្លែងដែលប្រពៃណីជួបប្រទះការច្នៃប្រឌិត</h2>
+                        <div class="mb-4">
+                            <img src="assets/img/blog-img/pfp-1.jpg"
+                                class="rounded-5" alt width="30px">
+                            <span class="card-text mx-1">Bro
+                                Code</span>
+                            <span class="card-text">&bull;</span>
+                            <time datetime="August 7, 2019" class="card-text ms-1">ថ្ងៃទី 12 ខែសីហា ឆ្នាំ 2024</time>
                         </div>
-                        <div class="col-lg-4">
-                            <div class>
-                                <h4 class="mb-4 text-black">Recent Post</h4>
-                                <div class="row g-4">
-                                    <div class="col-12">
-                                        <div class="card">
-                                            <div class="row g-0">
-                                                <div
-                                                    class="col-5 col-md-4 col-lg-5 col-xl-4">
-                                                    <img
-                                                        src="img/bg-hero-banner-langding-1.jpg"
-                                                        class="img-fluid h-100 object-fit-cover rounded-3"
-                                                        alt="...">
-                                                </div>
-                                                <div
-                                                    class="col-7 col-md-8 col-lg-7 col-xl-8">
-                                                    <div
-                                                        class="card-body p-0 px-2">
-                                                        <a href="#">
-                                                            <h5
-                                                                class="card-title">
-                                                                Mouth watering
-                                                                full
-                                                                English
-                                                                with breakfast
-                                                            </h5>
-                                                        </a>
-                                                        <time
-                                                            datetime="August 7, 2019"
-                                                            class="card-text ms-1">August
-                                                            7,
-                                                            2019</time>
-                                                    </div>
+                        <div class="blog-text">
+                            <p class="fw-medium fs-5 mb-4">ក្នុងចំណោមសង្កាត់ជិតផ្សារដ៏រលកបក់នៃទីក្រុង
+                                មានកន្លែងផឹកនោះដែលបានក្លាយទៅជាចំណុចគោលដ៏ពេញនិយមរបស់អ្នកដែលស្រឡាញ់អាហារ។
+                                ភោជនីយដ្ឋានរបស់យើងមិនមែនគ្រាន់តែមានន័យថាសេវាកម្មអាហារ
+                                ប៉ុន្តែវាគឺជាបទពិសោធន៍ដែលសកម្មជាតិហ្វិសិកស្តីពីអារម្មណ៍នៃរសជាតិ រូបរាង និងក្លិន។</p>
+                            <p class="fw-medium fs-5 mb-4">នៅ Wokstar
+                                យើងជឿជាក់លើអារម្មណ៍នៃការទស្សនីយភាពនៃអាហារដែលអាចនាំមនុស្សមកជាមួយគ្នា។
+                                មុខម្ហូបនៃបញ្ជីរបស់យើងគឺជាការរលត់ជាបន្ទាប់ដោយរសជាតិដែលអបអរសាទរការប្តេជ្ញារបស់ប្រពៃណីនៃភោជនីយដ្ឋានអាស៊ីឲ្យត្រូវនិងចំនួនវិចារណ៍ច្នៃប្រឌិតនៃបច្ចេកទេសភោជនីយដ្ឋាន។
+                                ថាតើអ្នកគឺជាអ្នកគោរពសីលធម៌នៃម្ហូបបុរាណ ឬអ្នកដែលចូលចិត្តសាកល្បងរសជាតិថ្មី,
+                                បញ្ជីររបស់យើងផ្តល់មុខម្ហូបពិសេសសម្រាប់គ្រប់គ្នា។
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="card">
-                                            <div class="row g-0">
-                                                <div
-                                                    class="col-5 col-md-4 col-lg-5 col-xl-4">
-                                                    <img
-                                                        src="img/bg-hero-banner-langding-1.jpg"
-                                                        class="img-fluid h-100 object-fit-cover rounded-3"
-                                                        alt="...">
-                                                </div>
-                                                <div
-                                                    class="col-7 col-md-8 col-lg-7 col-xl-8">
-                                                    <div
-                                                        class="card-body p-0 px-2">
-                                                        <a href="#">
-                                                            <h5
-                                                                class="card-title">
-                                                                Mouth watering
-                                                                full
-                                                                English
-                                                                with breakfast
-                                                            </h5>
-                                                        </a>
-                                                        <time
-                                                            datetime="August 7, 2019"
-                                                            class="card-text ms-1">August
-                                                            7,
-                                                            2019</time>
-                                                    </div>
+                                អ្នកចម្អិនអាហាររបស់យើងនៅ Wokstar គឺជាកុមារាទាំងមូល ដែលមានក្តីស្រឡាញ់និងទន់នោមចំពោះអាហារ។
+                                គ្រប់មុខម្ហូបត្រូវបានតែងដាក់ច្នៃប្រឌិតដោយប្រើប្រាស់គ្រឿងផ្សំល្អបំផុត,
+                                ទាំងជិតស្និទ្ធនិងសកល។ ចាប់តាំងពីមុខអាហារបាញ់ដំណីមករហូតដល់ជាច្រើនស្លឹករុក្ខជាតិមតិបញ្ញា
+                                គ្រប់សេចក្តីលម្អិតគឺនាំអ្នកទៅពិភពបន្ថែមនៃការសុខដុមផ្សំ។</p>
+                            <p class="fw-medium fs-5 mb-4">មុខម្ហូបរបស់យើងគឺជាជម្រើសនៃការធ្វើម្ហូបដ៏រីករាយ
+                                ដែលមុខម្ហូបនីមួយៗផ្តល់នូវទម្រង់រសជាតិតែមួយគត់។ ចាប់ផ្តើមអាហាររបស់អ្នកជាមួយនឹង Spring
+                                Rolls របស់យើង បម្រើជាមួយទឹកជ្រលក់ហឹរៗ ឬស៊ុប Wokstar Signature Soup ដ៏រលោង
+                                ដែលជាការលាយបញ្ចូលគ្នាដ៏ល្អឥតខ្ចោះនៃគ្រឿងទេស និងស្រស់។
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class=" card">
-                                            <div class="row g-0">
-                                                <div
-                                                    class="col-5 col-md-4 col-lg-5 col-xl-4">
-                                                    <img
-                                                        src="img/bg-hero-banner-langding-1.jpg"
-                                                        class="img-fluid h-100 object-fit-cover rounded-3"
-                                                        alt="...">
-                                                </div>
-                                                <div
-                                                    class="col-7 col-md-8 col-lg-7 col-xl-8">
-                                                    <div
-                                                        class="card-body p-0 px-2">
-                                                        <a href="#">
-                                                            <h5
-                                                                class="card-title">
-                                                                Mouth watering
-                                                                full
-                                                                English
-                                                                with breakfast
-                                                            </h5>
-                                                        </a>
-                                                        <time
-                                                            datetime="August 7, 2019"
-                                                            class="card-text ms-1">August
-                                                            7,
-                                                            2019</time>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class=" card">
-                                            <div class="row g-0">
-                                                <div
-                                                    class="col-5 col-md-4 col-lg-5 col-xl-4">
-                                                    <img
-                                                        src="img/bg-hero-banner-langding-1.jpg"
-                                                        class="img-fluid h-100 object-fit-cover rounded-3"
-                                                        alt="...">
-                                                </div>
-                                                <div
-                                                    class="col-7 col-md-8 col-lg-7 col-xl-8">
-                                                    <div
-                                                        class="card-body p-0 px-2">
-                                                        <a href="#">
-                                                            <h5
-                                                                class="card-title">
-                                                                Mouth watering
-                                                                full
-                                                                English
-                                                                with breakfast
-                                                            </h5>
-                                                        </a>
-                                                        <time
-                                                            datetime="August 7, 2019"
-                                                            class="card-text ms-1">August
-                                                            7,
-                                                            2019</time>
-                                                    </div>
+                                សម្រាប់មុខម្ហូបសំខាន់ Wokstar Special Stir-fry របស់យើងគឺជាអាហារដែលមនុស្សជាច្រើនចូលចិត្ត
+                                ដោយរួមបញ្ចូលគ្នានូវសាច់កាត់តូចៗ បន្លែស្រស់ៗ និងទឹកជ្រលក់ដ៏សំបូរបែប។
+                                ប្រសិនបើអ្នកកំពុងស្វែងរកអ្វីដែលស្រាលជាងនេះ សូមសាកល្បងសាច់មាន់ដុតស្លឹកគ្រៃរបស់យើង
+                                ដែលបម្រើជាមួយអង្ករផ្កាម្លិះ និងសាឡាត់ដ៏ស្រស់ស្រាយ។ សម្រាប់​អ្នក​ចូលចិត្ត​គ្រឿង​សមុទ្រ
+                                ប្រហុក​ខ្ទឹម​ជា​ម្ហូប​ដែល​មិន​គួរ​រំលង។
 
+                                បញ្ចប់អាហាររបស់អ្នកដោយភាពផ្អែមល្ហែមជាមួយនំដូងដូងដែលផលិតតាមផ្ទះរបស់យើង
+                                ដែលជាបង្អែមដែលបង្កប់នូវរសជាតិនៃតំបន់យ៉ាងស្រស់ស្អាត។
+                                ហើយដើម្បីផ្គូផ្គងជាមួយនឹងអាហាររបស់អ្នក ការជ្រើសរើសស្រា ស្រាបៀរសិប្បកម្ម
+                                និងស្រាក្រឡុកដែលរៀបចំយ៉ាងប្រុងប្រយ័ត្នរបស់យើងនឹងពង្រឹងបទពិសោធន៍នៃការទទួលទានអាហាររបស់អ្នក។
+                            </p>
+                            <p class="fw-medium fs-5 mb-4">
+                                ភោជនីយដ្ឋានរបស់យើងត្រូវបានរចនាឡើងដើម្បីជាកន្លែងដ៏ល្អឥតខ្ចោះសម្រាប់ឱកាសណាមួយ
+                                មិនថាជាអាហារថ្ងៃត្រង់ធម្មតាជាមួយមិត្តភ័ក្តិ អាហារពេលល្ងាចដ៏រ៉ូមែនទិកសម្រាប់ពីរនាក់
+                                កិច្ចប្រជុំអាជីវកម្ម ឬពិធីជួបជុំគ្រួសារ។ បរិយាកាសនៅ Wokstar
+                                ធ្វើឱ្យមានតុល្យភាពរវាងភាពទំនើបទាន់សម័យ និងការទាក់ទាញដ៏កក់ក្តៅ។
+                                ផ្ទៃខាងក្នុងរបស់យើងមានការលាយបញ្ចូលគ្នានៃការរចនាបែបទំនើប និងធាតុបែបអាស៊ីបែបបុរាណ
+                                បង្កើតឱ្យមានលំហរប្រកបដោយភាពឆើតឆាយ និងផាសុកភាព។
+
+                                កន្លែងទទួលទានអាហារដ៏ធំទូលាយរបស់យើងអាចផ្ទុកមនុស្សជាក្រុមធំជាងមុន
+                                ដែលធ្វើឱ្យវាល្អសម្រាប់ការជួបជុំ និងព្រឹត្តិការណ៍នានា
+                                ខណៈដែលបន្ទប់ឯកជនរបស់យើងផ្តល់នូវកន្លែងជិតស្និទ្ធជាងមុនសម្រាប់ឱកាសពិសេស។
+                                មិនថាអ្នកកំពុងរៀបចំកម្មវិធីជប់លៀងខួបកំណើត ខួបគម្រប់ខួប ឬព្រឹត្តិការណ៍សាជីវកម្មទេ
+                                ក្រុមការងាររបស់យើងនៅ Wokstar
+                                មានការប្តេជ្ញាចិត្តដើម្បីធានាថាបទពិសោធន៍របស់អ្នកមិនមានអ្វីប្លែកខុសពីធម្មតា។
+                                យើងផ្តល់ជូននូវសេវាកម្មរៀបចំព្រឹត្តិការណ៍ផ្ទាល់ខ្លួនដើម្បីជួយអ្នកក្នុងការរចនាម៉ឺនុយដ៏ល្អឥតខ្ចោះ
+                                រៀបចំសម្រាប់ការប៉ះពិសេស
+                                និងបង្កើតបរិយាកាសដែលឆ្លុះបញ្ចាំងពីសារៈសំខាន់នៃព្រឹត្តិការណ៍របស់អ្នក។
+                            </p>
+                            <h2 class="text-start text-black">Wokstar មិន​មែន​គ្រាន់​តែ​ជា​កន្លែង​ញ៉ាំ​អាហារ​ប៉ុណ្ណោះ​ទេ
+                                ​វា​ជា​កន្លែង​បង្កើត​អនុស្សាវរីយ៍</h2>
+                            <div class="my-4">
+                                <img src="assets/img/blog-img/3.webp"
+                                    class="img-fluid rounded-3 w-100" alt="...">
+                            </div>
+                            <p class="fw-medium fs-5 mb-4">
+                                អាហារកម្ពុជា គឺជាមរតកវប្បធម៌មួយដ៏ពិសេស ដែលបានពង្រីកវិស្តារទៅក្នុងឆ្នាំpioneers
+                                និងបច្ចុប្បន្ន។ យើងកាន់តែមានការយល់ដឹងខ្ពស់ពីប្រភពធម្មជាតិ
+                                និងវិធីសាស្រ្តក្នុងការម្រHammond អាហារដ៏គ្រប់គ្រាន់សម្រាប់រាងកាយ និងចិត្តរបស់យើង។
+
+                                ប្រទេសកម្ពុជាមានភូមិសាស្រ្តមួយដ៏សម្បូរបែប ហើយមាននូវឧត្ដមភាពរបស់ធម្មជាតិ
+                                ដែលបង្កើតឱ្យមានសម្បត្តិធម្មជាតិនានា។ វាអាចនឹងមានសម្បត្តិធម្មជាតិរបស់ខ្មែរ ដូចជាប្រភពដើម
+                                ដីមៀនសម្បូរប្រភពការ្រប និងច្រើនទៀត។ មហាសមុទ្របដិវត្តន៍ និងលំនៅដ្ឋានទន្លេអាច
+                                ផ្គត់ផ្គង់នូវសម្បត្តិធម្មជាតិដ៏សម្បូរបែប ដូចជាសត្វទឹក និងសមុទ្រផលិតផលផ្សេងៗ។
+
+                                ក្នុងខ្សែសង្វាក់អាហារកម្ពុជា
+                                មាននូវចំណីអាហារដ៏សម្បូរបែបដែលបានរួមចំណែកយ៉ាងខ្លាំងក្នុងការអភិវឌ្ឍន៍វប្បធម៌និងប្រពៃណីរបស់ខ្មែរ។
+                                វាចាប់ផ្ដើមមកពីព្រឹក្សាដើមដ៏ស្ទើរសិន និងដំណាំកសិកម្មកន្លះនៃជីវចិត្ត
+                                គ្រប់គ្រាន់ដូចជាអង្ករ មមី និងត្រីក៏ដូចជាមរតកសួន និងធម្មជាតិផ្សេងទៀត។
+                                ការកំណត់អតិថិជនទៅលើអាហារ និងពិធីកម្មទាំងនេះ
+                                បានពង្រីកវប្បធម៌របស់ខ្មែរក្នុងការរក្សាការពិសាវ មិនត្រឹមតែសម្រាប់អាហារប៉ុណ្ណោះ
+                                ប៉ុន្តែក៏ចូលរួមក្នុងការផ្តល់អត្ថន័យជាវប្បធម៌។
+
+                                ឧទាហរណ៍មួយគឺការប្រប្រួលរបស់ខ្មែរក្នុងការផ្គត់ផ្គង់ការគ្រប់គ្រងអាហារ ដូចជា
+                                ការលាបតែល់ក្នុងអាហារ ការបង្កប់ថ្នាំសម្រាប់ពេលលាក់ឱ្យបានយ៉ាងអស្ចារ្យ ការហូបចុកជាមួយនឹងដៃ
+                                និងការពេញចិត្តក្នុងតម្លៃអាហារជាដើម។ វាបង្ហាញពីវប្បធម៌
+                                និងអត្ថន័យជាទូទៅរបស់ការប្រប្រួលទាំងនេះ ដែលអាចធ្វើឱ្យខ្មែរទទួលបានអាហារដ៏សុខភាពនិងរីករាយ។
+
+                                មិនតែប៉ុណ្ណោះ ខ្មែរក៏បានសម្រេចបាននូវជំនាញក្នុងការធ្វើឱ្យអាហារកោសល្យយ៉ាងលំបាក
+                                និងផ្ទាក់ធ្វើឡើង។ ចាប់តាំងពីការបង្កើតផ្ទាក់អាហារនីមួយៗមេដ្ឋំណឹងវិញ
+                                ដល់ការរចនាលក្ខណៈតុសម្លាប់ ចនានិងសិល្បៈរៀបចំអាហារ។ វិធីសាស្រ្តទាំងនេះគឺជារដូវកាលដ៏ពិសេស
+                                និងមានតម្លៃ ពី generation ចូលទៅដល់ generation ចុងក្រោយ។
+
+                                ក្នុងនាមជានគរដ៏អស្ចារ្យដ៏ធំ ប្រទេសកម្ពុជា គឺជាបរិស្ថានដ៏សម្បូរបែបស្តីអំពីអាហារដ៏ចម្រុះ
+                                និងល្អ។ វាមានសម្បត្តិធម្មជាតិដ៏សម្បូរបែប រួមមាន វិធីសាស្រ្តក្នុងការរកឃើញ
+                                និងការម្ហែំអាហារដ៏បៃតង និងសុខភាពល្អ។ ជាពិសេស វាបានទប់ទល់នឹងវឌ្ឍនភាពនៃបច្ចេកវិជ្ជា
+                                និងនវានុវត្តន៍ផ្នែកអាហារដ៏ផ្សេងៗ និងបានរួមចំណែកក្នុងការបង្កើតផលិតផលដ៏អស្ចារ្យបំផុត ដូចជា
+                                ការច្នៃអាហារដ៏ម៉ឺងម៉ាត់ ដែលស័ក្តិសមជារបស់កម្ពុជាក្នុងគម្រោងពង្រីកទីផ្សារសកល។
+                            </p>
+                            <p class="fw-medium fs-5 mb-4">
+                                ភោជនីយដ្ឋានរបស់យើងត្រូវបានរចនាឡើងដើម្បីជាកន្លែងដ៏ល្អឥតខ្ចោះសម្រាប់ឱកាសណាមួយ
+                                មិនថាជាអាហារថ្ងៃត្រង់ធម្មតាជាមួយមិត្តភ័ក្តិ អាហារពេលល្ងាចដ៏រ៉ូមែនទិកសម្រាប់ពីរនាក់
+                                កិច្ចប្រជុំអាជីវកម្ម ឬពិធីជួបជុំគ្រួសារ។ បរិយាកាសនៅ Wokstar
+                                ធ្វើឱ្យមានតុល្យភាពរវាងភាពទំនើបទាន់សម័យ និងការទាក់ទាញដ៏កក់ក្តៅ។
+                                ផ្ទៃខាងក្នុងរបស់យើងមានការលាយបញ្ចូលគ្នានៃការរចនាបែបទំនើប និងធាតុបែបអាស៊ីបែបបុរាណ
+                                បង្កើតឱ្យមានលំហរប្រកបដោយភាពឆើតឆាយ និងផាសុកភាព។
+
+                                កន្លែងទទួលទានអាហារដ៏ធំទូលាយរបស់យើងអាចផ្ទុកមនុស្សជាក្រុមធំជាងមុន
+                                ដែលធ្វើឱ្យវាល្អសម្រាប់ការជួបជុំ និងព្រឹត្តិការណ៍នានា
+                                ខណៈដែលបន្ទប់ឯកជនរបស់យើងផ្តល់នូវកន្លែងជិតស្និទ្ធជាងមុនសម្រាប់ឱកាសពិសេស។
+                                មិនថាអ្នកកំពុងរៀបចំកម្មវិធីជប់លៀងខួបកំណើត ខួបគម្រប់ខួប ឬព្រឹត្តិការណ៍សាជីវកម្មទេ
+                                ក្រុមការងាររបស់យើងនៅ Wokstar
+                                មានការប្តេជ្ញាចិត្តដើម្បីធានាថាបទពិសោធន៍របស់អ្នកមិនមានអ្វីប្លែកខុសពីធម្មតា។
+                                យើងផ្តល់ជូននូវសេវាកម្មរៀបចំព្រឹត្តិការណ៍ផ្ទាល់ខ្លួនដើម្បីជួយអ្នកក្នុងការរចនាម៉ឺនុយដ៏ល្អឥតខ្ចោះ
+                                រៀបចំសម្រាប់ការប៉ះពិសេស
+                                និងបង្កើតបរិយាកាសដែលឆ្លុះបញ្ចាំងពីសារៈសំខាន់នៃព្រឹត្តិការណ៍របស់អ្នក។
+                            </p>
+                            <p class="fw-medium fs-5 mb-4">
+                                ភោជនីយដ្ឋានរបស់យើងត្រូវបានរចនាឡើងដើម្បីជាកន្លែងដ៏ល្អឥតខ្ចោះសម្រាប់ឱកាសណាមួយ
+                                មិនថាជាអាហារថ្ងៃត្រង់ធម្មតាជាមួយមិត្តភ័ក្តិ អាហារពេលល្ងាចដ៏រ៉ូមែនទិកសម្រាប់ពីរនាក់
+                                កិច្ចប្រជុំអាជីវកម្ម ឬពិធីជួបជុំគ្រួសារ។ បរិយាកាសនៅ Wokstar
+                                ធ្វើឱ្យមានតុល្យភាពរវាងភាពទំនើបទាន់សម័យ និងការទាក់ទាញដ៏កក់ក្តៅ។
+                                ផ្ទៃខាងក្នុងរបស់យើងមានការលាយបញ្ចូលគ្នានៃការរចនាបែបទំនើប និងធាតុបែបអាស៊ីបែបបុរាណ
+                                បង្កើតឱ្យមានលំហរប្រកបដោយភាពឆើតឆាយ និងផាសុកភាព។
+
+                                កន្លែងទទួលទានអាហារដ៏ធំទូលាយរបស់យើងអាចផ្ទុកមនុស្សជាក្រុមធំជាងមុន
+                                ដែលធ្វើឱ្យវាល្អសម្រាប់ការជួបជុំ និងព្រឹត្តិការណ៍នានា
+                                ខណៈដែលបន្ទប់ឯកជនរបស់យើងផ្តល់នូវកន្លែងជិតស្និទ្ធជាងមុនសម្រាប់ឱកាសពិសេស។
+                                មិនថាអ្នកកំពុងរៀបចំកម្មវិធីជប់លៀងខួបកំណើត ខួបគម្រប់ខួប ឬព្រឹត្តិការណ៍សាជីវកម្មទេ
+                                ក្រុមការងាររបស់យើងនៅ Wokstar
+                                មានការប្តេជ្ញាចិត្តដើម្បីធានាថាបទពិសោធន៍របស់អ្នកមិនមានអ្វីប្លែកខុសពីធម្មតា។
+                                យើងផ្តល់ជូននូវសេវាកម្មរៀបចំព្រឹត្តិការណ៍ផ្ទាល់ខ្លួនដើម្បីជួយអ្នកក្នុងការរចនាម៉ឺនុយដ៏ល្អឥតខ្ចោះ
+                                រៀបចំសម្រាប់ការប៉ះពិសេស
+                                និងបង្កើតបរិយាកាសដែលឆ្លុះបញ្ចាំងពីសារៈសំខាន់នៃព្រឹត្តិការណ៍របស់អ្នក។
+                            </p>
+                            <p class="fw-medium fs-5 mb-4">
+                                នៅ Wokstar យើងជឿថាអាហារពិសេសសមនឹងទទួលបានសេវាកម្មពិសេស។
+                                បុគ្គលិករបស់យើងត្រូវបានបណ្តុះបណ្តាលដើម្បីផ្តល់នូវកម្រិតនៃសេវាកម្មដែលបង្កើនបទពិសោធន៍ទទួលទានអាហាររបស់អ្នក
+                                ដោយធានាថារាល់ការមកទស្សនា Wokstar គឺគ្មានកំហុសតាំងពីដើមដល់ចប់។
+                                ចាប់ពីពេលដែលអ្នកឈានជើងចូលមាត់ទ្វាររបស់យើង អ្នកនឹងត្រូវបានស្វាគមន៍ដោយស្នាមញញឹមដ៏កក់ក្តៅ
+                                និងសេវាកម្មដែលយកចិត្តទុកដាក់ដែលរំពឹងទុកពីតម្រូវការរបស់អ្នក។
+                                ថាតើវាកំពុងផ្តល់ការណែនាំអំពីម៉ឺនុយផ្ទាល់ខ្លួន តម្រូវតាមចំណូលចិត្តនៃរបបអាហារ
+                                ឬគ្រាន់តែធានាថាកែវទឹករបស់អ្នកមិនទទេនោះទេ
+                                ក្រុមការងាររបស់យើងនៅទីនេះដើម្បីធ្វើឱ្យដំណើរទស្សនកិច្ចរបស់អ្នកពិតជាពិសេស។
+
+                                យើង​យល់​ថា​ការ​ញ៉ាំ​អាហារ​គឺ​មាន​ច្រើន​ជាង​អាហារ​ប៉ុណ្ណោះ​—វា​អំពី​បទពិសោធន៍​ទាំងមូល។
+                                នោះហើយជាមូលហេតុដែលយើងទៅខាងលើ និងលើសពីនេះដើម្បីបង្កើតបរិយាកាសដែលអ្នកអាចសម្រាក
+                                ពិសាអាហារនីមួយៗ និងរីករាយជាមួយការជួបជុំជាមួយអ្នកជុំវិញខ្លួន។
+                                គោលដៅរបស់យើងគឺធ្វើឱ្យភ្ញៀវគ្រប់រូបមានអារម្មណ៍ដូចជាសមាជិកដ៏មានតម្លៃនៃគ្រួសារ Wokstar
+                                ហើយយើងប្តេជ្ញាក្នុងការផ្តល់នូវបទពិសោធន៍ដែលអ្នកចង់ត្រលប់ទៅម្តងហើយម្តងទៀត។
+                            </p>
+                            <p class="fw-medium fs-5 mb-4">
+                                ប្រទេសកម្ពុជា គឺជាប្រទេសដែលមានប្រពៃណី និងវប្បធម៌ដ៏សម្បូរបែប។ មុខម្ហូបខ្មែរនៅទីនេះ
+                                មានការបញ្ជាក់ពីប្រវត្តិសាស្ត្រ និងវប្បធម៌ដ៏សំខាន់។
+                                មុខម្ហូបខ្មែរមិនត្រឹមតែមានរសជាតិឆ្ងាញ់ទេ ប៉ុន្តែគឺជាសញ្ញាដែលបង្ហាញពីអត្តសញ្ញាណ
+                                និងភាពចម្រុះរបស់ប្រជាជនកម្ពុជា។ មុខម្ហូបខ្មែរមានច្រើនប្រភេទ ប៉ុន្តែមានមុខម្ហូបដែលពេញនិយម
+                                និងមានកេរ្តិ៍ឈ្មោះដូចជា **អាម៉ុក** (Amok) ដែលជាមុខម្ហូបដែលធ្វើពីត្រី ឬសាច់មាន់
+                                បន្ថែមជាមួយនឹងគ្រឿងផ្សំដូចជា ក្រក, ក្រូចឆ្មារ និងទឹកក្រូចឆ្មារ។
+                                អាម៉ុកត្រូវបានដាំក្នុងស្លាបព្រិល និងមានរសជាតិឆ្ងាញ់ខ្លាំង។
+                                សម្លគឺជាមុខម្ហូបផ្សេងទៀតដែលមានសារៈសំខាន់។ សម្លគឺជាពេលវេលាសម្រាប់ការបរិច្ឆេទ
+                                និងការប្រមូលផ្តុំគ្នារបស់គ្រួសារ។ សម្លមានច្រើនប្រភេទ ដូចជា សម្លក្តៅ, សម្លត្រី,
+                                និងសម្លសាច់មាន់។ វាមានរសជាតិឆ្ងាញ់ និងអាចបន្ថែមសាច់ឬបន្លែផ្សេងៗបាន។
+                                នៅកម្ពុជា មានការប្រើប្រាស់បន្លែ និងសាច់យ៉ាងច្រើនក្នុងការធ្វើម្ហូប។ បន្លែដូចជា
+                                ស្លឹកគ្រាប់, បន្លែបៃតង, និងក្រូចឆ្មារ ត្រូវបានប្រើប្រាស់យ៉ាងទូលំទូលាយ។ សាច់មាន់,
+                                សាច់ព្រូន, និងសាច់ត្រីគឺជាសាច់ដែលមានការពេញនិយមក្នុងការធ្វើម្ហូប។ មុខម្ហូបខ្មែរ
+                                ផ្តល់អាហារដែលមានប្រយោជន៍ច្រើន។ ឧទាហរណ៍ **នំបុ័ង** (Num Banh Chok)
+                                គឺជាមុខម្ហូបដ៏ពេញនិយមក្នុងពេលព្រឹក។ វាធ្វើពីបង្អែមនំបុ័ងដែលមានរសជាតិផ្លែឈើ
+                                និងគ្រឿងផ្សំផ្សេងៗ។ នំបុ័ងនេះក៏ជាមុខម្ហូបដែលផ្តល់អាហារដែលមានសារធាតុចិញ្ចឹមខ្ពស់។
+                            </p>
+
+                            <div class="card card-quote text-black rounded-3 mb-4">
+                                <div class="card-body p-4">
+                                    <div class="quote">
+                                        <p class="pb-2 fs-5">
+                                            "ខ្ញុំមានពោះការទទួលបានបទពិសោធន៍នៅទីនេះ! ម្ហូបដែលបានបម្រើមានរសជាតិឆ្ងាញ់ណាស់។
+                                            យ៉ាងជាក់លាក់, ស៊ុបសាច់មានរសជាតិឆ្ងាញ់ និងសាច់មានភាពទន់នឹងឆ្ងាញ់។
+                                            ខ្ញុំបានសាកល្បងម្ហូបជាច្រើន ហើយគ្រប់មុខម្ហូបមានភាពខុសគ្នា
+                                            និងមានរសជាតិដ៏អស្ចារ្យ។ "
+                                        </p>
+                                        <span class="mb-0 ">
+                                            -- Lise Meitner
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="fw-medium fs-5 mb-5">
+                                ការទទួលបានមុខម្ហូបខ្មែរនៅក្នុងកម្ពុជា គឺជាបទពិសោធន៍មួយដែលអាចស្គាល់ពីវប្បធម៌
+                                និងប្រវត្តិសាស្ត្រ។ មុខម្ហូបនេះ មិនត្រឹមតែមានរសជាតិឆ្ងាញ់ទេ
+                                ប៉ុន្តែវាក៏ជាការបង្ហាញពីភាពចម្រុះ និងភាពសម្បូរបែបរបស់ប្រជាជនកម្ពុជា។ ដូច្នេះ
+                                ការសាកល្បងម្ហូបទាំងនេះ គឺជាការប្រារព្ធពិធីមួយដែលអ្នកមិនគួរមើលរំលងឡើយនៅក្នុងការទស្សនា
+                                ប្រទេសកម្ពុជា!
+                            </p>
+
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class>
+                            <h4 class="mb-4 text-black">ការបង្ហោះថ្មីៗ</h4>
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="row g-0">
+                                            <div class="col-5 col-md-4 col-lg-5 col-xl-4">
+                                                <img src="assets/img/blog-img/4.jpg"
+                                                    class="img-fluid h-100 object-fit-cover rounded-3" alt="...">
+                                            </div>
+                                            <div class="col-7 col-md-8 col-lg-7 col-xl-8">
+                                                <div class="card-body p-0 px-2">
+                                                    <a href="#">
+                                                        <h5 class="card-title">
+                                                            ចលនាសិល្បៈនៃការបង្ហាញ៖ ធ្វើឱ្យបទពិសោធនៃការញ៉ាំសម្រើច
+                                                        </h5>
+                                                    </a>
+                                                    <time datetime="August 7, 2019" class="card-text ms-1">ថ្ងៃទី១២
+                                                        ខែមិថុនា ឆ្នាំ២០២៣</time>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="row g-0">
+                                            <div class="col-5 col-md-4 col-lg-5 col-xl-4">
+                                                <img src="assets/img/blog-img/5.jpeg"
+                                                    class="img-fluid h-100 object-fit-cover rounded-3" alt="...">
+                                            </div>
+                                            <div class="col-7 col-md-8 col-lg-7 col-xl-8">
+                                                <div class="card-body p-0 px-2">
+                                                    <a href="#">
+                                                        <h5 class="card-title">
+                                                            ធ្វើការស្រាវជ្រាវរកស្រាប់ រដូវកាល៖ ទស្សនៈដ៏អស្ចារ្យរបស់ឈេញ
+                                                        </h5>
+                                                    </a>
+                                                    <time datetime="August 7, 2019" class="card-text ms-1">ថ្ងៃទី៣
+                                                        ខែកញ្ញា ឆ្នាំ២០២៣</time>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class=" card">
+                                        <div class="row g-0">
+                                            <div class="col-5 col-md-4 col-lg-5 col-xl-4">
+                                                <img src="assets/img/blog-img/6.jpg"
+                                                    class="img-fluid h-100 object-fit-cover rounded-3" alt="...">
+                                            </div>
+                                            <div class="col-7 col-md-8 col-lg-7 col-xl-8">
+                                                <div class="card-body p-0 px-2">
+                                                    <a href="#">
+                                                        <h5 class="card-title">
+                                                            សថិរភាពក្នុងបន្ទប់ចំហាយ៖
+                                                            របៀបដែលភោជនីយដ្ឋានរបស់យើងកាត់បន្ថយសំណល់
+                                                        </h5>
+                                                    </a>
+                                                    <time datetime="August 7, 2019" class="card-text ms-1">ថ្ងៃទី២០
+                                                        ខែវិច្ឆិកា ឆ្នាំ២០២៣</time>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class=" card">
-                                            <div class="row g-0">
-                                                <div
-                                                    class="col-5 col-md-4 col-lg-5 col-xl-4">
-                                                    <img
-                                                        src="img/bg-hero-banner-langding-1.jpg"
-                                                        class="img-fluid h-100 object-fit-cover rounded-3"
-                                                        alt="...">
+                                </div>
+                                <div class="col-12">
+                                    <div class=" card">
+                                        <div class="row g-0">
+                                            <div class="col-5 col-md-4 col-lg-5 col-xl-4">
+                                                <img src="assets/img/blog-img/7.webp"
+                                                    class="img-fluid h-100 object-fit-cover rounded-3" alt="...">
+                                            </div>
+                                            <div class="col-7 col-md-8 col-lg-7 col-xl-8">
+                                                <div class="card-body p-0 px-2">
+                                                    <a href="#">
+                                                        <h5 class="card-title">
+                                                            ដំណើរកាត់តាមរសជាតិ៖ អាហារពិសេសពីគ្រប់ទីកន្លែងលើពិភពលោក
+                                                        </h5>
+                                                    </a>
+                                                    <time datetime="August 7, 2019" class="card-text ms-1">ថ្ងៃទី២៨
+                                                        ខែមេសា ឆ្នាំ២០២៤</time>
                                                 </div>
-                                                <div
-                                                    class="col-7 col-md-8 col-lg-7 col-xl-8">
-                                                    <div
-                                                        class="card-body p-0 px-2">
-                                                        <a href="#">
-                                                            <h5
-                                                                class="card-title">
-                                                                Mouth watering
-                                                                full
-                                                                English
-                                                                with breakfast
-                                                            </h5>
-                                                        </a>
-                                                        <time
-                                                            datetime="August 7, 2019"
-                                                            class="card-text ms-1">August
-                                                            7,
-                                                            2019</time>
-                                                    </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class=" card">
+                                        <div class="row g-0">
+                                            <div class="col-5 col-md-4 col-lg-5 col-xl-4">
+                                                <img src="assets/img/blog-img/8.jpg"
+                                                    class="img-fluid h-100 object-fit-cover rounded-3" alt="...">
+                                            </div>
+                                            <div class="col-7 col-md-8 col-lg-7 col-xl-8">
+                                                <div class="card-body p-0 px-2">
+                                                    <a href="#">
+                                                        <h5 class="card-title">
+                                                            អនាគតនៃការញ៉ាំ៖
+                                                            លំនាំនិងនវានុវត្តន៍ក្នុងឧស្សាហកម្មភោជនីយដ្ឋាន
+                                                        </h5>
+                                                    </a>
+                                                    <time datetime="August 7, 2019" class="card-text ms-1">ថ្ងៃទី១៤
+                                                        ខែកក្កដា ឆ្នាំ២០២៤</time>
                                                 </div>
                                             </div>
                                         </div>
@@ -635,273 +572,113 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                <div class="container-lg mt-5 mt-lg-4">
-                    <h4 class="mb-4">Related Article</h4>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card position-relative">
-                                <img
-                                    src="img/bg-hero-banner-langding-1.jpg"
-                                    class="rounded-3" alt="...">
-                                <div class="card-body px-0 pb-1">
-                                    <a href="#">
-                                        <h4 class="card-title">
-                                            Mouth watering full English
-                                            with breakfast
-                                        </h4>
-                                    </a>
+            </div>
+        </section>
+        <section class="relate-article margin-bottom">
+            <div class="container-lg mt-5 mt-lg-4">
+                <h4 class="mb-4 text-black">អត្ថបទពាក់ព័ន្ធ</h4>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card position-relative">
+                            <img src="assets/img/blog-img/9.webp"
+                                class="rounded-3 img-fluid" alt="...">
+                            <div class="card-body px-0 pb-1">
+                                <a href="#">
+                                    <h4 class="card-title">
+                                        សិល្បៈនៃការរៀបចំម៉ាការ៉ូនី: ដំណើរកម្សាន្តបរិក្ខារ
+                                    </h4>
+                                </a>
 
-                                    <p class="card-text">With a creamy,
-                                        curry-spiced sauce and so much
-                                        tomato goodness, Chickpea and
-                                        Tomato Curry is one of my
-                                        favorite dinner recipes lately!
-                                        It comes together super quickly
-                                        - in...</p>
-                                </div>
-                                <div
-                                    class="card-footer bg-transparent border-0 px-0">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                        class="rounded-5" alt
-                                        width="30px">
-                                    <span class="card-text mx-1">Bro
-                                        Code</span>
-                                    <span
-                                        class="card-text">&bull;</span>
-                                    <time datetime="August 7, 2019"
-                                        class="card-text ms-1">August 7,
-                                        2019</time>
-                                </div>
+                                <p class="card-text text-3-line">ចូលទៅក្នុងពិភពលោកនៃម៉ាការ៉ូនីដ៏សម្បូរបែប និងមានលក្ខណៈផ្សេងៗគ្នា ដែលនីមួយៗមានប្រវត្តិរ៉ាប់រង។ ចូលរួមទស្សនាដើម្បីស្វែងយល់បច្ចេកទេសនិងសម្រស់ដែលអាចទន្ទឹងនឹងប្រភេទសាច់ដូវដ៏ពេញនិយមពីសាមញ្ញទៅជាបទពិសោធន៍ហ្វឺនសញ្ញា។</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-0">
+                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    class="rounded-5 img-fluid" alt width="30px">
+                                <span class="card-text mx-1">Chef Giulia Ross</span>
+                                <span class="card-text">&bull;</span>
+                                <time datetime="August 7, 2019" class="card-text ms-1">១៥ សីហា ២០២៤</time>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card position-relative">
-                                <img
-                                    src="img/bg-hero-banner-langding-1.jpg"
-                                    class="rounded-3" alt="...">
-                                <div class="card-body px-0 pb-1">
-                                    <a href="#">
-                                        <h4 class="card-title">
-                                            Mouth watering full English
-                                            with breakfast
-                                        </h4>
-                                    </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card position-relative">
+                            <img src="assets/img/blog-img/10.jpg"
+                                class="rounded-3 img-fluid" alt="...">
+                            <div class="card-body px-0 pb-1">
+                                <a href="#">
+                                    <h4 class="card-title">
+                                        សើចព្រេងជីវិតរបស់អ្នក: រសជាតិល្បីពណ៌នៅក្នុងម្ហូបកម្ពុជា
+                                    </h4>
+                                </a>
 
-                                    <p class="card-text">With a creamy,
-                                        curry-spiced sauce and so much
-                                        tomato goodness, Chickpea and
-                                        Tomato Curry is one of my
-                                        favorite dinner recipes lately!
-                                        It comes together super quickly
-                                        - in...</p>
-                                </div>
-                                <div
-                                    class="card-footer bg-transparent border-0 px-0">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                        class="rounded-5" alt
-                                        width="30px">
-                                    <span class="card-text mx-1">Bro
-                                        Code</span>
-                                    <span
-                                        class="card-text">&bull;</span>
-                                    <time datetime="August 7, 2019"
-                                        class="card-text ms-1">August 7,
-                                        2019</time>
-                                </div>
+                                <p class="card-text text-3-line">ចូលទៅក្នុងដំណើរកម្សាន្តផ្សារពណ៌និងស្មុគស្មាញនៃម្ហូបអាហារកម្ពុជា។ រកឃើញសិល្បៈនៃការត្រួតតាមពណ៌, ការសំខាន់នៃការផ្លាស់ប្តូរនៅតាមតំបន់ និងពូជវប្បធម៌អ្នកចម្រៀងដែលបង្កើតឡើងនូវម្ហូបកម្ពុជាដែលសភាពនិងសម្បូរ។</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-0">
+                                <img src="assets/img/blog-img/pfp-4.avif"
+                                    class="rounded-5" alt width="30px">
+                                <span class="card-text mx-1">អង្គលី សម្បទា</span>
+                                <span class="card-text">&bull;</span>
+                                <time datetime="August 7, 2019" class="card-text ms-1">១៥ សីហា ២០២៤</time>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card position-relative">
-                                <img
-                                    src="img/bg-hero-banner-langding-1.jpg"
-                                    class="rounded-3" alt="...">
-                                <div class="card-body px-0 pb-1">
-                                    <a href="#">
-                                        <h4 class="card-title">
-                                            Mouth watering full English
-                                            with breakfast
-                                        </h4>
-                                    </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card position-relative">
+                            <img src="assets/img/blog-img/11.jpg" class="rounded-3" alt="...">
+                            <div class="card-body px-0 pb-1">
+                                <a href="#">
+                                    <h4 class="card-title ">
+                                        ការសមាង្រាត់នៃកញ្ច្វាញ់ជីវ: សិល្បៈនៃការរៀបចំគ្រាប់ជីវ
+                                    </h4>
+                                </a>
 
-                                    <p class="card-text">With a creamy,
-                                        curry-spiced sauce and so much
-                                        tomato goodness, Chickpea and
-                                        Tomato Curry is one of my
-                                        favorite dinner recipes lately!
-                                        It comes together super quickly
-                                        - in...</p>
-                                </div>
-                                <div
-                                    class="card-footer bg-transparent border-0 px-0">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                        class="rounded-5" alt
-                                        width="30px">
-                                    <span class="card-text mx-1">Bro
-                                        Code</span>
-                                    <span
-                                        class="card-text">&bull;</span>
-                                    <time datetime="August 7, 2019"
-                                        class="card-text ms-1">August 7,
-                                        2019</time>
-                                </div>
+                                <p class="card-text text-3-line">ស្វែងរកសិល្បៈនៃការតម្រង់ឡើងវិញនូវលក្ខណៈពិសេស ដោយមានប៉ះពាល់គុណភាពខ្ពស់។ ពីអាហារភ្លើងគ្រួសារដែលបានលើកកម្ពស់ទៅការរកឃើញរសជាតិដ៏មិនរំពឹងទុក, រកឃើញថាពេលណាអាចផ្តល់ជូននូវការអភិវឌ្ឍជាថ្មីទៀតនៃការរៀបចំការគ្រោងទុកផ្តៀងផ្តាត់ និងធ្វើឱ្យសាច់ភ្ញៀវរបស់អ្នកភ្ញាក់ផ្អើល។</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-0">
+                                <img src="assets/img/blog-img/pfp-2.jpg"
+                                    class="rounded-5 object-fit-cover" alt width="30px" height="30px">
+                                <span class="card-text mx-1">Emily Greenwood</span>
+                                <span class="card-text">&bull;</span>
+                                <time datetime="August 7, 2019" class="card-text ms-1">១៥ សីហា ២០២៤</time>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="border-1  ">
-            <section class="top-footer-sm bg-transparent py-5">
-                <div class="container-fluid ">
-                    <div class="content-top">
-                        <div class="logo-lg-img">
-                            <img src="assets/img/logo-2-png.png" class="w-100 h-100 object-fit-cover pb-4"  alt="">
-                        </div>
-                        <div>
-                            <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar
-                                -
-                                កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
-                            <div class="app position-relative d-flex gap-3 py-2">
-                                <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
-                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                            </div>
-                        </div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-1  ">
+        <section class="top-footer-sm bg-transparent py-5">
+            <div class="container-fluid ">
+                <div class="content-top">
+                    <div class="logo-lg-img">
+                        <img src="assets/img/logo-2-png.png" class="w-100 h-100 object-fit-cover pb-4" alt="">
                     </div>
-                    <div class="accordion accordion-flush bg-transparent border-top pt-3 mt-3 border-opacity-10"
-                        id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent fs-5" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    ភោជនីយដ្ឋាន
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body accordion-body-1">
-                                    <ul class="list-unstyled d-flex flex-column gap-2">
-                                        <li>
-                                            <a href="about-restaurant.html">អំពីយើង</a>
-                                        </li>
-                                        <li>
-                                            <a href="asia-menu.html">ម៉ីនុយ</a>
-                                        </li>
-                                        <li>
-                                            <a href="service.html">សេវាកម្ម</a>
-                                        </li>
-                                        <li>
-                                            <a href="gallery-page.html">រូបភាពហាង</a>
-                                        </li>
-                                        <li>
-                                            <a href="reservastion.html">ការកក់តុ</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent fs-5" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    ព័ត៌មានផ្សេងៗ
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body accordion-body-1">
-                                    <ul class="list-unstyled d-flex flex-column gap-2">
-                                        <li>
-                                            <a href="testimontial-page.html">ការវាយតម្លៃ</a>
-                                        </li>
-                                        <li>
-                                            <a href="faq2.html">សំណួរ & ចម្លើយ</a>
-                                        </li>
-                                        <li>
-                                            <a href="notification-page.html">ការជូនដំណឹង</a>
-                                        </li>
-                                        <li>
-                                            <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">ជំនួយ</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent fs-5" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    ទំនាក់ទំនងមកកាន់យើង
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled d-flex flex-column gap-2">
-                                        <li>
-                                            <i class="fa-solid fa-location-dot"></i>
-                                            <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
-                                                54 ផ្លូវលេខ 606,
-                                                ភ្នំពេញ</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-phone-volume"></i>
-                                            <a href="tel:+88517631845">+885 17 631 845</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-envelope"></i>
-                                            <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-clock"></i>
-                                            <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 -
-                                                22:00 )</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div>
+                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar
+                            -
+                            កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
+                        <div class="app position-relative d-flex gap-3 py-2">
+                            <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="top-footer py-5 ">
-                <div class="container-fluid px-5">
-                    <div class="row text-white justify-content-center">
-                        <div class="col-12 col-md-12 col-xl-4 ">
-                            <div class="content-left">
-                                <div class="logo-lg-img">
-                                    <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png-copy.png"
-                                        alt="">
-                                </div>
-                                <div>
-                                    <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ
-                                        WokStar -
-                                        កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
-                                    <div class="app position-relative d-flex gap-3 py-2">
-                                        <a href="https://www.facebook.com/profile"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
-                                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
-                                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
-                            <div class="content-center">
-                                <h2 class="pb-2">ភោជនីយដ្ឋាន</h2>
+                <div class="accordion accordion-flush bg-transparent border-top pt-3 mt-3 border-opacity-10"
+                    id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ភោជនីយដ្ឋាន
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body accordion-body-1">
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li>
                                         <a href="about-restaurant.html">អំពីយើង</a>
@@ -921,9 +698,18 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
-                            <div class="content-center">
-                                <h2 class="pb-2">ព័ត៌មានផ្សេងៗ</h2>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ព័ត៌មានផ្សេងៗ
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body accordion-body-1">
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li>
                                         <a href="testimontial-page.html">ការវាយតម្លៃ</a>
@@ -943,9 +729,18 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-5 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
-                            <div class="content-right">
-                                <h2 class="pb-2">ទំនាក់ទំនងមកកាន់យើង</h2>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ទំនាក់ទំនងមកកាន់យើង
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li>
                                         <i class="fa-solid fa-location-dot"></i>
@@ -963,29 +758,127 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-clock"></i>
-                                        <span>ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
+                                        <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 -
+                                            22:00 )</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-    
                     </div>
                 </div>
-            </section>
-            <section class="copyright py-3 border-top">
-                <div class="container-fluid px-5">
-                    <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
-                        <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
-                        <p class="m-0 p-0">
-                            <a href="#" class="border-end pe-2">Privacy policy</a>
-                            <a href="#" class="ps-1">Term&condition</a>
-                        </p>
+            </div>
+        </section>
+        <section class="top-footer py-5 ">
+            <div class="container-fluid px-5">
+                <div class="row text-white justify-content-center">
+                    <div class="col-12 col-md-12 col-xl-4 ">
+                        <div class="content-left">
+                            <div class="logo-lg-img">
+                                <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png-copy.png"
+                                    alt="">
+                            </div>
+                            <div>
+                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ
+                                    WokStar -
+                                    កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
+                                <div class="app position-relative d-flex gap-3 py-2">
+                                    <a href="https://www.facebook.com/profile"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </footer>
+                    <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
+                        <div class="content-center">
+                            <h2 class="pb-2">ភោជនីយដ្ឋាន</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li>
+                                    <a href="about-restaurant.html">អំពីយើង</a>
+                                </li>
+                                <li>
+                                    <a href="asia-menu.html">ម៉ីនុយ</a>
+                                </li>
+                                <li>
+                                    <a href="service.html">សេវាកម្ម</a>
+                                </li>
+                                <li>
+                                    <a href="gallery-page.html">រូបភាពហាង</a>
+                                </li>
+                                <li>
+                                    <a href="reservastion.html">ការកក់តុ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-2 pt-3 pt-xl-5 flex-lg-grow-1">
+                        <div class="content-center">
+                            <h2 class="pb-2">ព័ត៌មានផ្សេងៗ</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li>
+                                    <a href="testimontial-page.html">ការវាយតម្លៃ</a>
+                                </li>
+                                <li>
+                                    <a href="faq2.html">សំណួរ & ចម្លើយ</a>
+                                </li>
+                                <li>
+                                    <a href="notification-page.html">ការជូនដំណឹង</a>
+                                </li>
+                                <li>
+                                    <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">ជំនួយ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
+                        <div class="content-right">
+                            <h2 class="pb-2">ទំនាក់ទំនងមកកាន់យើង</h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
+                                        54 ផ្លូវលេខ 606,
+                                        ភ្នំពេញ</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <a href="tel:+88517631845">+885 17 631 845</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
+                </div>
+            </div>
+        </section>
+        <section class="copyright py-3 border-top">
+            <div class="container-fluid px-5">
+                <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
+                    <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
+                    <p class="m-0 p-0">
+                        <a href="#" class="border-end pe-2">Privacy policy</a>
+                        <a href="#" class="ps-1">Term&condition</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
