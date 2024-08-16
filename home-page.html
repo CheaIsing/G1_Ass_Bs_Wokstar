@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="home-page">
     <header>
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
             <div class="container-xxl px-4 ">
@@ -224,55 +229,547 @@
         </nav>
     </header>
     <main>
-        <section class="section-slider margin-bottom">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade ">
-                <div class="carousel-inner">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-item  active position-relative w-100 h-100">
-                        <img src="img/bg-2.jpg" class="w-100 object-fit-cover black-50 position-relative" alt="">
-                        <div class="text-absolute h-100 position-absolute top-0 text-center d-flex flex-column justify-content-center ">
-                            <h2 class="display-4 pb-3 fw-medium">សូមស្វាគមន៏មកកាន់</h2>
-                            <div class="line"></div>
-                            <h1 class="display-2 pb-3 fw-bold lett pt-3">ភោជនីយដ្ឋាន <span>WokStar</span></h1>
-                            <div class="line"></div>
-                            <p class="fs-5 mt-4"> ស្វែងយល់ពីពិភពនៃការធ្វើម្ហូបដ៏រីករាយ និងទទួលយកបទពិសោធន៍នៃការទទួលទានអាហារដែលមិនអាចបំភ្លេចបាន។ រុករកម៉ឺនុយរបស់យើង ហើយធ្វើការកក់ទុកនៅថ្ងៃនេះ។ ភោជនីយដ្ឋានអាស៊ីដ៏ប្រណិតបំផុតសម្រាប់លោកអ្នក </p> 
+        <section class="section-home position-relative ">
+            <div class="style-1 position-absolute">
+            </div>
+            <div class="container">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                    <div class="content">
+                                        <div class="text">
+                                            <h3 class="display-4 fw-medium">ស្វាគមន៍មកកាន់​ </h3>
+                                            <hr>
+                                            <h1 class="display-3 fw-bold">ភោជនីយដ្ឋាន របស់យើង</h1>
+                                            <hr>
+                                            <p class="fs-5">ផ្ដល់ជូនលោកអ្នកនូវសេវាកម្ម និងរសជាតិម្ហូបដ៏ប្រណិត
+                                                ជាមួយនឹងបរិយាកាសដ៏កក់ក្តៅ
+                                                ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតដែលពោលពេញដោយម្ហូបអាសុី<br>សាកល្បងរសជាតិនៅwokstar
+                                                ឥឡូវនេះ!</p>
+                                            </p>
+                                            <div class="mt-4">
+                                                <a href="reservation.html"><button type="button"
+                                                        class="btn btn-cart py-2 fs-5 text-white">កក់តុឥឡូវនេះ</button></a>
+                                                <a href="#"><button type="button"
+                                                        class="btn btn-cart py-2 ms-3 fs-5 text-white">មើលមីនុយ</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/europe-food/brown-bear-cushion.jpg" class="" alt="">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item position-relative">
-                        <img src="img/bg-3.jpg" class="w-100 object-fit-cover black-50 position-relative" alt="">
-                        <div class="text-absolute h-100 position-absolute top-0 text-center  d-flex flex-column justify-content-center ">
-                            <h1 class="display-4 pb-3 fw-bold">ភោជនីយដ្ឋាន <span>WokStar</span></h1>
-                            <p class="fs-4">ផ្តល់ជូនលោកអ្នកនូវសេវាកម្ម និងរសជាតិម្ហូបដ៏ប្រណិត
-                                ជាមួយនឹងបរិយាកាសដ៏កក់ក្តៅ ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
-                                កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!<br>សាកល្បងរសជាតិនៅwokstar ឥឡូវនេះ!</p>
-                            <a href="sing-up.html"><button type="button" class=" btn-booking">កក់តុឥឡូវនេះ</button></a>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                    <div class="content">
+                                        <div class="text">
+                                            <h3 class="display-4 fw-medium">មុឺនុយពិសេសេ</h3>
+                                            <hr>
+                                            <h1 class="display-3 fw-bold">ភោជនីយដ្ឋាន របស់យើង</h1>
+                                            <hr>
+                                            <p class="fs-5">ភោជនីយដ្ឋានអាហារចម្រុះល្អបំផុត! <br>សាកល្បងរសជាតិនៅwokstar
+                                                ឥឡូវនេះ!</p>
+                                            </p>
+                                            <div class="mt-4">
+                                                <a href="reservation.html"><button type="button"
+                                                        class="btn btn-cart py-2 fs-5 text-white">កក់តុឥឡូវនេះ</button></a>
+                                                <a href="#"><button type="button"
+                                                        class="btn btn-cart py-2 ms-3 fs-5 text-white">មើលមីនុយ</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/europe-food/brown-bear-printed-sweater (1).jpg" class="" alt="">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item bg-success">
-                        <img src="img/gif/Untitled design (2).gif" class=" w-100 object-fit-cover" alt="...">
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                    <div class="content">
+                                        <div class="text">
+                                            <h3 class="display-4 fw-medium">ស្វាគមន៍មកកាន់​ </h3>
+                                            <hr>
+                                            <h1 class="display-3 fw-bold">ភោជនីយដ្ឋាន របស់យើង</h1>
+                                            <hr>
+                                            <p class="fs-5">ភោជនីយដ្ឋានអាហារចម្រុះល្អបំផុត! <br>សាកល្បងរសជាតិនៅwokstar
+                                                ឥឡូវនេះ!</p>
+                                            <div class="mt-4">
+                                                <a href="reservation.html"><button type="button"
+                                                        class="btn btn-cart py-2 fs-5 text-white">កក់តុឥឡូវនេះ</button></a>
+                                                <a href="#"><button type="button"
+                                                        class="btn btn-cart py-2 ms-3 fs-5 text-white ">មើលមីនុយ</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/europe-food/hummingbird-printed-t-shirt.jpg" class="" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="section-moremenu position-relative ">
+            <div class="style"></div>
+            <div class="bg-food ">
+                <img src="img/pngwing.com (9).png" alt="">
+            </div>
+            <div class="container-lg pb-5 mb-5 padding-top">
+                <div class="title">
+                    <div class="d-flex justify-content-center pb-4">
+                        <img src="img/icon/dishes.png" alt="">
+                        <h1 class="ps-3 pt-2">មុខម្ហូបបន្ថែម</h1>
+                    </div>
+                </div>
+                <div class="swiper mySwiper py-3">
+                    <div class="swiper-wrapper h-100">
+                        <div class="swiper-slide">
+                            <div class="card mproduct border-0">
+                                <div class="mproduct-image">
+                                    <a href="menu-europe.html">
+                                        <img class="card-img rounded-circle"
+                                            src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                    </a>
+                                    <div class="mproduct-hover">
+                                        <ul class="p-0">
+                                            <li class="mproduct-icon i-cart">
+                                                <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-wishlist">
+                                                <a href="wishlist-page.html" title="រក្សាទុក" ​​>
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-compare">
+                                                <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <i class="bi bi-bar-chart-line-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-check">
+                                                <a href="menu-europe-detail.html" title="លម្អិត">
+                                                    <i class="bi bi-eye"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body mproduct-des text-center ">
+                                    <div class="product-review mb-1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                    <p class="fs-5">$12.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card mproduct border-0">
+                                <div class="mproduct-image">
+                                    <a href="">
+                                        <img class="card-img rounded-circle"
+                                            src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                    </a>
+                                    <div class="mproduct-hover">
+                                        <ul class="p-0">
+                                            <li class="mproduct-icon i-cart">
+                                                <a href="#" title="ដាក់ចូលកន្តក">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-wishlist">
+                                                <a href="#" title="រក្សាទុក" ​​>
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-compare">
+                                                <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                    <i class="bi bi-bar-chart-line-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-check">
+                                                <a href="#" title="លម្អិត">
+                                                    <i class="bi bi-eye"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body mproduct-des text-center ">
+                                    <div class="product-review mb-1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                    <p class="fs-5">$12.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card mproduct border-0">
+                                <div class="mproduct-image">
+                                    <a href="">
+                                        <img class="card-img rounded-circle"
+                                            src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                    </a>
+                                    <div class="mproduct-hover">
+                                        <ul class="p-0">
+                                            <li class="mproduct-icon i-cart">
+                                                <a href="#" title="ដាក់ចូលកន្តក">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-wishlist">
+                                                <a href="#" title="រក្សាទុក" ​​>
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-compare">
+                                                <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                    <i class="bi bi-bar-chart-line-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-check">
+                                                <a href="#" title="លម្អិត">
+                                                    <i class="bi bi-eye"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body mproduct-des text-center ">
+                                    <div class="product-review mb-1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                    <p class="fs-5">$12.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card mproduct border-0">
+                                <div class="mproduct-image">
+                                    <a href="">
+                                        <img class="card-img rounded-circle"
+                                            src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                    </a>
+                                    <div class="mproduct-hover">
+                                        <ul class="p-0">
+                                            <li class="mproduct-icon i-cart">
+                                                <a href="#" title="ដាក់ចូលកន្តក">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-wishlist">
+                                                <a href="#" title="រក្សាទុក" ​​>
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-compare">
+                                                <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                    <i class="bi bi-bar-chart-line-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-check">
+                                                <a href="#" title="លម្អិត">
+                                                    <i class="bi bi-eye"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body mproduct-des text-center ">
+                                    <div class="product-review mb-1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                    <p class="fs-5">$12.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card mproduct border-0">
+                                <div class="mproduct-image">
+                                    <a href="">
+                                        <img class="card-img rounded-circle"
+                                            src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                    </a>
+                                    <div class="mproduct-hover">
+                                        <ul class="p-0">
+                                            <li class="mproduct-icon i-cart">
+                                                <a href="#" title="ដាក់ចូលកន្តក">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-wishlist">
+                                                <a href="#" title="រក្សាទុក" ​​>
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-compare">
+                                                <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                    <i class="bi bi-bar-chart-line-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-check">
+                                                <a href="#" title="លម្អិត">
+                                                    <i class="bi bi-eye"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body mproduct-des text-center ">
+                                    <div class="product-review mb-1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                    <p class="fs-5">$12.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card mproduct border-0">
+                                <div class="mproduct-image">
+                                    <a href="">
+                                        <img class="card-img rounded-circle"
+                                            src="img/europe-food/mountain-fox-cushion.jpg" alt="">
+                                    </a>
+                                    <div class="mproduct-hover">
+                                        <ul class="p-0">
+                                            <li class="mproduct-icon i-cart">
+                                                <a href="#" title="ដាក់ចូលកន្តក">
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-wishlist">
+                                                <a href="#" title="រក្សាទុក" ​​>
+                                                    <i class="bi bi-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-compare">
+                                                <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                    <i class="bi bi-bar-chart-line-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mproduct-icon i-check">
+                                                <a href="#" title="លម្អិត">
+                                                    <i class="bi bi-eye"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body mproduct-des text-center ">
+                                    <div class="product-review mb-1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
+                                    <p class="fs-5">$12.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide my-auto">
+                            <div class="card w-100 h-100 border-0 position-relative">
+                                <div class="position-absolute w-100 h-100">
+                                    <!-- <img src="assets/img/tray.png"
+                                        class="position-fixed object-fit-cover w-100 h-100 pb-5" alt=""> -->
+                                </div>
+                                <div class=" w-100">
+                                    <a href="menu-europe.html" class="hvr-icon-forward">
+                                        <button type="button" class="btn btn-lg btn-more hvr-icon-forward">
+                                            មើលបន្ថែម
+                                            <i class="bi bi-arrow-right hvr-icon"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center ">
+                        <div class="button-prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="button-next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="section-service margin-bottom">
+            <div class="contianer" style="height: 60vh; background-color: blue;" ">
+                <h1></h1>
+            </div>
+        </section>
+        <section class=" section-galery margin-bottom mx-5">
+                <h1 class="text-center pb-3">រូបភាព</h1>
+                <div class="row g-4">
+                    <!-- item-1 -->
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-2 -->
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-3 -->
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-4 -->
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-5 -->
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-6 -->
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-7 -->
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-8 -->
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <img src="img/bg-hero-baner-landing-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
     </main>
-
     <footer class="border-1  ">
         <section class="top-footer-sm bg-transparent py-5">
             <div class="container-fluid ">
@@ -281,8 +778,7 @@
                         <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
                     </div>
                     <div>
-                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar
-                            -
+                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
                             កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
                         <div class="app position-relative d-flex gap-3 py-2">
                             <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
@@ -310,10 +806,10 @@
                                         <a href="about-restaurant.html">អំពីយើង</a>
                                     </li>
                                     <li>
-                                        <a href="asia-menu.html">ម៉ីនុយ</a>
+                                        <a href="menu-khmer.html">ម៉ីនុយ</a>
                                     </li>
                                     <li>
-                                        <a href="service.html">សេវាកម្ម</a>
+                                        <a href="service-page.html">សេវាកម្ម</a>
                                     </li>
                                     <li>
                                         <a href="gallery-page.html">រូបភាពហាង</a>
@@ -338,10 +834,10 @@
                             <div class="accordion-body accordion-body-1">
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li>
-                                        <a href="testimontial-page.html">ការវាយតម្លៃ</a>
+                                        <a href="customer-review.html">ការវាយតម្លៃ</a>
                                     </li>
                                     <li>
-                                        <a href="faq2.html">សំណួរ & ចម្លើយ</a>
+                                        <a href="faq-page.html">សំណួរ & ចម្លើយ</a>
                                     </li>
                                     <li>
                                         <a href="notification-page.html">ការជូនដំណឹង</a>
@@ -370,8 +866,7 @@
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li>
                                         <i class="fa-solid fa-location-dot"></i>
-                                        <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
-                                            54 ផ្លូវលេខ 606,
+                                        <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606,
                                             ភ្នំពេញ</a>
                                     </li>
                                     <li>
@@ -384,8 +879,7 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-clock"></i>
-                                        <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 -
-                                            22:00 )</span>
+                                        <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
                                     </li>
                                 </ul>
                             </div>
@@ -400,12 +894,10 @@
                     <div class="col-12 col-md-12 col-xl-4 ">
                         <div class="content-left">
                             <div class="logo-lg-img">
-                                <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png-copy.png"
-                                    alt="">
+                                <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
                             </div>
                             <div>
-                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ
-                                    WokStar -
+                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
                                     កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
                                 <div class="app position-relative d-flex gap-3 py-2">
                                     <a href="https://www.facebook.com/profile"><i
@@ -425,16 +917,16 @@
                                     <a href="about-restaurant.html">អំពីយើង</a>
                                 </li>
                                 <li>
-                                    <a href="asia-menu.html">ម៉ីនុយ</a>
+                                    <a href="menu-khmer.html">ម៉ីនុយ</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">សេវាកម្ម</a>
+                                    <a href="service-page.html">សេវាកម្ម</a>
                                 </li>
                                 <li>
                                     <a href="gallery-page.html">រូបភាពហាង</a>
                                 </li>
                                 <li>
-                                    <a href="reservastion.html">ការកក់តុ</a>
+                                    <a href="reservation.html">ការកក់តុ</a>
                                 </li>
                             </ul>
                         </div>
@@ -444,10 +936,10 @@
                             <h2 class="pb-2">ព័ត៌មានផ្សេងៗ</h2>
                             <ul class="list-unstyled d-flex flex-column gap-2">
                                 <li>
-                                    <a href="testimontial-page.html">ការវាយតម្លៃ</a>
+                                    <a href="customer-review.html">ការវាយតម្លៃ</a>
                                 </li>
                                 <li>
-                                    <a href="faq2.html">សំណួរ & ចម្លើយ</a>
+                                    <a href="faq-page.html">សំណួរ & ចម្លើយ</a>
                                 </li>
                                 <li>
                                     <a href="notification-page.html">ការជូនដំណឹង</a>
@@ -461,14 +953,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-5 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
+                    <div class="col-md-4 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
                         <div class="content-right">
                             <h2 class="pb-2">ទំនាក់ទំនងមកកាន់យើង</h2>
                             <ul class="list-unstyled d-flex flex-column gap-2">
                                 <li>
                                     <i class="fa-solid fa-location-dot"></i>
-                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
-                                        54 ផ្លូវលេខ 606,
+                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606,
                                         ភ្នំពេញ</a>
                                 </li>
                                 <li>
@@ -495,8 +986,8 @@
                 <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
                     <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
                     <p class="m-0 p-0">
-                        <a href="#" class="border-end pe-2">Privacy policy</a>
-                        <a href="#" class="ps-1">Term&condition</a>
+                        <a href="term-of-use-page.html" class="border-end pe-2">គោលការណ៍ឯកជនភាព</a>
+                        <a href="term-of-use-page.html" class="ps-1">លក្ខខណ្ឌ</a>
                     </p>
                 </div>
             </div>
@@ -505,6 +996,53 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
-    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const myCarouselElement = document.querySelector('#myCarousel')
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            touch: false
+        })
+
+    </script>
+
+    <!-- swiper script  -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            //   autoplay: {
+            //     delay: 4500,
+            //     disableOnInteraction: false,
+            //     },
+            cssMode: true,
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+
 </body>
+
 </html>
