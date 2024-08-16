@@ -129,8 +129,6 @@ myToastEl.addEventListener('hidden.bs.toast', () => {
   // do something...
 })
 
-//aos 
-AOS.init();
 
 //validation
 (() => {
