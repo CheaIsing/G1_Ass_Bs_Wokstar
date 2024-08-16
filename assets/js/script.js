@@ -89,3 +89,82 @@ button.addEventListener("click", (event) => {
 
   currentThemeSetting = newTheme;
 });
+
+
+// script toast
+// toast cart
+var buttons = document.querySelectorAll('#toast-cart');
+    
+   // Loop through each button and attach the click event listener
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var toast = new bootstrap.Toast(document.getElementById('liveToast-cart'));
+        toast.show();
+    });
+});
+// toast compare
+var buttons = document.querySelectorAll('#toast-wish');
+    
+   // Loop through each button and attach the click event listener
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var toast = new bootstrap.Toast(document.getElementById('liveToast-wish'));
+        toast.show();
+    });
+});
+// toast wishlist
+var buttons = document.querySelectorAll('#toast-compare');
+    
+   // Loop through each button and attach the click event listener
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var toast = new bootstrap.Toast(document.getElementById('liveToast-compare'));
+        toast.show();
+    });
+});
+
+//btn close
+const myToastEl = document.getElementById('myToast')
+myToastEl.addEventListener('hidden.bs.toast', () => {
+  // do something...
+})
+
+
+//validation
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+      }, false)
+  })
+})()
+
+//cart script
+const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+        let a = 1;
+
+        plus.addEventListener("click", () => {
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+        });
+        minus.addEventListener("click", () => {
+            if (a >= 1) {
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            }
+        });
