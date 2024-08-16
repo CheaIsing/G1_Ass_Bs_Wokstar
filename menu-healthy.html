@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <style>
 </style>
 <body>
@@ -28,9 +27,7 @@
                     <button class="btn btn-icon btn-responsive-icon" type="button">
                         <i class="fa-solid fa-basket-shopping"></i>
                     </button>
-                    <!-- <button class="btn btn-icon" type="button">
-                        <i class="fa-solid fa-moon text-white"></i>
-                    </button> -->
+                    
                     <button class="btn btn-icon btn-responsive-icon" type="button">
                         <i class="fa-solid fa-user"></i>
                     </button>
@@ -56,12 +53,12 @@
                                 <a class="nav-link" href="#">ទំព័រដើម</a>
                             </li>
 
-                            <li class="nav-item mx-lg-2 dropdown megamenu">
+                            <li class="nav-item mx-lg-2 dropdown megamenu ">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     ម៉ីនុយ
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu border-0">
                                     <div class="container-xxl">
                                         <div class="row w-100 gy-4">
                                             <div class="col-xl-3">
@@ -172,9 +169,9 @@
                                     សេវាកម្ម
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">សេវាកម្ម</a></li>
-                                    <li><a class="dropdown-item" href="#">ការវាយតម្លៃ</a></li>
-                                    <li><a class="dropdown-item" href="#">រូបភាព</a></li>
+                                    <li><a class="dropdown-item" href="service-page.html">សេវាកម្ម</a></li>
+                                    <li><a class="dropdown-item" href="customer-review.html">ការវាយតម្លៃ</a></li>
+                                    <li><a class="dropdown-item" href="gallery-page.html">រូបភាព</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item mx-lg-2 dropdown">
@@ -183,15 +180,15 @@
                                     អំពី
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">អំពីយើង</a></li>
-                                    <li><a class="dropdown-item" href="#">អំពីភោជនីយដ្ឋាន</a></li>
+                                    <li><a class="dropdown-item" href="about-us.html">អំពីយើង</a></li>
+                                    <li><a class="dropdown-item" href="about-restaurant.html">អំពីភោជនីយដ្ឋាន</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">អាជីព</a>
+                                <a class="nav-link" href="">អាជីព</a>
                             </li>
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">ព័ត៌មាន</a>
+                                <a class="nav-link" href="career-detail-page.html">ព័ត៌មាន</a>
                             </li>
                             <li class="nav-item mx-lg-2 dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -199,8 +196,8 @@
                                     ទំនាក់ទំនង
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">ទំនាក់ទំនងយើង</a></li>
-                                    <li><a class="dropdown-item" href="#">សំណួរ​
+                                    <li><a class="dropdown-item" href="contact.html">ទំនាក់ទំនងយើង</a></li>
+                                    <li><a class="dropdown-item" href="faq-page.html">សំណួរ​
                                             និងចម្លើយ</a></li>
                                 </ul>
                             </li>
@@ -261,42 +258,44 @@
                                 <div class="card mproduct p-2 p-xl-3 border-0">
                                     <div class="mproduct-image">
                                         <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
+                                            <img class="card-img rounded-circle"
+                                                src="assets/img/europe-food/chicken-spinach.jpg" alt="">
                                         </a>
                                         <div class="mproduct-hover">
                                             <ul class="p-0">
                                                 <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <button type="button" class="btn" id="toast-cart" title="ដាក់ចូលកន្ត្រក">
                                                         <i class="bi bi-cart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
+                                                    <button type="button" class="btn" id="toast-wish" title="រក្សាទុក">
                                                         <i class="bi bi-heart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <button type="button" class="btn" id="toast-compare" title="ប្រៀបធៀបទំនិញ">
                                                         <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-check">
                                                     <a href="menu-healthy-detail.html" title="លម្អិត">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </li>
+    
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
+                                        <div class="product-review mb-1​ fs-5 py-1">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-half"></i>
                                             <i class="bi bi-star"></i>
                                         </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
+                                        <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
                                         <p class="fs-5">$12.50</p>
                                     </div>
                                 </div>
@@ -305,42 +304,44 @@
                                 <div class="card mproduct p-2 p-xl-3 border-0">
                                     <div class="mproduct-image">
                                         <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
+                                            <img class="card-img rounded-circle"
+                                                src="assets/img/europe-food/chicken-spinach.jpg" alt="">
                                         </a>
                                         <div class="mproduct-hover">
                                             <ul class="p-0">
                                                 <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <button type="button" class="btn" id="toast-cart" title="ដាក់ចូលកន្ត្រក">
                                                         <i class="bi bi-cart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
+                                                    <button type="button" class="btn" id="toast-wish" title="រក្សាទុក">
                                                         <i class="bi bi-heart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <button type="button" class="btn" id="toast-compare" title="ប្រៀបធៀបទំនិញ">
                                                         <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-check">
                                                     <a href="menu-healthy-detail.html" title="លម្អិត">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </li>
+    
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
+                                        <div class="product-review mb-1​ fs-5 py-1">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-half"></i>
                                             <i class="bi bi-star"></i>
                                         </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
+                                        <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
                                         <p class="fs-5">$12.50</p>
                                     </div>
                                 </div>
@@ -349,42 +350,44 @@
                                 <div class="card mproduct p-2 p-xl-3 border-0">
                                     <div class="mproduct-image">
                                         <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
+                                            <img class="card-img rounded-circle"
+                                                src="assets/img/europe-food/chicken-spinach.jpg" alt="">
                                         </a>
                                         <div class="mproduct-hover">
                                             <ul class="p-0">
                                                 <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <button type="button" class="btn" id="toast-cart" title="ដាក់ចូលកន្ត្រក">
                                                         <i class="bi bi-cart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
+                                                    <button type="button" class="btn" id="toast-wish" title="រក្សាទុក">
                                                         <i class="bi bi-heart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <button type="button" class="btn" id="toast-compare" title="ប្រៀបធៀបទំនិញ">
                                                         <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-check">
                                                     <a href="menu-healthy-detail.html" title="លម្អិត">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </li>
+    
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
+                                        <div class="product-review mb-1​ fs-5 py-1">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-half"></i>
                                             <i class="bi bi-star"></i>
                                         </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
+                                        <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
                                         <p class="fs-5">$12.50</p>
                                     </div>
                                 </div>
@@ -393,42 +396,44 @@
                                 <div class="card mproduct p-2 p-xl-3 border-0">
                                     <div class="mproduct-image">
                                         <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
+                                            <img class="card-img rounded-circle"
+                                                src="assets/img/europe-food/chicken-spinach.jpg" alt="">
                                         </a>
                                         <div class="mproduct-hover">
                                             <ul class="p-0">
                                                 <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <button type="button" class="btn" id="toast-cart" title="ដាក់ចូលកន្ត្រក">
                                                         <i class="bi bi-cart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
+                                                    <button type="button" class="btn" id="toast-wish" title="រក្សាទុក">
                                                         <i class="bi bi-heart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <button type="button" class="btn" id="toast-compare" title="ប្រៀបធៀបទំនិញ">
                                                         <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-check">
                                                     <a href="menu-healthy-detail.html" title="លម្អិត">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </li>
+    
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
+                                        <div class="product-review mb-1​ fs-5 py-1">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-half"></i>
                                             <i class="bi bi-star"></i>
                                         </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
+                                        <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
                                         <p class="fs-5">$12.50</p>
                                     </div>
                                 </div>
@@ -437,42 +442,44 @@
                                 <div class="card mproduct p-2 p-xl-3 border-0">
                                     <div class="mproduct-image">
                                         <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
+                                            <img class="card-img rounded-circle"
+                                                src="assets/img/europe-food/chicken-spinach.jpg" alt="">
                                         </a>
                                         <div class="mproduct-hover">
                                             <ul class="p-0">
                                                 <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <button type="button" class="btn" id="toast-cart" title="ដាក់ចូលកន្ត្រក">
                                                         <i class="bi bi-cart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
+                                                    <button type="button" class="btn" id="toast-wish" title="រក្សាទុក">
                                                         <i class="bi bi-heart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <button type="button" class="btn" id="toast-compare" title="ប្រៀបធៀបទំនិញ">
                                                         <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-check">
                                                     <a href="menu-healthy-detail.html" title="លម្អិត">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </li>
+    
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
+                                        <div class="product-review mb-1​ fs-5 py-1">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-half"></i>
                                             <i class="bi bi-star"></i>
                                         </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
+                                        <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
                                         <p class="fs-5">$12.50</p>
                                     </div>
                                 </div>
@@ -481,42 +488,44 @@
                                 <div class="card mproduct p-2 p-xl-3 border-0">
                                     <div class="mproduct-image">
                                         <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
+                                            <img class="card-img rounded-circle"
+                                                src="assets/img/europe-food/chicken-spinach.jpg" alt="">
                                         </a>
                                         <div class="mproduct-hover">
                                             <ul class="p-0">
                                                 <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <button type="button" class="btn" id="toast-cart" title="ដាក់ចូលកន្ត្រក">
                                                         <i class="bi bi-cart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
+                                                    <button type="button" class="btn" id="toast-wish" title="រក្សាទុក">
                                                         <i class="bi bi-heart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <button type="button" class="btn" id="toast-compare" title="ប្រៀបធៀបទំនិញ">
                                                         <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-check">
                                                     <a href="menu-healthy-detail.html" title="លម្អិត">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </li>
+    
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
+                                        <div class="product-review mb-1​ fs-5 py-1">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-half"></i>
                                             <i class="bi bi-star"></i>
                                         </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
+                                        <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
                                         <p class="fs-5">$12.50</p>
                                     </div>
                                 </div>
@@ -525,42 +534,44 @@
                                 <div class="card mproduct p-2 p-xl-3 border-0">
                                     <div class="mproduct-image">
                                         <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
+                                            <img class="card-img rounded-circle"
+                                                src="assets/img/europe-food/chicken-spinach.jpg" alt="">
                                         </a>
                                         <div class="mproduct-hover">
                                             <ul class="p-0">
                                                 <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <button type="button" class="btn" id="toast-cart" title="ដាក់ចូលកន្ត្រក">
                                                         <i class="bi bi-cart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
+                                                    <button type="button" class="btn" id="toast-wish" title="រក្សាទុក">
                                                         <i class="bi bi-heart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <button type="button" class="btn" id="toast-compare" title="ប្រៀបធៀបទំនិញ">
                                                         <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-check">
                                                     <a href="menu-healthy-detail.html" title="លម្អិត">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </li>
+    
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
+                                        <div class="product-review mb-1​ fs-5 py-1">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-half"></i>
                                             <i class="bi bi-star"></i>
                                         </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
+                                        <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
                                         <p class="fs-5">$12.50</p>
                                     </div>
                                 </div>
@@ -569,139 +580,90 @@
                                 <div class="card mproduct p-2 p-xl-3 border-0">
                                     <div class="mproduct-image">
                                         <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
+                                            <img class="card-img rounded-circle"
+                                                src="assets/img/europe-food/chicken-spinach.jpg" alt="">
                                         </a>
                                         <div class="mproduct-hover">
                                             <ul class="p-0">
                                                 <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
+                                                    <button type="button" class="btn" id="toast-cart" title="ដាក់ចូលកន្ត្រក">
                                                         <i class="bi bi-cart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
+                                                    <button type="button" class="btn" id="toast-wish" title="រក្សាទុក">
                                                         <i class="bi bi-heart"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
+                                                    <button type="button" class="btn" id="toast-compare" title="ប្រៀបធៀបទំនិញ">
                                                         <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                                 <li class="mproduct-icon i-check">
                                                     <a href="menu-healthy-detail.html" title="លម្អិត">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </li>
+    
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
+                                        <div class="product-review mb-1​ fs-5 py-1">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-half"></i>
                                             <i class="bi bi-star"></i>
                                         </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
+                                        <h5 class="fs-3">ទាខ្វៃប៉េកាំង</h5>
                                         <p class="fs-5">$12.50</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-9 col-sm-6 col-md-4 col-lg-3 ">
-                                <div class="card mproduct p-2 p-xl-3 border-0">
-                                    <div class="mproduct-image">
-                                        <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
-                                        </a>
-                                        <div class="mproduct-hover">
-                                            <ul class="p-0">
-                                                <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
-                                                        <i class="bi bi-cart"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
-                                                        <i class="bi bi-heart"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
-                                                        <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="mproduct-icon i-check">
-                                                    <a href="menu-healthy-detail.html" title="លម្អិត">
-                                                        <i class="bi bi-eye"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
-                                        <p class="fs-5">$12.50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-9 col-sm-6 col-md-4 col-lg-3 ">
-                                <div class="card mproduct p-2 p-xl-3 border-0">
-                                    <div class="mproduct-image">
-                                        <a href="menu-healthy-detail.html">
-                                            <img class="card-img rounded-circle" src="assets/img/europe-food/chicken-spinach.jpg" alt="">
-                                        </a>
-                                        <div class="mproduct-hover">
-                                            <ul class="p-0">
-                                                <li class="mproduct-icon i-cart">
-                                                    <a href="cart-page.html" title="ដាក់ចូលកន្តក">
-                                                        <i class="bi bi-cart"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="mproduct-icon i-wishlist">
-                                                    <a href="wishlist-page.html" title="រក្សាទុក"​​>
-                                                        <i class="bi bi-heart"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="mproduct-icon i-compare">
-                                                    <a href="compare-page.html" title="ប្រៀបធៀបទំនិញ">
-                                                        <i class="bi bi-bar-chart-line-fill"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="mproduct-icon i-check">
-                                                    <a href="menu-healthy-detail.html" title="លម្អិត">
-                                                        <i class="bi bi-eye"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card-body mproduct-des text-center ">
-                                        <div class="product-review mb-1">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <h5 class="fs-3">មាន់ដុតស្ពីណាច</h5>
-                                        <p class="fs-5">$12.50</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast-cart" class="toast" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="toast-header justify-content-end bg-transparent border-0">
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body p-3 pt-0 ">
+                    <h5>ទំនិញបានដាក់ចូលកន្រ្តកដោយជោគជ័យ</h5>
+                </div>
+            </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast-wish" class="toast" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="toast-header justify-content-end bg-transparent border-0">
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body p-3 pt-0 ">
+                    <h5 >ទំនិញបានដាក់ចូលចំណង់ចំណូលចិត្ត!</h5>
+                </div>
+            </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast-compare" class="toast" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="toast-header justify-content-end bg-transparent border-0">
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body p-3 pt-0 ">
+                    <h5 >ទំនិញបានដាក់ចូលប្រៀបធៀប!</h5>
+                </div>
+            </div>
+        </div>
         <section class="section-slider margin-bottom">
             <div id="carouselExampleFade" class="carousel slide carousel-fade ">
                 <div class="carousel-inner">
@@ -733,7 +695,6 @@
               </div>
         </section>
     </main>
-
     <footer class="border-1  ">
         <section class="top-footer-sm bg-transparent py-5">
             <div class="container-fluid ">
