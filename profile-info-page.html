@@ -21,7 +21,7 @@
                 <a class="navbar-brand" href="#">
                     <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
-                <div class="d-flex d-xl-none align-items-xl-center">
+                <div class="d-flex d-xl-none align-items-center">
                     <form class="d-flex" role="search">
                         <button class="btn btn-icon btn-responsive-icon" type="button">
                             <i class="fa-solid fa-search"></i>
@@ -30,27 +30,35 @@
                     <button class="btn btn-icon btn-responsive-icon" type="button">
                         <i class="fa-solid fa-basket-shopping"></i>
                     </button>
-                    
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
-                        <i class="fa-solid fa-user"></i>
-                    </button>
-                    <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="offcanvas"
+                    <div class="dropdown-center dropdown-account">
+                        <a class="btn btn-icon btn-responsive-icon" role="button" href="profile-info-page.html" title="គណនី" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu bg-black ms-5 mt-4">
+                            <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Action</a></li>
+                            <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Another action</a></li>
+                            <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Something else here</a></li>
+                          </ul>
+                    </div>
+                    <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
                         <i class=" fa-solid fa-bars"></i>
                     </button>
                 </div>
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-start bg-offcanvasNavbar" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                    <div class="offcanvas-header d-flex d-xl-none align-items-center">
+                    <div class="offcanvas-header d-flex d-xl-none align-items-center bg-transparent">
                         <a class="navbar-brand" href="#">
-                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="70px">
                         </a>
-                        <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn btn-icon fs-1 shadow-none ms-auto text-black" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body bg-transparent">
                         <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
                             <li class="nav-item mx-lg-2">
                                 <a class="nav-link" href="home-page.html">ទំព័រដើម</a>
@@ -197,7 +205,7 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center">
-                            <a class="btn btn-icon" role="button" href="reservation.html"​​​title="កក់តុ">
+                            <a class="btn btn-icon" role="button" href="reservation.html"​title="កក់តុ">
                                 <i class="fa-solid fa-utensils"></i>
                             </a>
                             <form class="d-none d-xl-flex" role="search" title="ស្វែងរក">
@@ -205,19 +213,27 @@
                                     <i class="fa-solid fa-search"></i>
                                 </button>
                             </form>
-                            <a class="btn btn-icon d-none d-xl-inline-block" role="button" href="cart-page.html" title="កន្រ្តក">
+                            <a class="btn btn-icon d-none d-xl-inline-block" role="button" title="កន្រ្តក"  data-bs-toggle="offcanvas" href="#offcanvasCart"aria-controls="offcanvasCartExample">
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </a>
                             <button class="btn btn-icon" type="button" data-theme-toggle>
                             </button>
-                            <a class="btn btn-icon d-none d-xl-inline-block" role="button" href="profile-info-page.html" title="គណនី">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
+                            <div class="dropdown-center dropdown-account">
+                                <a class="btn btn-icon d-none d-xl-inline-block" role="button" href="profile-info-page.html" title="គណនី" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                                <ul class="dropdown-menu bg-black mt-4">
+                                    <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Action</a></li>
+                                    <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Something else here</a></li>
+                                  </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+        
     </header>
     <main>
         <section class="mt-5 pt-5">
@@ -356,7 +372,7 @@
                                     <div class="row g-4">
                                         <div class="col-12">
                                             <div class="account-choice-item d-flex align-items-center">
-                                                <img src="img/icon/fb.png" alt="." width="35px">
+                                                <img src="assets/img/icon/fb.png" alt="." width="35px">
                                                 <div class="account-choice-text ms-3">
                                                     <div class="h5 account-choice-title mb-0 text-black">
                                                         Facebook
@@ -367,7 +383,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="account-choice-item d-flex align-items-center">
-                                                <img src="http://antstudents.com/WebScholarship/Group-1/ProjectHTML/img/Google.png"
+                                                <img src="assets/img/icon/Google.png"
                                                     alt="." width="35px">
                                                 <div class="account-choice-text ms-3">
                                                     <div class="h5 account-choice-title mb-0 text-black">
@@ -380,7 +396,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="account-choice-item d-flex align-items-center">
-                                                <img src="img/icon/apple.png" alt="." width="35px">
+                                                <img src="assets/img/icon/apple.png" alt="." width="35px">
                                                 <div class="account-choice-text ms-3">
                                                     <div class="h5 account-choice-title mb-0 text-black">
                                                         Apple
@@ -615,6 +631,29 @@
             </div>
         </section>
     </footer>
+
+    <!-- Cart Offcanvas -->
+    <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasCartLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
