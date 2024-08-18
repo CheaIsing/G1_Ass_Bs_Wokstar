@@ -68,6 +68,10 @@ body {
   color: var(--c-gray-dark);
 }
 
+.text-whitee{
+  color: var(--c-white);
+}
+
 .text-white-light {
   color: var(--c-white-light);
 }
@@ -76,12 +80,16 @@ body {
   background-color: var(--c-black) !important;
 }
 
+.bg-brand{
+  background-color: var(--c-brand) !important;
+}
+
 .bg-offcanvasNavbar {
   background-color: var(--c-white);
 }
 
 .border-brand {
-  border-color: var(--c-brand);
+  border-color: var(--c-brand) !important;
 }
 
 .btn-brand {
@@ -211,10 +219,60 @@ body {
   margin-left: 0 !important;
 }
 
+.navbar .dropdown-account .dropdown-menu{
+  left: -380% !important;
+}
+
 .navbar .btn-icon {
   font-size: 1.6rem;
   color: var(--c-text-grey) !important;
   border: 0;
+}
+
+.offcanvas-cart{  
+  background-image: url(../../assets/img/highlight3.png) !important;
+}
+
+.offcanvas-cart .btn-x{
+  font-size: 36px !important;
+  padding-right: 0 !important;
+  transition: .3s;
+}
+
+.offcanvas-cart .btn-x:hover{
+  color: var(--c-brand) !important;
+}
+
+.offcanvas-cart .btn-remove{
+  transition: .3s;
+  font-size: 18px;
+}
+.offcanvas-cart .btn-remove:hover{
+  color: var(--c-brand) !important;
+}
+
+.offcanvas-cart::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: var(--overlay-navbar) !important;
+  z-index: 1000;
+}
+
+.offcanvas-cart .offcanvas-body,
+.offcanvas-cart .offcanvas-header
+{
+  position: relative;
+  z-index: 2000;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .navbar .dropdown-account .dropdown-menu{
+    /* margin-right: 200px !important; */
+    left: -490% !important;
+  }
 }
 
 @media (max-width: 1200px){
@@ -271,17 +329,23 @@ body {
   box-shadow: 0 0 0 transparent;
 }
 
-.navbar .dropdown-account .dropdown-menu {
-  left: -380%;
+.navbar .dropdown-account .dropdown-menu .dropdown-item > div{
+  width: 30px !important;
+  margin-right: 7px;
 }
 
 .navbar .dropdown-account .dropdown-menu .dropdown-item {
   transition: .3s;
+  margin-bottom: 4px !important;
 }
 
 .navbar .dropdown-account .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
   color: var(--c-brand);
+}
+
+.navbar .badge-noti{
+  font-size: 14px;
 }
 
 .navbar .dropdown-account .btn-icon{
@@ -292,7 +356,7 @@ body {
   content: "";
   position: absolute;
   width: 500%;
-  left: -100%;
+  left: -200%;
   bottom: -24px;
   height: 25px;
   background-color: transparent;
@@ -394,9 +458,6 @@ body {
     border: 0;
   }
 
-  .navbar .dropdown-account .dropdown-menu {
-    left: -100%;
-  }
 }
 
 .navbar .dropdown:hover:not(.megamenu)>.dropdown-menu {
@@ -2105,6 +2166,14 @@ footer .copyright a:hover {
 }
 
 /* Noti Page */
+[data-theme="light"] {
+  --c-list-item-bg: #f4f4f4;
+}
+
+[data-theme="dark"] {
+  --c-list-item-bg: #343434;
+}
+
 .profile-info-page header nav {
   background-color: #000;
 }
@@ -2132,10 +2201,74 @@ footer .copyright a:hover {
   padding-block: 16px;
   border-radius: 8px;
   background-color: transparent;
+  transition: .3s;
+}
+
+.noti-page .list-group .list-group-item:hover strong{
+  
+  color: var(--c-brand) !important;
+}
+
+.noti-page .list-group .list-group-item:hover {
+  
+  background-color: var(--c-list-item-bg);
 }
 
 .noti-page .list-group .list-group-item .card {
   color: var(--c-card-text);
+}
+
+/* Voucher page */
+.voucher-page .card.coupon{
+  position: relative;
+}
+
+.voucher-page .card.coupon::before{
+  content: '';
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #ddd;
+  clip-path: circle(50% at 100% 50%);
+  background-color: var(--c-white-black-light);
+  border-radius: 50%;
+  left: -34px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.voucher-page .card.coupon::after{
+  content: '';
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #ddd;
+  clip-path: circle(50% at 0 50%);
+  background-color: var(--c-white-black-light);
+  border-radius: 50%;
+  right: -34px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.voucher-page .card.coupon .coupon-left{
+  width: 100px !important;
+}
+
+.voucher-page .btn-close {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 576px) {
+  .section-slider{
+    height: 200px !important;
+    object-fit: cover;
+  }
+
+  .section-slider .carousel-inner img{
+    height: 200px !important;
+    object-fit: cover;
+  }
 }
 
 /* Order History Page */

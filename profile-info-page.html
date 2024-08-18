@@ -27,21 +27,29 @@
                             <i class="fa-solid fa-search"></i>
                         </button>
                     </form>
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
+                    <a class="btn btn-icon d-none d-xl-inline-block" role="button" title="កន្រ្តក"
+                        data-bs-toggle="offcanvas" href="#offcanvasCart" aria-controls="offcanvasCartExample">
                         <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
+                    </a>
+                    <a href="#offcanvasCart" class="btn btn-icon btn-responsive-icon" role="button"
+                        data-bs-toggle="offcanvas" aria-controls="offcanvasCartExample" title="កន្រ្តក">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
                     <div class="dropdown-center dropdown-account">
-                        <a class="btn btn-icon btn-responsive-icon" role="button" href="profile-info-page.html" title="គណនី" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn btn-icon btn-responsive-icon" role="button" href="profile-info-page.html"
+                            title="គណនី" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-user"></i>
                         </a>
                         <ul class="dropdown-menu bg-black ms-5 mt-4">
                             <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Action</a></li>
-                            <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Another action</a></li>
-                            <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Something else here</a></li>
-                          </ul>
+                            <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Another action</a>
+                            </li>
+                            <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Something else
+                                    here</a></li>
+                        </ul>
                     </div>
-                    <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                    <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
                         <i class=" fa-solid fa-bars"></i>
                     </button>
@@ -51,11 +59,11 @@
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
                     <div class="offcanvas-header d-flex d-xl-none align-items-center bg-transparent">
                         <a class="navbar-brand" href="#">
-                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="70px">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-Orange-png.png" alt height="70px">
                         </a>
-                        <button type="button" class="btn btn-icon fs-1 shadow-none ms-auto text-black" data-bs-dismiss="offcanvas"
-                            aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
+                        <button type="button" class="btn btn-icon fs-2 shadow-none ms-auto text-black"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
                         </button>
                     </div>
                     <div class="offcanvas-body bg-transparent">
@@ -75,89 +83,137 @@
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-khmer.html"><h5 class="dropdown-item">ម្ហូបខ្មែរ</h5></a>
+                                                        <a href="menu-khmer.html">
+                                                            <h5 class="dropdown-item">ម្ហូបខ្មែរ</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="menu-khmer-detail.html">អាម៉ុកត្រី</a></li>
-                                                    <li><a class="dropdown-item" href="menu-khmer-detail.html">បុកមាន់ហឹរ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-khmer-detail.html">ត្រីបំពង</a></li>
-                                                    <li><a class="dropdown-item" href="menu-khmer-detail.html">សម្លម្ជូរខ្ទិះ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-khmer-detail.html">អាម៉ុកត្រី</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-khmer-detail.html">បុកមាន់ហឹរ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-khmer-detail.html">ត្រីបំពង</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-khmer-detail.html">សម្លម្ជូរខ្ទិះ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-chinese.html"><h5 class="dropdown-item">ម្ហូបចិន</h5></a>
+                                                        <a href="menu-chinese.html">
+                                                            <h5 class="dropdown-item">ម្ហូបចិន</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="menu-chinese-detail.html">ហាកាវចំហុយ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-chinese-detail.html">មាន់កុងប៉ាវ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-chinese-detail.html">មីជូរហឹរ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-chinese-detail.html">ស៊ុបគាវ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-chinese-detail.html">ហាកាវចំហុយ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-chinese-detail.html">មាន់កុងប៉ាវ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-chinese-detail.html">មីជូរហឹរ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-chinese-detail.html">ស៊ុបគាវ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-thai.html"><h5 class="dropdown-item">ម្ហូបថៃ</h5></a>
+                                                        <a href="menu-thai.html">
+                                                            <h5 class="dropdown-item">ម្ហូបថៃ</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="menu-thai-detail.html">ផាត់ថៃ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-thai-detail.html">ឡាបសាច់ជ្រូក</a></li>
-                                                    <li><a class="dropdown-item" href="menu-thai-detail.html">គុយទាវទូក</a></li>
-                                                    <li><a class="dropdown-item" href="menu-thai-detail.html">គុយទាវទឹកខ្មៅ</a></li>
+                                                    <li><a class="dropdown-item" href="menu-thai-detail.html">ផាត់ថៃ</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-thai-detail.html">ឡាបសាច់ជ្រូក</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-thai-detail.html">គុយទាវទូក</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-thai-detail.html">គុយទាវទឹកខ្មៅ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-vietname.html"><h5 class="dropdown-item">ម្ហូបវៀតណាម</h5></a>
+                                                        <a href="menu-vietname.html">
+                                                            <h5 class="dropdown-item">ម្ហូបវៀតណាម</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="menu-vietname-detail.html">ហ្វឺសាច់គោ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-vietname-detail.html">បុងបរវេរ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-vietname-detail.html">នំបញ្ចុកដុះផ្សិត</a></li>
-                                                    <li><a class="dropdown-item" href="menu-vietname-detail.html">គួងចំហុយ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-vietname-detail.html">ហ្វឺសាច់គោ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-vietname-detail.html">បុងបរវេរ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-vietname-detail.html">នំបញ្ចុកដុះផ្សិត</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-vietname-detail.html">គួងចំហុយ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-europe.html"><h5 class="dropdown-item">ម្ហូបអ៊ឺរ៉ុប</h5></a>
+                                                        <a href="menu-europe.html">
+                                                            <h5 class="dropdown-item">ម្ហូបអ៊ឺរ៉ុប</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="menu-europe-detail.html">ផាស្តាប៉េងប៉ោះ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-europe-detail.html">ភីហ្សាបេខន់</a></li>
-                                                    <li><a class="dropdown-item" href="menu-europe-detail.html">មាន់ស្ពីណាច</a></li>
-                                                    <li><a class="dropdown-item" href="menu-europe-detail.html">ស្តេកសាច់គោ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-europe-detail.html">ផាស្តាប៉េងប៉ោះ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-europe-detail.html">ភីហ្សាបេខន់</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-europe-detail.html">មាន់ស្ពីណាច</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-europe-detail.html">ស្តេកសាច់គោ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-healthy.html"><h5 class="dropdown-item">អាហារសុខភាព</h5></a>
+                                                        <a href="menu-healthy.html">
+                                                            <h5 class="dropdown-item">អាហារសុខភាព</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="menu-healthy-detail.html">ស្តេកទ្រូងមាន់</a></li>
-                                                    <li><a class="dropdown-item" href="menu-healthy-detail.html">សាល់ម៉ុនសាឡាដ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-healthy-detail.html">ផាស្តាបង្គារ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-healthy-detail.html">សាឡាដក្រូចថ្លុង</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-healthy-detail.html">ស្តេកទ្រូងមាន់</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-healthy-detail.html">សាល់ម៉ុនសាឡាដ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-healthy-detail.html">ផាស្តាបង្គារ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-healthy-detail.html">សាឡាដក្រូចថ្លុង</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-dessert.html"><h5 class="dropdown-item">បង្អែម</h5></a>
+                                                        <a href="menu-dessert.html">
+                                                            <h5 class="dropdown-item">បង្អែម</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="menu-dessert-detail.html">សង់ខ្យាល្ពៅ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-dessert-detail.html">បាយដំណើបស្វាយទុំ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-dessert-detail.html">ការ៉េមសូកូឡា</a></li>
-                                                    <li><a class="dropdown-item" href="menu-dessert-detail.html">ថាតរសជាតិក្រូច</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-dessert-detail.html">សង់ខ្យាល្ពៅ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-dessert-detail.html">បាយដំណើបស្វាយទុំ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-dessert-detail.html">ការ៉េមសូកូឡា</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-dessert-detail.html">ថាតរសជាតិក្រូច</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-drink.html"><h5 class="dropdown-item">ភេសជ្ជះ</h5></a>
+                                                        <a href="menu-drink.html">
+                                                            <h5 class="dropdown-item">ភេសជ្ជះ</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="menu-drink-detail.html">កាហ្វេទឹកដោះគោ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-drink-detail.html">ម៉ាឆាឡាតេ</a></li>
-                                                    <li><a class="dropdown-item" href="menu-drink-detail.html">ស្រ្តបឺរីក្រឡុក</a></li>
-                                                    <li><a class="dropdown-item" href="menu-drink-detail.html">តែផាសិន</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-drink-detail.html">កាហ្វេទឹកដោះគោ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-drink-detail.html">ម៉ាឆាឡាតេ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-drink-detail.html">ស្រ្តបឺរីក្រឡុក</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-drink-detail.html">តែផាសិន</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -205,36 +261,222 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center">
-                            <a class="btn btn-icon" role="button" href="reservation.html"​title="កក់តុ">
+                            <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
                                 <i class="fa-solid fa-utensils"></i>
                             </a>
                             <form class="d-none d-xl-flex" role="search" title="ស្វែងរក">
-                                <button class="btn btn-icon" type="button">
+                                <button class="btn btn-icon" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#searchModal">
                                     <i class="fa-solid fa-search"></i>
                                 </button>
                             </form>
-                            <a class="btn btn-icon d-none d-xl-inline-block" role="button" title="កន្រ្តក"  data-bs-toggle="offcanvas" href="#offcanvasCart"aria-controls="offcanvasCartExample">
+                            <a class="btn btn-icon d-none d-xl-inline-block" role="button" title="កន្រ្តក"
+                                data-bs-toggle="offcanvas" href="#offcanvasCart" aria-controls="offcanvasCartExample">
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </a>
                             <button class="btn btn-icon" type="button" data-theme-toggle>
                             </button>
                             <div class="dropdown-center dropdown-account">
-                                <a class="btn btn-icon d-none d-xl-inline-block" role="button" href="profile-info-page.html" title="គណនី" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="btn btn-icon d-none d-xl-inline-block position-relative" role="button"
+                                    href="profile-info-page.html" title="គណនី" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     <i class="fa-solid fa-user"></i>
+                                    <span
+                                        class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                        <small>6</small>
+                                    </span>
                                 </a>
-                                <ul class="dropdown-menu bg-black mt-4">
-                                    <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Action</a></li>
-                                    <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item text-white-light fw-medium fs-5" href="#">Something else here</a></li>
-                                  </ul>
+                                <ul class="dropdown-menu bg-black mt-4 rounded-3 py-3">
+                                    <div class="card border-0 ">
+                                        <div class="account-header d-flex flex-column align-items-center px-5 pt-2">
+                                            <div class="mb-2">
+                                                <img class="border border-brand border-2 rounded-circle object-fit-cover"
+                                                    src="assets/img/blog-img/pfp-1.jpg" alt="#" width="60px">
+                                            </div>
+                                            <div
+                                                class="d-flex flex-column align-items-center justify-content-center text-whitee">
+                                                <h5 class="mb-0">Willaim Sarah</h5>
+                                                <p>williamsarah@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <a href="profile-info-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-address-card me-3"></i>
+                                            </div>
+                                            ព័ត៌មានផ្ទាល់ខ្លួន
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="order-history-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-bag-shopping me-3"></i>
+                                            </div>
+                                            ការបញ្ជាទិញ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="voucher-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-ticket me-3"></i>
+                                            </div>
+                                            ប័ណ្ណចំណាយ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="notification-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-bell me-3"></i>
+                                            </div>
+                                            ការជូនដំណឹង
+                                            <span class="badge ms-auto bg-brand rounded-pill fw-normal">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="wishlist-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-heart me-3"></i>
+                                            </div>
+                                            ចំំណូលចិត្តរបស់ខ្ញុំ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="term-of-use-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-book me-3"></i>
+
+                                            </div>
+                                            គេាលការណ៏ប្រើ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center mb-0"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-right-from-bracket me-3"></i>
+                                            </div>
+                                            ចាកចេញ
+                                        </a>
+                                    </li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        
+
     </header>
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end offcanvas-cart bg-offcanvasNavbar" tabindex="-1" id="offcanvasCart"
+        aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header bg-transparent text-black">
+            <h3 class="offcanvas-title" id="offcanvasCartLabel">កន្ត្រកទំនិញ</h3>
+            <button type="button" class="btn ms-auto btn-lg text-black border-0 btn-x" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body bg-transparent pt-0 ">
+            <div class="d-flex flex-column justify-content-between h-100">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card flex-row align-items-center py-2 border-0 border-bottom rounded-0">
+                            <div class="offcanvas-cart-product-img">
+                                <img class="rounded-circle " src="assets/img/chinese-food/c10.png" alt="--" width="85px"
+                                    height="85px">
+                            </div>
+
+                            <div class="card-body d-flex flex-column text-black">
+                                <h5 class="text-black mb-0">Brown Bear Vector</h5>
+                                <span class="fs-5">
+                                    ចំនួន: 1
+                                </span>
+                                <div class="d-flex justify-content-between ">
+                                    <span class="fs-5">$20</span>
+                                    <button type="button" class="btn py-0 text-black btn-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card flex-row align-items-center py-2 border-0 border-bottom rounded-0">
+                            <div class="offcanvas-cart-product-img">
+                                <img class="rounded-circle " src="assets/img/chinese-food/c10.png" alt="--" width="85px"
+                                    height="85px">
+                            </div>
+
+                            <div class="card-body d-flex flex-column text-black">
+                                <h5 class="text-black mb-0">Brown Bear Vector</h5>
+                                <span class="fs-5">
+                                    ចំនួន: 1
+                                </span>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fs-5">$20</span>
+                                    <button type="button" class="btn py-0 text-black btn-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout border-top pt-3 text-black">
+                    <div class="d-flex justify-content-between align-items-center mb-2 text-black">
+                        <span class="fw-medium fs-5">សរុប</span>
+                        <span class="fw-medium fs-5">$43</span>
+                    </div>
+                    <span>ការដឹកជញ្ជូន និងពន្ធត្រូវបានគណនានៅពេលចេញ។</span>
+                    <a href="cart-page.html" role="button" class="w-100 btn btn-cart fs-6 fw-medium mt-3 border-0">
+                        មើលកន្ត្រកទាំងអស់
+                    </a>
+                    <a href="checkout-page.html" role="button" class="w-100 btn btn-brand fs-6 fw-medium mt-3 border-0">
+                        ទូទាត់
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seacrh Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between align-items-center bg-transparent">
+                    <form class="flex-grow-1">
+                        <div class="input-group w-100">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="search" class="form-control bg-transparent" placeholder="ស្វែងរក..."
+                                aria-label="Search">
+                        </div>
+                    </form>
+                    <button type="button" class="btn-close d-flex align-items-center ms-1 shadow-none border-0"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="mt-5 pt-5">
             <div class="container-lg my-5">
@@ -243,7 +485,7 @@
                         <div class="card border-0 py-4 px-2 ps-0">
                             <div class="card-header bg-transparent mb-3">
                                 <img class="rounded-circle mb-3"
-                                    src="https://tr.rbxcdn.com/b1efdf15c75325c428f5f58f5c8ba7b1/420/420/Hat/Webp" alt>
+                                    src="assets/img/blog-img/pfp-1.jpg" alt>
                                 <h5 class="mb-0">Willaim Sarah</h5>
                                 <span>williamsarah@gmail.com</span>
                             </div>
@@ -319,15 +561,17 @@
                                     <div class="profile-info">
                                         <h3 class="mb-4 text-black">ព័ត៌មានអ្នក</h3>
                                         <div class="row mb-4">
-                                            <label for="inputEmail3" class="col-sm-3 col-form-label text-black">រូបថត</label>
+                                            <label for="inputEmail3"
+                                                class="col-sm-3 col-form-label text-black">រូបថត</label>
                                             <div class="col-sm-9">
                                                 <div class="d-flex align-items-center">
                                                     <label for="profile" class="me-4">
-                                                        <img src="https://tr.rbxcdn.com/b1efdf15c75325c428f5f58f5c8ba7b1/420/420/Hat/Webp"
+                                                        <img src="assets/img/blog-img/pfp-1.jpg"
                                                             alt width="100px" class="rounded-circle">
                                                     </label>
                                                     <div>
-                                                        <label for="profile" class="btn btn-brand custom-file-upload fw-medium"
+                                                        <label for="profile"
+                                                            class="btn btn-brand custom-file-upload fw-medium"
                                                             role="button">
 
                                                             ផ្លាស់ប្តូររូប
@@ -341,21 +585,24 @@
                                             </div>
                                         </div>
                                         <div class="row mb-4">
-                                            <label for="inputEmail3" class="col-sm-3 col-form-label text-black">ឈ្មោះ</label>
+                                            <label for="inputEmail3"
+                                                class="col-sm-3 col-form-label text-black">ឈ្មោះ</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control bg-transparent" id="inputEmail3"
                                                     value="Willaim Sarah">
                                             </div>
                                         </div>
                                         <div class="row mb-4">
-                                            <label for="inputEmail3" class="col-sm-3 col-form-label text-black">អ៊ីមែល</label>
+                                            <label for="inputEmail3"
+                                                class="col-sm-3 col-form-label text-black">អ៊ីមែល</label>
                                             <div class="col-sm-9">
                                                 <input type="email" class="form-control bg-transparent" id="inputEmail3"
                                                     value="williamsarah@gmail.com">
                                             </div>
                                         </div>
                                         <div class="row mb-4">
-                                            <label for="inputEmail3" class="col-sm-3 col-form-label text-black">លេខទូរស័ព្ទ</label>
+                                            <label for="inputEmail3"
+                                                class="col-sm-3 col-form-label text-black">លេខទូរស័ព្ទ</label>
                                             <div class="col-sm-9">
                                                 <input type="tel" class="form-control bg-transparent" id="inputEmail3"
                                                     value="012923442">
@@ -378,20 +625,21 @@
                                                         Facebook
                                                     </div>
                                                 </div>
-                                                <button type="button" class="btn ms-auto text-brand-dark btn-connect">ភ្ជាប់</button>
+                                                <button type="button"
+                                                    class="btn ms-auto text-brand-dark btn-connect">ភ្ជាប់</button>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="account-choice-item d-flex align-items-center">
-                                                <img src="assets/img/icon/Google.png"
-                                                    alt="." width="35px">
+                                                <img src="assets/img/icon/Google.png" alt="." width="35px">
                                                 <div class="account-choice-text ms-3">
                                                     <div class="h5 account-choice-title mb-0 text-black">
                                                         Google
                                                     </div>
                                                     <span class="text-brand-dark">បានភ្ជាប់</span>
                                                 </div>
-                                                <button type="button" class="btn ms-auto text-brand-dark btn-connect">ផ្ដាច់ការភ្ជាប់</button>
+                                                <button type="button"
+                                                    class="btn ms-auto text-brand-dark btn-connect">ផ្ដាច់ការភ្ជាប់</button>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -402,7 +650,8 @@
                                                         Apple
                                                     </div>
                                                 </div>
-                                                <button type="button" class="btn ms-auto text-brand-dark btn-connect">ភ្ជាប់</button>
+                                                <button type="button"
+                                                    class="btn ms-auto text-brand-dark btn-connect">ភ្ជាប់</button>
                                             </div>
                                         </div>
                                     </div>
@@ -411,7 +660,9 @@
                             <div class="col-12">
                                 <div class="delete-account shadow-brand-lg rounded-2 p-4 bg-white-black-light">
                                     <h3 class="mb-4 text-black">លុបគណនី</h3>
-                                    <p class="text-grey">នៅពេលអ្នកលុបគណនីរបស់អ្នក អ្នកបាត់បង់សិទ្ធិចូលប្រើសេវាកម្មគណនី ហើយយើងលុបទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នកជាអចិន្ត្រៃយ៍។ អ្នកអាចលុបចោលការលុបក្នុងរយៈពេល 14 ថ្ងៃ។
+                                    <p class="text-grey">នៅពេលអ្នកលុបគណនីរបស់អ្នក អ្នកបាត់បង់សិទ្ធិចូលប្រើសេវាកម្មគណនី
+                                        ហើយយើងលុបទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នកជាអចិន្ត្រៃយ៍។
+                                        អ្នកអាចលុបចោលការលុបក្នុងរយៈពេល 14 ថ្ងៃ។
                                     </p>
                                     <button class="btn btn-danger fw-medium" type="button">លុបគណនី</button>
                                 </div>
@@ -431,7 +682,8 @@
                         <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
                     </div>
                     <div>
-                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar - កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
+                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
+                            កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
                         <div class="app position-relative d-flex gap-3 py-2">
                             <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
@@ -440,93 +692,104 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion accordion-flush bg-transparent border-top pt-3 mt-3 border-opacity-10" id="accordionFlushExample">
+                <div class="accordion accordion-flush bg-transparent border-top pt-3 mt-3 border-opacity-10"
+                    id="accordionFlushExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-transparent fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            ភោជនីយដ្ឋាន
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body accordion-body-1">
-                            <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li>
-                                    <a href="about-restaurant.html">អំពីយើង</a>
-                                </li>
-                                <li>
-                                    <a href="menu-khmer.html">ម៉ីនុយ</a>
-                                </li>
-                                <li>
-                                    <a href="service-page.html">សេវាកម្ម</a>
-                                </li>
-                                <li>
-                                    <a href="gallery-page.html">រូបភាពហាង</a>
-                                </li>
-                                <li>
-                                    <a href="reservation.html">ការកក់តុ</a>
-                                </li>
-                            </ul>
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ភោជនីយដ្ឋាន
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body accordion-body-1">
+                                <ul class="list-unstyled d-flex flex-column gap-2">
+                                    <li>
+                                        <a href="about-restaurant.html">អំពីយើង</a>
+                                    </li>
+                                    <li>
+                                        <a href="menu-khmer.html">ម៉ីនុយ</a>
+                                    </li>
+                                    <li>
+                                        <a href="service-page.html">សេវាកម្ម</a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery-page.html">រូបភាពហាង</a>
+                                    </li>
+                                    <li>
+                                        <a href="reservation.html">ការកក់តុ</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-transparent fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            ព័ត៌មានផ្សេងៗ
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body accordion-body-1">
-                            <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li>
-                                    <a href="customer-review.html">ការវាយតម្លៃ</a>
-                                </li>
-                                <li>
-                                    <a href="faq-page.html">សំណួរ & ចម្លើយ</a>
-                                </li>
-                                <li>
-                                    <a href="notification-page.html">ការជូនដំណឹង</a>
-                                </li>
-                                <li>
-                                    <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">ជំនួយ</a>
-                                </li>
-                            </ul>
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ព័ត៌មានផ្សេងៗ
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body accordion-body-1">
+                                <ul class="list-unstyled d-flex flex-column gap-2">
+                                    <li>
+                                        <a href="customer-review.html">ការវាយតម្លៃ</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq-page.html">សំណួរ & ចម្លើយ</a>
+                                    </li>
+                                    <li>
+                                        <a href="notification-page.html">ការជូនដំណឹង</a>
+                                    </li>
+                                    <li>
+                                        <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">ជំនួយ</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-transparent fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            ទំនាក់ទំនងមកកាន់យើង
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li>
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606, ភ្នំពេញ</a>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-phone-volume"></i>
-                                    <a href="tel:+88517631845">+885 17 631 845</a>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-clock"></i>
-                                    <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
-                                </li>
-                            </ul>
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ទំនាក់ទំនងមកកាន់យើង
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled d-flex flex-column gap-2">
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606,
+                                            ភ្នំពេញ</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                        <a href="tel:+88517631845">+885 17 631 845</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="https://mail.google.com/mail/u/0/#inbox">Wokstar@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </section>
         <section class="top-footer py-5 ">
@@ -538,9 +801,11 @@
                                 <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
                             </div>
                             <div>
-                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar - កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
+                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
+                                    កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
                                 <div class="app position-relative d-flex gap-3 py-2">
-                                    <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com/profile"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
                                     <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
                                     <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
                                     <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
@@ -598,7 +863,8 @@
                             <ul class="list-unstyled d-flex flex-column gap-2">
                                 <li>
                                     <i class="fa-solid fa-location-dot"></i>
-                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606, ភ្នំពេញ</a>
+                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606,
+                                        ភ្នំពេញ</a>
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-phone-volume"></i>
@@ -631,29 +897,6 @@
             </div>
         </section>
     </footer>
-
-    <!-- Cart Offcanvas -->
-    <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasCartLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
