@@ -10,95 +10,100 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="landing-page">
     <header>
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
             <div class="container-xxl px-4 ">
-                <a class="navbar-brand" href="index.html">
-                    <img class="ms-3 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
+                <a class="navbar-brand" href="#">
+                    <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
-                <div class="d-flex d-xl-none align-items-xl-center">
-                    <form class="d-flex" role="search">
-                        <button class="btn btn-icon btn-responsive-icon" type="button">
-                            <i class="fa-solid fa-search"></i>
-                        </button>
-                    </form>
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
-                        <i class="fa-solid fa-user"></i>
-                    </button>
-                    <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                <div class="d-flex d-xl-none align-items-center">
+                    
+                    <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
                         <i class=" fa-solid fa-bars"></i>
                     </button>
                 </div>
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-start bg-offcanvasNavbar" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                    <div class="offcanvas-header d-flex d-xl-none align-items-center">
+                    <div class="offcanvas-header d-flex d-xl-none align-items-center bg-transparent">
                         <a class="navbar-brand" href="#">
-                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-Orange-png.png" alt height="70px">
                         </a>
-                        <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn btn-icon fs-2 shadow-none ms-auto text-black"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body bg-transparent">
+
                         <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
+
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">ទំព័រដើម</a>
+                                <a class="nav-link" href="#menu" role="button">
+                                    ម៉ីនុយ
+                                </a>
+                                
                             </li>
-
-
-                            <li class="nav-item mx-lg-2 dropdown">
-                                <a class="nav-link " href="sing-up.html" role="button" aria-expanded="false">
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="#" role="button">
                                     សេវាកម្ម
                                 </a>
-
                             </li>
-                            <li class="nav-item mx-lg-2 dropdown">
-                                <a class="nav-link " href="sing-up.html" role="button" aria-expanded="false">
-                                    អំពី
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="#" role="button">
+                                    អំពីយើង
                                 </a>
                             </li>
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="sing-up.html">រូបភាព</a>
+                                <a class="nav-link " href="#" role="button"
+                                    >
+                                    រូបភាព
+                                </a>
                             </li>
-                            
-                            <li class="nav-item mx-lg-2 ">
-                                <a class="nav-link " href="sing-up.html" role="button" aria-expanded="false">
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link " href="#" role="button"
+                                    >
+                                    ការវាយតម្លៃ
+                                </a>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link " href="#" role="button"
+                                    >
                                     ទំនាក់ទំនង
                                 </a>
                             </li>
                         </ul>
-                        <div class="d-flex align-items-center">
-                            <button class="btn btn-landing " type="button">
-                                កក់តុ
-                            </button>
-                            <a href="sing-up.html">
-                                <button class="btn btn-landing ms-2 =" type="button">
-                                    ចុះឈ្មោះ
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                            <div class="d-flex align-items-center">
+                                <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </a>
+                                <button class="btn btn-icon" type="button" data-theme-toggle>
                                 </button>
-                            </a>
-
-                            <a href="">
-                                <button class="btn btn-landing m-2  " type="button">
-                                ចូលគណនី
-                            </button>
-                            </a>
-                            <button class="btn btn-icon" type="button" data-theme-toggle>
-                                <i class="fa-solid fa-moon"></i>
-                            </button>
+                            </div>
+                            <div class="d-flex flex-nowrap">
+                                <a href="login.html" class="btn btn-brand me-2 fs-6 text-nowrap fw-medium" role="button">
+                                    ចូលគណនី
+                                </a>
+                                <a href="sing-up.html">
+                                    <button class="btn btn-brand fs-6 text-nowrap fw-medium" role="button">
+                                        ចុះឈ្មោះ
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+
     </header>
     <main>
         <section class="section-slider margin-bottom">
@@ -154,10 +159,14 @@
         </section>
         <section class="section-menus position-relative ">
             <img src="assets/img/highlight3.png" class="position-absolute" alt="">
+            <div class="style"></div>
+            <div class="bg-food ">
+                <img src="img/pngwing.com (9).png" alt="">
+            </div>
             <div class="container">
                 <div class=" ">
-                    <h1 class="pb-4 text-center">មីនុយរបស់យើង</h1>
-                    <div class="bg-top">
+                    <h1 class="pb-4 pt-5 text-center">មីនុយរបស់យើង</h1>
+                    <div class="bg-top ">
                         <ul class="nav nav-tabs  border-0" id="myTab" role="tablist">
                             <li class="nav-item " role="presentation">
                                 <button class="nav-link active rounded-5" id="khmer-tab" data-bs-toggle="tab"
@@ -202,7 +211,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="tab-content mt-5 padding-bottom" id="myTabContent">
+                <div class="tab-content mt-5 padding-bottom" id="myTabContent ">
                     <div class="tab-pane fade show active" id="khmer-food" role="tabpanel" aria-labelledby="khmer-tab"
                         tabindex="0">
                         <div class="row ">
@@ -210,7 +219,7 @@
                                 <div class="card mb-3 style-card">
                                     <div class="d-flex ">
                                         <div class="justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                            <img src="assets/img/khmer-food/13.png" class="card-img" alt="">
                                         </div>
                                         <div class="flex-grow-1 d-flex">
                                             <div class="card-body ps-0">
@@ -231,7 +240,7 @@
                                                     <hr>
                                                 </div>
                                             </div>
-                                        </div>    
+                                        </div>
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -264,7 +273,7 @@
                                 <div class="card mb-3 style-card">
                                     <div class="d-flex ">
                                         <div class="justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                            <img src="assets/img/khmer-food/16.png" class="card-img" alt="">
                                         </div>
                                         <div class="flex-grow-1 d-flex">
                                             <div class="card-body ps-0">
@@ -286,7 +295,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -320,7 +329,7 @@
                                 <div class="card mb-3 style-card position-relative">
                                     <div class="d-flex ">
                                         <div class="justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                            <img src="assets/img/khmer-food/18.png" class="card-img" alt="">
                                         </div>
                                         <div class="flex-grow-1 d-flex">
                                             <div class="card-body ps-0">
@@ -342,7 +351,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="content pos">
                                         <ul class="p-0">
@@ -376,7 +385,7 @@
                                 <div class="card mb-3 style-card">
                                     <div class="d-flex ">
                                         <div class="justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                            <img src="assets/img/khmer-food/20.png" class="card-img" alt="">
                                         </div>
                                         <div class="flex-grow-1 d-flex">
                                             <div class="card-body ps-0">
@@ -398,7 +407,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -428,7 +437,7 @@
 
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="tab-pane fade" id="chinese-food" role="tabpanel" aria-labelledby="chinese-tab"
@@ -436,12 +445,12 @@
                         <div class="row ">
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/chinese-food/c1.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -453,7 +462,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div class="">
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
@@ -492,13 +501,12 @@
                             <div class="col-lg-6">
                                 <div class=" swiper-slide">
                                     <div class="card mb-3 style-card">
-                                        <div class="row g-0">
-                                            <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                                <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img"
-                                                    alt="">
+                                        <div class="d-flex">
+                                            <div class=" justify-content-center align-items-center">
+                                                <img src="assets/img/chinese-food/c10.png" class="card-img" alt="">
                                             </div>
-                                            <div class="col-lg-8 col-md-8">
-                                                <div class="card-body  ms-3">
+                                            <div class="flex-grow-1 d-flex">
+                                                <div class="card-body  ps-0">
                                                     <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                     <hr>
                                                     <p class="rating pt-1">
@@ -510,7 +518,7 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-2 col-md-2">
+                                            <div class="">
                                                 <div class="card-body price align-items-center">
                                                     <hr>
                                                     <p class="card-text">12.22$</p>
@@ -549,12 +557,12 @@
                             <div class="col-lg-6">
 
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/chinese-food/c5.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -566,7 +574,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div class="">
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
@@ -606,12 +614,12 @@
                             <div class="col-lg-6">
 
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/chinese-food/c3.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -623,13 +631,14 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -665,12 +674,12 @@
                         <div class="row ">
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/thai-food/t1.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -682,13 +691,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -721,13 +732,12 @@
                             <div class="col-lg-6">
                                 <div class=" swiper-slide">
                                     <div class="card mb-3 style-card">
-                                        <div class="row g-0">
-                                            <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                                <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img"
-                                                    alt="">
+                                        <div class="d-flex">
+                                            <div class=" justify-content-center align-items-center">
+                                                <img src="assets/img/thai-food/t2.png" class="card-img" alt="">
                                             </div>
-                                            <div class="col-lg-8 col-md-8">
-                                                <div class="card-body  ms-3">
+                                            <div class="flex-grow-1 d-flex">
+                                                <div class="card-body  ps-0">
                                                     <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                     <hr>
                                                     <p class="rating pt-1">
@@ -739,13 +749,15 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-2 col-md-2">
+
+                                            <div>
                                                 <div class="card-body price align-items-center">
                                                     <hr>
                                                     <p class="card-text">12.22$</p>
                                                     <hr>
                                                 </div>
                                             </div>
+
                                         </div>
                                         <div class="content">
                                             <ul class="p-0">
@@ -776,14 +788,13 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/thai-food/t3.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -795,13 +806,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -833,14 +846,13 @@
 
                             </div>
                             <div class="col-lg-6">
-
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/thai-food/t4.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -852,13 +864,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -893,12 +907,12 @@
                         <div class="row ">
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/vietname-food/9.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -910,12 +924,14 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="content">
@@ -949,13 +965,12 @@
                             <div class="col-lg-6">
                                 <div class=" swiper-slide">
                                     <div class="card mb-3 style-card">
-                                        <div class="row g-0">
-                                            <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                                <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img"
-                                                    alt="">
+                                        <div class="d-flex">
+                                            <div class=" justify-content-center align-items-center">
+                                                <img src="assets/img/vietname-food/20.png" class="card-img" alt="">
                                             </div>
-                                            <div class="col-lg-8 col-md-8">
-                                                <div class="card-body  ms-3">
+                                            <div class="flex-grow-1 d-flex">
+                                                <div class="card-body  ps-0">
                                                     <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                     <hr>
                                                     <p class="rating pt-1">
@@ -967,13 +982,16 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-2 col-md-2">
+
+                                            <div>
                                                 <div class="card-body price align-items-center">
                                                     <hr>
                                                     <p class="card-text">12.22$</p>
                                                     <hr>
                                                 </div>
                                             </div>
+
+
                                         </div>
                                         <div class="content">
                                             <ul class="p-0">
@@ -1006,12 +1024,12 @@
                             <div class="col-lg-6">
 
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/vietname-food/26.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1023,13 +1041,16 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
+
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1061,14 +1082,13 @@
 
                             </div>
                             <div class="col-lg-6">
-
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/vietname-food/41.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1080,13 +1100,16 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div>
+
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1121,12 +1144,12 @@
                         <div class="row ">
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/europe-food/2.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1138,13 +1161,16 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
+
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1177,13 +1203,12 @@
                             <div class="col-lg-6">
                                 <div class=" swiper-slide">
                                     <div class="card mb-3 style-card">
-                                        <div class="row g-0">
-                                            <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                                <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img"
-                                                    alt="">
+                                        <div class="d-flex">
+                                            <div class=" justify-content-center align-items-center">
+                                                <img src="assets/img/europe-food/e1.png" class="card-img" alt="">
                                             </div>
-                                            <div class="col-lg-8 col-md-8">
-                                                <div class="card-body  ms-3">
+                                            <div class=" flex-grow-1 d-flex">
+                                                <div class="card-body  ps-0">
                                                     <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                     <hr>
                                                     <p class="rating pt-1">
@@ -1195,13 +1220,15 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-2 col-md-2">
+
+                                            <div>
                                                 <div class="card-body price align-items-center">
                                                     <hr>
                                                     <p class="card-text">12.22$</p>
                                                     <hr>
                                                 </div>
                                             </div>
+
                                         </div>
                                         <div class="content">
                                             <ul class="p-0">
@@ -1232,14 +1259,13 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/europe-food/e11.jpg" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1251,12 +1277,14 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="content">
@@ -1288,11 +1316,11 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/europe-food/e2.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
+                                        <div class="flex-grow-1 d-flex">
                                             <div class="card-body  ms-3">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
@@ -1305,13 +1333,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1346,12 +1376,12 @@
                         <div class="row ">
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/healthy-food/3_thumb.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/healthy-food/h1.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class=" flex-grow-0 d-block">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">ផេសស្តូហ្សូគីនី</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1363,13 +1393,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">7.34$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1401,12 +1433,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/healthy-food/4_thumb.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/healthy-food/h2.jpg" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">ធូណាសាឡាដ</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1418,13 +1450,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">8.12$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1456,13 +1490,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/healthy-food/brown-bear-cushion (1).jpg" class="card-img"
-                                                alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/healthy-food/h3.jpg" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">ស្តេកសាច់គោ</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1474,12 +1507,14 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">10.50$</p>
                                                 <hr>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="content">
@@ -1513,12 +1548,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/healthy-food/8_thumb.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/healthy-food/h4.jpg" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">ផាស្តាសាឡាដ</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1530,13 +1565,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1570,12 +1607,12 @@
                         <div class="row ">
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/dessert/dessert-1.jpg" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1587,13 +1624,16 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div>
+
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1626,13 +1666,12 @@
                             <div class="col-lg-6">
                                 <div class=" swiper-slide">
                                     <div class="card mb-3 style-card">
-                                        <div class="row g-0">
-                                            <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                                <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img"
-                                                    alt="">
+                                        <div class="d-flex">
+                                            <div class="justify-content-center align-items-center">
+                                                <img src="assets/img/dessert/dessert-2.png" class="card-img" alt="">
                                             </div>
-                                            <div class="col-lg-8 col-md-8">
-                                                <div class="card-body  ms-3">
+                                            <div class="flex-grow-1 d-flex">
+                                                <div class="card-body  ps-0">
                                                     <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                     <hr>
                                                     <p class="rating pt-1">
@@ -1644,7 +1683,7 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-2 col-md-2">
+                                            <div>
                                                 <div class="card-body price align-items-center">
                                                     <hr>
                                                     <p class="card-text">12.22$</p>
@@ -1683,12 +1722,12 @@
                             <div class="col-lg-6">
 
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/dessert/dessert-4.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1700,13 +1739,16 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
                                                 <hr>
                                             </div>
+
                                         </div>
+
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1740,12 +1782,12 @@
                             <div class="col-lg-6">
 
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/dessert/dessert-5.jpg" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">អាម៉ុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
@@ -1757,7 +1799,8 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
                                                 <p class="card-text">12.22$</p>
@@ -1765,47 +1808,48 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="content">
-                                        <ul class="p-0">
-                                            <li class="mproduct-icon i-cart">
-                                                <a href="#" title="ដាក់ចូលកន្តក">
-                                                    <i class="bi bi-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li class="mproduct-icon i-wishlist">
-                                                <a href="#" title="រក្សាទុក" ​​>
-                                                    <i class="bi bi-heart"></i>
-                                                </a>
-                                            </li>
-                                            <li class="mproduct-icon i-compare">
-                                                <a href="#" title="ប្រៀបធៀបទំនិញ">
-                                                    <i class="bi bi-bar-chart-line-fill"></i>
-                                                </a>
-                                            </li>
-                                            <li class="mproduct-icon i-check">
-                                                <a href="#" title="លម្អិត">
-                                                    <i class="bi bi-eye"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+
+                                </div>
+                                <div class="content">
+                                    <ul class="p-0">
+                                        <li class="mproduct-icon i-cart">
+                                            <a href="#" title="ដាក់ចូលកន្តក">
+                                                <i class="bi bi-cart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-wishlist">
+                                            <a href="#" title="រក្សាទុក" ​​>
+                                                <i class="bi bi-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-compare">
+                                            <a href="#" title="ប្រៀបធៀបទំនិញ">
+                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mproduct-icon i-check">
+                                            <a href="#" title="លម្អិត">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-
-
                         </div>
+
+
                     </div>
                     <div class="tab-pane fade" id="drink" role="tabpanel" aria-labelledby="drink-tab" tabindex="0">
                         <div class="row ">
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="=justify-content-center align-items-center">
+                                            <img src="assets/img/drink/drink-orange-tea.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
-                                                <h5 class="card-title mb-0 ">អាម៉ុក</h5>
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
+                                                <h5 class="card-title mb-0 ">តែក្រូចឆ្មា</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
                                                     <i class="bi bi-star-fill"></i>
@@ -1816,13 +1860,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
-                                                <p class="card-text">12.22$</p>
+                                                <p class="card-text">1.60$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1855,14 +1901,14 @@
                             <div class="col-lg-6">
                                 <div class=" swiper-slide">
                                     <div class="card mb-3 style-card">
-                                        <div class="row g-0">
-                                            <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                                <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img"
+                                        <div class="d-flex">
+                                            <div class="justify-content-center align-items-center">
+                                                <img src="assets/img/drink/drink-strawberry-frapp.png" class="card-img"
                                                     alt="">
                                             </div>
-                                            <div class="col-lg-8 col-md-8">
-                                                <div class="card-body  ms-3">
-                                                    <h5 class="card-title mb-0 ">អាម៉ុក</h5>
+                                            <div class="flex-grow-1 d-flex">
+                                                <div class="card-body  ps-0">
+                                                    <h5 class="card-title mb-0 ">ស្ទូបឺរីក្រឡុក</h5>
                                                     <hr>
                                                     <p class="rating pt-1">
                                                         <i class="bi bi-star-fill"></i>
@@ -1873,13 +1919,16 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-2 col-md-2">
+                                            <div class="">
                                                 <div class="card-body price align-items-center">
                                                     <hr>
-                                                    <p class="card-text">12.22$</p>
+                                                    <p class="card-text">2.30$</p>
                                                     <hr>
                                                 </div>
                                             </div>
+
+
+
                                         </div>
                                         <div class="content">
                                             <ul class="p-0">
@@ -1912,13 +1961,14 @@
                             <div class="col-lg-6">
 
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class=" justify-content-center align-items-center">
+                                            <img src="assets/img/drink/drink-passion-fruit-tea.png" class="card-img"
+                                                alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
-                                                <h5 class="card-title mb-0 ">អាម៉ុក</h5>
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
+                                                <h5 class="card-title mb-0 ">ផាសសិនតែក្រឡុក</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
                                                     <i class="bi bi-star-fill"></i>
@@ -1929,13 +1979,14 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                        <div class="">
                                             <div class="card-body price align-items-center">
                                                 <hr>
-                                                <p class="card-text">12.22$</p>
+                                                <p class="card-text">2.50$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -1968,13 +2019,13 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="card mb-3 style-card">
-                                    <div class="row g-0">
-                                        <div class="col-lg-2 col-md-2 justify-content-center align-items-center">
-                                            <img src="img/europe-food/brown-bear-cushion.jpg" class="card-img" alt="">
+                                    <div class="d-flex">
+                                        <div class="justify-content-center align-items-center">
+                                            <img src="assets/img/drink/matcha.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col-lg-8 col-md-8">
-                                            <div class="card-body  ms-3">
-                                                <h5 class="card-title mb-0 ">អាម៉ុក</h5>
+                                        <div class="flex-grow-1 d-flex">
+                                            <div class="card-body  ps-0">
+                                                <h5 class="card-title mb-0 ">ម៉ាឆា</h5>
                                                 <hr>
                                                 <p class="rating pt-1">
                                                     <i class="bi bi-star-fill"></i>
@@ -1985,13 +2036,15 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+
+                                        <div>
                                             <div class="card-body price align-items-center">
                                                 <hr>
-                                                <p class="card-text">12.22$</p>
+                                                <p class="card-text">1.90$</p>
                                                 <hr>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="content">
                                         <ul class="p-0">
@@ -2021,20 +2074,18 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- <div class="smoke-1">
+            </div>
+            <!-- <div class="smoke-1">
                 <img src="img/smoke.png " class="position-absolute" alt="">
             </div> -->
         </section>
-        <section class="section-service margin-bottom bg-dark ">
+
+
+
+        <!-- <section class="section-about-us position-relative margin-bottom ">
             <div class="container">
-                <h1 class="text-center text-light pt-5">សេវាកម្ម</h1>
-            </div>
-        </section>
-        <section class="section-about-us position-relative margin-bottom ">
-            <div class="container">
-                <div class="about-res ">
+          <div class="about-res ">
                     <div class="row ">
                         <div class="col-md-6 text-center align-content-center justify-content-center p-5">
                             <h4 class="text-black">ABOUT OUR RESTAURANT</h4>
@@ -2050,7 +2101,7 @@
                                 <div class="line"></div>
                                 <span>&nbsp;&nbsp;
                                     <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i> 
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -2074,129 +2125,12 @@
                         </div>
 
                     </div>
-                </div>
-            </div>
+                </div> -->
+        <!-- </div>
             <div class="shap-1 position-absolute">
                 <img src="img/leaves.png" alt="">
             </div>
-        </section>
-        <section class="section-galery margin-bottom mx-5">
-            <h1 class="text-center pb-3">រូបភាព</h1>
-            <div class="row g-4">
-                <!-- item-1 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content ">
-                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- item-2 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content ">
-                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- item-3 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content ">
-                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- item-4 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content ">
-                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- item-5 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content ">
-                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- item-6 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content ">
-                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- item-7 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content ">
-                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- item-8 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="pic" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="modal fade  modal-xl" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content ">
-                            <img src="img/bg-hero-baner-landing-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> -->
         <section class="section-feedback position-relative margin-bottom">
             <div class="container">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -2306,7 +2240,56 @@
                 <img src="img/leaves.png" alt="">
             </div>
         </section>
-        <section class="section-contact">
+
+
+        <section class="section-gallery position-relative ">
+            <div class="container-fluid pb-5 mb-5 padding-top">
+                <div class="title">
+                    <div class="pb-4">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/icon/dishes.png" alt="">
+                            <h1 class="ps-3 pt-2">មុខម្ហូបពិសេស</h1>
+
+                        </div>
+                        <p class="fs-4 text-center text-black">មុខម្ហូបពិសេសៗតាមប្រទេសនីមួយៗ</p>
+                    </div>
+                </div>
+                <div class="swiper mySwiper py-3">
+                    <div class="swiper-wrapper h-100">
+                        <div class="swiper-slide">
+                            <img src="assets/img/imge-detail-chef/team_gallery_1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/imge-detail-chef/team_gallery_2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/imge-detail-chef/team_gallery_3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/imge-detail-chef/team_gallery_4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/imge-detail-chef/team_gallery_5.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/imge-detail-chef/team_gallery_6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/imge-detail-chef/team_gallery_7.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center mt-5">
+                        <div class="button-prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="button-next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-contact margin-bottom">
             <div class="container">
                 <div class="reservation position-relative  ">
                     <img src="img/bg-contact-1.jpg" alt="" class="position-absolute">
@@ -2354,7 +2337,78 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-about-us margin-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="title">
+                            <div class="pb-4">
+                                <div class="d-flex ">
+                                    <img src="img/icon/dishes.png" alt="">
+                                    <h1 class="ps-3 pt-2 text-black">អំពីអាហាររបស់យើង</h1>
+                                </div>
+                                <p class="fs-4  text-black">
+                                    សិល្បៈវិចិត្រសិល្បៈនៃសេវាកម្មម្ហូបអាហាររបស់ Workstar </p>
+                            </div>
+                            <p class="pb-4 text-black">រីករាយក្នុងការធ្វើដំណើរ gourmet ជាមួយនឹងម៉ឺនុយដែលបង្ហាញពីការលាយបញ្ចូលគ្នានៃរសជាតិ។
+                                មេចុងភៅរបស់យើងប្រើគ្រឿងផ្សំល្អបំផុតដើម្បីបង្កើតមុខម្ហូបដែលមិនត្រឹមតែជាអាហារប៉ុណ្ណោះទេ
+                                ប៉ុន្តែបទពិសោធន៍ដែលមិនអាចបំភ្លេចបាន។
+                            </p>
+                        </div>
+                        <div class="style-boder-1"></div>
+                        <div class="row">
+                            <div class="col-6 mt-3">
+                                <div class="row ">
+                                    <div class="col-md-2 p-2">
+                                        <div class="box-icon"><img src="assets/img/about/about_feature_1.svg" alt=""></div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="box-content p-2">
+                                            <h5 class="text-black">
+                                                អាហារដែលមានគុណភាពល្អបំផុត
+                                            </h5>
+                                            <p class="text-black">
+                                                ការតុបតែងរៀបចំយ៉ាងប្រុងប្រយ័ត្នបំផុត.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 style-boder mt-3">
+                                <div class="row ps-2">
+                                    <div class="col-md-2 p-2 ">
+                                        <div class="box-icon"><img src="assets/img/about/about_feature_2.svg" alt=""></div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="box-content p-2">
+                                            <h5 class="text-black">
+                                                ចុងភៅដែលមានសមត្ថភាព
+                                            </h5>
+                                            <p class="text-black">
+                                                កំណត់គំនិត និងប្រធានបទនៃអាហាររបស់អ្នក។
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <button type="button"
+                                class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-2">
+                                មើលបន្ថែម
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/imge-detail-chef/team_gallery_11.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="border-1  ">
         <section class="top-footer-sm bg-transparent py-5">
             <div class="container-fluid ">
@@ -2579,9 +2633,11 @@
         </section>
     </footer>
 
-
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         const myCarouselElement = document.querySelector('#myCarousel')
 
@@ -2589,6 +2645,40 @@
             interval: 2000,
             touch: false
         })
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            //   autoplay: {
+            //     delay: 4500,
+            //     disableOnInteraction: false,
+            //     },
+            cssMode: true,
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
     </script>
 
 

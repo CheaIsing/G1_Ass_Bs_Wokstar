@@ -14,74 +14,120 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-xl bg-black fixed-top navbar-dark align-items-center">
+        <nav class="navbar bg-black navbar-expand-xl fixed-top navbar-dark align-items-center">
             <div class="container-xxl px-4 ">
                 <a class="navbar-brand" href="#">
-                    <img class="ms-3 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
+                    <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
-                <div class="d-flex d-xl-none align-items-xl-center">
-                    <form class="d-flex" role="search">
-                        <button class="btn btn-icon btn-responsive-icon" type="button">
-                            <i class="fa-solid fa-search"></i>
-                        </button>
-                    </form>
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
-                        <i class="fa-solid fa-user"></i>
-                    </button>
-                    <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                <div class="d-flex d-xl-none align-items-center">
+                    
+                    <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
                         <i class=" fa-solid fa-bars"></i>
                     </button>
                 </div>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-start bg-offcanvasNavbar" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                    <div class="offcanvas-header d-flex d-xl-none align-items-center">
+                    <div class="offcanvas-header d-flex d-xl-none align-items-center bg-transparent">
                         <a class="navbar-brand" href="#">
-                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-Orange-png.png" alt height="70px">
                         </a>
-                        <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn btn-icon fs-2 shadow-none ms-auto text-black"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body bg-transparent">
+
                         <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="home-page.html">ទំព័រដើម</a>
+                            </li>
 
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="#menu" role="button">
+                                    ម៉ីនុយ
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="#" role="button">
+                                    សេវាកម្ម
+                                </a>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link" href="#" role="button">
+                                    អំពីយើង
+                                </a>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link " href="#" role="button"
+                                    >
+                                    រូបភាព
+                                </a>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link " href="#" role="button"
+                                    >
+                                    ការវាយតម្លៃ
+                                </a>
+                            </li>
+                            <li class="nav-item mx-lg-2">
+                                <a class="nav-link " href="#" role="button"
+                                    >
+                                    ទំនាក់ទំនង
+                                </a>
+                            </li>
                         </ul>
-                        <div class="d-flex align-items-center">
-                            <button class="btn btn-landing " type="button">
-                                កក់តុ
-                            </button>
-                            <button class="btn btn-landing ms-2 =" type="button">
-                                ចុះឈ្មោះ
-                            </button>
-
-                            <button class="btn btn-landing m-2  " type="button">
-                                ចូលគណនី
-                            </button>
-                            <button class="btn btn-icon" type="button" data-theme-toggle>
-                                <i class="fa-solid fa-moon"></i>
-                            </button>
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                            <div class="d-flex align-items-center">
+                                <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </a>
+                                <button class="btn btn-icon" type="button" data-theme-toggle>
+                                </button>
+                            </div>
+                            <div class="d-flex flex-nowrap">
+                                <a href="login.html" class="btn btn-brand me-2 fs-6 text-nowrap fw-medium" role="button">
+                                    ចូលគណនី
+                                </a>
+                                <a href="sing-up.html">
+                                    <button class="btn btn-brand fs-6 text-nowrap fw-medium" role="button">
+                                        ចុះឈ្មោះ
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+
     </header>
+
+
     <main>
-        <!-- <section class="contac-benner ">
-            <div class="image ">
-                <img src="img/bg-hero-banner-langding-1.jpg " alt="">
-            </div>
-        </section> -->
         <section class=" container background-imge overflow-hidden rounded-3 margin-bottom">
-            <div class=" px-4 py-5 px-md-5 text-center text-lg-start my-5">
+            <div class=" px-4  px-md-5 text-center text-lg-start my-5">
                 <div class="row gx-lg-5 align-items-center mb-5">
+                    <div class="col-lg-5  mb-lg-0">
+                        <a class="" href="#">
+                            <img class=" w-50 h-50 " src="img/logo-2-png.png" alt height="60px">
+                        </a>
+                        <h2 class="my-5 display-5 fw-bold text-white">
+                            ស្វាគមន៍មកកាន់​ WokStar
+                        </h2>
+                        <p class="mb-4 fs-6 text-white">
+                            កត់ត្រាព័ត៌មានគណនីរបស់អ្នក ដើម្បីទទួលបានបទពិសោធន៍ល្អបំផុត
+                        </p>
+                        <span>
+                            <a class="text-brand" href="">www.workstar.com</a>
+                        </span>
+                    </div>
                     <div class="col-lg-7 mb-5 mb-lg-0">
                         <div class="card bg-glass">
-                            <div class="card-body px-4 py-5 px-md-5">
+                            <div class="card-body px-4  px-md-5">
                                 <form>
                                     <h4 class="pb-3 text-center text-white">ចូលគណនី</h4>
                                     <div data-mdb-input-init class="form-outline">
@@ -100,37 +146,34 @@
                                         <div>
                                             <input class="form-check-input me-2" type="checkbox" value=""
                                                 id="form2Example33" checked />
-                                            <label class="form-check-label" for="form2Example33">
+                                            <label class="form-check-label text-white" for="form2Example33">
                                                 ចង់ចាំគណនីខ្ញុំ
                                             </label>
                                         </div>
-
-                                        <span class="btn btn-primary" data-bs-target="#exampleModalToggle"
-                                            data-bs-toggle="modal">
-                                            ភ្លេចលេខសម្ងាត់?
+                                        <span class="btn-outline text-brand fs-6 pointer"
+                                            data-bs-target="#exampleModalToggle" data-bs-toggle="modal">ភ្លេចលេខសម្ងាត់?
+                                            <a href=""></a>
                                         </span>
+
                                     </div>
                                     <!-- Submit button -->
                                     <a href="home-page.html" type="submit" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-login-form btn-block mb-4 border-0">
+                                        class=" btn-login-form btn-block mb-4 border-0 text-center text-white pt-2">
                                         ចូលគណនី
                                     </a>
 
-                                    <div class="form-check d-flex justify-content-center  mb-4">
-                                        <label class="form-check-label" for="form2Example33">
+                                    <div class="form-check d-flex justify-content-center   mb-4">
+                                        <label class="form-check-label text-white" for="form2Example33">
                                             មិនមានគណនី?
                                         </label>
 
-                                        <a href="sing-up.html" class="text-warning"><label class="form-check-label"
-                                                for="form2Example33">
-                                                ចុះឈ្មោះ
-                                            </label></a>
+                                        <a href="sing-up.html" class="text-brand">ចុះឈ្មោះ</a>
                                     </div>
                                     <!-- Register buttons -->
                                     <div class="text-center">
                                         <div class="or">
-                                            <div class="line"></div>
-                                            <span>&nbsp;&nbsp;ឬចុះឈ្មោះជាមូយ&nbsp;&nbsp;</span>
+                                            <div class="line "></div>
+                                            <span class="text-brand">&nbsp;&nbsp;ឬចុះឈ្មោះជាមូយ&nbsp;&nbsp;</span>
                                             <div class="line"></div>
                                         </div>
                                         <div class="btn-icon mb-3">
@@ -156,20 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5  mb-lg-0">
-                        <a class="" href="#">
-                            <img class="ms-3 w-50 h-50 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
-                        </a>
-                        <h2 class="my-5 display-5 fw-bold text-white">
-                            ស្វាគមន៍មកកាន់​ WokStarbr
-                        </h2>
-                        <p class="mb-4 text-white">
-                            កត់ត្រាព័ត៌មានគណនីរបស់អ្នក ដើម្បីទទួលបានបទពិសោធន៍ល្អបំផុត
-                        </p>
-                        <span>
-                            <a class="text-white" href="">www.workstar.com</a>
-                        </span>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -190,25 +220,76 @@
                             <input type="email" class="form-control" name="" id="" placeholder="example@gmail.com">
                         </div>
                     </form>
-                    
-                    <button type="button" class="btn btn-primary" style="width: 100%;">
-                            Button
-                     </button>
-                    </div> 
+                    <span type="submit" class="text-white text-center btn-login" data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal" style="width: 100%;">
+                        បន្ត
+                    </span>
                 </div>
-                <!-- <div class="modal-footer">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
-                            data-bs-toggle="modal">Open second modal</button>
-                    </div> -->
             </div>
         </div>
     </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 p-2">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalToggleLabel">ភ្លេចលេខសម្ងាត់?</h1> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center">ផ្ទៀងផ្ទាត់អ៊ីមែល</h1>
+                    <p class="text-center">សូមបញ្ចូលលេខកូដដែលផ្ញើចូលទៅក្នុងអ៊ីមែលរបស់អ្នក</p>
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="" id="" placeholder="6 - លេខ">
+                        </div>
+                    </form>
+                    <span type="submit" class="text-white text-center btn-login" data-bs-target="#exampleModalToggle3"
+                        data-bs-toggle="modal" style="width: 100%;">
+                        បន្ត
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 p-2">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalToggleLabel">ភ្លេចលេខសម្ងាត់?</h1> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center">លេខសម្ងាត់​ថ្មី</h1>
+                    <p class="text-center">សូមបង្កើតលេខសម្ងាត់ថ្មីរបស់អ្នកខាងក្រោម</p>
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="" id="" placeholder="បង្កើតលេខសម្ងាត់ថ្មី">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="" id="" placeholder="បញ្ជាក់លេខសម្ងាត់ថ្មី">
+                        </div>
+                    </form>
+                    <a href="login.html" class="text-white">
+                        <span type="submit" class=" text-center btn-login" style="width: 100%;">
+                            ផ្លាស់ប្ដូរ
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <footer class="border-1  ">
         <section class="top-footer-sm bg-transparent py-5">
             <div class="container-fluid ">
                 <div class="content-top">
                     <div class="logo-lg-img">
-                        <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png-copy.png" alt="">
+                        <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
                     </div>
                     <div>
                         <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar
