@@ -220,7 +220,7 @@ body {
 }
 
 .navbar .dropdown-account .dropdown-menu{
-  left: -380% !important;
+  left: -500% !important;
 }
 
 .navbar .btn-icon {
@@ -1524,6 +1524,11 @@ footer .copyright a:hover {
 
 .cart-page .card .btn {
   color: var(--c-black);
+}
+
+.cart-page select option{
+  color: var(--c-black) !important;
+  background-color: var(--c-white-black-light) !important;
 }
 
 /* Wishlist Page */
