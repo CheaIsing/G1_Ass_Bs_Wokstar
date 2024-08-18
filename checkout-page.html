@@ -273,7 +273,7 @@
     <main>
         <section class="my-5 pt-5">
             <div class="container-lg mt-5">
-                <form>
+                <form class="needs-validation" novalidate>
                     <div class="row g-4 g-lg-5">
                         <div class="col-lg-7">
                             <div class="mb-4 mb-lg-5">
@@ -281,19 +281,31 @@
                                 <div class="row g-4 g-lg-5">
                                     <div class="col-12">
                                         <label for="username" class="form-label">ឈ្មោះ</label>
-                                        <input type="text" class="form-control" id="username">
+                                        <input type="text" class="form-control" id="username" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="inputEmail4" class="form-label">អ៊ីមែល</label>
-                                        <input type="email" class="form-control" id="inputEmail4">
+                                        <label for="email" class="form-label">អ៊ីមែល</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="tel" class="form-label">លេខទូរស័ព្ទ</label>
-                                        <input type="tel" class="form-control" id="tel">
+                                        <input type="tel" class="form-control" id="tel" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
                                     </div>
                                     <div class="col-12">
                                         <label for="addr" class="form-label">អាស័យដ្ឋាន</label>
-                                        <textarea class="form-control" name id="addr" rows="3"></textarea>
+                                        <textarea class="form-control" name id="addr" rows="3" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
                                     </div>
                                 </div>
                             </div>
@@ -320,20 +332,32 @@
                                         </div>
                                     </div>
                                     <div class="col-12 credit-card-checked">
-                                        <label for class="form-label">Card number - លេខកាត</label>
-                                        <input type="text" class="form-control" id="username">
+                                        <label for="c-num" class="form-label">Card number - លេខកាត</label>
+                                        <input type="text" class="form-control" id="c-num" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
                                     </div>
                                     <div class="col-12 credit-card-checked">
-                                        <label for="inputEmail4" class="form-label">ឈ្មោះលើកាត</label>
-                                        <input type="txt" class="form-control" id="inputEmail4">
+                                        <label for="num-c" class="form-label">ឈ្មោះលើកាត</label>
+                                        <input type="text" class="form-control" id="num-c" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
                                     </div>
                                     <div class="col-md-6 credit-card-checked">
-                                        <label for class="form-label">ថ្ងៃផុតកំណត់</label>
-                                        <input type="text" class="form-control" id="username">
+                                        <label for="dates" class="form-label">ថ្ងៃផុតកំណត់</label>
+                                        <input type="text" class="form-control" id="dates" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
                                     </div>
                                     <div class="col-md-6 credit-card-checked">
-                                        <label for="inputEmail4" class="form-label">CVC / CVV</label>
-                                        <input type="text" class="form-control" id="inputEmail4">
+                                        <label for="cvc" class="form-label">CVC / CVV</label>
+                                        <input type="text" class="form-control" id="cvc" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
                                     </div>
                                 </div>
                             </div>
