@@ -124,10 +124,6 @@ buttons.forEach(function(button) {
 });
 
 //btn close
-const myToastEl = document.getElementById('myToast')
-myToastEl.addEventListener('hidden.bs.toast', () => {
-  // do something...
-})
 
 
 //validation

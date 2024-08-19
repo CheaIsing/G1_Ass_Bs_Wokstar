@@ -7,44 +7,53 @@
     <title>Landing page</title>
     <link rel="icon" type="image/jpg" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="landing-page">
     <header>
-        <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark align-items-center">
             <div class="container-xxl ">
                 <a class="navbar-brand " href="#">
                     <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
-                <div class="d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                        <a class="btn btn-icon px-1" role="button" href="reservation.html" ​title="កក់តុ">
-                            <i class="fa-solid fa-utensils"></i>
-                        </a>
-                        <button class="btn btn-icon" type="button" data-theme-toggle>
-                        </button>
-                    </div>
-                    <div class="d-flex flex-nowrap">
-                        <a href="login.html" class="btn btn-brand me-2 fs-6 text-nowrap fw-medium"
-                            role="button">
-                            ចូលគណនី
-                        </a>
-                        <a href="sing-up.html">
-                            <button class="btn btn-brand fs-6 text-nowrap fw-medium" role="button">
-                                ចុះឈ្មោះ
-                            </button>
-                        </a>
+                <button class="navbar-toggler text-white hover-c-brand shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fs-4 hover-scale"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <div class="ms-auto d-flex flex-row align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <a class="btn text-white px-1 btn-lg hover-c-brand" role="button" href="reservation.html"
+                                ​title="កក់តុ">
+                                <i class="fa-solid fa-utensils"></i>
+                            </a>
+                            <button class="btn text-white btn-lg hover-c-brand" type="button" data-theme-toggle></button>
+                        </div>
+                        <div class="d-flex">
+                            <a href="login.html" class="btn btn-brand me-3 fs-6 text-nowrap fw-medium" role="button">
+                                ចូលគណនី
+                            </a>
+                            <a href="sing-up.html">
+                                <button class="btn btn-brand fs-6 text-nowrap fw-medium" role="button">
+                                    ចុះឈ្មោះ
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
+
     </header>
     <main>
         <section class="section-sliders margin-bottom vh-100 bg-danger">
@@ -56,7 +65,7 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                     </div>
-                    <div class="carousel-item vh-100  active position-relative w-100 h-100" >
+                    <div class="carousel-item vh-100  active position-relative w-100 h-100">
                         <img src="assets/img/bg-2.jpg" class="w-100 object-fit-cover black-50 position-relative" alt="">
                         <div class="text-absolute  top-0 w-100 h-100 " data-aos="zoom-in-down" data-aos-duration="1000">
                             <h2 class="display-4 pb-3 fw-medium">សូមស្វាគមន៏មកកាន់</h2>
@@ -68,7 +77,7 @@
                                 ហើយធ្វើការកក់ទុកនៅថ្ងៃនេះ។ ភោជនីយដ្ឋានអាស៊ីដ៏ប្រណិតបំផុតសម្រាប់លោកអ្នក </p>
                         </div>
                     </div>
-                    <div class="carousel-item vh-100  position-relative w-100 h-100" >
+                    <div class="carousel-item vh-100  position-relative w-100 h-100">
                         <img src="assets/img/bg-3.jpg" class="w-100 object-fit-cover black-50 position-relative" alt="">
                         <div class="text-absolute  top-0 w-100 h-100 " data-aos="zoom-in-down" data-aos-duration="1000">
                             <h1 class="display-4 pb-3 fw-bold">ភោជនីយដ្ឋាន <span>WokStar</span></h1>
@@ -103,43 +112,52 @@
                     <h1 class="pb-4 pt-5 text-center text-black" data-aos="zoom-in-down" data-aos-duration="1000">
                         មីនុយរបស់យើង</h1>
                     <div class="bg-top ">
-                        <ul class="nav nav-tabs d-flex justify-content-center align-items-center border-0" id="myTab" role="tablist">
-                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <ul class="nav nav-tabs d-flex justify-content-center align-items-center border-0" id="myTab"
+                            role="tablist">
+                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <button class="nav-link active rounded-5" id="khmer-tab" data-bs-toggle="tab"
                                     data-bs-target="#khmer-food" type="button" role="tab" aria-controls="khmer-food"
                                     aria-selected="true">ម្ហូបខ្មែរ</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <button class="nav-link rounded-5" id="chinese-tab" data-bs-toggle="tab"
                                     data-bs-target="#chinese-food" type="button" role="tab" aria-controls="chinese-food"
                                     aria-selected="false">ម្ហូបចិន</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <button class="nav-link rounded-5" id="thai-tab" data-bs-toggle="tab"
                                     data-bs-target="#thai-food" type="button" role="tab" aria-controls="thai-food"
                                     aria-selected="false">ម្ហូបថៃ</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <button class="nav-link rounded-5" id="vatname-tab" data-bs-toggle="tab"
                                     data-bs-target="#vatname-food" type="button" role="tab" aria-controls="vatname-food"
                                     aria-selected="true">ម្ហូបវៀតណាម</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <button class="nav-link rounded-5" id="europe-tab" data-bs-toggle="tab"
                                     data-bs-target="#europe-food" type="button" role="tab" aria-controls="europe-food"
                                     aria-selected="false">ម្ហូបអីរ៉ុប</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <button class="nav-link rounded-5" id="healthy-tab" data-bs-toggle="tab"
                                     data-bs-target="#healthy-food" type="button" role="tab" aria-controls="healthy-900"
                                     aria-selected="false">អាហារសុខភាព</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <button class="nav-link rounded-5" id="dessert-tab" data-bs-toggle="tab"
                                     data-bs-target="#dessert" type="button" role="tab" aria-controls="dessert"
                                     aria-selected="false">បង្អែម</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <li class="nav-item pt-2" role="presentation" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <button class="nav-link rounded-5" id="drink-tab" data-bs-toggle="tab"
                                     data-bs-target="#drink" type="button" role="tab" aria-controls="drink"
                                     aria-selected="false">ភេសជះ</button>
@@ -1932,7 +1950,7 @@
                                             <div class="card-body  ps-0">
                                                 <h5 class="card-title mb-0 ">ផាសសិនតែក្រឡុក</h5>
                                                 <hr>
-                                                <p class="rating pt-1" >
+                                                <p class="rating pt-1">
                                                     <i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-fill"></i>
@@ -1951,7 +1969,7 @@
 
                                     </div>
                                     <div class="content">
-                                        <ul class="p-0" >
+                                        <ul class="p-0">
                                             <li class="mproduct-icon i-cart">
                                                 <a href="#" title="ដាក់ចូលកន្តក">
                                                     <i class="bi bi-cart"></i>
@@ -2293,7 +2311,7 @@
         <section class="section-gallery position-relative">
             <div class="container-fluid pb-5 mb-5 padding-top" id="animated-thumbnails">
                 <div class="title">
-                    <div class="pb-4"  data-aos="zoom-in-down" data-aos-duration="1000">
+                    <div class="pb-4" data-aos="zoom-in-down" data-aos-duration="1000">
                         <div class="d-flex justify-content-center">
                             <img src="img/icon/dishes.png" alt="">
                             <h1 class="ps-3 pt-2 text-black">រូបភាព</h1>
@@ -2304,25 +2322,32 @@
                 </div>
                 <div class="swiper mySwiper py-3">
                     <div class="swiper-wrapper h-100" id="lightgallery">
-                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_1.jpg"  data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_1.jpg"
+                            data-aos="zoom-in-down" data-aos-duration="1000">
                             <img src="assets/img/imge-detail-chef/team_gallery_1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide"data-src="assets/img/imge-detail-chef/team_gallery_2.jpg"  data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_2.jpg"
+                            data-aos="zoom-in-down" data-aos-duration="1000">
                             <img src="assets/img/imge-detail-chef/team_gallery_2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide"data-src="assets/img/imge-detail-chef/team_gallery_3.jpg" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_3.jpg"
+                            data-aos="zoom-in-down" data-aos-duration="1000">
                             <img src="assets/img/imge-detail-chef/team_gallery_3.jpg" alt="">
                         </div>
-                        <div class="swiper-slide"data-src="assets/img/imge-detail-chef/team_gallery_4.jpg" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_4.jpg"
+                            data-aos="zoom-in-down" data-aos-duration="1000">
                             <img src="assets/img/imge-detail-chef/team_gallery_4.jpg" alt="">
                         </div>
-                        <div class="swiper-slide"data-src="assets/img/imge-detail-chef/team_gallery_5.jpg" data-aos="fade-down-rig" data-aos-duration="1000">
+                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_5.jpg"
+                            data-aos="fade-down-rig" data-aos-duration="1000">
                             <img src="assets/img/imge-detail-chef/team_gallery_5.jpg" alt="">
                         </div>
-                        <div class="swiper-slide"data-src="assets/img/imge-detail-chef/team_gallery_6.jpg"  data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_6.jpg"
+                            data-aos="zoom-in-down" data-aos-duration="1000">
                             <img src="assets/img/imge-detail-chef/team_gallery_6.jpg" alt="">
                         </div>
-                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_1.jpg"  data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div class="swiper-slide" data-src="assets/img/imge-detail-chef/team_gallery_1.jpg"
+                            data-aos="zoom-in-down" data-aos-duration="1000">
                             <img src="assets/img/imge-detail-chef/team_gallery_1.jpg" alt="">
                         </div>
                     </div>
@@ -2344,7 +2369,8 @@
                     <div class="col-lg-6 col-md-12 mt-5 pt-5">
                         <div class="row ">
                             <div class="col-12">
-                                <h2 class="text-center text-brand align-content-center" data-aos="zoom-in-down" data-aos-duration="1000">បើកដំណើរការ</h2>
+                                <h2 class="text-center text-brand align-content-center" data-aos="zoom-in-down"
+                                    data-aos-duration="1000">បើកដំណើរការ</h2>
                                 <div class="or">
                                     <div class="line"></div>
                                     <span>&nbsp;&nbsp;
@@ -2357,7 +2383,8 @@
                                     <div class="line"></div>
                                 </div>
                             </div>
-                            <div class=" col-lg-6 col-md-6 text-center" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <div class=" col-lg-6 col-md-6 text-center" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <div class="time-1">
 
                                     <div class="text-black">
@@ -2373,7 +2400,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" col-lg-6 col-md-6 text-center"data-aos="zoom-in-down" data-aos-duration="1000">
+                            <div class=" col-lg-6 col-md-6 text-center" data-aos="zoom-in-down"
+                                data-aos-duration="1000">
                                 <div class="time-1">
 
                                     <div class="text-black">
@@ -2664,8 +2692,8 @@
                 <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
                     <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
                     <p class="m-0 p-0">
-                        <a href="term-of-use-page.html" class="border-end pe-2">គោលការណ៍ឯកជនភាព</a>
-                        <a href="term-of-use-page.html" class="ps-1">លក្ខខណ្ឌ</a>
+                        <a href="public-term-of-use-page.html" class="border-end pe-2">គោលការណ៍ឯកជនភាព</a>
+                        <a href="public-term-of-use-page.html" class="ps-1">លក្ខខណ្ឌ</a>
                     </p>
                 </div>
             </div>
@@ -2686,25 +2714,25 @@
         })
     </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/autoplay/lg-autoplay.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/autoplay/lg-autoplay.min.js"></script>
 
-<script type="text/javascript">
-    lightGallery(document.getElementById('lightgallery'), {
-        plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
-        speed: 500,
-    })
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
+            speed: 500,
+        })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {

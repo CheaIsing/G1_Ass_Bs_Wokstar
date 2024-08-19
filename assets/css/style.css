@@ -52,7 +52,17 @@ body {
   /* overflow-x: hidden !important; */
 }
 
+.bg-blackk{
+  background-color: #000 !important;
+}
 
+.hover-scale :hover{
+  transform: scale(1.15) !important;
+}
+
+.hover-c-brand:hover{
+  color: var(--c-btn-brand-hover) !important;
+}
 
 .padding-top {
   padding-top: 80px;
@@ -376,12 +386,50 @@ body {
   font-weight: 500 !important;
 }
 
- #searchModal .form-control{
-  color: #7a7a7a !important;
+#searchModal .modal-dialog .modal-content{
+  background-color: transparent !important;
+  border: 0 !important;
 }
 
- #searchModal .form-control::placeholder{
+#searchModal .modal-dialog .modal-content .btn-close{
+  background: none !important;
+  color: #fff !important;
+  content: "X";
+
+}
+
+#searchModal .modal-dialog .input-group{
+  border-radius: 30px !important;
+  background-color: transparent !important;
+  border: 2px solid #fff !important;
+  display: flex !important;
+  border: 0 !important;
+}
+
+ #searchModal .modal-dialog .input-group .form-control{
+  color: #fff !important;
+  background-color: transparent !important;
+  order: 1 !important;
+  border-radius: 0;
+  border-right: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 18px;
+}
+
+ #searchModal .modal-dialog .input-group .input-group-text{
   color: #7a7a7a !important;
+  background-color: transparent !important;
+  order: 2 !important;
+  border-radius: 0;
+  border-left: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff !important;
+}
+
+ #searchModal .modal-dialog .form-control::placeholder{
+  color: #fff !important;
 }
 
 .navbar .dropdown-account .btn-icon{
@@ -822,6 +870,10 @@ footer .copyright a:hover {
   color: var(--hero-title-color);
 }
 
+.hero-banner>.content a:hover {
+  color: var(--c-brand);
+}
+
 /* section menu  */
 [data-theme="light"] {
   --m-border-card-img: #e9ecef;
@@ -1126,18 +1178,6 @@ footer .copyright a:hover {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  animation: rotate360 6s linear infinite alternate;
-  /* animation-direction: normal; */
-  animation-direction: alternate;
-}
-@keyframes rotate360 {
-  0%{
-    transform: rotate(0);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-  
 }
 .section-menudetail button{
   text-wrap: nowrap;
@@ -2671,6 +2711,10 @@ a {
 .card-contect .card {
   box-shadow: 1px 0px 8px 4px rgba(210, 210, 210, 0.5);
   border-radius: 12px
+}
+
+.card-contect a{
+  transition: .3s;
 }
 
 .page-contact .reservation {
