@@ -3614,7 +3614,7 @@ option {
 
 .landing-page .section-slider .carousel-item {
   width: 100%;
-  max-height: 100vh !important;
+  /* max-height: 100vh !important; */
   background-color: #deb10c;
 }
 
