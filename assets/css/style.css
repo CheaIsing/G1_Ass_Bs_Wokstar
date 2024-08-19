@@ -43,11 +43,12 @@
 }
 
 body {
-  width: 100%;
   font-family: kantumruy pro, sans-serif;
   background-color: var(--c-body-bg);
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
 }
+
+
 
 .padding-top {
   padding-top: 80px;
@@ -2078,6 +2079,7 @@ footer .copyright a:hover {
   border-radius: 20px !important;
   border: 0;
   padding-inline: 0;
+  position: relative;
 }
 
 .blog-page .news .card .card-body {
@@ -2104,8 +2106,8 @@ footer .copyright a:hover {
   }
 }
 
-.blog-page .news .card .card-body .card-title:hover {
-  color: var(--c-brand);
+.blog-page .news .card .card-body .stretched-link:hover .card-title{
+  color: var(--c-brand) !important;
 }
 
 .blog-page .pagination .page-link {
@@ -2188,6 +2190,11 @@ footer .copyright a:hover {
 
 .blog-detail-page .card {
   border: 0;
+  position: relative;
+}
+
+.blog-detail-page .card .card-body .stretched-link:hover .card-title{
+  color: var(--c-brand);
 }
 
 .blog-detail-page .relate-article .card>img {
@@ -4453,7 +4460,7 @@ option {
 
 .landing-page .section-service {
   width: 100%;
-  height: 60vh;
+  /* height: 60vh; */
 
 }
 
