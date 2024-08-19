@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 @font-face {
   font-family: kantumruy pro;
   src: url(../font/KantumruyPro-VariableFont_wght.ttf);
@@ -34,6 +39,7 @@
 }
 
 body {
+  width: 100%;
   font-family: kantumruy pro, sans-serif;
   background-color: var(--c-body-bg);
 }
@@ -309,6 +315,8 @@ footer .top-footer-sm .content-top .logo-lg-img {
   width: 75%;
 }
 
+
+
 footer .top-footer .content-left .app a,
 footer .top-footer-sm .content-top .app a {
   color: var(--c-header-color);
@@ -487,6 +495,7 @@ footer .copyright a:hover {
 .hero-banner {
   width: 100%;
   height: 70vh;
+  position: relative;
 }
 
 .hero-banner>.banner-bg {
@@ -1019,6 +1028,7 @@ footer .copyright a:hover {
 .section-moremenu .swiper {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .section-moremenu .swiper-slide {
@@ -2034,6 +2044,13 @@ footer .copyright a:hover {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-4-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -3771,6 +3788,7 @@ option {
 .landing-page .section-service {
   width: 100%;
   height: 60vh;
+
 }
 
 .section-menus .tab-content {
@@ -4257,9 +4275,12 @@ option {
   box-shadow: 0px 0px 15px 4px var(--m-card-shadow-color);
 }
 .service-page .section-service .service-list .card .text{
-  min-height: 300px;
+  /* min-height: 300px; */
   color: var(--c-black);
   transition: 0.5s;
+  padding-bottom: 12px!important;
+
+  /* overflow: hidden; */
 }
 .service-page .section-service .service-list .card .text .icon{
   width: 80px;
@@ -4279,22 +4300,40 @@ option {
   height: 100%;
   position: absolute;
   top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 18px;
   background-color:var(--c-black);
   transition: 0.5s;
+  border-radius: 6px;
   z-index: -1;
   transform: translate(-100%,-100%);
   transition-timing-function: ease-in-out;
+}
+.service-page .section-service .service-list .card p{
+  font-size: 18px!important;
 }
 .service-page .section-service .service-list .card:hover .text-hover{
   transform: translate(0,0);
   bottom: 0;
 }
+.service-page .section-service .service-list .card .text h3{
+  transition: 0.5s;
+}
+.service-page .section-service .service-list .card:hover .text h3{
+  color: var(--c-brand);
+}
+.service-page .section-service .service-list .card:hover .text-4-line{
+  display: block;
+}
+.service-page .section-service .service-list .card .text-hover i{
+  font-size: 200px!important;
+  opacity: 0;
+}
+.service-page .section-service .service-list .card:hover .text-hover i{
+  opacity: 0.2;
+}
 .service-page .section-service .service-list .card:hover .text{
   color:var(--c-white);
+  transform: translateY(-105px);
 }
 .service-page .section-adding{
   width: 100%;
@@ -4421,5 +4460,29 @@ option {
   padding-right: 5px;
 }
 @media (max-width:992px) {
-  
+  .service-page .section-service .service-list .card{
+    height: 350px;
+  }
+  .service-page .section-service .service-list .card .text-4-line{
+    -webkit-line-clamp: 5;
+  }
+}
+@media (max-width:768px) {
+  .service-page .section-service .service-list .card{
+    height: 280px;
+  }
+  .service-page .section-service .service-list .card .text-4-line{
+    -webkit-line-clamp: 5;
+  }
+}
+@media (max-width:576px) {
+  .service-page .section-service .service-list .card{
+    height: 350px;
+  }
+  .service-page .section-service .service-list .card .text .d-flex{
+    display: block!important;
+  }
+  .service-page .section-service .service-list .card .text-4-line{
+    -webkit-line-clamp: 6;
+  }
 }
