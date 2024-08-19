@@ -3,7 +3,7 @@
   font-family: kantumruy pro;
   src: url(../font/KantumruyPro-VariableFont_wght.ttf);
 }
-
+/*  */
 [data-theme="light"] {
   --c-brand: #fdcf28;
   --c-brand-dark: #f5c61c;
