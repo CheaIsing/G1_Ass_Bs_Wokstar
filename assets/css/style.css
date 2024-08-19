@@ -44,6 +44,7 @@
 body {
   font-family: kantumruy pro, sans-serif;
   background-color: var(--c-body-bg);
+  overflow-x: hidden !important;
 }
 
 .padding-top {
@@ -362,6 +363,14 @@ body {
   font-weight: 500 !important;
 }
 
+ #searchModal .form-control{
+  color: #7a7a7a !important;
+}
+
+ #searchModal .form-control::placeholder{
+  color: #7a7a7a !important;
+}
+
 .navbar .dropdown-account .btn-icon{
   position: relative;
 }
@@ -499,6 +508,10 @@ body {
 
 .dropdown>.dropdown-toggle:active {
   pointer-events: none;
+}
+
+.dropdown-account>a:active {
+  pointer-events: none !important;
 }
 
 /* ----->> Footer <<----  */
@@ -1047,9 +1060,15 @@ footer .copyright a:hover {
   z-index: 1;
 }
 
-.section-slider .carousel-item .text-absolute {
-  z-index: 2;
+.carousel-item .text-absolute {
   color: white;
+  max-width: 900px !important;
+  text-align: center;
+  display: flex ;
+  justify-content: center ;
+  flex-direction: column;
+  position: absolute;
+  /* padding: 19rem; */
 }
 
 @media (max-width: 576px) {
@@ -1348,46 +1367,6 @@ footer .copyright a:hover {
   color: var(--c-black);
 }
 
-/* .section-moremenu .btn-more{
-  width: 80%;
-  border-radius: 50px;
-  border: 1px solid var(--c-brand);
-  color: var(--c-brand);
-  padding: 18px;
-  animation: btn-more-ani 1s linear infinite ;
-  animation-direction: alternate;
-}
-.section-moremenu .btn-more:hover{
-  background-color: var(--c-brand);
-  color: #fff;
-  animation: none;
-} */
-/* @keyframes btn-more-ani {
-  from{
-      padding: 18px;
-  }
-  to{
-      padding: 30px 18px;
-  }
-} */
-
-/* hover icon forward */
-/* .hvr-icon-forward {
-  vertical-align: middle;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition: 0.5s;
-  text-wrap: nowrap;
-}
-.hvr-icon-forward .hvr-icon::before {
-  transition: 0.5s;
-  transition-timing-function: ease-out;
-}
-.hvr-icon-forward:hover{
-  transform: translateX(10%);
-}
-.hvr-icon-forward:hover .hvr-icon::before, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
-  transform: translateX(15%);
-} */
 
 
 /* hover border top  */
@@ -2272,7 +2251,7 @@ footer .copyright a:hover {
   position: absolute;
   width: 46px;
   height: 46px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--c-brand);
   clip-path: circle(50% at 100% 50%);
   background-color: var(--c-white-black-light);
   border-radius: 50%;
@@ -2285,7 +2264,7 @@ footer .copyright a:hover {
   position: absolute;
   width: 46px;
   height: 46px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--c-brand);
   clip-path: circle(50% at 0 50%);
   background-color: var(--c-white-black-light);
   border-radius: 50%;
@@ -2859,13 +2838,9 @@ a {
   transform: scale(1.06);
 }
 
-/* .page-restaurant .section-feedback .shap-1 {
-    max-width: 300px;
-    height: auto;
-    top: 0;
-    margin-top: -10%;
 
-} */
+
+
 
 .section-feedback .shap-2 {
   max-width: 300px;
@@ -2932,7 +2907,7 @@ a {
 }
 
 .section-feedback .carousel-inner {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -3698,6 +3673,7 @@ option {
 .page-about-us .section-profile .app a:hover {
   border: 0;
 }
+
 /* end page about us */
 
 /* start Page details chef */
@@ -3737,13 +3713,8 @@ option {
   color: #fff;
 }
 
-.bg-style {
-  background-color: var(--c-bg-style-form);
-
-}
-
 .bg-style form {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .section-detail-chef .form-control {
@@ -3911,7 +3882,8 @@ option {
   top: -10%;
 
 }
-.section-moremenu-style .style{
+
+.section-moremenu-style .style {
   left: -10%;
   top: -50% !important;
 }
@@ -3922,7 +3894,7 @@ option {
   position: absolute;
   z-index: -11;
 
-} 
+}
 
 .home-page .style-1 {
   width: 350px;
@@ -3943,13 +3915,14 @@ option {
 
 .section-home-res .content .text p {
   font-size: 18px;
-}     
+}
 
 .home-page .section-home-res .img2 {
   position: absolute;
   bottom: 0;
   right: 0;
 }
+
 .home-page .section-home-res .shape1 {
   top: 0;
   right: 0;
@@ -3976,7 +3949,7 @@ option {
   0% {
     margin-top: 0;
   }
- 
+
   100% {
     margin-bottom: 30px;
   }
@@ -3992,15 +3965,16 @@ option {
   }
 }
 
-.home-page .section-service .service{
+.section-service .service {
   padding: 8% 0;
 }
-.home-page .section-blog .card{
+.home-page .section-blog .card {
   border-top-right-radius: 60px;
   background-color: var(--c-bg-option);
   border: 0;
   /* border: 1px solid var(--c-brand); */
 }
+
 .home-page .section-blog .card img {
   width: 100%;
   height: 250px;
@@ -4009,22 +3983,24 @@ option {
 
 }
 
-.home-page .section-blog .card .card-body a{
+.home-page .section-blog .card .card-body a {
   color: var(--c-black);
 
 }
-.style-boder{
+
+.style-boder {
   border-left: 2px solid var(--c-brand);
 }
-.style-boder-1{
+
+.style-boder-1 {
   border-top: 2px solid var(--c-brand);
 }
 
-.home-page .section-blog .card .card-body a:hover{
+.home-page .section-blog .card .card-body a:hover {
   color: var(--c-brand);
 }
-.section-open-time>img{
 
+.section-open-time>img {
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -4032,27 +4008,21 @@ option {
   object-fit: cover;
 }
 
-.home-page .section-reservation-home img{
+.home-page .section-reservation-home img {
   width: 100%;
   height: 55vh;
   object-fit: cover;
   filter: brightness(30%);
-
+  
 }
-.home-page .section-reservation-home .content-res{
+.home-page .section-reservation-home .content-res {
   top: 0;
   margin-top: 5%;
+  padding: 0 20px;
 }
-.home-page .section-reservation-home .form-reservation .text {
+.home-page .section-reservation-home .content-res  .text {
   color: var(--c-text-res);
 }
-
-
-.home-page .section-reservation-home .form-reservation form {
-  max-width: 600px;
-  padding: 20px;
-}
-
 .home-page .section-reservation-home .form-control {
   border-radius: 30px;
   border: 0;
@@ -4062,8 +4032,72 @@ option {
 .home-page .section-reservation-home .form-control::placeholder {
   color: #ffff;
 }
-.home-page .section-reservation-home .form-control option{
+.home-page .section-reservation-home .form-control option {
   color: var(--c-bg-option);
+}
+.home-page .section-gallery .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.home-page .section-gallery .swiper-slide {
+  /* height: 100%; */
+  max-height: 430px;
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home-page .section-gallery .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-page .style-bottom .button-next,
+.home-page .style-bottom .button-prev {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+
+}
+
+ .flower-1 {
+  top: -20%;
+  margin-right: 9%;
+  margin-top: -7%;
+}
+
+
+.flower-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation-name: flower-rotate-1;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  z-index: -1;
+
+}
+
+
+@keyframes flower-rotate-1 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+
+  }
+
 }
 
 
@@ -4190,6 +4224,7 @@ option {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 
 
 }
@@ -4403,11 +4438,6 @@ option {
   transform: translateY(0);
 }
 
-.landing-page .section-service {
-  width: 100%;
-  height: 60vh;
-}
-
 .section-menus .tab-content {
   color: var(--c-black);
 }
@@ -4497,6 +4527,7 @@ option {
     border-radius: 100px;
     padding: 0;
   }
+
   .landing-page .section-about-us .shap-1 img {
     width: 250px !important;
     height: auto;
@@ -4526,6 +4557,7 @@ option {
     border-radius: 100px;
     padding: 0;
   }
+
   .landing-page .section-menus .card .rating {
     opacity: 0;
   }
@@ -4547,6 +4579,7 @@ option {
     padding: 0;
   }
 }
+
 
 .landing-page .section-contact .reservation {
   margin: auto;
@@ -4606,75 +4639,7 @@ option {
   /* padding: 20px; */
 
 }
-
-.section-galery img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.section-galery .pic {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  cursor: pointer;
-
-}
-
-.section-galery .pic img {
-  width: 100%;
-  height: 100%;
-
-  cursor: pointer;
-  border-radius: 12px;
-  position: absolute;
-}
-
-.section-galery .pic::before {
-  content: "PHOTO GALLERY";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(233, 233, 233);
-  font-size: 22px;
-  font-weight: bold;
-  width: 100%;
-  opacity: 0;
-  transition: 0.3s;
-  z-index: 99;
-  transition-delay: .2s;
-
-
-}
-
-.section-galery .pic:hover::before {
-  margin-top: 0;
-  opacity: 1;
-
-}
-
-.section-galery .pic::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 12px;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 0;
-  transform: 0.3s;
-}
-
-.section-galery .pic:hover::after {
-  height: 100%;
-}
-
+ 
 .btn-landing {
   padding: 6px 30px;
   font-size: 20px;
@@ -4709,12 +4674,14 @@ option {
   z-index: -11;
   top: -20%;
 
-} 
+}
+
 @media(max-width:678px) {
-  .landing-page .section-menus .bg-food img{
+  .landing-page .section-menus .bg-food img {
     display: none;
   }
-  .landing-page .section-menus .style{
+
+  .landing-page .section-menus .style {
     display: none;
   }
 }
@@ -4734,7 +4701,9 @@ option {
   justify-content: center;
   align-items: center;
 }
-.landing-page .section-gallery .swiper-slide img{
+
+
+.landing-page .section-gallery .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4747,9 +4716,14 @@ option {
   height: 50px;
   border-radius: 10px;
   display: flex;
-  
+
 }
 
+.landing-page .section-about-us .flower {
+  right: 0;
+  margin-right: 9%;
+  margin-top: -7%;
+}
 
 /* ----->>> Service Page <<<----- */
 [data-theme="light"] {
@@ -4822,7 +4796,7 @@ option {
   z-index: -1;
 }
 .service-page .section-adding .text{
-  /* max-width: 650px; */
+  max-width: 650px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -4834,7 +4808,7 @@ option {
 
 }
 .service-page .section-adding .text img{
-  /* width: 300px; */
+  width: 300px;
   object-fit: cover;
 }
 .service-page .section-adding .text .btn-book{
@@ -4935,4 +4909,32 @@ option {
 }
 @media (max-width:992px) {
   
+}
+.landing-page .section-about-us .flower img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation-name: flower-rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  z-index: -1;
+
+}
+@keyframes flower-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+
+  }
+
+}
+@media (max-width:1400px){
+  .landing-page .section-about-us .flower img{
+    display: none;
+  }
 }
