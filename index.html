@@ -17,82 +17,37 @@
 <body class="landing-page">
     <header>
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
-            <div class="container-xxl px-4 ">
+            <div class="container-xxl ">
                 <a class="navbar-brand " href="#">
                     <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
-                <div class="d-flex d-xl-none align-items-center">
-                    <div class="d-flex flex-lg-row align-items-lg-center">
-                        <div class="d-flex align-items-center">
-                            <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
-                                <i class="fa-solid fa-utensils"></i>
-                            </a>
-                            <button class="btn btn-icon" type="button" data-theme-toggle>
-                            </button>
-                        </div>
-                        <div class="d-flex flex-nowrap">
-                            <a href="login.html" class="btn btn-brand me-2 fs-6 text-nowrap fw-medium"
-                                role="button">
-                                ចូលគណនី
-                            </a>
-                            <a href="sing-up.html">
-                                <button class="btn btn-brand fs-6 text-nowrap fw-medium" role="button">
-                                    ចុះឈ្មោះ
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <i class=" fa-solid fa-bars"></i>
-                    </button> -->
-                </div>
-                <div class="offcanvas offcanvas-start bg-offcanvasNavbar" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                    <div class="offcanvas-header d-flex d-xl-none align-items-center bg-transparent">
-                        <a class="navbar-brand" href="#">
-                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-Orange-png.png" alt height="70px">
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-icon px-1" role="button" href="reservation.html" ​title="កក់តុ">
+                            <i class="fa-solid fa-utensils"></i>
                         </a>
-                        <button type="button" class="btn btn-icon fs-2 shadow-none ms-auto text-black"
-                            data-bs-dismiss="offcanvas" aria-label="Close">
-                            <i class="bi bi-x-lg"></i>
+                        <button class="btn btn-icon" type="button" data-theme-toggle>
                         </button>
                     </div>
-                    <div class="offcanvas-body bg-transparent">
-                        <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
-                        </ul>
-                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
-                            <button class="btn btn-icon" type="button" data-theme-toggle>
+                    <div class="d-flex flex-nowrap">
+                        <a href="login.html" class="btn btn-brand me-2 fs-6 text-nowrap fw-medium"
+                            role="button">
+                            ចូលគណនី
+                        </a>
+                        <a href="sing-up.html">
+                            <button class="btn btn-brand fs-6 text-nowrap fw-medium" role="button">
+                                ចុះឈ្មោះ
                             </button>
-                            <div class="d-flex align-items-center">
-                                <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
-                                    <i class="fa-solid fa-utensils"></i>
-                                </a>
-                                <button class="btn btn-icon" type="button" data-theme-toggle>
-                                </button>
-                            </div>
-                            <div class="d-flex flex-nowrap">
-                                <a href="login.html" class="btn btn-brand me-2 fs-6 text-nowrap fw-medium"
-                                    role="button">
-                                    ចូលគណនី
-                                </a>
-                                <a href="sing-up.html">
-                                    <button class="btn btn-brand fs-6 text-nowrap fw-medium" role="button">
-                                        ចុះឈ្មោះ
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="section-slider margin-bottom">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade ">
-                <div class="carousel-inner vh-100">
+        <section class="section-sliders vh-100 bg-danger">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -101,7 +56,7 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-item  active position-relative w-100 h-100">
+                    <div class="carousel-item vh-100  active position-relative w-100 h-100">
                         <img src="img/bg-2.jpg" class="w-100 object-fit-cover black-50 position-relative" alt="">
                         <div class="text-absolute  top-0 w-100 h-100 ">
                             <h2 class="display-4 pb-3 fw-medium">សូមស្វាគមន៏មកកាន់</h2>
@@ -115,7 +70,7 @@
                     </div>
                     <div class="carousel-item position-relative">
                         <img src="img/bg-3.jpg" class="w-100 object-fit-cover black-50 position-relative" alt="">
-                        <div class="text-absolute top-0 w-100 h-100 ">
+                        <div class="text-absolute w-100 h-100 ">
                             <h1 class="display-4 pb-3 fw-bold">ភោជនីយដ្ឋាន <span>WokStar</span></h1>
                             <p class="fs-4">ផ្តល់ជូនលោកអ្នកនូវសេវាកម្ម និងរសជាតិម្ហូបដ៏ប្រណិត
                                 ជាមួយនឹងបរិយាកាសដ៏កក់ក្តៅ ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
@@ -146,45 +101,54 @@
             </div>
             <div class="container pb-1">
                 <div class="">
-                    <h1 class="pb-4 pt-5 text-center text-black" data-aos="fade-down-right" data-aos-duration="1000">មីនុយរបស់យើង</h1>
+                    <h1 class="pb-4 pt-5 text-center text-black" data-aos="fade-down-right" data-aos-duration="1000">
+                        មីនុយរបស់យើង</h1>
                     <div class="bg-top ">
-                        <ul class="nav nav-tabs  border-0" id="myTab" role="tablist">
-                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right" data-aos-duration="700">
+                        <ul class="nav nav-tabs d-flex justify-content-center align-items-center border-0" id="myTab" role="tablist">
+                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right"
+                                data-aos-duration="700">
                                 <button class="nav-link active rounded-5" id="khmer-tab" data-bs-toggle="tab"
                                     data-bs-target="#khmer-food" type="button" role="tab" aria-controls="khmer-food"
                                     aria-selected="true">ម្ហូបខ្មែរ</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right" data-aos-duration="750">
+                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right"
+                                data-aos-duration="750">
                                 <button class="nav-link rounded-5" id="chinese-tab" data-bs-toggle="tab"
                                     data-bs-target="#chinese-food" type="button" role="tab" aria-controls="chinese-food"
                                     aria-selected="false">ម្ហូបចិន</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right" data-aos-duration="700">
+                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right"
+                                data-aos-duration="700">
                                 <button class="nav-link rounded-5" id="thai-tab" data-bs-toggle="tab"
                                     data-bs-target="#thai-food" type="button" role="tab" aria-controls="thai-food"
                                     aria-selected="false">ម្ហូបថៃ</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right" data-aos-duration="750">
+                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right"
+                                data-aos-duration="750">
                                 <button class="nav-link rounded-5" id="vatname-tab" data-bs-toggle="tab"
                                     data-bs-target="#vatname-food" type="button" role="tab" aria-controls="vatname-food"
                                     aria-selected="true">ម្ហូបវៀតណាម</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right" data-aos-duration="800">
+                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right"
+                                data-aos-duration="800">
                                 <button class="nav-link rounded-5" id="europe-tab" data-bs-toggle="tab"
                                     data-bs-target="#europe-food" type="button" role="tab" aria-controls="europe-food"
                                     aria-selected="false">ម្ហូបអីរ៉ុប</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right" data-aos-duration="850">
+                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right"
+                                data-aos-duration="850">
                                 <button class="nav-link rounded-5" id="healthy-tab" data-bs-toggle="tab"
                                     data-bs-target="#healthy-food" type="button" role="tab" aria-controls="healthy-900"
                                     aria-selected="false">អាហារសុខភាព</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right" data-aos-duration="950">
+                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right"
+                                data-aos-duration="950">
                                 <button class="nav-link rounded-5" id="dessert-tab" data-bs-toggle="tab"
                                     data-bs-target="#dessert" type="button" role="tab" aria-controls="dessert"
                                     aria-selected="false">បង្អែម</button>
                             </li>
-                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right" data-aos-duration="1000">
+                            <li class="nav-item pt-2" role="presentation" data-aos="fade-down-right"
+                                data-aos-duration="1000">
                                 <button class="nav-link rounded-5" id="drink-tab" data-bs-toggle="tab"
                                     data-bs-target="#drink" type="button" role="tab" aria-controls="drink"
                                     aria-selected="false">ភេសជះ</button>
@@ -417,9 +381,9 @@
                             <div class="mb-3 pt-3 d-flex justify-content-center">
                                 <a href="sing-up.html">
                                     <button type="button"
-                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
-                                    មើលបន្ថែម
-                                </button>
+                                        class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
+                                        មើលបន្ថែម
+                                    </button>
                                 </a>
                             </div>
 
@@ -653,9 +617,9 @@
                             <div class="mb-3 pt-3 d-flex justify-content-center">
                                 <a href="sing-up.html">
                                     <button type="button"
-                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
-                                    មើលបន្ថែម
-                                </button>
+                                        class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
+                                        មើលបន្ថែម
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -893,9 +857,9 @@
                             <div class="mb-3 pt-3 d-flex justify-content-center">
                                 <a href="menu-khmer.html">
                                     <button type="button"
-                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
-                                    មើលបន្ថែម
-                                </button>
+                                        class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
+                                        មើលបន្ថែម
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -1132,9 +1096,9 @@
                             <div class="mb-3 pt-3 d-flex justify-content-center">
                                 <a href="sing-up.html">
                                     <button type="button"
-                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
-                                    មើលបន្ថែម
-                                </button>
+                                        class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
+                                        មើលបន្ថែម
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -1601,9 +1565,9 @@
                             <div class="mb-3 pt-3 d-flex justify-content-center">
                                 <a href="sing-up.html">
                                     <button type="button"
-                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
-                                    មើលបន្ថែម
-                                </button>
+                                        class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
+                                        មើលបន្ថែម
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -1843,9 +1807,9 @@
                             <div class="mb-3 pt-3 d-flex justify-content-center">
                                 <a href="sing-up.html">
                                     <button type="button"
-                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
-                                    មើលបន្ថែម
-                                </button>
+                                        class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
+                                        មើលបន្ថែម
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -2083,9 +2047,9 @@
                             <div class="mb-3 pt-3 d-flex justify-content-center">
                                 <a href="sing-up.html">
                                     <button type="button"
-                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
-                                    មើលបន្ថែម
-                                </button>
+                                        class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-black rounded-5">
+                                        មើលបន្ថែម
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -2097,7 +2061,7 @@
         <section class="section-about-us margin-bottom position-relative">
             <div class="container position-relative">
                 <div class="row">
-                    
+
                     <div class="col-lg-6 col-md-12">
                         <div class="title">
                             <div class="pb-4">
@@ -2108,7 +2072,8 @@
                                 <p class="fs-4 text-black" data-aos="fade-left" data-aos-duration="1000">
                                     សិល្បៈវិចិត្រសិល្បៈនៃសេវាកម្មម្ហូបអាហាររបស់ Workstar </p>
                             </div>
-                            <p class="pb-4 text-black fs-5" data-aos="fade-left" data-aos-duration="1000">រីករាយក្នុងការធ្វើដំណើរ gourmet
+                            <p class="pb-4 text-black fs-5" data-aos="fade-left" data-aos-duration="1000">
+                                រីករាយក្នុងការធ្វើដំណើរ gourmet
                                 ជាមួយនឹងម៉ឺនុយដែលបង្ហាញពីការលាយបញ្ចូលគ្នានៃរសជាតិ។
                                 មេចុងភៅរបស់យើងប្រើគ្រឿងផ្សំល្អបំផុតដើម្បីបង្កើតមុខម្ហូបដែលមិនត្រឹមតែជាអាហារប៉ុណ្ណោះទេ
                                 ប៉ុន្តែបទពិសោធន៍ដែលមិនអាចបំភ្លេចបាន។
@@ -2245,7 +2210,8 @@
                             aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
-                        <h1 class="text-center text-black" data-aos="fade-down-left" data-aos-duration="1000">ការវាយតម្លៃ</h1>
+                        <h1 class="text-center text-black" data-aos="fade-down-left" data-aos-duration="1000">
+                            ការវាយតម្លៃ</h1>
                         <div class="carousel-item active" data-bs-interval="10000">
                             <div class="wrappers  d-flex ">
                                 <div class="thumbnail">
@@ -2337,7 +2303,7 @@
                     </button>
                 </div>
             </div>
-            <div class="shap-2  position-absolute"> 
+            <div class="shap-2  position-absolute">
                 <img src="img/leaves.png" alt="">
             </div>
             <div class="shap-3  position-absolute">
@@ -2398,7 +2364,8 @@
                     <div class="col-lg-6 col-md-12 mt-5 pt-5">
                         <div class="row ">
                             <div class="col-12">
-                                <h2 class="text-center text-brand align-content-center" data-aos="fade-down-right" data-aos-duration="1000">បើកដំណើរការ</h2>
+                                <h2 class="text-center text-brand align-content-center" data-aos="fade-down-right"
+                                    data-aos-duration="1000">បើកដំណើរការ</h2>
                                 <div class="or">
                                     <div class="line"></div>
                                     <span>&nbsp;&nbsp;
@@ -2411,7 +2378,8 @@
                                     <div class="line"></div>
                                 </div>
                             </div>
-                            <div class=" col-lg-6 col-md-6 text-center" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class=" col-lg-6 col-md-6 text-center" data-aos="fade-down-right"
+                                data-aos-duration="1000">
                                 <div class="time-1">
 
                                     <div class="text-black">
@@ -2427,7 +2395,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" col-lg-6 col-md-6 text-center" data-aos="fade-down-left" data-aos-duration="1000">
+                            <div class=" col-lg-6 col-md-6 text-center" data-aos="fade-down-left"
+                                data-aos-duration="1000">
                                 <div class="time-1">
 
                                     <div class="text-black">
