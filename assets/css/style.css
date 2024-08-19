@@ -23,6 +23,8 @@
   --c-bg-style-form: #f7efd8;
   --c-bg-option: #ececec;
   --c-option: #fffff;
+  --c-black-icon: #ffffff;
+
 }
 
 [data-theme="dark"] {
@@ -40,6 +42,8 @@
   --c-bg-c: #232323;
   --c-bg-option: #181818;
   --c-option: #18181818;
+  --c-black-icon: #212121;
+
 }
 
 body {
@@ -52,15 +56,21 @@ body {
 .padding-top {
   padding-top: 80px;
 }
+.c-header-bg{
+  background: #000;
+}
+
 
 /* set class color  */
 .text-brand {
   color: var(--c-brand);
 }
 
+
 .text-brand-dark {
   color: var(--c-brand-dark);
 }
+
 
 .text-black {
   color: var(--c-black) !important;
@@ -3026,6 +3036,16 @@ a {
   transform: translateX(0);
   opacity: 1s;
 }
+.section-reservation-home{
+  background-image: url(../img/bg-res.jpg);
+  max-width: 100%;
+  max-height: 100vh;
+  position: relative;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .section-feedback .aside .name h4 {
   font-size: 22px;
@@ -3044,6 +3064,13 @@ a {
 
 .page-restaurant .section-feedback .section-delivery {
   height: 70vh;
+}
+.page-restaurant  .section-delivery .card{
+    border: 0;
+    background-color: #f5c61c30;
+    color: var(--c-black);
+    font-weight: 500;
+
 }
 
 @media (max-width: 1200px) {
@@ -3122,6 +3149,9 @@ a {
     height: auto;
     right: 0;
     margin-top: -20%;
+  }
+  .page-restaurant .section-about-us .shap-1 img{
+    display: none;
   }
 }
 
@@ -3686,6 +3716,12 @@ option {
 .page-about-us .section-profile .app a:hover {
   border: 0;
 }
+.page-about-us .last-section .content p{
+  font-size: 20px ;
+}
+.page-about-us .last-section .content ul li{
+  font-size: 18px;
+}
 
 /* end page about us */
 
@@ -4021,13 +4057,6 @@ option {
   object-fit: cover;
 }
 
-.home-page .section-reservation-home img {
-  width: 100%;
-  height: 55vh;
-  object-fit: cover;
-  filter: brightness(30%);
-  
-}
 .home-page .section-reservation-home .content-res {
   top: 0;
   margin-top: 5%;
@@ -4098,6 +4127,11 @@ option {
   animation-timing-function: linear;
   z-index: -1;
 
+}
+@media(max-width:767px){
+  .flower-1 img{
+    display: none;
+  }
 }
 
 
@@ -4393,7 +4427,8 @@ option {
 
 .landing-page .section-menus .content ul li a,
 .landing-page .section-menus .content ul li a {
-  color: var(--c-header-color);
+  color: var(--c-black-icon);
+  
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -4453,8 +4488,6 @@ option {
 
 .landing-page .section-service {
   width: 100%;
-  height: 60vh;
-
 }
 
 .section-menus .tab-content {
@@ -4540,6 +4573,9 @@ option {
     opacity: 1;
     margin-top: 33rem;
     left: 25%;
+  }
+  .landing-page .section-menus .content li a i{
+    color: var(--c-black);
   }
 
   .landing-page .section-menus .style-card {
