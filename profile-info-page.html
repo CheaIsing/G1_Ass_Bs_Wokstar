@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Main Link  -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -68,7 +69,7 @@
                             </div>
                             <li>
                                 <a href="profile-info-page.html"
-                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    class="dropdown-item text-white-light active fs-5 d-flex align-items-center"
                                     aria-current="page">
                                     <div>
                                         <i class="fa-solid fa-address-card me-3"></i>
@@ -398,7 +399,7 @@
                                     </div>
                                     <li>
                                         <a href="profile-info-page.html"
-                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            class="dropdown-item text-white-light active fs-5 d-flex align-items-center"
                                             aria-current="page">
                                             <div>
                                                 <i class="fa-solid fa-address-card me-3"></i>
@@ -577,13 +578,16 @@
         <section class="mt-5 pt-5">
             <div class="container-lg my-5">
                 <div class="row g-4">
-                    <div class="setting-sidebar col-md-4 col-xl-3">
+                    <div class="setting-sidebar col-md-4 col-xl-3" data-aos="zoom-in"
+                    data-aos-duration="1000"  >
                         <div class="card border-0 py-4 px-2 ps-0">
                             <div class="card-header bg-transparent mb-3">
                                 <img class="rounded-circle mb-3"
                                     src="assets/img/blog-img/pfp-1.jpg" alt>
-                                <h5 class="mb-0">Willaim Sarah</h5>
-                                <span>williamsarah@gmail.com</span>
+                                <h5 class="mb-0" data-aos="zoom-in"
+                                data-aos-duration="1000">Willaim Sarah</h5>
+                                <span data-aos="zoom-in"
+                                data-aos-duration="1000">williamsarah@gmail.com</span>
                             </div>
                             <ul class="nav">
                                 <li class="nav-item border-0">
@@ -594,7 +598,7 @@
                                         ព័ត៌មានផ្ទាល់ខ្លួន
                                     </a>
                                 </li>
-                                <li class="nav-item border-0">
+                                <li class="nav-item border-0" >
                                     <a href="order-history-page.html" class="nav-link d-flex">
                                         <div>
                                             <i class="fa-solid fa-bag-shopping me-3"></i>
@@ -650,7 +654,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-8 col-xl-9">
+                    <div class="col-md-8 col-xl-9" data-aos="zoom-in"
+                    data-aos-duration="1000"  >
                         <div class="row g-4">
                             <div class="col-12">
                                 <form class="p-4 rounded-2 shadow-brand-lg bg-white-black-light">
@@ -659,13 +664,14 @@
                                         <div class="row mb-4">
                                             <label for="inputEmail3"
                                                 class="col-sm-3 col-form-label text-black">រូបថត</label>
-                                            <div class="col-sm-9">
+                                            <div class="col-sm-9" >
                                                 <div class="d-flex align-items-center">
                                                     <label for="profile" class="me-4">
                                                         <img src="assets/img/blog-img/pfp-1.jpg"
                                                             alt width="100px" class="rounded-circle">
                                                     </label>
-                                                    <div>
+                                                    <div data-aos="zoom-in"
+                                                    data-aos-duration="1000"  >
                                                         <label for="profile"
                                                             class="btn btn-brand custom-file-upload fw-medium"
                                                             role="button">
@@ -704,16 +710,17 @@
                                                     value="012923442">
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-brand fw-medium">
+                                        <button type="submit" class="btn btn-brand fw-medium ms-auto">
                                             រក្សាទុកការប្តូរ</button>
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12"  data-aos="zoom-in"
+                            data-aos-duration="1000"  >
                                 <div class="account-choice shadow-brand-lg rounded-2 p-4 bg-white-black-light">
-                                    <h3 class="mb-4 text-black">ជម្រើសគណនី</h3>
+                                    <h3 class="mb-4 text-black" >ជម្រើសគណនី</h3>
                                     <div class="row g-4">
-                                        <div class="col-12">
+                                        <div class="col-12" >
                                             <div class="account-choice-item d-flex align-items-center">
                                                 <img src="assets/img/icon/fb.png" alt="." width="35px">
                                                 <div class="account-choice-text ms-3">
@@ -725,7 +732,7 @@
                                                     class="btn ms-auto text-brand-dark btn-connect">ភ្ជាប់</button>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-12" >
                                             <div class="account-choice-item d-flex align-items-center">
                                                 <img src="assets/img/icon/Google.png" alt="." width="35px">
                                                 <div class="account-choice-text ms-3">
@@ -738,7 +745,7 @@
                                                     class="btn ms-auto text-brand-dark btn-connect">ផ្ដាច់ការភ្ជាប់</button>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-12" >
                                             <div class="account-choice-item d-flex align-items-center">
                                                 <img src="assets/img/icon/apple.png" alt="." width="35px">
                                                 <div class="account-choice-text ms-3">
@@ -753,7 +760,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12"  data-aos="zoom-in"
+                                        data-aos-duration="1000"  >
                                 <div class="delete-account shadow-brand-lg rounded-2 p-4 bg-white-black-light">
                                     <h3 class="mb-4 text-black">លុបគណនី</h3>
                                     <p class="text-grey">នៅពេលអ្នកលុបគណនីរបស់អ្នក អ្នកបាត់បង់សិទ្ធិចូលប្រើសេវាកម្មគណនី
@@ -996,6 +1004,10 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

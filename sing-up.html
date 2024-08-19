@@ -7,7 +7,8 @@
     <title>sigup</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
@@ -16,109 +17,104 @@
         <nav class="navbar bg-black navbar-expand-xl fixed-top navbar-dark align-items-center">
             <div class="container-xxl px-4 ">
                 <a class="navbar-brand" href="#">
-                    <img class="ms-3 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
+                    <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                <div class="d-flex d-xl-none align-items-center">
+                    
+                    <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class=" fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start bg-offcanvasNavbar" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                    <div class="offcanvas-header d-flex d-xl-none align-items-center">
+                    <div class="offcanvas-header d-flex d-xl-none align-items-center bg-transparent">
                         <a class="navbar-brand" href="#">
-                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-Orange-png.png" alt height="70px">
                         </a>
-                        <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn btn-icon fs-2 shadow-none ms-auto text-black"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body bg-transparent">
+
                         <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">ទំព័រដើម</a>
-                            </li>
-
-                            <li class="nav-item mx-lg-2 megamenu ">
-                                <a class="nav-link " href="#"> ម៉ីនុយ </a>
-
-                            </li>
-                            <li class="nav-item mx-lg-2 ">
-                                <a class="nav-link " href="#"> សេវាកម្ម </a>
-
-                            </li>
-                            <li class="nav-item mx-lg-2 ">
-                                <a class="nav-link " href="#" role="button" aria-expanded="false">អំពី</a>
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">អាជីព</a>
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">ព័ត៌មាន</a>
-                            </li>
-                            <li class="nav-item mx-lg-2 ">
-                                <a class="nav-link " href="#"> ទំនាក់ទំនង </a>
-
-                            </li>
                         </ul>
-                        <div class="d-flex align-items-center">
-                            <button class="btn btn-login" type="button">
-                                កក់តុ
-                            </button>
-                            <a href="login.html">
-                                <button class="btn btn-login" type="button">
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                            <div class="d-flex align-items-center">
+                                <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </a>
+                                <button class="btn btn-icon" type="button" data-theme-toggle>
+                                </button>
+                            </div>
+                            <div class="d-flex flex-nowrap">
+                                <a href="login.html" class="btn btn-brand me-2 fs-6 text-nowrap fw-medium" role="button">
                                     ចូលគណនី
-                                </button>
-                            </a>
-                            <a href="singin..html">
-                                <button class="btn btn-login" type="button">
-                                    ចុះឈ្មោះ
-                                </button>
-                            </a>
+                                </a>
+                                <a href="sing-up.html">
+                                    <button class="btn btn-brand fs-6 text-nowrap fw-medium" role="button">
+                                        ចុះឈ្មោះ
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+
     </header>
     <main>
 
         <!-- Section: Design Block -->
         <section class=" container background-imge overflow-hidden rounded-3">
-            <div class=" px-4 py-5 px-md-5 text-center text-lg-start my-5">
+            <div class=" px-4  px-md-5 text-center text-lg-start my-5">
                 <div class="row gx-lg-5 align-items-center mb-5">
                     <div class="col-lg-5  mb-lg-0">
                         <a class="" href="#">
-                            <img class="ms-3 w-50 h-50 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
+                            <img class=" w-50 h-50 " src="img/logo-2-png.png" alt height="60px">
                         </a>
-                        <h2 class="my-5 display-5 fw-bold text-white" >
-                            ស្វាគមន៍មកកាន់​ WokStarbr 
-                            
+                        <h2 class="my-5 display-5 fw-bold text-white">
+                            ស្វាគមន៍មកកាន់​ WokStar
+
                         </h2>
-                        <p class="mb-4 text-white" >
+                        <p class="mb-4 text-white">
                             កត់ត្រាព័ត៌មានគណនីរបស់អ្នក ដើម្បីទទួលបានបទពិសោធន៍ល្អបំផុត
                         </p>
                         <span>
-                            <a class="text-white"  href="">www.workstar.com</a>
+                            <a class="text-brand" href="">www.workstar.com</a>
                         </span>
                     </div>
                     <div class="col-lg-7  mb-lg-0 ">
                         <div class="card bg-glass">
-                            <div class="card-body px-4 py-5 ">
+                            <div class="card-body px-4 ">
                                 <form>
-                                    
+
                                     <h4 class="pb-3 text-center">ចុះឈ្មោះ</h4>
                                     <!-- Name input -->
                                     <div data-mdb-input-init class="form-outline">
-                                        <input type="text" id="form3Example2"  class="form-control"  placeholder="ឈ្មោះ*"/>
+                                        <input type="text" id="form3Example2" class="form-control"
+                                            placeholder="ឈ្មោះ*" />
 
                                     </div>
                                     <!-- Email input -->
-                                    <div data-mdb-input-init class="form-outline my-4">   
-                                        <input type="email" id="form3Example3" class="form-control"​ placeholder="អុីម៉ែល*" />
+                                    <div data-mdb-input-init class="form-outline my-4">
+                                        <input type="email" id="form3Example3" class="form-control" ​
+                                            placeholder="អុីម៉ែល*" />
                                     </div>
                                     <!-- Password input -->
-                                    <div data-mdb-input-init class="form-outline my-4">           
-                                        <input type="password" id="form3Example4" class="form-control" placeholder="លេខសម្ងាត់*"/>
+                                    <div data-mdb-input-init class="form-outline my-4">
+                                        <input type="password" id="form3Example4" class="form-control"
+                                            placeholder="លេខសម្ងាត់*" />
 
                                     </div>
                                     <!-- Password input -->
                                     <div data-mdb-input-init class="form-outline my-4">
-                                        <input type="password" id="form3Example4" class="form-control" placeholder="បញ្ជាក់លេខសម្ងាត់*"/>
+                                        <input type="password" id="form3Example4" class="form-control"
+                                            placeholder="បញ្ជាក់លេខសម្ងាត់*" />
 
                                     </div>
 
@@ -127,27 +123,27 @@
                                         <div>
                                             <input class="form-check-input me-2" type="checkbox" value=""
                                                 id="form2Example33" checked />
-                                                <label class="form-check-label" for="privacy">&nbsp;
-                                                    ខ្ញុំយល់ព្រមនឺង <a href="">លក្ខខណ្ខនៃសេវាកម្ម</a> និង <a href="">ឯកជនភាព
-                                                    </a>.
-                                                </label>
+                                            <label class="form-check-label" for="privacy">&nbsp;
+                                                ខ្ញុំយល់ព្រមនឺង <a href="">លក្ខខណ្ខនៃសេវាកម្ម</a> និង <a href="">ឯកជនភាព
+                                                </a>.
+                                            </label>
                                         </div>
                                     </div>
 
                                     <!-- Submit button -->
-                                    <button type="submit" data-mdb-button-init data-mdb-ripple-init
-                                        class=" btn-login-form btn-block mb-4 border-0">
+                                    <a href="login.html" type="submit" data-mdb-button-init data-mdb-ripple-init
+                                        class=" btn-login-form btn-block mb-4 border-0 text-center text-white pt-2">
                                         ចុះឈ្មោះ
-                                    </button>
+                                    </a>
+
                                     <div class="form-check d-flex justify-content-center  mb-4">
                                         <label class="form-check-label" for="form2Example33">
                                             មានគណនីរូចរាល់?
                                         </label>
 
-                                        <a href="login.html" class="text-warning"><label class="form-check-label"
-                                                for="form2Example33">
-                                                ចូលគណនី
-                                        </label></a>
+                                        <a href="login.html" class="text-warning">
+                                            ចូលគណនី
+                                            </a>
                                     </div>
 
                                     <!-- Register buttons -->
@@ -171,12 +167,12 @@
 
                                         <div class="term-and-privacy">
                                             <p>
-                                                <span >លក្ខខណ្ឌនៃកាលប្រើប្រាស់ </span>
+                                                <span>លក្ខខណ្ឌនៃកាលប្រើប្រាស់ </span>
                                                 &nbsp;| &nbsp;
-                                                <span >គោលការណ៍ឯកជនភាព</span>
+                                                <span>គោលការណ៍ឯកជនភាព</span>
                                             </p>
                                         </div>
-                                    </div>   
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -191,11 +187,10 @@
             <div class="container-fluid ">
                 <div class="content-top">
                     <div class="logo-lg-img">
-                        <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png-copy.png" alt="">
+                        <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
                     </div>
                     <div>
-                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar
-                            -
+                        <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
                             កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
                         <div class="app position-relative d-flex gap-3 py-2">
                             <a href="https://www.facebook.com/profile"><i class="fa-brands fa-facebook-f"></i></a>
@@ -223,16 +218,16 @@
                                         <a href="about-restaurant.html">អំពីយើង</a>
                                     </li>
                                     <li>
-                                        <a href="asia-menu.html">ម៉ីនុយ</a>
+                                        <a href="sing-up.html">ម៉ីនុយ</a>
                                     </li>
                                     <li>
-                                        <a href="service.html">សេវាកម្ម</a>
+                                        <a href="sing-up.html">សេវាកម្ម</a>
                                     </li>
                                     <li>
-                                        <a href="gallery-page.html">រូបភាពហាង</a>
+                                        <a href="sing-up.html">រូបភាពហាង</a>
                                     </li>
                                     <li>
-                                        <a href="reservastion.html">ការកក់តុ</a>
+                                        <a href="sing-up.html">ការកក់តុ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -251,16 +246,16 @@
                             <div class="accordion-body accordion-body-1">
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li>
-                                        <a href="testimontial-page.html">ការវាយតម្លៃ</a>
+                                        <a href="sing-up.html">ការវាយតម្លៃ</a>
                                     </li>
                                     <li>
-                                        <a href="faq2.html">សំណួរ & ចម្លើយ</a>
+                                        <a href="faq-page.html">សំណួរ & ចម្លើយ</a>
                                     </li>
                                     <li>
-                                        <a href="notification-page.html">ការជូនដំណឹង</a>
+                                        <a href="sing-up.html">ការជូនដំណឹង</a>
                                     </li>
                                     <li>
-                                        <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
+                                        <a href="sing-up.html">ជ្រើសរើសបុគ្គលិក</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">ជំនួយ</a>
@@ -283,8 +278,7 @@
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li>
                                         <i class="fa-solid fa-location-dot"></i>
-                                        <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
-                                            54 ផ្លូវលេខ 606,
+                                        <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606,
                                             ភ្នំពេញ</a>
                                     </li>
                                     <li>
@@ -297,8 +291,7 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-clock"></i>
-                                        <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 -
-                                            22:00 )</span>
+                                        <span class="text-white">ចន្ទ- អាទិត្យ ( 9:00 - 22:00 )</span>
                                     </li>
                                 </ul>
                             </div>
@@ -313,12 +306,10 @@
                     <div class="col-12 col-md-12 col-xl-4 ">
                         <div class="content-left">
                             <div class="logo-lg-img">
-                                <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png-copy.png"
-                                    alt="">
+                                <img class="w-100 h-100 object-fit-cover pb-4" src="assets/img/logo-2-png.png" alt="">
                             </div>
                             <div>
-                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ
-                                    WokStar -
+                                <p class="fs-5 text-white">ទទួលយកបទពិសោធន៍នៃរសជាតិដ៏ប្រណិតនៅ WokStar -
                                     កន្លែងដែលពោរពេញដោយម្ហូបអាស៊ី!</p>
                                 <div class="app position-relative d-flex gap-3 py-2">
                                     <a href="https://www.facebook.com/profile"><i
@@ -338,16 +329,16 @@
                                     <a href="about-restaurant.html">អំពីយើង</a>
                                 </li>
                                 <li>
-                                    <a href="asia-menu.html">ម៉ីនុយ</a>
+                                    <a href="sing-up.html">ម៉ីនុយ</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">សេវាកម្ម</a>
+                                    <a href="sing-up.html">សេវាកម្ម</a>
                                 </li>
                                 <li>
-                                    <a href="gallery-page.html">រូបភាពហាង</a>
+                                    <a href="sing-up.html">រូបភាពហាង</a>
                                 </li>
                                 <li>
-                                    <a href="reservastion.html">ការកក់តុ</a>
+                                    <a href="sing-up.html">ការកក់តុ</a>
                                 </li>
                             </ul>
                         </div>
@@ -357,16 +348,16 @@
                             <h2 class="pb-2">ព័ត៌មានផ្សេងៗ</h2>
                             <ul class="list-unstyled d-flex flex-column gap-2">
                                 <li>
-                                    <a href="testimontial-page.html">ការវាយតម្លៃ</a>
+                                    <a href="sing-up.html">ការវាយតម្លៃ</a>
                                 </li>
                                 <li>
-                                    <a href="faq2.html">សំណួរ & ចម្លើយ</a>
+                                    <a href="faq-page.html">សំណួរ & ចម្លើយ</a>
                                 </li>
                                 <li>
-                                    <a href="notification-page.html">ការជូនដំណឹង</a>
+                                    <a href="sing-up.html">ការជូនដំណឹង</a>
                                 </li>
                                 <li>
-                                    <a href="career-page.html">ជ្រើសរើសបុគ្គលិក</a>
+                                    <a href="sing-up.html">ជ្រើសរើសបុគ្គលិក</a>
                                 </li>
                                 <li>
                                     <a href="contact.html">ជំនួយ</a>
@@ -374,14 +365,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-5 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
+                    <div class="col-md-4 col-lg-4 col-xl-3 pt-3 pt-xl-5 flex-lg-grow-0">
                         <div class="content-right">
                             <h2 class="pb-2">ទំនាក់ទំនងមកកាន់យើង</h2>
                             <ul class="list-unstyled d-flex flex-column gap-2">
                                 <li>
                                     <i class="fa-solid fa-location-dot"></i>
-                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ
-                                        54 ផ្លូវលេខ 606,
+                                    <a href="https://maps.app.goo.gl/dKVGsxwrahm67dL2A">ផ្ទះលេខ 54 ផ្លូវលេខ 606,
                                         ភ្នំពេញ</a>
                                 </li>
                                 <li>
@@ -408,8 +398,8 @@
                 <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
                     <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
                     <p class="m-0 p-0">
-                        <a href="#" class="border-end pe-2">Privacy policy</a>
-                        <a href="#" class="ps-1">Term&condition</a>
+                        <a href="term-of-use-page.html" class="border-end pe-2">គោលការណ៍ឯកជនភាព</a>
+                        <a href="term-of-use-page.html" class="ps-1">លក្ខខណ្ឌ</a>
                     </p>
                 </div>
             </div>

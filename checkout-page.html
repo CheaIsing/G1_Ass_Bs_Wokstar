@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Main Link  -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
-<body class="checkout-page">
+<body class="profile-info-page checkout-page">
 
     <header>
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
@@ -22,36 +23,145 @@
                 <a class="navbar-brand" href="#">
                     <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
-                <div class="d-flex d-xl-none align-items-xl-center">
+                <div class="d-flex d-xl-none align-items-center">
                     <form class="d-flex" role="search">
-                        <button class="btn btn-icon btn-responsive-icon" type="button">
+                        <button class="btn btn-icon btn-responsive-icon" type="button" data-bs-toggle="modal"
+                            data-bs-target="#searchModal">
                             <i class="fa-solid fa-search"></i>
                         </button>
                     </form>
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
+                    <a class="btn btn-icon d-none d-xl-inline-block position-relative" role="button" title="កន្រ្តក"
+                        data-bs-toggle="offcanvas" href="#offcanvasCart" aria-controls="offcanvasCartExample">
                         <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
+                        <span
+                            class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                            <small>2</small>
+                        </span>
+                    </a>
+                    <a href="#offcanvasCart" class="btn btn-icon btn-responsive-icon position-relative" role="button"
+                        data-bs-toggle="offcanvas" aria-controls="offcanvasCartExample" title="កន្រ្តក">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span
+                            class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                            <small>2</small>
+                        </span>
+                    </a>
+                    <div class="dropdown-center dropdown-account">
+                        <a class="btn btn-icon btn-responsive-icon position-relative" role="button"
+                            href="profile-info-page.html" title="គណនី" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                            <span
+                                class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                <small>6</small>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu bg-black ms-5 mt-4 rounded-3 py-3">
+                            <div class="card border-0 ">
+                                <div class="account-header d-flex flex-column align-items-center px-5 pt-2">
+                                    <div class="mb-2">
+                                        <img class="border border-brand border-2 rounded-circle object-fit-cover"
+                                            src="assets/img/blog-img/pfp-1.jpg" alt="#" width="60px">
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-center text-whitee">
+                                        <h5 class="mb-0">Willaim Sarah</h5>
+                                        <p>williamsarah@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="profile-info-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-address-card me-3"></i>
+                                    </div>
+                                    ព័ត៌មានផ្ទាល់ខ្លួន
+                                </a>
+                            </li>
+                            <li>
+                                <a href="order-history-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping me-3"></i>
+                                    </div>
+                                    ការបញ្ជាទិញ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="voucher-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-ticket me-3"></i>
+                                    </div>
+                                    ប័ណ្ណចំណាយ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notification-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-bell me-3"></i>
+                                    </div>
+                                    ការជូនដំណឹង
+                                    <span class="badge ms-auto bg-brand rounded-pill fw-normal">6</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wishlist-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-heart me-3"></i>
+                                    </div>
+                                    ចំំណូលចិត្តរបស់ខ្ញុំ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="term-of-use-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-book me-3"></i>
 
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
-                        <i class="fa-solid fa-user"></i>
-                    </button>
-                    <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                    </div>
+                                    គេាលការណ៏ប្រើ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center mb-0"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-right-from-bracket me-3"></i>
+                                    </div>
+                                    ចាកចេញ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
                         <i class=" fa-solid fa-bars"></i>
                     </button>
                 </div>
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-start bg-offcanvasNavbar" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                    <div class="offcanvas-header d-flex d-xl-none align-items-center">
+                    <div class="offcanvas-header d-flex d-xl-none align-items-center bg-transparent">
                         <a class="navbar-brand" href="#">
-                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-Orange-png.png" alt height="70px">
                         </a>
-                        <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn btn-icon fs-2 shadow-none ms-auto text-black"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body bg-transparent">
                         <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
                             <li class="nav-item mx-lg-2">
                                 <a class="nav-link" href="home-page.html">ទំព័រដើម</a>
@@ -246,74 +356,278 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center">
-                            <a class="btn btn-icon" role="button" href="reservation.html" ​​​title="កក់តុ">
+                            <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
                                 <i class="fa-solid fa-utensils"></i>
                             </a>
                             <form class="d-none d-xl-flex" role="search" title="ស្វែងរក">
-                                <button class="btn btn-icon" type="button">
+                                <button class="btn btn-icon" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#searchModal">
                                     <i class="fa-solid fa-search"></i>
                                 </button>
                             </form>
-                            <a class="btn btn-icon d-none d-xl-inline-block" role="button" href="cart-page.html"
-                                title="កន្រ្តក">
+                            <a class="btn btn-icon d-none d-xl-inline-block position-relative" role="button"
+                                title="កន្រ្តក" data-bs-toggle="offcanvas" href="#offcanvasCart"
+                                aria-controls="offcanvasCartExample">
                                 <i class="fa-solid fa-basket-shopping"></i>
+                                <span
+                                    class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                    <small>2</small>
+                                </span>
                             </a>
                             <button class="btn btn-icon" type="button" data-theme-toggle>
                             </button>
-                            <a class="btn btn-icon d-none d-xl-inline-block" role="button" href="profile-info-page.html"
-                                title="គណនី">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
+                            <div class="dropdown-center dropdown-account">
+                                <a class="btn btn-icon d-none d-xl-inline-block position-relative" role="button"
+                                    href="profile-info-page.html" title="គណនី" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span
+                                        class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                        <small>6</small>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu bg-black mt-4 rounded-3 py-3">
+                                    <div class="card border-0 ">
+                                        <div class="account-header d-flex flex-column align-items-center px-5 pt-2">
+                                            <div class="mb-2">
+                                                <img class="border border-brand border-2 rounded-circle object-fit-cover"
+                                                    src="assets/img/blog-img/pfp-1.jpg" alt="#" width="60px">
+                                            </div>
+                                            <div
+                                                class="d-flex flex-column align-items-center justify-content-center text-whitee">
+                                                <h5 class="mb-0">Willaim Sarah</h5>
+                                                <p>williamsarah@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <a href="profile-info-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-address-card me-3"></i>
+                                            </div>
+                                            ព័ត៌មានផ្ទាល់ខ្លួន
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="order-history-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-bag-shopping me-3"></i>
+                                            </div>
+                                            ការបញ្ជាទិញ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="voucher-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-ticket me-3"></i>
+                                            </div>
+                                            ប័ណ្ណចំណាយ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="notification-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-bell me-3"></i>
+                                            </div>
+                                            ការជូនដំណឹង
+                                            <span class="badge ms-auto bg-brand rounded-pill fw-normal">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="wishlist-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-heart me-3"></i>
+                                            </div>
+                                            ចំំណូលចិត្តរបស់ខ្ញុំ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="term-of-use-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-book me-3"></i>
+
+                                            </div>
+                                            គេាលការណ៏ប្រើ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center mb-0"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-right-from-bracket me-3"></i>
+                                            </div>
+                                            ចាកចេញ
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+
     </header>
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end offcanvas-cart bg-offcanvasNavbar" tabindex="-1" id="offcanvasCart"
+        aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header bg-transparent text-black">
+            <h3 class="offcanvas-title" id="offcanvasCartLabel">កន្ត្រកទំនិញ</h3>
+            <button type="button" class="btn ms-auto btn-lg text-black border-0 btn-x" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body bg-transparent pt-0 ">
+            <div class="d-flex flex-column justify-content-between h-100">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card flex-row align-items-center py-2 border-0 border-bottom rounded-0">
+                            <div class="offcanvas-cart-product-img">
+                                <img class="rounded-circle " src="assets/img/chinese-food/c10.png" alt="--" width="85px"
+                                    height="85px">
+                            </div>
+
+                            <div class="card-body d-flex flex-column text-black">
+                                <h5 class="text-black mb-0">Brown Bear Vector</h5>
+                                <span class="fs-5">
+                                    ចំនួន: 1
+                                </span>
+                                <div class="d-flex justify-content-between ">
+                                    <span class="fs-5">$20</span>
+                                    <button type="button" class="btn py-0 text-black btn-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card flex-row align-items-center py-2 border-0 border-bottom rounded-0">
+                            <div class="offcanvas-cart-product-img">
+                                <img class="rounded-circle " src="assets/img/chinese-food/c10.png" alt="--" width="85px"
+                                    height="85px">
+                            </div>
+
+                            <div class="card-body d-flex flex-column text-black">
+                                <h5 class="text-black mb-0">Brown Bear Vector</h5>
+                                <span class="fs-5">
+                                    ចំនួន: 1
+                                </span>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fs-5">$20</span>
+                                    <button type="button" class="btn py-0 text-black btn-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout border-top pt-3 text-black">
+                    <div class="d-flex justify-content-between align-items-center mb-2 text-black">
+                        <span class="fw-medium fs-5">សរុប</span>
+                        <span class="fw-medium fs-5">$43</span>
+                    </div>
+                    <span>ការដឹកជញ្ជូន និងពន្ធត្រូវបានគណនានៅពេលចេញ។</span>
+                    <a href="cart-page.html" role="button" class="w-100 btn btn-cart fs-6 fw-medium mt-3">
+                        មើលកន្ត្រកទាំងអស់
+                    </a>
+                    <a href="checkout-page.html" role="button" class="w-100 btn btn-brand fs-6 fw-medium mt-3 border-0">
+                        ទូទាត់
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seacrh Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between align-items-center bg-transparent">
+                    <form class="flex-grow-1">
+                        <div class="input-group w-100">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="search" class="form-control bg-transparent" placeholder="ស្វែងរក..."
+                                aria-label="Search">
+                        </div>
+                    </form>
+                    <button type="button" class="btn-close d-flex align-items-center ms-1 shadow-none border-0"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="my-5 pt-5">
             <div class="container-lg mt-5">
-                <form class="needs-validation" novalidate>
+                <form class="needs-validation" novalidate data-aos="zoom-in" data-aos-duration="1000">
                     <div class="row g-4 g-lg-5">
                         <div class="col-lg-7">
                             <div class="mb-4 mb-lg-5">
-                                <h2 class="mb-4 text-black">ព័ត៌មានផ្ទាល់ខ្លួន</h2>
+                                <h2 class="mb-4 text-black"  
+                                data-aos="zoom-in" data-aos-duration="1000">ព័ត៌មានផ្ទាល់ខ្លួន</h2>
                                 <div class="row g-4 g-lg-5">
-                                    <div class="col-12">
+                                    <div class="col-12"  
+                                         >
                                         <label for="username" class="form-label">ឈ្មោះ</label>
                                         <input type="text" class="form-control" id="username" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
-                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6"  
+                                         >
                                         <label for="email" class="form-label">អ៊ីមែល</label>
                                         <input type="email" class="form-control" id="email" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
-                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6"  
+                                         >
                                         <label for="tel" class="form-label">លេខទូរស័ព្ទ</label>
                                         <input type="tel" class="form-control" id="tel" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
-                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12"  
+                                         >
                                         <label for="addr" class="form-label">អាស័យដ្ឋាន</label>
                                         <textarea class="form-control" name id="addr" rows="3" required></textarea>
                                         <div class="invalid-feedback">
                                             Please choose a username.
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-4 mb-lg-5">
-                                <h2 class="mb-4 text-black">ការទូទាត់</h2>
+                                <h2 class="mb-4 text-black"  
+                                     >ការទូទាត់</h2>
 
                                 <div class="row g-4 g-lg-5">
-                                    <div class="col-12">
+                                    <div class="col-12" 
+                                         >
                                         <div class="d-flex align-items-center my-3 mb-lg-0 flex-wrap">
                                             <div class="form-check form-check-inline d-flex align-items-center me-sm-5">
                                                 <input class="form-check-input" type="radio" name="inlineRadioOptions"
@@ -331,53 +645,57 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 credit-card-checked">
+                                    <div class="col-12 credit-card-checked" 
+                                         >
                                         <label for="c-num" class="form-label">Card number - លេខកាត</label>
                                         <input type="text" class="form-control" id="c-num" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
-                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-12 credit-card-checked">
+                                    <div class="col-12 credit-card-checked"
+                                         >
                                         <label for="num-c" class="form-label">ឈ្មោះលើកាត</label>
                                         <input type="text" class="form-control" id="num-c" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
-                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 credit-card-checked">
+                                    <div class="col-md-6 credit-card-checked" 
+                                        data-aos-duration="1000"  >
                                         <label for="dates" class="form-label">ថ្ងៃផុតកំណត់</label>
                                         <input type="text" class="form-control" id="dates" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
-                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 credit-card-checked">
+                                    <div class="col-md-6 credit-card-checked" 
+                                        data-aos-duration="1000"  >
                                         <label for="cvc" class="form-label">CVC / CVV</label>
                                         <input type="text" class="form-control" id="cvc" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                         <div class="col-lg-5">
-                            <h2 class="mb-4 text-black">សង្ខេបនៃការបញ្ជាទិញ</h2>
+                            <h2 class="mb-4 text-black" 
+                            data-aos="zoom-in" data-aos-duration="1000">សង្ខេបនៃការបញ្ជាទិញ</h2>
                             <div class="order-summary p-3">
                                 <div class="order-summary-list">
                                     <div class="row">
-                                        <div class="col-12">
+                                        <div class="col-12" 
+                                             >
                                             <div class="card flex-row align-items-center border-0">
                                                 <div class="product-img pe-1">
-                                                    <img class src="img/dessert/brown-bear-vector-graphics.jpg" alt
+                                                    <img class src="assets/img/chinese-food/c10.png" alt
                                                         width="100px" />
                                                 </div>
                                                 <div class="card-body">
-                                                    <h4 class="card-title text-black">Brown
-                                                        Bear
-                                                        Vector</h4>
+                                                    <h4 class="card-title text-black">ស៊ុបគាវ</h4>
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <select>
                                                             <option class="text-white bg-dark" value="1">1</option>
@@ -394,7 +712,7 @@
                                                         </button>
                                                     </div>
                                                     <h6
-                                                        class="mt-2 fs-5 text-black">20$</h6>
+                                                        class="mt-2 fs-5 text-black">7.50$</h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -404,15 +722,13 @@
                                                 <div
                                                     class="product-img pe-1">
                                                     <img class
-                                                        src="img/dessert/brown-bear-vector-graphics.jpg"
+                                                        src="assets/img/europe-food/e1.png"
                                                         alt
                                                         width="100px" />
                                                 </div>
                                                 <div class="card-body">
                                                     <h4
-                                                                class="card-title text-black">Brown
-                                                                Bear
-                                                                Vector</h4>
+                                                                class="card-title text-black">មាន់ស្ពីណាច់</h4>
                                                                 <div
                                                                     class="d-flex align-items-center justify-content-between">
                                                                     <select>
@@ -433,14 +749,14 @@
                                                         </button>
                                                     </div>
                                                     <h6
-                                                        class="mt-2 fs-5 text-black">20$</h6>
+                                                        class="mt-2 fs-5 text-black">$5.50</h6>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="promo-code">
+                                <div class="promo-code" >
                                     <form>
                                         <div class="mb-4">
 
@@ -457,7 +773,7 @@
                                                                 </div>
                 </form>
             </div>
-            <div class="total-section">
+            <div class="total-section" >
                 <div class="d-flex justify-content-between">
                     <div class="fs-5 fw-medium">ទំនិញ
                     </div>
@@ -492,6 +808,7 @@
             </div>
             </div>
             </form>
+            </div>
         </section>
     </main>
     <footer class="border-1  ">
@@ -756,6 +1073,10 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

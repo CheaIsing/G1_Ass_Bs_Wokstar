@@ -17,147 +17,295 @@
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
             <div class="container-xxl px-4 ">
                 <a class="navbar-brand" href="#">
-                    <img class="ms-3 ms-xl-4" src="img/logo-2-png.png" alt height="60px">
+                    <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
-                <div class="d-flex d-xl-none align-items-xl-center">
+                <div class="d-flex d-xl-none align-items-center">
                     <form class="d-flex" role="search">
-                        <button class="btn btn-icon btn-responsive-icon" type="button">
+                        <button class="btn btn-icon btn-responsive-icon" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
                             <i class="fa-solid fa-search"></i>
                         </button>
                     </form>
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
+                    <a class="btn btn-icon d-none d-xl-inline-block position-relative" role="button" title="កន្រ្តក"
+                        data-bs-toggle="offcanvas" href="#offcanvasCart" aria-controls="offcanvasCartExample">
                         <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                    <button class="btn btn-icon btn-responsive-icon" type="button">
-                        <i class="fa-solid fa-user"></i>
-                    </button>
-                    <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        <span
+                                        class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                        <small>2</small>
+                                    </span>
+                    </a>
+                    <a href="#offcanvasCart" class="btn btn-icon btn-responsive-icon position-relative" role="button"
+                        data-bs-toggle="offcanvas" aria-controls="offcanvasCartExample" title="កន្រ្តក">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span
+                                        class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                        <small>2</small>
+                                    </span>
+                    </a>
+                    <div class="dropdown-center dropdown-account">
+                        <a class="btn btn-icon btn-responsive-icon position-relative" role="button" href="profile-info-page.html"
+                            title="គណនី" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                            <span
+                                        class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                        <small>6</small>
+                                    </span>
+                        </a>
+                        <ul class="dropdown-menu bg-black ms-5 mt-4 rounded-3 py-3">
+                            <div class="card border-0 ">
+                                <div class="account-header d-flex flex-column align-items-center px-5 pt-2">
+                                    <div class="mb-2">
+                                        <img class="border border-brand border-2 rounded-circle object-fit-cover"
+                                            src="assets/img/blog-img/pfp-1.jpg" alt="#" width="60px">
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column align-items-center justify-content-center text-whitee">
+                                        <h5 class="mb-0">Willaim Sarah</h5>
+                                        <p>williamsarah@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="profile-info-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-address-card me-3"></i>
+                                    </div>
+                                    ព័ត៌មានផ្ទាល់ខ្លួន
+                                </a>
+                            </li>
+                            <li>
+                                <a href="order-history-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping me-3"></i>
+                                    </div>
+                                    ការបញ្ជាទិញ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="voucher-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-ticket me-3"></i>
+                                    </div>
+                                    ប័ណ្ណចំណាយ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notification-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-bell me-3"></i>
+                                    </div>
+                                    ការជូនដំណឹង
+                                    <span class="badge ms-auto bg-brand rounded-pill fw-normal">6</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wishlist-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-heart me-3"></i>
+                                    </div>
+                                    ចំំណូលចិត្តរបស់ខ្ញុំ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="term-of-use-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-book me-3"></i>
+
+                                    </div>
+                                    គេាលការណ៏ប្រើ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center mb-0"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="fa-solid fa-right-from-bracket me-3"></i>
+                                    </div>
+                                    ចាកចេញ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
                         <i class=" fa-solid fa-bars"></i>
                     </button>
                 </div>
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-start bg-offcanvasNavbar" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                    <div class="offcanvas-header d-flex d-xl-none align-items-center">
+                    <div class="offcanvas-header d-flex d-xl-none align-items-center bg-transparent">
                         <a class="navbar-brand" href="#">
-                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png2.png" alt height="70px">
+                            <img class="ms-3 ms-xl-4" src="assets/img/logo-2-Orange-png.png" alt height="70px">
                         </a>
-                        <button type="button" class="btn-close fs-4 btn-icon shadow-none" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn btn-icon fs-2 shadow-none ms-auto text-black"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body bg-transparent">
                         <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#">ទំព័រដើម</a>
+                                <a class="nav-link" href="home-page.html">ទំព័រដើម</a>
                             </li>
 
-                            <li class="nav-item mx-lg-2 dropdown megamenu ">
+                            <li class="nav-item mx-lg-2 dropdown megamenu">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     ម៉ីនុយ
                                 </a>
-                                <ul class="dropdown-menu border-0">
+                                <ul class="dropdown-menu border-0 ">
                                     <div class="container-xxl">
-                                        <div class="row w-100 gy-4">
+                                        <div class="row w-100 gy-4 pb-3">
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <h5 class="dropdown-item">Khmer
-                                                            Food</h6>
+                                                        <a href="menu-khmer.html">
+                                                            <h5 class="dropdown-item">ម្ហូបខ្មែរ</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-khmer-detail.html">អាម៉ុកត្រី</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-khmer-detail.html">បុកមាន់ហឹរ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-khmer-detail.html">ត្រីបំពង</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-khmer-detail.html">សម្លម្ជូរខ្ទិះ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <h5 class="dropdown-item">Khmer
-                                                            Food</h6>
+                                                        <a href="menu-chinese.html">
+                                                            <h5 class="dropdown-item">ម្ហូបចិន</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-chinese-detail.html">ហាកាវចំហុយ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-chinese-detail.html">មាន់កុងប៉ាវ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-chinese-detail.html">មីជូរហឹរ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-chinese-detail.html">ស៊ុបគាវ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <h5 class="dropdown-item">Khmer
-                                                            Food</h6>
+                                                        <a href="menu-thai.html">
+                                                            <h5 class="dropdown-item">ម្ហូបថៃ</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="menu-thai-detail.html">ផាត់ថៃ</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-thai-detail.html">ឡាបសាច់ជ្រូក</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-thai-detail.html">គុយទាវទូក</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-thai-detail.html">គុយទាវទឹកខ្មៅ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <h5 class="dropdown-item">Khmer
-                                                            Food</h6>
+                                                        <a href="menu-vietname.html">
+                                                            <h5 class="dropdown-item">ម្ហូបវៀតណាម</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-vietname-detail.html">ហ្វឺសាច់គោ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-vietname-detail.html">បុងបរវេរ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-vietname-detail.html">នំបញ្ចុកដុះផ្សិត</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-vietname-detail.html">គួងចំហុយ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <h5 class="dropdown-item">Khmer
-                                                            Food</h6>
+                                                        <a href="menu-europe.html">
+                                                            <h5 class="dropdown-item">ម្ហូបអ៊ឺរ៉ុប</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-europe-detail.html">ផាស្តាប៉េងប៉ោះ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-europe-detail.html">ភីហ្សាបេខន់</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-europe-detail.html">មាន់ស្ពីណាច</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-europe-detail.html">ស្តេកសាច់គោ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <h5 class="dropdown-item">Khmer
-                                                            Food</h6>
+                                                        <a href="menu-healthy.html">
+                                                            <h5 class="dropdown-item">អាហារសុខភាព</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-healthy-detail.html">ស្តេកទ្រូងមាន់</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-healthy-detail.html">សាល់ម៉ុនសាឡាដ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-healthy-detail.html">ផាស្តាបង្គារ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-healthy-detail.html">សាឡាដក្រូចថ្លុង</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <h5 class="dropdown-item">Khmer
-                                                            Food</h6>
+                                                        <a href="menu-dessert.html">
+                                                            <h5 class="dropdown-item">បង្អែម</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-dessert-detail.html">សង់ខ្យាល្ពៅ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-dessert-detail.html">បាយដំណើបស្វាយទុំ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-dessert-detail.html">ការ៉េមសូកូឡា</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-dessert-detail.html">ថាតរសជាតិក្រូច</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <h5 class="dropdown-item">Khmer
-                                                            Food</h6>
+                                                        <a href="menu-drink.html">
+                                                            <h5 class="dropdown-item">ភេសជ្ជះ</h5>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-drink-detail.html">កាហ្វេទឹកដោះគោ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-drink-detail.html">ម៉ាឆាឡាតេ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-drink-detail.html">ស្រ្តបឺរីក្រឡុក</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="menu-drink-detail.html">តែផាសិន</a></li>
                                                 </ul>
                                             </div>
-
                                         </div>
                                     </div>
 
@@ -185,10 +333,10 @@
                                 </ul>
                             </li>
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="">អាជីព</a>
+                                <a class="nav-link" href="career-page.html">អាជីព</a>
                             </li>
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="career-detail-page.html">ព័ត៌មាន</a>
+                                <a class="nav-link" href="blog-page.html">ព័ត៌មាន</a>
                             </li>
                             <li class="nav-item mx-lg-2 dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -203,38 +351,238 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center">
-                            <button class="btn btn-icon" type="button">
+                            <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
                                 <i class="fa-solid fa-utensils"></i>
-                            </button>
-                            <form class="d-none d-xl-flex" role="search">
-                                <button class="btn btn-icon" type="button">
+                            </a>
+                            <form class="d-none d-xl-flex" role="search" title="ស្វែងរក">
+                                <button class="btn btn-icon" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#searchModal">
                                     <i class="fa-solid fa-search"></i>
                                 </button>
                             </form>
-                            <button class="btn btn-icon d-none d-xl-inline-block" type="button">
+                            <a class="btn btn-icon d-none d-xl-inline-block position-relative" role="button" title="កន្រ្តក"
+                                data-bs-toggle="offcanvas" href="#offcanvasCart" aria-controls="offcanvasCartExample">
                                 <i class="fa-solid fa-basket-shopping"></i>
-                            </button>
+                                <span
+                                        class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                        <small>2</small>
+                                    </span>
+                            </a>
                             <button class="btn btn-icon" type="button" data-theme-toggle>
-                                <!-- <i class="fa-solid fa-moon"></i> -->
                             </button>
-                            <button class="btn btn-icon d-none d-xl-inline-block" type="button">
-                                <i class="fa-solid fa-user"></i>
-                            </button>
+                            <div class="dropdown-center dropdown-account">
+                                <a class="btn btn-icon d-none d-xl-inline-block position-relative" role="button"
+                                    href="profile-info-page.html" title="គណនី" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span
+                                        class="badge ms-auto bg-brand rounded-pill fw-normal position-absolute end-0 top-0 fs-7 p-1 px-2 badge-noti">
+                                        <small>6</small>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu bg-black mt-4 rounded-3 py-3">
+                                    <div class="card border-0 ">
+                                        <div class="account-header d-flex flex-column align-items-center px-5 pt-2">
+                                            <div class="mb-2">
+                                                <img class="border border-brand border-2 rounded-circle object-fit-cover"
+                                                    src="assets/img/blog-img/pfp-1.jpg" alt="#" width="60px">
+                                            </div>
+                                            <div
+                                                class="d-flex flex-column align-items-center justify-content-center text-whitee">
+                                                <h5 class="mb-0">Willaim Sarah</h5>
+                                                <p>williamsarah@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <a href="profile-info-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-address-card me-3"></i>
+                                            </div>
+                                            ព័ត៌មានផ្ទាល់ខ្លួន
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="order-history-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-bag-shopping me-3"></i>
+                                            </div>
+                                            ការបញ្ជាទិញ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="voucher-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-ticket me-3"></i>
+                                            </div>
+                                            ប័ណ្ណចំណាយ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="notification-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-bell me-3"></i>
+                                            </div>
+                                            ការជូនដំណឹង
+                                            <span class="badge ms-auto bg-brand rounded-pill fw-normal">6</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="wishlist-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-heart me-3"></i>
+                                            </div>
+                                            ចំំណូលចិត្តរបស់ខ្ញុំ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="term-of-use-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-book me-3"></i>
+
+                                            </div>
+                                            គេាលការណ៏ប្រើ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center mb-0"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="fa-solid fa-right-from-bracket me-3"></i>
+                                            </div>
+                                            ចាកចេញ
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+
     </header>
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end offcanvas-cart bg-offcanvasNavbar" tabindex="-1" id="offcanvasCart"
+        aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header bg-transparent text-black">
+            <h3 class="offcanvas-title" id="offcanvasCartLabel">កន្ត្រកទំនិញ</h3>
+            <button type="button" class="btn ms-auto btn-lg text-black border-0 btn-x" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body bg-transparent pt-0 ">
+            <div class="d-flex flex-column justify-content-between h-100">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card flex-row align-items-center py-2 border-0 border-bottom rounded-0">
+                            <div class="offcanvas-cart-product-img">
+                                <img class="rounded-circle " src="assets/img/chinese-food/c10.png" alt="--" width="85px"
+                                    height="85px">
+                            </div>
+
+                            <div class="card-body d-flex flex-column text-black">
+                                <h5 class="text-black mb-0">Brown Bear Vector</h5>
+                                <span class="fs-5">
+                                    ចំនួន: 1
+                                </span>
+                                <div class="d-flex justify-content-between ">
+                                    <span class="fs-5">$20</span>
+                                    <button type="button" class="btn py-0 text-black btn-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card flex-row align-items-center py-2 border-0 border-bottom rounded-0">
+                            <div class="offcanvas-cart-product-img">
+                                <img class="rounded-circle " src="assets/img/chinese-food/c10.png" alt="--" width="85px"
+                                    height="85px">
+                            </div>
+
+                            <div class="card-body d-flex flex-column text-black">
+                                <h5 class="text-black mb-0">Brown Bear Vector</h5>
+                                <span class="fs-5">
+                                    ចំនួន: 1
+                                </span>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fs-5">$20</span>
+                                    <button type="button" class="btn py-0 text-black btn-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout border-top pt-3 text-black">
+                    <div class="d-flex justify-content-between align-items-center mb-2 text-black">
+                        <span class="fw-medium fs-5">សរុប</span>
+                        <span class="fw-medium fs-5">$43</span>
+                    </div>
+                    <span>ការដឹកជញ្ជូន និងពន្ធត្រូវបានគណនានៅពេលចេញ។</span>
+                    <a href="cart-page.html" role="button" class="w-100 btn btn-cart fs-6 fw-medium mt-3">
+                        មើលកន្ត្រកទាំងអស់
+                    </a>
+                    <a href="checkout-page.html" role="button" class="w-100 btn btn-brand fs-6 fw-medium mt-3 border-0">
+                        ទូទាត់
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seacrh Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between align-items-center bg-transparent">
+                    <form class="flex-grow-1">
+                        <div class="input-group w-100">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="search" class="form-control bg-transparent" placeholder="ស្វែងរក..."
+                                aria-label="Search">
+                        </div>
+                    </form>
+                    <button type="button" class="btn-close d-flex align-items-center ms-1 shadow-none border-0"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section class="hero-banner position-relative">
             <div class="banner-bg europe-banner"></div>
             <div class="content d-flex align-items-center">
                 <div class="container">
-                    <div class="text-center text-white-light mb-5">
-                        <h2 class="display-2 my-4">ការកក់តុ</h2>
-                        <div class="fs-5">
-                            <span class="text-brand">Reservation</span>
+                    <div class="text-center text-white-light mb-5" >
+                        <h2 class="display-2 my-4" data-aos="fade-down-right" data-aos-duration="1000">ការកក់តុ</h2>
+                        <div class="fs-5" data-aos="fade-up-left" data-aos-duration="1000">
+                            <a href="home-page.html" class="text-white-light text-decoration-none">ទំព័រដើម</a>
+                            <span> &nbsp;>&nbsp; </span>
+                            <span class="text-brand">ការកក់តុ</span>
                         </div>
                     </div>
                 </div>
@@ -253,7 +601,7 @@
                                 និងផ្តល់នូវការកំណត់ផ្តាច់មុខជាមួយនឹងម៉ឺនុយផ្ទាល់ខ្លួន បុគ្គលិកដែលយកចិត្តទុកដាក់
                                 និងសេវាកម្មពិសេស។</p>
                             <h6>អាចកក់តាមរយះលេខ</h6>
-                            <h2>(885+) 123456789</h2>
+                            <h2>(885+) <a href="" class="text-brand"> 123456789</a></h2>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -335,8 +683,8 @@
                             </div>
                             <div class="mb-3 d-flex justify-content-center">
                                 <button type="button"
-                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-white  rounded-4">
-                                    Button
+                                    class="btn btn-cart px-5 py-2 ms-3 fs-5 align-items-center text-white ">
+                                    បញ្ចូន
                                 </button>
                             </div>
                         </form>
@@ -347,13 +695,13 @@
         <section class="background-res-style margin-bottom ">
             <div class="container-fluid ">
                 <div class="bg-image position-relative">
-                    <img src="img/bg-1.jpg" alt="">
+                    <img src="assets/img/bg-1.jpg" alt="">
                     <div class="content position-absolute d-flex justify-content-center ">
                         <div class="align-content-center text-center">
                             <h3 class="text-white align-content-center">
-                                Events Or Celebration
+                                កម្មវិធី
                             </h3>
-                            <p class="text-white align-content-center">Find a Party Area</p>
+                            <p class="text-white align-content-center">ស្វែងរកន្លែងជប់លៀង</p>
                         </div>
                     </div>
                 </div>
@@ -364,7 +712,7 @@
                 <div class="row margin-bottom hover-image">
                     <div class="col-md-6">
                         <div class="single-image">
-                            <img src="img/hbd-img.jpg" alt="">
+                            <img src="assets/img/hbd-img.jpg" alt="">
                             <div class="overlay-text">
                                 <h3 class="title">Welcome</h3>
                                 <span class="post">Birthday Celebration <br> WokStar</span>
@@ -373,8 +721,8 @@
                     </div>
                     <div class="col-md-6">
                         <div class="content px-4">
-                            <h3>Birthday Celebration</h3>
-                            <p class="price">130$</p>
+                            <h3 class="text-brand fs-3">Birthday Celebration</h3>
+                            <p class="price text-brand fs-4">130$</p>
                             <p>ការរៀបចំពិធីខួបកំណើតនៅភោជនីយដ្ឋានជាការប្រមូលផ្តុំមួយដែលអាចបង្កើតបានក្នុងបរិយាកាសផ្តាច់មុខ
                                 និងស្រស់ស្អាត។
                                 វាផ្តល់នូវបទពិសោធន៍តែមួយគត់ដែលសមស្របសម្រាប់ការប្រារព្ធខួបកំណើតមួយយ៉ាងអនុស្សាវរីយ៍។ </p>
@@ -402,37 +750,32 @@
                 <div class="row hover-image " id="row-rev">
                     <div class="col-md-6">
                         <div class="content px-4">
-                            <h3>Birthday Celebration</h3>
-                            <p class="price">130$</p>
-                            <p>ការរៀបចំពិធីខួបកំណើតនៅភោជនីយដ្ឋានជាការប្រមូលផ្តុំមួយដែលអាចបង្កើតបានក្នុងបរិយាកាសផ្តាច់មុខ
-                                និងស្រស់ស្អាត។
-                                វាផ្តល់នូវបទពិសោធន៍តែមួយគត់ដែលសមស្របសម្រាប់ការប្រារព្ធខួបកំណើតមួយយ៉ាងអនុស្សាវរីយ៍។ </p>
+                            <h3 class="text-brand fs-3">Family Celebration</h3>
+                            <p class="price fs-4 text-brand">70$</p>
+                            <p> ក្រុមការងារដាក់អោយនៅពេលនោះដើម្បីធានាថារបស់របរនិងតម្រូវការនានាត្រូវបានចាប់អារម្មណ៍ </p>
                             <p>
-                                ក្រុមការងារដាក់អោយនៅពេលនោះដើម្បីធានាថារបស់របរនិងតម្រូវការនានាត្រូវបានចាប់អារម្មណ៍
+                                ជ្រើសរើសភោជនីយដ្ឋានដែលផ្តល់ម៉ឺនុយដែលតម្រូវតាមរសជាតិរបស់អ្នកគ្រប់គ្នា។ ពិចារណាលើការរឹតបន្តឹងរបបអាហារ អាឡែស៊ី ឬចំណូលចិត្
                                 <i class="bi bi-check2-circle"></i>
                             </p>
                             <p>
-                                ក្រុមការងារដាក់អោយនៅពេលនោះដើម្បីធានាថារបស់របរនិងតម្រូវការនានាត្រូវបានចាប់អារម្មណ៍
+                                សម្រេចចិត្តលើបរិយាកាសដែលអ្នកចង់បាន - ផ្លូវការ ធម្មតា កក់ក្ដៅ ឬរស់រវើក។ ឱកាសខ្លះទាមទារឱ្យមានបទពិសោធន៍ទទួលទានអាហារឆ្ងាញ់ៗ ខណៈពេលដែលកន្លែងផ្សេងទៀតអាចសមនឹងកន្លែងធម្មតា និងជាលក្ខណៈគ្រួសារ។
                                 <i class="bi bi-check2-circle"></i>
                             </p>
                             <p>
-                                ក្រុមការងារដាក់អោយនៅពេលនោះដើម្បីធានាថារបស់របរនិងតម្រូវការនានាត្រូវបានចាប់អារម្មណ៍
+                                ទីតាំងដែលងាយស្រួលសម្រាប់អ្នកចូលរួមទាំងអស់។ ប្រសិនបើសមាជិកគ្រួសារខ្លះមានបញ្ហាចល័ត សូមប្រាកដថាភោជនីយដ្ឋានអាចចូលបាន។
                                 <i class="bi bi-check2-circle"></i>
                             </p>
-                            <p>
-                                ក្រុមការងារដាក់អោយនៅពេលនោះដើម្បីធានាថារបស់របរនិងតម្រូវការនានាត្រូវបានចាប់អារម្មណ៍
-                                <i class="bi bi-check2-circle"></i>
-                            </p>
+                    
                             <p>រាល់ពិធីខួបកំណើតនៅភោជនីយដ្ឋានជាការប្រមូលផ្តុំមួយដែលមានការកំណត់ពិសេសតាមតម្រូវការ
                                 ដែលធ្វើឱ្យមានអនុស្សាវរីយ៍មិនអាចភ្លេចបាន។</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="single-image">
-                            <img src="img/hbd-img.jpg" alt="">
+                            <img src="assets/img/image-party.png" alt="">
                             <div class="overlay-text">
                                 <h3 class="title">Welcome</h3>
-                                <span class="post">Birthday Celebration <br> WokStar</span>
+                                <span class="post">Family Celebration <br> WokStar</span>
                             </div>
                         </div>
                     </div>
@@ -442,8 +785,8 @@
         <section>
             <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered ">
-                  <img src="img/bg-1.jpg" alt="">
-                  </div>
+                  <img src="assets/img/images.jpg" alt="">
+                </div>
             </div>
         </section>
     </main>
