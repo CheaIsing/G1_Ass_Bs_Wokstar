@@ -2566,7 +2566,7 @@ footer .copyright a:hover {
 /*start login signup*/
 .background-imge {
   max-width: 1180px;
-  background-image: url(../../img/bg_login.jpg);
+  background-image: url(../img/bg_login.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
