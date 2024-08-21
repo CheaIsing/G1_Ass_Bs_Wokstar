@@ -194,6 +194,7 @@ body {
   font-size: 20px;
   transition: 0.3s;
   text-wrap: nowrap;
+  align-items: center;
 }
 
 .navbar .navbar-nav .nav-item .nav-link::before {
@@ -236,6 +237,12 @@ body {
 }
 
 .navbar .dropdown:not(.megamenu) .dropdown-menu {
+  top: 84px;
+  background-color: transparent;
+  /* padding: 0.75rem !important; */
+}
+
+.navbar .dropdown:not(.megamenu) .dropdown-menu ::before {
   top: 84px;
   background-color: transparent;
   /* padding: 0.75rem !important; */
@@ -449,11 +456,40 @@ body {
 @media (max-width: 576px){
   .navbar .btn-responsive-icon{
     padding-inline: 6px !important;
-    /* font-size: 20px !important; */
+    font-size: 1.7rem !important;
+  }
+
+  .navbar .btn-responsive-icon .badge-noti{
+    padding-inline: 7px !important;
+    font-size: 11px !important;
+  }
+
+  .navbar .navbar-toggler.btn-responsive-icon{
+    font-size: 32px !important;
+    margin-top: 1px;
+    padding-right: 0px !important;
   }
 
   .navbar .dropdown-account .dropdown-menu{
     left: -700% !important;
+  }
+}
+
+@media (max-width: 400px){
+  .navbar .btn-responsive-icon{
+    padding-inline: 6px !important;
+    font-size: 21px !important;
+  }
+  
+  .navbar .btn-responsive-icon .badge-noti{
+    padding-inline: 7px !important;
+    font-size: 11px !important;
+  }
+
+  .navbar .navbar-toggler.btn-responsive-icon{
+    font-size: 27px !important;
+    margin-top: 1px;
+    padding-right: 0px !important;
   }
 }
 
@@ -2055,6 +2091,7 @@ footer .copyright a:hover {
 
 /* Blog Page */
 [data-theme="light"] {
+  --c-card-text-dark : #343434;
   --c-card-text: #7a7a7a;
   --c-body-bg-light: #fff;
 }
@@ -2062,6 +2099,7 @@ footer .copyright a:hover {
 [data-theme="dark"] {
   --c-card-text: rgba(255, 255, 255, 0.75);
   --c-body-bg-light: rgb(40, 40, 40);
+  --c-card-text-dark : #rgba(255, 255, 255, 0.75);
 }
 
 .blog-page .news .card {
@@ -2327,6 +2365,25 @@ footer .copyright a:hover {
 /* Voucher page */
 .voucher-page .card.coupon{
   position: relative;
+  color: var(--c-card-text-dark);
+}
+
+.voucher-page .card.coupon p{
+  font-size: 18px ;
+}
+
+@media (min-width: 576px) {
+  .voucher-page .card.coupon p{
+    font-size: 20px !important;
+  }
+
+  .voucher-page .card.coupon time{
+    font-size: 16px !important;
+  }
+}
+
+.voucher-page .card.coupon time{
+  font-size: 16px;
 }
 
 .voucher-page .card.coupon::before{
@@ -2334,7 +2391,7 @@ footer .copyright a:hover {
   position: absolute;
   width: 46px;
   height: 46px;
-  border: 1px solid var(--c-brand);
+  border: 1px solid var(--c-btn-brand-hover);
   clip-path: circle(50% at 100% 50%);
   background-color: var(--c-white-black-light);
   border-radius: 50%;
@@ -2351,7 +2408,7 @@ footer .copyright a:hover {
   clip-path: circle(50% at 0 50%);
   background-color: var(--c-white-black-light);
   border-radius: 50%;
-  right: -34px;
+  right: -35px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -3867,6 +3924,10 @@ option {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.home-page .carousel-control-prev, .carousel-control-next{
+  width: 40px !important;
 }
 
 @media (max-width:1200px) {
