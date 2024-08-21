@@ -801,7 +801,7 @@ footer .copyright a:hover {
 
 .hero-banner>.banner-bg.europe-banner {
   width: 100%;
-  background-image: url(../img/banner/europe-banner.jpg);
+  background-image: url(../img/banner/europe-banner.png);
 }
 .hero-banner>.banner-bg.chinese-banner {
   width: 100%;
@@ -1130,12 +1130,13 @@ footer .copyright a:hover {
 
 .carousel-item .text-absolute {
   color: white;
-  max-width: 900px !important;
+  width: 100%;
   text-align: center;
   display: flex ;
   justify-content: center ;
   flex-direction: column;
   position: absolute;
+  z-index: 2;
   /* padding: 19rem; */
 }
 
@@ -1151,13 +1152,23 @@ footer .copyright a:hover {
 
 /* toast btn  */
 .toast {
-  background-color: #f5c61cc1;
+  width: 100%;
+  /* background-color: #f5c61cc1;
+  background-color: #fedc61; */
+  background-color: #fff;
+  color: #f5c61c;
+  border: 2px solid var(--c-brand);
 }
-
+.toast .toast-body{
+  width: 300px;
+}
+/* .btn-close{
+  color: var(--c-white)!important;
+}
 .toast .btn-close:focus {
-  /* border: none; */
+  border: none;
   box-shadow: none !important;
-}
+} */
 
 /* --------->> Menu detail page <<----------  */
 .section-moremenu .title h1 {
