@@ -1201,24 +1201,13 @@ footer .copyright a:hover {
 /* toast btn  */
 .toast {
   width: 100%;
-  /* background-color: #f5c61cc1;
-  background-color: #fedc61; */
-  background-color: #fff;
+  background-color: var(--c-white);
   color: #f5c61c;
   border: 2px solid var(--c-brand);
 }
-
-.toast .toast-body {
+.toast .toast-body{
   width: 300px;
 }
-
-/* .btn-close{
-  color: var(--c-white)!important;
-}
-.toast .btn-close:focus {
-  border: none;
-  box-shadow: none !important;
-} */
 
 /* --------->> Menu detail page <<----------  */
 .section-moremenu .title h1 {
@@ -1324,10 +1313,6 @@ footer .copyright a:hover {
   border-color: var(--c-brand) !important;
 }
 
-.dproduct-des .tab-content {
-  color: var(--c-black);
-}
-
 .dproduct-des .section-cus-review .cus-profile img {
   width: 100%;
   height: 100%;
@@ -1342,7 +1327,20 @@ footer .copyright a:hover {
   color: var(--c-black);
   border-color: var(--c-brand);
 }
-
+.dproduct-des .tab-content {
+  color: var(--c-black);
+  font-size: 17px;
+  line-height: 30px;
+}
+.section-menu-des .dproduct-des .d-addition h5{
+  font-size: 23px!important;
+  padding: 15px 0 8px 0;
+  position: relative;
+}
+.section-menu-des .dproduct-des .d-addition li{
+  padding: 4px 0;
+  font-size: 17px;
+}
 .section-menu-des .dproduct-des .form-review .title i:hover {
   color: var(--c-brand);
   cursor: pointer;
@@ -4984,22 +4982,20 @@ option {
 
 .service-page .section-service .service-list .card {
   width: 100%;
-  /* padding: 18px; */
   height: 300px;
   position: relative;
   border: 0;
   overflow: hidden;
-  /* background-color: red; */
   box-shadow: 0px 0px 15px 4px var(--m-card-shadow-color);
 }
-
-.service-page .section-service .service-list .card .text {
-  /* min-height: 300px; */
+.service-page .section-service .service-list .card .text{
   color: var(--c-black);
   transition: 0.5s;
-  padding-bottom: 12px !important;
-
-  /* overflow: hidden; */
+  padding-bottom: 12px!important;
+}
+.service-page .section-service .service-list .card:hover .text{
+  color:var(--c-white);
+  transform: translateY(-105px);
 }
 
 .service-page .section-service .service-list .card .text .icon {
@@ -5015,6 +5011,10 @@ option {
 
 .service-page .section-service .service-list .card .text h3 {
   text-wrap: nowrap;
+  transition: 0.5s;
+}
+.service-page .section-service .service-list .card:hover .text h3{
+  color: var(--c-brand);
 }
 
 .service-page .section-service .service-list .card .text-hover {
@@ -5039,16 +5039,7 @@ option {
   transform: translate(0, 0);
   bottom: 0;
 }
-
-.service-page .section-service .service-list .card .text h3 {
-  transition: 0.5s;
-}
-
-.service-page .section-service .service-list .card:hover .text h3 {
-  color: var(--c-brand);
-}
-
-.service-page .section-service .service-list .card:hover .text-4-line {
+.service-page .section-service .service-list .card:hover .text-4-line{
   display: block;
 }
 
@@ -5071,13 +5062,7 @@ option {
     transform: translate(70%, 50%);
   }
 }
-
-.service-page .section-service .service-list .card:hover .text {
-  color: var(--c-white);
-  transform: translateY(-105px);
-}
-
-.service-page .section-adding {
+.service-page .section-adding{
   width: 100%;
   height: 500px;
   position: relative;
@@ -5098,10 +5083,8 @@ option {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: green; */
   text-align: center;
   color: #fff;
-
 }
 
 .service-page .section-adding .text img {
@@ -5174,7 +5157,11 @@ option {
 }
 
 /* section feature  */
-.service-page .section-feature img.position-relative {
+.service-page .section-feature .title img{
+  width: 50px;
+  height: 50px;
+}
+.service-page .section-feature img.position-relative{
   width: 70%;
   z-index: 1;
   object-fit: cover;
@@ -5206,13 +5193,7 @@ option {
     transform: scale(1.1);
   }
 }
-
-.service-page .section-feature .title img {
-  width: 50px;
-  height: 50px;
-}
-
-.service-page .section-feature .card {
+.service-page .section-feature .card{
   border: 0;
   background-color: #f5c61c30;
 }
