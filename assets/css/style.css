@@ -2564,28 +2564,64 @@ footer .copyright a:hover {
 }
 
 /*start login signup*/
-.background-imge {
-  max-width: 1180px;
-  background-image: url(../img/bg_login.jpg);
+
+[data-theme="light"]{
+  --c-login : hsla(0, 4%, 25%, 0.183);
+  --filter-login: saturate(200%) blur(20px);
+  --box-show-login:0px 0px 10px 5px rgba(100, 100, 100, 0.662); 
+  --bg-glass:  #2c2c2ca6;
+  --color-text: #ffff;
+  --color-text-brand: #dddddd;
+  --c-form-control: #E8F0FE;
+}
+.text-login{
+  color: var(--color-text);
+}
+.color-text-brand{
+  color: var(--color-text-brand);
+}
+
+.background-imge-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg-3.jpg); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: 10%;
-  margin-bottom: 8%;
+  position: relative;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
 }
 
 .background-imge a {
   color: var(--c-brand);
   text-decoration: none;
 }
-
 a {
   text-decoration: none;
 }
-
+.bg-image-login{
+  background-image: url(../img/bg-login-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 .bg-glass {
-  background-color: hsla(0, 0%, 100%, 0.322) !important;
-  backdrop-filter: saturate(200%) blur(20px);
+  background-color: var(--bg-login);
+  backdrop-filter: var(--backdrop-filter);
+  background-color:var(--bg-glass);
+  color: var(--login-c-text);
+  border-radius: none !important;
+  box-shadow: var(--box-show-login);
+} 
+
+@media (min-width: 992px) {
+  .bg-glass {
+    border-radius: 30px 100px 100px 30px !important;
+
+  } 
 }
 
 .btn-login-form {
@@ -2593,12 +2629,27 @@ a {
   height: 40px;
   background-color: var(--c-brand);
   border-radius: 8px;
-  color: var(--c-white);
+}
+.was-validated .form-check-input:valid:checked,
+.form-check-input.is-valid:checked{
+  background-color: var(--c-brand);
+}
+.was-validated .form-control:valid,
+.form-control.is-valid{
+  border-color: var(--c-brand);
+  background-image: url(../img/icon/check-mark.png);
+}
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+  border-color: var(--c-brand);
+}
+.background-imge-1 .form-control {
+  background-color: var(--c-form-control) !important;
+}
+.background-imge-1 .form-control:focus{
+  
 }
 
-.background-imge .form-check-label {
-  color: var(--c-white);
-}
 
 .or {
   display: flex;
