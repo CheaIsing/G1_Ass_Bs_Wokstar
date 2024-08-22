@@ -20,10 +20,17 @@
     <header>
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark align-items-center">
             <div class="container-xxl px-4 ">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="ms-3 ms-xl-4" src="assets/img/logo-2-png.png" alt height="60px">
                 </a>
                 <div class="d-flex d-xl-none align-items-center">
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-icon btn-responsive-icon" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </form>
+                    
+                    
                     
                     <button class="navbar-toggler btn btn-icon btn-responsive-icon fs-0" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
@@ -31,6 +38,7 @@
                         <i class=" fa-solid fa-bars"></i>
                     </button>
                 </div>
+                
 
                 <div class="offcanvas offcanvas-start bg-offcanvasNavbar" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
@@ -44,54 +52,217 @@
                         </button>
                     </div>
                     <div class="offcanvas-body bg-transparent">
-
                         <ul class="navbar-nav justify-content-center flex-grow-1 me-5 ms-xl-4 ms-xxl-5 ">
-
                             <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#menu" role="button">
+                                <a class="nav-link" href="index.html">ទំព័រដើម</a>
+                            </li>
+
+                            <li class="nav-item mx-lg-2 dropdown megamenu">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     ម៉ីនុយ
                                 </a>
-                                
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#" role="button">
-                                    សេវាកម្ម
-                                </a>
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link" href="#" role="button">
-                                    អំពីយើង
-                                </a>
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link " href="#" role="button"
-                                    >
-                                    រូបភាព
-                                </a>
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link " href="#" role="button"
-                                    >
-                                    ការវាយតម្លៃ
-                                </a>
-                            </li>
-                            <li class="nav-item mx-lg-2">
-                                <a class="nav-link " href="#" role="button"
-                                    >
-                                    ទំនាក់ទំនង
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                                <ul class="dropdown-menu border-0 ">
+                                    <div class="container-xxl">
+                                        <div class="row w-100 gy-4 pb-3">
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <a href="public-menu-khmer.html">
+                                                            <h5 class="dropdown-item">ម្ហូបខ្មែរ</h5>
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-khmer-detail.html">អាម៉ុកត្រី</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-khmer-detail.html">បុកមាន់ហឹរ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-khmer-detail.html">ត្រីបំពង</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-khmer-detail.html">សម្លម្ជូរខ្ទិះ</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <a href="public-menu-chinese.html">
+                                                            <h5 class="dropdown-item">ម្ហូបចិន</h5>
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-chinese-detail.html">ហាកាវចំហុយ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-chinese-detail.html">មាន់កុងប៉ាវ</a></li>
+                                                    <li><a class="dropdown-item"
+
+                                                        href="public-menu-chinese-detail.html">មីជូរហឹរ</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-chinese-detail.html">ស៊ុបគាវ</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="public-menu-thai.html">
+                                                                <h5 class="dropdown-item">ម្ហូបថៃ</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="public-menu-thai-detail.html">ផាត់ថៃ</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-thai-detail.html">ឡាបសាច់ជ្រូក</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-thai-detail.html">គុយទាវទូក</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-thai-detail.html">គុយទាវទឹកខ្មៅ</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="public-menu-vietname.html">
+                                                                <h5 class="dropdown-item">ម្ហូបវៀតណាម</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-vietname-detail.html">ហ្វឺសាច់គោ</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-vietname-detail.html">បុងបរវេរ</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-vietname-detail.html">នំបញ្ចុកដុះផ្សិត</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-vietname-detail.html">គួងចំហុយ</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="public-menu-europe.html">
+                                                                <h5 class="dropdown-item">ម្ហូបអ៊ឺរ៉ុប</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-europe-detail.html">ផាស្តាប៉េងប៉ោះ</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-europe-detail.html">ភីហ្សាបេខន់</a></li>
+                                                        <li><a class="dropdown-item"
+
+                                                            href="public-menu-europe-detail.html">មាន់ស្ពីណាច</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-europe-detail.html">ស្តេកសាច់គោ</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <a href="public-menu-healthy.html">
+                                                            <h5 class="dropdown-item">អាហារសុខភាព</h5>
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-healthy-detail.html">ស្តេកទ្រូងមាន់</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-healthy-detail.html">សាល់ម៉ុនសាឡាដ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-healthy-detail.html">ផាស្តាបង្គារ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-healthy-detail.html">សាឡាដក្រូចថ្លុង</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <a href="public-menu-dessert.html">
+                                                            <h5 class="dropdown-item">បង្អែម</h5>
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-dessert-detail.html">សង់ខ្យាល្ពៅ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-dessert-detail.html">បាយដំណើបស្វាយទុំ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-dessert-detail.html">ការ៉េមសូកូឡា</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-dessert-detail.html">ថាតរសជាតិក្រូច</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <ul>
+                                                    <li>
+                                                        <a href="public-menu-drink.html">
+                                                            <h5 class="dropdown-item">ភេសជ្ជះ</h5>
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-drink-detail.html">កាហ្វេទឹកដោះគោ</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="public-menu-drink-detail.html">ម៉ាឆាឡាតេ</a></li>
+
+                                                            <li><a class="dropdown-item"
+                                                                href="public-menu-drink-detail.html">ស្រ្តបឺរីក្រឡុក</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="public-menu-drink-detail.html">តែផាសិន</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-lg-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        សេវាកម្ម
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="service-page.html">សេវាកម្ម</a></li>
+                                        <li><a class="dropdown-item" href="customer-review.html">ការវាយតម្លៃ</a></li>
+                                        <li><a class="dropdown-item" href="gallery-page.html">រូបភាព</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-lg-2">
+                                    <a class="nav-link" href="career-page.html">អាជីព</a>
+                                </li>
+                                <li class="nav-item mx-lg-2">
+                                    <a class="nav-link" href="blog-page.html">ព័ត៌មាន</a>
+                                </li>
+                                <li class="nav-item mx-lg-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        អំពី
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="about-us.html">អំពីយើង</a></li>
+                                        <li><a class="dropdown-item" href="about-restaurant.html">អំពីភោជនីយដ្ឋាន</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-lg-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        ទំនាក់ទំនង
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="contact.html">ទំនាក់ទំនងយើង</a></li>
+                                        <li><a class="dropdown-item" href="faq-page.html">សំណួរ​
+                                                និងចម្លើយ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                             <div class="d-flex align-items-center">
                                 <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
                                     <i class="fa-solid fa-utensils"></i>
                                 </a>
-                                <button class="btn btn-icon" type="button" data-theme-toggle>
-                                </button>
-                            </div>
-                            <div class="d-flex flex-nowrap">
-                                <a href="login.html" class="btn btn-brand me-2 fs-6 text-nowrap fw-medium" role="button">
+                                <form class="d-none d-xl-flex" role="search" title="ស្វែងរក">
+                                    <button class="btn btn-icon" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#searchModal">
+                                        <i class="fa-solid fa-search"></i>
+                                    </button>
+                                </form>
+                                
+                            <button class="btn btn-icon" type="button" data-theme-toggle>
+                            </button>
+                            <div class="d-flex">
+                                <a href="login.html" class="btn btn-brand me-3 fs-6 text-nowrap fw-medium" role="button">
                                     ចូលគណនី
                                 </a>
                                 <a href="sing-up.html">
@@ -107,6 +278,26 @@
         </nav>
 
     </header>
+    <!-- Seacrh Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between align-items-center bg-transparent">
+                    <form class="flex-grow-1">
+                        <div class="input-group w-100">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="search" class="form-control bg-transparent" placeholder="ស្វែងរក..."
+                                aria-label="Search">
+                        </div>
+                    </form>
+                    <button type="button" class="btn-close d-flex align-items-center ms-1 shadow-none border-0"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <main>
         <section class="mt-5 pt-5">
@@ -657,7 +848,7 @@
                                     <a href="about-restaurant.html">អំពីយើង</a>
                                 </li>
                                 <li>
-                                    <a href="menu-khmer.html">ម៉ីនុយ</a>
+                                    <a href="public-menu-khmer.html">ម៉ីនុយ</a>
                                 </li>
                                 <li>
                                     <a href="service-page.html">សេវាកម្ម</a>
@@ -759,7 +950,7 @@
                                     <a href="about-restaurant.html">អំពីយើង</a>
                                 </li>
                                 <li>
-                                    <a href="menu-khmer.html">ម៉ីនុយ</a>
+                                    <a href="public-menu-khmer.html">ម៉ីនុយ</a>
                                 </li>
                                 <li>
                                     <a href="service-page.html">សេវាកម្ម</a>
@@ -827,8 +1018,8 @@
                 <div class="d-sm-flex text-center text-sm-start justify-content-between text-white">
                     <p class="m-0 p-0">រក្សាសិទ្ធិដោយWokStar<span>©</span>2024</p>
                     <p class="m-0 p-0">
-                        <a href="term-of-use-page.html" class="border-end pe-2">គោលការណ៍ឯកជនភាព</a>
-                        <a href="term-of-use-page.html" class="ps-1">លក្ខខណ្ឌ</a>
+                        <a href="public-term-of-use-page.html" class="border-end pe-2">គោលការណ៍ឯកជនភាព</a>
+                        <a href="public-term-of-use-page.html" class="ps-1">លក្ខខណ្ឌ</a>
                     </p>
                 </div>
             </div>
