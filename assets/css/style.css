@@ -1133,12 +1133,10 @@ footer .copyright a:hover {
   transition: 0.5s;
   z-index: -1;
 }
-
-.mproduct .mproduct-image .mproduct-hover ul li:hover::after {
+.mproduct .mproduct-image .mproduct-hover ul li:hover::after{
   transform: translateY(0);
   display: block;
 }
-
 .mproduct .mproduct-image .mproduct-hover ul li button,
 .mproduct .mproduct-image .mproduct-hover ul li a {
   font-size: 20px;
@@ -1256,10 +1254,37 @@ footer .copyright a:hover {
 .section-menudetail .dproduct-detail .option button:hover {
   color: var(--c-brand);
 }
+.section-menudetail .dproduct-detail .option a{
+  color: var(--c-black);
+  transition: 0.3s;
+  background-color: transparent;
+  border: 0;
+}
 
+.section-menudetail .dproduct-detail .option a:hover {
+  color: var(--c-brand);
+}
+/* 
 .section-menudetail .dproduct-detail a:hover {
   transform: translateY(100%);
   color: var(--c-brand);
+} */
+/* hover icon forward */
+.hvr-icon-forward {
+  vertical-align: middle;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition: 0.5s;
+  text-wrap: nowrap;
+}
+.hvr-icon-forward .hvr-icon {
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover{
+  transform: translateX(10%);
+}
+.hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon, .hvr-icon-forward:hover .hvr-icon {
+  transform: translateX(15%);
 }
 
 
@@ -4518,12 +4543,38 @@ option {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
-
-
 }
 
 .landing-page .section-menus .card {
   border: solid 2px var(--c-brand);
+}
+.landing-page .section-menus .btn-view{
+  border: 1px solid var(--c-brand);
+  transition: 0.3s;
+}
+.landing-page .section-menus .btn-view:hover{
+  background-color: var(--c-brand);
+  color: #fff!important;
+}
+.landing-page .section-menudetail .dproduct-detail .btn-cart:hover{
+  color: #fff!important;
+}
+.landing-page .section-menudetail .dproduct-detail .btn-view{
+  background-color: var(--c-brand);
+  color: #fff;
+}
+.landing-page .section-menudetail .dproduct-detail .btn-view:hover{
+  background-color: var(--c-brand-dark);
+}
+.landing-page .modal1 button.btn-close:focus{
+  border: 0!important;
+  box-shadow: none!important;
+}
+.landing-page .section-menus .btn-cart:focus{
+  border: 0!important;
+}
+.landing-page .section-menus img{
+  cursor: pointer;
 }
 
 .landing-page .nav-link {
