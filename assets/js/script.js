@@ -681,6 +681,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if(document.querySelector('a[href="reservation.html"]')){
             document.querySelector('a[href="reservation.html"]').href = "reservation.html?l=true"
         }
+        if(url.pathname === "/menu-khmer-detail.html" || url.pathname === "/menu-thai-detail.html" || url.pathname === "/menu-vietname-detail.html" || url.pathname === "/menu-healthy-detail.html" || url.pathname === "/menu-europe-detail.html" || url.pathname === "/menu-drink-detail.html" || url.pathname === "/menu-desert-detail.html" || url.pathname === "/menu-chinese-detail.html"){
+            
+            document.querySelectorAll(`a[href="${url.pathname.slice(1)}"]`).forEach(a=>{
+                a.href=`${url.pathname.slice(1)}` + '?l=true&u=true';
+            })
+        }
+        
         
       if (params.has("u")) {
         const parameterValue2 = url.searchParams.get("u");
