@@ -2819,7 +2819,6 @@ a {
   background-color: var(--c-form-control) !important;
 }
 
-.background-imge-1 .form-control:focus {}
 
 
 .or {
@@ -2986,7 +2985,10 @@ a {
 .page-contact .form-reservation .form-control::placeholder {
   color: #fff;
 }
+.page-contact .form-reservation .form-control option{
+  color: #fff;
 
+}
 .page-contact textarea {
   border-bottom: 2px solid var(--c-brand);
   height: 120px;
@@ -3478,6 +3480,7 @@ a {
 
 option {
   background-color: var(--c-black);
+  
 
 }
 
@@ -3521,16 +3524,23 @@ option {
   background: transparent;
   color: var(--c-body-bg);
 }
-
+.page-reservation .reservation .form-reservation input{
+  color: #fff;
+} 
+.page-reservation .reservation .form-reservation select{
+  color: #fff !important;
+}
 .page-reservation .reservation .form-reservation .form-control::placeholder {
-  color: var(--c-text-res);
+  color: #fff;
 }
 
 .page-reservation textarea {
   border-bottom: 2px solid var(--c-brand);
   height: 120px;
 }
-
+#select-beast option{
+  color: var(--c-white);
+}
 .page-reservation .open-reservation .text {
   color: var(--c-black);
 }
@@ -3675,11 +3685,22 @@ option {
 /* end page reservation */
 
 /* Start page about us */
+
+[data-theme="light"]{
+  --c-bg-about: #fff;
+
+}
+
+[data-theme="dark"] {
+  --c-bg-about: #000;
+
+
+}
 .page-about-us main .card {
   width: 100%;
-  height: 320px;
+  height: 420px;
   position: relative;
-  background-color: #e9ecef;
+  background-color: var(--c-bg-about);
   /* background-color: var(--c-brand); */
   box-shadow: inset 0 -3em 3em rgba(52, 52, 52, 0.2),
     0 0 0 2px white,
@@ -3689,7 +3710,7 @@ option {
 }
 
 .page-about-us main .card:hover {
-  height: 350px;
+  height: 420px;
   /* overflow: hidden; */
   transform: rotateY(20px);
 }
@@ -3728,7 +3749,7 @@ option {
   content: "";
   position: absolute;
   inset: 3px;
-  background: #f8f8f8;
+  background: var(--c-bg-about);
   overflow: hidden;
 }
 
@@ -3737,7 +3758,6 @@ option {
   top: 20px;
   width: 200px;
   height: 230px;
-
   transition: 0.5s;
   overflow: hidden;
 }
@@ -3753,7 +3773,13 @@ option {
 
   }
 }
-
+@media(max-width:576px) {
+  /* .page-about-us .card:hover .content {
+    top: 150px;
+    height: 250px;
+    padding: 0 30px;
+  } */
+}
 .page-about-us .card:hover .imgeBox {
   top: -80px;
   scale: 0.9;
@@ -3764,26 +3790,30 @@ option {
   height: 100%;
   object-fit: cover;
   padding: 3px;
-  /* border-radius: 50%; */
+  border-radius: 30px;
   position: absolute;
 }
 
 .page-about-us .card .content {
   position: absolute;
   width: 100%;
-  top: 260px;
+  top: 280px;
   text-align: center;
-  height: 35px;
+  height: 100px;
   overflow: hidden;
   text-align: center;
   transform: 0.5s;
   color: #ffffff;
+  padding: 0 10px;
 }
 
 .page-about-us .card:hover .content {
   top: 150px;
-  height: 250px;
+  height:300px;
   padding: 0 30px;
+}
+.page-about-us .card .content .app a i{
+  color: var(--c-black);
 }
 
 .page-about-us .card .content h2 {
@@ -3808,7 +3838,7 @@ option {
 
 .page-about-us .purpose .content p {
   font-size: 20px;
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 
 .page-about-us .purpose .single-image {
@@ -4045,6 +4075,10 @@ option {
 
 
 }
+.page-detail-chef .section-detail-chef .contact-chef select option{
+  color: var(--c-black);
+  background-color: var(--c-black);
+}
 
 .social-media-chef .app .btn-cart {
   border: 0;
@@ -4075,8 +4109,11 @@ option {
 }
 
 .bg-style option {
-  background-color: var(--c-bg-option);
+  background-color: #000;
+  font-size: 18px;
+  color: #fff;
 }
+
 
 /* end Page details chef */
 
@@ -4382,6 +4419,7 @@ option {
 
 .home-page .section-reservation-home .form-control option {
   color: var(--c-bg-option);
+
 }
 
 .home-page .section-gallery .swiper {
@@ -4499,7 +4537,7 @@ option {
 }
 
 .landing-page .section-sliders .carousel-item .text-absolute {
-  width: 750px;
+  max-width: 750px !important;
   z-index: 2;
   color: white;
   left: 0;

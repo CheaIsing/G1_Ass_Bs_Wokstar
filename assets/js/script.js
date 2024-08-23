@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                                             <div class="col-xl-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="menu-khmer.html">
+                                                        <a href="menu-khmer.html?l=true">
                                                             <h5 class="dropdown-item">ម្ហូបខ្មែរ</h5>
                                                         </a>
                                                     </li>
