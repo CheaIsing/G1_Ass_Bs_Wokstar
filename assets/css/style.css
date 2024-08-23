@@ -918,7 +918,51 @@ footer .copyright a:hover {
   background-image: url(../img/banner/service-banner.png);
   filter: brightness(0.2);
 }
+.hero-banner>.banner-bg.restaurant-banner {
+  width: 100%;
+  background-image: url(../img/banner/abut-restauran-banner);
+}
+.hero-banner>.banner-bg.blog-banner {
+  width: 100%;
+  background-image: url(../img/banner/blog-banner.jpg);
+}
+.hero-banner>.banner-bg.gallery-banner {
+  width: 100%;
+  background-image: url(../img/banner/gallery-banner.jpg);
+}
+.hero-banner>.banner-bg.chef-banner {
+  width: 100%;
+  background-image: url(../img/banner/c);
+}
+.hero-banner>.banner-bg.reservation-banner {
+  width: 100%;
+  background-image: url(../img/banner/reservation-banner.jpg);
+}
+.hero-banner>.banner-bg.contact-banner {
+  width: 100%;
+  background-image: url(../img/banner/contact-banner.jpg);
+}
+.hero-banner>.banner-bg.faq-banner {
+  width: 100%;
+  background-image: url(../img/banner/faq-banner.jpg);
+}
+.hero-banner>.banner-bg.feedback-banner {
+  width: 100%;
+  background-image: url(../img/banner/feedback-banner.jpg);
+}
+.hero-banner>.banner-bg.career-banner {
+  width: 100%;
+  background-image: url(../img/banner/career-banner.png);
+}
+.hero-banner>.banner-bg.about-us-banner {
+  width: 100%;
+  background-image: url(../img/banner/about-us-banner.jpg);
+}
+.hero-banner>.banner-bg.cart-banner {
+  width: 100%;
+  background-image: url(../img/banner/cart-banner.jpg);
 
+}
 .hero-banner>.banner-bg img {
   width: 100%;
   height: 100%;
