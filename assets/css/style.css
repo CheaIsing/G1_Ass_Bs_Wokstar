@@ -3201,7 +3201,7 @@ a {
 
 .page-restaurant .section-about-chef {
   background-color: var(--c-bg-c);
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 .page-restaurant .section-about-chef .card {
@@ -3275,15 +3275,13 @@ a {
 }
 
 
-
-
-
 .section-feedback .shap-2 {
-  max-width: 300px;
+  width: 300px;
   height: auto;
   top: 0;
   margin-top: -3%;
 }
+
 
 .section-feedback .shap-3 {
   max-width: 300px;
@@ -3316,6 +3314,15 @@ a {
   z-index: -1;
 }
 
+@media (max-width:768px){
+  .section-feedback .shap-2 img,
+  .section-feedback .shap-3 img {
+    display: none;
+
+  }
+}
+
+
 .section-feedback .shap-3 img {
   width: 100%;
   height: 100%;
@@ -3341,26 +3348,22 @@ a {
     margin-top: 40px;
   }
 }
-
 .section-feedback .carousel-inner {
   max-width: 1000px;
   margin: auto;
 }
-
 .section-feedback .wrappers {
   display: flex;
   align-items: center;
   gap: 60px;
   padding: 30px 20px;
 }
-
 .section-feedback .thumbnail {
   width: 180px;
   height: 180px;
   position: relative;
   flex-shrink: 0;
 }
-
 .section-feedback .thumbnail img {
   width: 100%;
   height: 100%;
@@ -3371,7 +3374,6 @@ a {
 
 
 }
-
 .section-feedback .active .thumbnail img {
   transform: scale(1);
 }
@@ -3522,8 +3524,7 @@ a {
     max-width: 250px;
     height: auto;
     top: 0;
-
-    margin-top: -15%;
+    /* margin-top: -15%; */
 
   }
 
@@ -4332,7 +4333,6 @@ option {
   }
 
 }
-
 .home-page .section-home .carousel {
   width: 100%;
   height: 100vh;
@@ -4345,7 +4345,6 @@ option {
   width: 100%;
   max-height: 100%;
   border-radius: 50%;
-  /* border: 5px solid yellow; */
   object-fit: cover;
   padding: 10px;
   animation: animation-imge;
@@ -5600,6 +5599,8 @@ option {
   .service-page .section-service .service-list .card .text-4-line {
     -webkit-line-clamp: 5;
   }
+  
+  
 }
 
 @media (max-width:576px) {
@@ -5618,5 +5619,16 @@ option {
 
 .btn-cart:focus,
 .landing-page .btn-cart:hover{
-  border: 0 !important;
+  border: 0 !important;}
+
+.carousel-control-prev-icon {
+  background-image: url("../img/icon/angle-left.png") !important;
+    /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")*/
+  ;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../img/icon/angle-right.png") !important;
+    /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")*/
+  ;
 }
