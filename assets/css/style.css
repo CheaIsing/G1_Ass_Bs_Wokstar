@@ -310,7 +310,7 @@ body {
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .navbar .dropdown-account .dropdown-menu {
     /* margin-right: 200px !important; */
-    left: -490% !important;
+    left: -610% !important;
   }
 }
 
@@ -342,6 +342,7 @@ body {
     z-index: 4000;
 
   }
+
 }
 
 .navbar .offcanvas .offcanvas-header .btn-close i {
@@ -619,6 +620,10 @@ body {
 
 ::-webkit-calendar-picker-indicator {
   filter: invert(0.5);
+}
+
+.carousel-control-prev, .carousel-control-next{
+  width: 30px;
 }
 
 .navbar .megamenu:hover>.dropdown-menu {

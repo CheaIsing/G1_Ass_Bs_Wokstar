@@ -649,6 +649,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 });
             
         }
+
+        //chef
+        if(document.querySelectorAll('a[href="detail-chef.html"]')){
+            
+            document.querySelectorAll('a[href="detail-chef.html"]').forEach(a=>{
+                a.href= "detail-chef.html?l=true&u=true";
+            })
+        }
+
+        //blog
+
+        if(document.querySelectorAll('a[href="blog-detail-page.html"]')){
+            
+            document.querySelectorAll('a[href="blog-detail-page.html"]').forEach(a=>{
+                a.href= "blog-detail-page.html?l=true&u=true";
+            })
+        }
+
+        if(document.querySelectorAll('a[href="career-detail-page.html"]')){
+            document.querySelectorAll('a[href="career-detail-page.html"]').forEach(a=>{
+                a.href = "career-detail-page.html?l=true&u=true";
+            })
+        }
         
       if (params.has("u")) {
         const parameterValue2 = url.searchParams.get("u");
@@ -739,12 +762,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
        
 
-          if(url.pathname = "/detail-chef.html?l=true&u=true"){
+          if(url.pathname === "/detail-chef.html"){
             console.log(`about-restaurant.html?l=true`);
             element2.href = "about-restaurant.html?l=true"
             
             
           }
+          if(url.pathname === "/blog-detail-page.html"){
+            element2.href = "blog-page.html?l=true"
+            
+            
+          }
+          if(url.pathname === "/career-detail-page.html"){
+            element2.href = "career-page.html?l=true"
+          }
+
+          
+
+          
           
       }
     }
