@@ -932,7 +932,7 @@ footer .copyright a:hover {
 }
 .hero-banner>.banner-bg.chef-banner {
   width: 100%;
-  background-image: url(../img/banner/c);
+  background-image: url(../img/banner/chef-banner.jpg);
 }
 .hero-banner>.banner-bg.reservation-banner {
   width: 100%;
@@ -1991,6 +1991,10 @@ footer .copyright a:hover {
 
 .term-of-use-page ul {
   list-style-type: none;
+}
+
+.term-of-use-page{
+
 }
 
 .term-of-use-page .term-and-conditions,
@@ -3278,7 +3282,7 @@ a {
   max-width: 300px;
   height: auto;
   top: 0;
-  margin-top: -10%;
+  margin-top: -3%;
 }
 
 .section-feedback .shap-3 {
@@ -3501,7 +3505,7 @@ a {
     max-width: 250px;
     height: auto;
     top: 0;
-    margin-top: -15%;
+    /* margin-top: -15%; */
 
   }
 
@@ -3509,11 +3513,11 @@ a {
     max-width: 250px;
     height: auto;
     right: 0;
-    margin-top: -15%;
+    /* margin-top: -15%; */
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 920px) {
   .section-feedback .shap-2 {
     max-width: 250px;
     height: auto;
@@ -5610,4 +5614,9 @@ option {
   .service-page .section-service .service-list .card .text-4-line {
     -webkit-line-clamp: 6;
   }
+}
+
+.btn-cart:focus,
+.landing-page .btn-cart:hover{
+  border: 0 !important;
 }
