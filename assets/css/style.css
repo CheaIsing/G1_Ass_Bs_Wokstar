@@ -3,6 +3,17 @@
   src: url(../font/KantumruyPro-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: 'lg';
+  src: url('fonts/lg.woff') format('woff'),
+       url('fonts/lg.ttf') format('truetype'),
+       url('fonts/lg.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
 /*  */
 [data-theme="light"] {
   --c-brand: #fdcf28;
