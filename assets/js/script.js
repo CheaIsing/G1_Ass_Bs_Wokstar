@@ -678,10 +678,56 @@ document.addEventListener("DOMContentLoaded", (event) => {
             document.querySelector('a[href="menu-khmer.html"]').href = "menu-khmer.html?l=true"
         }
 
+        if(document.querySelectorAll('a[href="menu-khmer-detail.html"]')){
+            document.querySelectorAll('a[href="menu-khmer-detail.html"]').forEach(a=>{
+                a.href = "menu-khmer-detail.html?l=true&u=true";
+            })
+        }
+
+        if(document.querySelectorAll('a[href="menu-thai-detail.html"]')){
+            document.querySelectorAll('a[href="menu-thai-detail.html"]').forEach(a=>{
+                a.href = "menu-thai-detail.html?l=true&u=true";
+            })
+        }
+
+        if(document.querySelectorAll('a[href="menu-vietname-detail.html"]')){
+            document.querySelectorAll('a[href="menu-vietname-detail.html"]').forEach(a=>{
+                a.href = "menu-vietname-detail.html?l=true&u=true";
+            })
+        }
+        if(document.querySelectorAll('a[href="menu-drink-detail.html"]')){
+            document.querySelectorAll('a[href="menu-drink-detail.html"]').forEach(a=>{
+                a.href = "menu-drink-detail.html?l=true&u=true";
+            })
+        }
+        if(document.querySelectorAll('a[href="menu-healthy-detail.html"]')){
+            document.querySelectorAll('a[href="menu-healthy-detail.html"]').forEach(a=>{
+                a.href = "menu-healthy-detail.html?l=true&u=true";
+            })
+        }
+        if(document.querySelectorAll('a[href="menu-europe-detail.html"]')){
+            document.querySelectorAll('a[href="menu-europe-detail.html"]').forEach(a=>{
+                a.href = "menu-europe-detail.html?l=true&u=true";
+            })
+        }
+        if(document.querySelectorAll('a[href="menu-dessert-detail.html"]')){
+            document.querySelectorAll('a[href="menu-dessert-detail.html"]').forEach(a=>{
+                a.href = "menu-dessert-detail.html?l=true&u=true";
+            })
+        }
+        if(document.querySelectorAll('a[href="menu-chinese-detail.html"]')){
+            document.querySelectorAll('a[href="menu-chinese-detail.html"]').forEach(a=>{
+                a.href = "menu-chinese-detail.html?l=true&u=true";
+            })
+        }
+
         if(document.querySelector('a[href="reservation.html"]')){
             document.querySelector('a[href="reservation.html"]').href = "reservation.html?l=true"
         }
+        console.log(url.pathname === "/menu-vietname.html");
+        
         if(url.pathname === "/menu-khmer-detail.html" || url.pathname === "/menu-thai-detail.html" || url.pathname === "/menu-vietname-detail.html" || url.pathname === "/menu-healthy-detail.html" || url.pathname === "/menu-europe-detail.html" || url.pathname === "/menu-drink-detail.html" || url.pathname === "/menu-desert-detail.html" || url.pathname === "/menu-chinese-detail.html"){
+            console.log(url.pathname);
             
             document.querySelectorAll(`a[href="${url.pathname.slice(1)}"]`).forEach(a=>{
                 a.href=`${url.pathname.slice(1)}` + '?l=true&u=true';
