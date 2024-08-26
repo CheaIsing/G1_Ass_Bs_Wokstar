@@ -4406,8 +4406,22 @@ option {
   align-items: center;
   display: flex;
   text-align: start;
-  justify-content: center;
+  /* justify-content: center; */
 
+}
+
+@media (max-width: 1200px) {
+  .home-page .section-home .carousel .carousel-inner .carousel-item .content {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+  
+  }
 }
 
 .home-page .section-home .carousel .carousel-inner .carousel-item .content h1 {
