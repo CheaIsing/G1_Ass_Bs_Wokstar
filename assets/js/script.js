@@ -377,7 +377,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         '.hero-banner a[href="home-page.html"]'
       );
 
-      element1.href = "index.html";
+      if(element1){
+        element1.href = "index.html";
+      }
       console.log(element1);
 
       // console.log(button.nextElementSibling.classList);
