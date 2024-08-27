@@ -5670,6 +5670,10 @@ option {
   }
 }
 
+.btn-cart:focus{
+  border: 0;
+}
+
 .btn-cart:focus,
 .landing-page .btn-cart:hover{
   /* border-color: transparent !important; */
