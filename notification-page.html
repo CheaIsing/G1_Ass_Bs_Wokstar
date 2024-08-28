@@ -94,7 +94,7 @@
                             </li>
                             <li>
                                 <a href="voucher-page.html"
-                                    class="dropdown-item text-white-light active fs-5 d-flex align-items-center"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
                                     aria-current="page">
                                     <div>
                                         <i class="fa-solid fa-ticket me-3"></i>
@@ -115,12 +115,22 @@
                             </li>
                             <li>
                                 <a href="wishlist-page.html"
-                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    class="dropdown-item text-white-light active fs-5 d-flex align-items-center"
                                     aria-current="page">
                                     <div>
                                         <i class="fa-solid fa-heart me-3"></i>
                                     </div>
                                     ចំំណូលចិត្តរបស់ខ្ញុំ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wishlist-page.html"
+                                    class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                    aria-current="page">
+                                    <div>
+                                        <i class="bi bi-bar-chart-line-fill me-3"></i>
+                                    </div>
+                                    ប្រៀបធៀបទំនិញ
                                 </a>
                             </li>
                             <li>
@@ -359,15 +369,17 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center">
-                            <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
-                                <i class="fa-solid fa-utensils"></i>
-                            </a>
-                            <form class="d-none d-xl-flex" role="search" title="ស្វែងរក">
-                                <button class="btn btn-icon" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#searchModal">
-                                    <i class="fa-solid fa-search"></i>
-                                </button>
-                            </form>
+                            <div class="d-flex align-items-center">
+                                <a class="btn btn-icon" role="button" href="reservation.html" ​title="កក់តុ">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </a>
+                                <form class="d-none d-xl-flex" role="search" title="ស្វែងរក">
+                                    <button class="btn btn-icon" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#searchModal">
+                                        <i class="fa-solid fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
                             <a class="btn btn-icon d-none d-xl-inline-block position-relative" role="button"
                                 title="កន្រ្តក" data-bs-toggle="offcanvas" href="#offcanvasCart"
                                 aria-controls="offcanvasCartExample">
@@ -435,7 +447,7 @@
                                     </li>
                                     <li>
                                         <a href="notification-page.html"
-                                            class="dropdown-item text-white-light active fs-5 d-flex align-items-center"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
                                             aria-current="page">
                                             <div>
                                                 <i class="fa-solid fa-bell me-3"></i>
@@ -452,6 +464,16 @@
                                                 <i class="fa-solid fa-heart me-3"></i>
                                             </div>
                                             ចំំណូលចិត្តរបស់ខ្ញុំ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="compare-page.html"
+                                            class="dropdown-item text-white-light fs-5 d-flex align-items-center"
+                                            aria-current="page">
+                                            <div>
+                                                <i class="bi bi-bar-chart-line-fill me-3"></i>
+                                            </div>
+                                            ប្រៀបធៀបទំនិញ
                                         </a>
                                     </li>
                                     <li>
@@ -585,15 +607,19 @@
         <section class="pt-5 mt-5">
             <div class="container-lg my-5">
                 <div class="row g-4">
-                    <div class="setting-sidebar col-md-4 col-xl-3" data-aos="zoom-in" data-aos-duration="1000">
-                        <div class="card border-0 py-4 px-2 ps-0">
+                    <div class="setting-sidebar col-md-4 col-xl-3" data-aos="zoom-in"
+                    data-aos-duration="1000"  >
+                        <div class="card border-0 rounded-2 py-4 px-2 ps-0">
                             <div class="card-header bg-transparent mb-3">
-                                <img class="rounded-circle mb-3" src="assets/img/blog-img/pfp7.png" alt>
-                                <h5 class="mb-0" data-aos="zoom-in" data-aos-duration="1000">Willaim Sarah</h5>
-                                <span data-aos="zoom-in" data-aos-duration="1000">williamsarah@gmail.com</span>
+                                <img class="rounded-circle mb-3"
+                                    src="assets/img/blog-img/pfp7.png" alt>
+                                <h5 class="mb-0" data-aos="zoom-in"
+                                data-aos-duration="1000">Willaim Sarah</h5>
+                                <span data-aos="zoom-in"
+                                data-aos-duration="1000">williamsarah@gmail.com</span>
                             </div>
                             <ul class="nav">
-                                <li class="nav-item border-0" data-aos="zoom-in">
+                                <li class="nav-item border-0">
                                     <a href="profile-info-page.html" class="nav-link d-flex" aria-current="page">
                                         <div>
                                             <i class="fa-solid fa-address-card me-3"></i>
@@ -601,7 +627,7 @@
                                         ព័ត៌មានផ្ទាល់ខ្លួន
                                     </a>
                                 </li>
-                                <li class="nav-item border-0" data-aos="zoom-in">
+                                <li class="nav-item border-0">
                                     <a href="order-history-page.html" class="nav-link d-flex">
                                         <div>
                                             <i class="fa-solid fa-bag-shopping me-3"></i>
@@ -620,7 +646,7 @@
                                 </li>
 
                                 <li class="nav-item border-0">
-                                    <a href="notification-page.html" class="nav-link active d-flex">
+                                    <a href="notification-page.html" class="nav-link d-flex">
                                         <div>
                                             <i class="fa-solid fa-bell me-3"></i>
                                         </div>
@@ -629,11 +655,20 @@
                                     </a>
                                 </li>
                                 <li class="nav-item border-0">
-                                    <a href="wishlist-page.html" class="nav-link d-flex">
+                                    <a href="wishlist-page.html" class="nav-link active d-flex">
                                         <div>
                                             <i class="fa-solid fa-heart me-3"></i>
                                         </div>
                                         ចំំណូលចិត្តរបស់ខ្ញុំ
+                                    </a>
+                                </li>
+                                <li class="nav-item border-0">
+                                    <a href="compare-page.html" class="nav-link d-flex">
+                                        <div>
+                                            <i class="bi bi-bar-chart-line-fill me-3"></i>
+                                        </div>
+                                        ប្រៀបធៀបទំនិញ
+
                                     </a>
                                 </li>
                                 <li class="nav-item border-0">
@@ -653,6 +688,7 @@
                                         ចាកចេញ
                                     </a>
                                 </li>
+
                             </ul>
                         </div>
                     </div>

@@ -153,6 +153,8 @@ buttons.forEach(function (button) {
 document.addEventListener("DOMContentLoaded", (event) => {
   const url = new URL(window.location.href);
   const params = new URLSearchParams(url.search);
+  console.log(params);
+  
 
   if (params.has("l")) {
     console.log("Parameter exists!");
@@ -166,13 +168,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
       
       button.nextElementSibling.classList.add("d-flex", "flex-nowrap");
       button.previousElementSibling.classList.add("fs-7");
-      button.previousElementSibling.previousElementSibling.href =
+      if(button.previousElementSibling.firstElementChild){
+            button.previousElementSibling.firstElementChild.href =
         "reservation.html?l=true";
+        }
 
       document
         .querySelector(".navbar-nav")
         .classList.add("mx-xxl-5", "mx-xl-1");
-      document.querySelector(".btn-home-page-responsive").remove();
+        if(document.querySelector(".btn-home-page-responsive")){
+            document.querySelector(".btn-home-page-responsive").remove();
+        }
+      
       document.querySelectorAll(".navbar-brand").forEach((btn) => {
         btn.href = "index.html";
       });
