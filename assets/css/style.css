@@ -3915,7 +3915,7 @@ option {
 }
 
 .page-reservation .party .content {
-  text-align: center;
+  text-align: start;
   color: var(--c-black);
 }
 
@@ -3942,7 +3942,7 @@ option {
 }
 
 @media (max-width:767px) {
-  .section-about-story .about-story-1 {
+   .about-story-1 {
     flex-direction: column-reverse;
   }
 
