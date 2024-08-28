@@ -154,7 +154,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const url = new URL(window.location.href);
   const params = new URLSearchParams(url.search);
   console.log(params);
-  
 
   if (params.has("l")) {
     console.log("Parameter exists!");
@@ -165,21 +164,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
         "dropdown-center",
         "dropdown-account"
       );
-      
+
       button.nextElementSibling.classList.add("d-flex", "flex-nowrap");
       button.previousElementSibling.classList.add("fs-7");
-      if(button.previousElementSibling.firstElementChild){
-            button.previousElementSibling.firstElementChild.href =
-        "reservation.html?l=true";
-        }
+      if (button.previousElementSibling.firstElementChild) {
+        button.previousElementSibling.firstElementChild.href =
+          "reservation.html?l=true";
+      }
 
       document
         .querySelector(".navbar-nav")
         .classList.add("mx-xxl-5", "mx-xl-1");
-        if(document.querySelector(".btn-home-page-responsive")){
-            document.querySelector(".btn-home-page-responsive").remove();
-        }
-      
+      if (document.querySelector(".btn-home-page-responsive")) {
+        document.querySelector(".btn-home-page-responsive").remove();
+      }
+
       document.querySelectorAll(".navbar-brand").forEach((btn) => {
         btn.href = "index.html";
       });
@@ -380,12 +379,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
                                                 និងចម្លើយ</a></li>
                                     </ul>
                                 </li>`;
-      let element1 = document.querySelector(
+
+      if (document.querySelectorAll('.hero-banner a[href="home-page.html"]')) {
+        console.log(true);
+        
+      }
+
+      let element1 = document.querySelectorAll(
         '.hero-banner a[href="home-page.html"]'
       );
 
-      if(element1){
-        element1.href = "index.html";
+      if (element1) {
+        element1.forEach(e=>{
+            e.href = "index.html";
+
+        })
       }
       console.log(element1);
 
@@ -622,16 +630,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 </div>
             </section>
         `;
-        if(document.querySelectorAll('.mproduct-hover')){
-            let currHref = url.pathname.slice(1);
-            
-            let newHref = currHref.slice(0, -5) + "-detail.html?l=true&u=true";
-            console.log(newHref);
-            
-            document
-                .querySelectorAll(`.mproduct-hover`)
-                .forEach((con) => {
-                  con.innerHTML = `<ul class="p-0">
+      if (document.querySelectorAll(".mproduct-hover")) {
+        let currHref = url.pathname.slice(1);
+
+        let newHref = currHref.slice(0, -5) + "-detail.html?l=true&u=true";
+        console.log(newHref);
+
+        document.querySelectorAll(`.mproduct-hover`).forEach((con) => {
+          con.innerHTML = `<ul class="p-0">
                                                   <li class="mproduct-icon i-cart">
                                                       <a href="sing-up.html" role="button" class="btn" title="ដាក់ចូលកន្ត្រក">
                                                           <i class="bi bi-cart"></i>
@@ -648,119 +654,142 @@ document.addEventListener("DOMContentLoaded", (event) => {
                                                       </a>
                                                   </li>
                                                   <li class="mproduct-icon i-check">
-                                                      <a href="${
-                                                        newHref
-                                                      }" role="button" title="លម្អិត">
+                                                      <a href="${newHref}" role="button" title="លម្អិត">
                                                           <i class="bi bi-eye"></i>
                                                       </a>
                                                   </li>
       
                                               </ul>`;
-                });
-            
-        }
+        });
+      }
 
-        //chef
-        if(document.querySelectorAll('a[href="detail-chef.html"]')){
-            
-            document.querySelectorAll('a[href="detail-chef.html"]').forEach(a=>{
-                a.href= "detail-chef.html?l=true&u=true";
-            })
-        }
+      //chef
+      if (document.querySelectorAll('a[href="detail-chef.html"]')) {
+        document.querySelectorAll('a[href="detail-chef.html"]').forEach((a) => {
+          a.href = "detail-chef.html?l=true&u=true";
+        });
+      }
 
-        //blog
+      //blog
 
-        if(document.querySelectorAll('a[href="blog-detail-page.html"]')){
-            
-            document.querySelectorAll('a[href="blog-detail-page.html"]').forEach(a=>{
-                a.href= "blog-detail-page.html?l=true&u=true";
-            })
-        }
+      if (document.querySelectorAll('a[href="blog-detail-page.html"]')) {
+        document
+          .querySelectorAll('a[href="blog-detail-page.html"]')
+          .forEach((a) => {
+            a.href = "blog-detail-page.html?l=true&u=true";
+          });
+      }
 
-        if(document.querySelectorAll('a[href="career-detail-page.html"]')){
-            document.querySelectorAll('a[href="career-detail-page.html"]').forEach(a=>{
-                a.href = "career-detail-page.html?l=true&u=true";
-            })
-        }
+      if (document.querySelectorAll('a[href="career-detail-page.html"]')) {
+        document
+          .querySelectorAll('a[href="career-detail-page.html"]')
+          .forEach((a) => {
+            a.href = "career-detail-page.html?l=true&u=true";
+          });
+      }
 
-        if(document.querySelector('a[href="menu-khmer.html"]')){
-            document.querySelector('a[href="menu-khmer.html"]').href = "menu-khmer.html?l=true"
-        }
+      if (document.querySelector('a[href="menu-khmer.html"]')) {
+        document.querySelector('a[href="menu-khmer.html"]').href =
+          "menu-khmer.html?l=true";
+      }
 
-        if(document.querySelectorAll('a[href="menu-khmer-detail.html"]')){
-            document.querySelectorAll('a[href="menu-khmer-detail.html"]').forEach(a=>{
-                a.href = "menu-khmer-detail.html?l=true&u=true";
-            })
-        }
+      if (document.querySelectorAll('a[href="menu-khmer-detail.html"]')) {
+        document
+          .querySelectorAll('a[href="menu-khmer-detail.html"]')
+          .forEach((a) => {
+            a.href = "menu-khmer-detail.html?l=true&u=true";
+          });
+      }
 
-        if(document.querySelectorAll('a[href="menu-thai-detail.html"]')){
-            document.querySelectorAll('a[href="menu-thai-detail.html"]').forEach(a=>{
-                a.href = "menu-thai-detail.html?l=true&u=true";
-            })
-        }
+      if (document.querySelectorAll('a[href="menu-thai-detail.html"]')) {
+        document
+          .querySelectorAll('a[href="menu-thai-detail.html"]')
+          .forEach((a) => {
+            a.href = "menu-thai-detail.html?l=true&u=true";
+          });
+      }
 
-        if(document.querySelectorAll('a[href="menu-vietname-detail.html"]')){
-            document.querySelectorAll('a[href="menu-vietname-detail.html"]').forEach(a=>{
-                a.href = "menu-vietname-detail.html?l=true&u=true";
-            })
-        }
-        if(document.querySelectorAll('a[href="menu-drink-detail.html"]')){
-            document.querySelectorAll('a[href="menu-drink-detail.html"]').forEach(a=>{
-                a.href = "menu-drink-detail.html?l=true&u=true";
-            })
-        }
-        if(document.querySelectorAll('a[href="menu-healthy-detail.html"]')){
-            document.querySelectorAll('a[href="menu-healthy-detail.html"]').forEach(a=>{
-                a.href = "menu-healthy-detail.html?l=true&u=true";
-            })
-        }
-        if(document.querySelectorAll('a[href="menu-europe-detail.html"]')){
-            document.querySelectorAll('a[href="menu-europe-detail.html"]').forEach(a=>{
-                a.href = "menu-europe-detail.html?l=true&u=true";
-            })
-        }
-        if(document.querySelectorAll('a[href="menu-dessert-detail.html"]')){
-            document.querySelectorAll('a[href="menu-dessert-detail.html"]').forEach(a=>{
-                a.href = "menu-dessert-detail.html?l=true&u=true";
-            })
-        }
-        if(document.querySelectorAll('a[href="menu-chinese-detail.html"]')){
-            document.querySelectorAll('a[href="menu-chinese-detail.html"]').forEach(a=>{
-                a.href = "menu-chinese-detail.html?l=true&u=true";
-            })
-        }
+      if (document.querySelectorAll('a[href="menu-vietname-detail.html"]')) {
+        document
+          .querySelectorAll('a[href="menu-vietname-detail.html"]')
+          .forEach((a) => {
+            a.href = "menu-vietname-detail.html?l=true&u=true";
+          });
+      }
+      if (document.querySelectorAll('a[href="menu-drink-detail.html"]')) {
+        document
+          .querySelectorAll('a[href="menu-drink-detail.html"]')
+          .forEach((a) => {
+            a.href = "menu-drink-detail.html?l=true&u=true";
+          });
+      }
+      if (document.querySelectorAll('a[href="menu-healthy-detail.html"]')) {
+        document
+          .querySelectorAll('a[href="menu-healthy-detail.html"]')
+          .forEach((a) => {
+            a.href = "menu-healthy-detail.html?l=true&u=true";
+          });
+      }
+      if (document.querySelectorAll('a[href="menu-europe-detail.html"]')) {
+        document
+          .querySelectorAll('a[href="menu-europe-detail.html"]')
+          .forEach((a) => {
+            a.href = "menu-europe-detail.html?l=true&u=true";
+          });
+      }
+      if (document.querySelectorAll('a[href="menu-dessert-detail.html"]')) {
+        document
+          .querySelectorAll('a[href="menu-dessert-detail.html"]')
+          .forEach((a) => {
+            a.href = "menu-dessert-detail.html?l=true&u=true";
+          });
+      }
+      if (document.querySelectorAll('a[href="menu-chinese-detail.html"]')) {
+        document
+          .querySelectorAll('a[href="menu-chinese-detail.html"]')
+          .forEach((a) => {
+            a.href = "menu-chinese-detail.html?l=true&u=true";
+          });
+      }
 
-        if(document.querySelector('a[href="reservation.html"]')){
-            document.querySelector('a[href="reservation.html"]').href = "reservation.html?l=true"
-        }
-        console.log(url.pathname === "/menu-vietname.html");
-        
-        if(url.pathname === "/menu-khmer-detail.html" || url.pathname === "/menu-thai-detail.html" || url.pathname === "/menu-vietname-detail.html" || url.pathname === "/menu-healthy-detail.html" || url.pathname === "/menu-europe-detail.html" || url.pathname === "/menu-drink-detail.html" || url.pathname === "/menu-desert-detail.html" || url.pathname === "/menu-chinese-detail.html"){
-            console.log(url.pathname);
-            
-            document.querySelectorAll(`a[href="${url.pathname.slice(1)}"]`).forEach(a=>{
-                a.href=`${url.pathname.slice(1)}` + '?l=true&u=true';
-            })
-        }
-        
-        
+      if (document.querySelector('a[href="reservation.html"]')) {
+        document.querySelector('a[href="reservation.html"]').href =
+          "reservation.html?l=true";
+      }
+      console.log(url.pathname === "/menu-vietname.html");
+
+      if (
+        url.pathname === "/menu-khmer-detail.html" ||
+        url.pathname === "/menu-thai-detail.html" ||
+        url.pathname === "/menu-vietname-detail.html" ||
+        url.pathname === "/menu-healthy-detail.html" ||
+        url.pathname === "/menu-europe-detail.html" ||
+        url.pathname === "/menu-drink-detail.html" ||
+        url.pathname === "/menu-desert-detail.html" ||
+        url.pathname === "/menu-chinese-detail.html"
+      ) {
+        console.log(url.pathname);
+
+        document
+          .querySelectorAll(`a[href="${url.pathname.slice(1)}"]`)
+          .forEach((a) => {
+            a.href = `${url.pathname.slice(1)}` + "?l=true&u=true";
+          });
+      }
+
       if (params.has("u")) {
         const parameterValue2 = url.searchParams.get("u");
         let currHref = url.pathname.slice(1);
         let newHref = currHref.slice(0, -12) + ".html?l=true";
-       
-        
 
-        let element2 = element1.nextElementSibling.nextElementSibling;
+        let element2 = element1[0].nextElementSibling.nextElementSibling;
         element2.href = `${newHref}`;
 
         // Menu detail
-        if(document.querySelector(
+        if (document.querySelector(".section-menudetail .dproduct-detail")) {
+          document.querySelector(
             ".section-menudetail .dproduct-detail"
-          )){
-        document.querySelector(
-          ".section-menudetail .dproduct-detail"
-        ).lastElementChild.innerHTML = `<div class="border-end border-brand px-3 ps-0">
+          ).lastElementChild.innerHTML = `<div class="border-end border-brand px-3 ps-0">
                                     <a href="sing-up.html" role="button">
                                         <i class="bi bi-heart text-brand"></i>
                                         <span class="ps-2">ចំណង់ចំណូលចិត្ត</span>
@@ -771,40 +800,39 @@ document.addEventListener("DOMContentLoaded", (event) => {
                                         <i class="bi bi-bar-chart-line-fill text-brand"></i>
                                         <span class="ps-2">ប្រៀបធៀបទំនិញ</span>
                                     </a>
-                                </div>`;}
-        
-        if(document.querySelector(
+                                </div>`;
+        }
+
+        if (
+          document.querySelector(
             ".section-menudetail .dproduct-detail .btn-cart"
-          )){
-            let parent = document.querySelector(
-                ".section-menudetail .dproduct-detail .btn-cart"
-              ).parentElement;
-            document
+          )
+        ) {
+          let parent = document.querySelector(
+            ".section-menudetail .dproduct-detail .btn-cart"
+          ).parentElement;
+          document
             .querySelector(".section-menudetail .dproduct-detail .btn-cart")
             .remove();
-  
+
           const buttonCart = document.createElement("a");
-  
+
           buttonCart.setAttribute("role", "button");
           buttonCart.setAttribute("class", "btn btn-cart px-3 py-2 ms-3 fs-5");
           buttonCart.setAttribute("href", "sing-up.html");
-  
+
           buttonCart.innerHTML =
             'ដាក់ចូលកន្ត្រក<i class="fa-solid fa-cart-shopping ps-2"></i>';
-  
+
           parent.appendChild(buttonCart);
           console.log(parent);
         }
 
+        if (document.querySelectorAll(`.mproduct-hover`)) {
+          document.querySelectorAll(`.mproduct-hover`).forEach((con) => {
+            console.log(currHref);
 
-        if(document
-            .querySelectorAll(`.mproduct-hover`)){
-                document
-                .querySelectorAll(`.mproduct-hover`)
-                .forEach((con) => {
-                    console.log(currHref);
-                    
-                  con.innerHTML = `<ul class="p-0">
+            con.innerHTML = `<ul class="p-0">
                                                   <li class="mproduct-icon i-cart">
                                                       <a href="sing-up.html" role="button" class="btn" title="ដាក់ចូលកន្ត្រក">
                                                           <i class="bi bi-cart"></i>
@@ -822,39 +850,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
                                                   </li>
                                                   <li class="mproduct-icon i-check">
                                                       <a href="${
-                                                        currHref + '?l=true&u=true'
+                                                        currHref +
+                                                        "?l=true&u=true"
                                                       }" role="button" title="លម្អិត">
                                                           <i class="bi bi-eye"></i>
                                                       </a>
                                                   </li>
       
                                               </ul>`;
-                });
-            }
-            
-       
+          });
+        }
 
-          if(url.pathname === "/detail-chef.html"){
-            console.log(`about-restaurant.html?l=true`);
-            element2.href = "about-restaurant.html?l=true"
-            
-
-            
-            
-          }
-          if(url.pathname === "/blog-detail-page.html"){
-            element2.href = "blog-page.html?l=true"
-            
-            
-          }
-          if(url.pathname === "/career-detail-page.html"){
-            element2.href = "career-page.html?l=true"
-          }
-
-          
-
-          
-          
+        if (url.pathname === "/detail-chef.html") {
+          console.log(`about-restaurant.html?l=true`);
+          element2.href = "about-restaurant.html?l=true";
+        }
+        if (url.pathname === "/blog-detail-page.html") {
+          element2.href = "blog-page.html?l=true";
+        }
+        if (url.pathname === "/career-detail-page.html") {
+          element2.href = "career-page.html?l=true";
+        }
       }
     }
   } else {
@@ -863,23 +879,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 //cart script
-if(document.querySelector(".plus") || document.querySelector(".minus") || document.querySelector(".num")){
-    const plus = document.querySelector(".plus"),
-  minus = document.querySelector(".minus"),
-  num = document.querySelector(".num");
-let a = 1;
+if (
+  document.querySelector(".plus") ||
+  document.querySelector(".minus") ||
+  document.querySelector(".num")
+) {
+  const plus = document.querySelector(".plus"),
+    minus = document.querySelector(".minus"),
+    num = document.querySelector(".num");
+  let a = 1;
 
-plus.addEventListener("click", () => {
-  a++;
-  a = a < 10 ? "0" + a : a;
-  num.innerText = a;
-});
-minus.addEventListener("click", () => {
-  if (a >= 1) {
-    a--;
+  plus.addEventListener("click", () => {
+    a++;
     a = a < 10 ? "0" + a : a;
     num.innerText = a;
-  }
-});
-
+  });
+  minus.addEventListener("click", () => {
+    if (a >= 1) {
+      a--;
+      a = a < 10 ? "0" + a : a;
+      num.innerText = a;
+    }
+  });
 }
