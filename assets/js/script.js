@@ -385,16 +385,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         
       }
 
-      let element1 = document.querySelectorAll(
-        '.hero-banner a[href="home-page.html"]'
-      );
+
+      let element1 = document.querySelector('.hero-banner a[href="home-page.html"]');
 
       if (element1) {
-        element1.forEach(e=>{
-            e.href = "index.html";
-
-        })
+        element1.href="index.html"
       }
+       
       console.log(element1);
 
       // console.log(button.nextElementSibling.classList);
