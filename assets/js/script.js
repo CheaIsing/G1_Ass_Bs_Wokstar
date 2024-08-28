@@ -380,7 +380,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                                                 និងចម្លើយ</a></li>
                                     </ul>
                                 </li>`;
-      const element1 = document.querySelector(
+      let element1 = document.querySelector(
         '.hero-banner a[href="home-page.html"]'
       );
 

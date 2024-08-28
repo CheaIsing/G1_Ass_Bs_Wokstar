@@ -5236,11 +5236,10 @@ option {
 
 }
 
-@media (max-width: 380px) {
   .compare-page .overflow-x-scroll::-webkit-scrollbar {
     display: none !important;
   }
-}
+
 
 @media(max-width:768px) {
   .landing-page .section-menus .style-card .price {
