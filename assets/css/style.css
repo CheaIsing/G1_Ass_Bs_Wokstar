@@ -2983,7 +2983,7 @@ footer .copyright a:hover {
 
 .background-imge-1 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: url(../img/bg-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
