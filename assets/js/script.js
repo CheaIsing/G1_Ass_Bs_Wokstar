@@ -392,6 +392,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       if (element1) {
         element1.href="index.html"
       }
+       
       console.log(element1);
 
       // console.log(button.nextElementSibling.classList);
@@ -779,7 +780,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         let currHref = url.pathname.slice(1);
         let newHref = currHref.slice(0, -12) + ".html?l=true";
 
-        let element2 = element1.nextElementSibling.nextElementSibling;
+        let element2 = element1[0].nextElementSibling.nextElementSibling;
         element2.href = `${newHref}`;
 
         // Menu detail
