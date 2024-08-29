@@ -385,8 +385,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         
       }
 
-
-      let element1 = document.querySelector('.hero-banner a[href="home-page.html"]');
+      let element1 = document.querySelector(
+        'a[href="home-page.html"]'
+      );
 
       if (element1) {
         element1.href="index.html"
