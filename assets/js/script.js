@@ -380,13 +380,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
                                     </ul>
                                 </li>`;
 
-      if (document.querySelectorAll('.hero-banner a[href="home-page.html"]')) {
-        console.log(true);
-        
-      }
 
       let element1 = document.querySelector(
-        'a[href="home-page.html"]'
+        '.hero-banner a[href="home-page.html"]'
       );
 
       if (element1) {
@@ -780,7 +776,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         let currHref = url.pathname.slice(1);
         let newHref = currHref.slice(0, -12) + ".html?l=true";
 
-        let element2 = element1[0].nextElementSibling.nextElementSibling;
+        let element2 = element1.nextElementSibling.nextElementSibling;
         element2.href = `${newHref}`;
 
         // Menu detail
@@ -869,6 +865,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if (url.pathname === "/career-detail-page.html") {
           element2.href = "career-page.html?l=true";
         }
+
+        
       }
     }
   } else {
